@@ -23,5 +23,5 @@
 ___
 ![flowchart](Algorithmflowchart.png)
 
-## Limitations and how to mitigate them
+### Limitations and how to mitigate them
 ![flowchart](step4visualcue.png)
