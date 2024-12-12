@@ -19,5 +19,9 @@
 
 
 
-#Step 4
-![flowchart](Algorithm flowchart example.png)
+# Step 4
+___
+![flowchart](Algorithmflowchart.png)
+
+## Limitations and how to mitigate them
+![flowchart](step4visualcue.png)
