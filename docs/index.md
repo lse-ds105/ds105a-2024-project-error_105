@@ -21,7 +21,9 @@
 
 # Step 4
 
+
+
 ![flowchart](Algorithmflowchart.png)
 
 ### Limitations and how to mitigate them
-![flowchart](step4visualcue.png)
+![flowchart](step4visualcuev1.png)
