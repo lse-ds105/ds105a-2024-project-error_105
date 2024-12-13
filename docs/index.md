@@ -52,11 +52,19 @@
 
 
 # Step 2
-
+### **A world map classified by biomes:**
 ![worldmap](Worldmap.png)
 
-![code](Code.png)
 
+### **A map that highlights locations with the chosen biome along with the corresponding coordinates:**
+![code](Code_coordinates.png)
+
+---
+
+**Problem:** Each type of biomes have so many locations, how do we filter them further to find the **BEST** location for the Pokemons?  
+**Plan:** We can use other APIs (eg. OpenMeteo) to further analyse more specific places that are suitable for the different Pokemon characters.
+
+---
 
 
 
