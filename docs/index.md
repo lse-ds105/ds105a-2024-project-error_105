@@ -165,7 +165,7 @@ pokemon_gdf = gpd.GeoDataFrame(pokemon_ranked, geometry='geometry')
 
 ### For more detailed information on our data sources, check out: [Datasets and Their Uses](datasets-and-their-uses.md)
 
-### Here is how we plan to split the work 
+### Here is how we plan to split the work:
 | **Week**     | **Tasks**                                                                                      | **Assigned To**                        | **Notes**                              |
 |--------------|------------------------------------------------------------------------------------------------|----------------------------------------|----------------------------------------|
 | **Week 1**   | **Preliminary Research**: Finalize data sources and research Pokémon-biome matching logic.     | Adrian (data sources), Vignesh (Pokémon-biome logic), Jon (data source review), Hailey (research and organization) | Group check-in at the end of Week 1. |
