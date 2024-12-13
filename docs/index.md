@@ -4,7 +4,6 @@
   <img src="https://i.imgur.com/E6Nluee.gif" alt="Pokemon Animation" style="width: 100%; max-width: 800px;" />
 </div>
 
-![Pokemon Animation](https://i.imgur.com/E6Nluee.gif)
 
 ---
 
