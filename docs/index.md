@@ -124,6 +124,7 @@ pokemon_ranked[['Latitude', 'Longitude']] = pokemon_ranked.apply(
 # Convert to GeoDataFrame for visualization
 pokemon_ranked['geometry'] = pokemon_ranked.apply(lambda row: Point(row['Longitude'], row['Latitude']), axis=1)
 pokemon_gdf = gpd.GeoDataFrame(pokemon_ranked, geometry='geometry')
+```
 
 ### Handling Dual-Typed Pokémon
 
