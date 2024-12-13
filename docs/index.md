@@ -1,5 +1,9 @@
 # Team Error_105
 # **Where would Pokémon stay in the Real World using Real-World Biomes and Locations**  
+<div align="center">
+  <img src="https://i.imgur.com/E6Nluee.gif" alt="Pokemon Animation" style="width: 100%; max-width: 800px;" />
+</div>
+
 ![Pokemon Animation](https://i.imgur.com/E6Nluee.gif)
 
 ---
@@ -159,3 +163,6 @@ pokemon_gdf = gpd.GeoDataFrame(pokemon_ranked, geometry='geometry')
 
 ### Limitations and how to mitigate them
 ![flowchart](step4visualcuev1.png)
+
+
+### Why must you be careful around pokemon? Cos they might just peek-a-chu!
