@@ -167,7 +167,13 @@ pokemon_gdf = gpd.GeoDataFrame(pokemon_ranked, geometry='geometry')
 
 ### Here is how we plan to split the work:
                                                   
-![image](https://github.com/user-attachments/assets/ff7e2d53-e9e2-42c4-b2f1-aef8e9d2ede2)
+| Week     | Tasks                                                                                                  | Assigned To                                                                                          | Notes                             |
+|----------|--------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|-----------------------------------|
+| Week 1   | Preliminary Research: Finalize data sources and research Pokémon-biome matching logic.                  | Adrian (data sources), Vignesh (Pokémon-biome logic), Jon (data source review), Hailey (research and organization) | Group check-in at the end of Week 1. |
+| Week 2-4 | Process geographic and environmental data. Implement biome-Pokémon mapping.                            | Jon (geographic data), Hailey (environmental data, mapping), Adrian (support), Vignesh (biome-Pokémon mapping) | Group check-in at the end of Week 4. |
+| Week 5-7 | Develop ranking system. Integrate Open-Meteo data for power scaling.                                   | Vignesh (ranking system), Adrian (Open-Meteo integration), Jon (support), Hailey (Open-Meteo analysis) | Group check-in at the end of Week 7. |
+| Week 8-9 | Visualize Pokémon distribution using GeoPandas and finalize the presentation.                           | Hailey (visualization), Jon (presentation finalization), Vignesh (presentation finalization), Adrian (final adjustments) | Group check-in at the end of Week 9. |
+
 
 
 
