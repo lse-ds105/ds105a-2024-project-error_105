@@ -1,6 +1,5 @@
-# Project Error_105
-# **Project Title**  
-**Mapping Pokémon to Real-World Biomes and Locations**
+# Team Error_105
+# **Mapping Pokémon to Real-World Biomes and Locations**  
 
 ---
 
