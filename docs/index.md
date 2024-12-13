@@ -54,7 +54,7 @@
 ---
 # Step 1 
 ### **The `PokeApi`** 
-Our goal is to categorise all Generation 1 Pokemon based on their habitats, types, and base stats. To do this, we’ll use three main endpoints from PokéAPI: Generation, Pokemon , and Pokemon Species. We will achieve this in three steps:
+Our goal is to categorise all Generation 1 Pokemon based on their habitats, types, and base stats. To do this, we’ll use three main endpoints from PokéAPI: Generation, Pokemon, and Pokemon Species. We will achieve this in three steps:
 
 1. We’ll use the Generation endpoint to fetch all the Pokemon in Generation 1. This will give us a list of PokemonIDs that we’ll use to pull more detailed data in the next steps.
 2. For each Pokemon ID, we’ll use the Pokemon endpoint to get two key pieces of information: their types, like Grass, Fire, or Water, and their base stats, which include things like HP, Attack, and Defense. These stats will help us determine the overall "strength" of each Pokemon. This will be done in Step 3. 
