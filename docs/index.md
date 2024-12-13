@@ -156,10 +156,8 @@ pokemon_gdf = gpd.GeoDataFrame(pokemon_ranked, geometry='geometry')
 
 # Step 4
 
-<iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/_smhC4uv7Tw?si=vkLQZZW-4WqiOtGt" 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
+https://github.com/user-attachments/assets/e88b17e0-1465-4101-a1c9-a7c36d8b80d8
+
 
 ![flowchart](Algorithmflowchart.png)
 
