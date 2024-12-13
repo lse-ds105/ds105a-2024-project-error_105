@@ -1,4 +1,55 @@
 # Project Error_105
+# **Project Title**  
+**Mapping Pokémon to Real-World Biomes and Locations**
+
+---
+
+## **Goals**
+- Allocate Pokémon to biomes and habitats based on their types, traits, and power scales.
+- Use APIs and datasets to map these biomes to real-world locations, incorporating environmental and ecological data.
+- Visualize the results on an interactive map with Pokémon-specific details (e.g., have a global view of where Pokémon will exist, maybe using Folium or GeoPandas).
+- **Ambitious Extension**: Enable Pokémon search by name with satellite imaging of their habitats (using NASA API).
+
+---
+
+## **Outline**
+
+### **1. Introduction** 
+- Overview of the project and its objectives.
+
+### **2. Steps**
+
+#### **Step 1: Allocate Pokémon Types to Biomes**  
+- Assign Pokémon to specific biomes based on their characteristics and environmental traits.
+*(Lead: Jon)*  
+
+#### **Step 2: Identify Real-World Biomes**  
+- Locate real-world regions corresponding to these biomes and provide geographic coordinates for each biome.  
+  *(Lead: Hailey)*  
+
+#### **Step 3: Assign Pokémon by Power Scaling**  
+- Rank Pokémon within their respective biomes based on power scaling.  
+- Example:  
+  - Stronger Pokémon (e.g., Charizard) inhabit the most extreme parts of their biome (e.g., the hottest deserts).  
+  - Weaker Pokémon (e.g., Charmander) stay in less extreme areas.  
+  *(Lead: Adrian)*  
+
+#### **Step 4: Rank Real-World Biomes by Strength**  
+- Evaluate real-world locations based on their "biome strength."  
+- Example: The Lut Desert, the hottest desert globally, would be rated 100.
+*(Lead: Vig)* 
+
+#### **Step 5: Allocate Pokémon to Precise Global Locations**  
+- Using the scaling criteria, assign Pokémon to specific real-world coordinates on a global map.  
+
+---
+
+### **Final Deliverables**
+- A fully interactive map showcasing Pokémon distribution by biome.
+- Integration of additional tools and APIs (e.g., Open-Meteo, NASA APIs) for enhanced visualization and analysis.
+
+---
+
 
 # Step 2
 
@@ -49,7 +100,30 @@
   
 ![wavepeaks](wave_height_graph.png)
 
-![code_assignlocations](code_assignlocations.png)
+# **Example of Code**
+
+```python
+def assign_locations(pokemon_row, locations_df):
+    # Filter locations by the Pokémon's biome and sort by condition scale (which we will define for each type).
+    filtered_locations = locations_df[locations_df['Biome'] == pokemon_row['Biome']].sort_values(by='ConditionScale', ascending=False)
+    
+    # Assign the location matching the Pokémon's power scale (through compiling overall stats of Pokémon).
+    match = filtered_locations[filtered_locations['ConditionScale'] == pokemon_row['PowerScale']]
+    if not match.empty:
+        return match.iloc[0][['Latitude', 'Longitude']]
+    else:
+        return filtered_locations.iloc[-1][['Latitude', 'Longitude']]
+
+# Apply location assignment
+pokemon_ranked[['Latitude', 'Longitude']] = pokemon_ranked.apply(
+    lambda row: assign_locations(row, locations),
+    axis=1,
+    result_type='expand'
+)
+
+# Convert to GeoDataFrame for visualization
+pokemon_ranked['geometry'] = pokemon_ranked.apply(lambda row: Point(row['Longitude'], row['Latitude']), axis=1)
+pokemon_gdf = gpd.GeoDataFrame(pokemon_ranked, geometry='geometry')
 
 ### Handling Dual-Typed Pokémon
 
