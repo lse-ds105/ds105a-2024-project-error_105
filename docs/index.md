@@ -163,7 +163,20 @@ pokemon_gdf = gpd.GeoDataFrame(pokemon_ranked, geometry='geometry')
 ### Limitations and how to mitigate them
 ![flowchart](step4visualcuev1.png)
 
-# For more detailed information on our data sources, check out: [Datasets and Their Uses](datasets-and-their-uses.md)
+### For more detailed information on our data sources, check out: [Datasets and Their Uses](datasets-and-their-uses.md)
+
+### Here is how we plan to split the work 
+| **Week**     | **Tasks**                                                                                      | **Assigned To**                        | **Notes**                              |
+|--------------|------------------------------------------------------------------------------------------------|----------------------------------------|----------------------------------------|
+| **Week 1**   | **Preliminary Research**: Finalize data sources and research Pokémon-biome matching logic.     | Adrian (data sources), Vignesh (Pokémon-biome logic), Jon (data source review), Hailey (research and organization) | Group check-in at the end of Week 1. |
+| **Week 2-4** | Process geographic and environmental data. Implement biome-Pokémon mapping.                    | Jon (geographic data), Hailey (environmental data, mapping), Adrian (support), Vignesh (biome-Pokémon mapping) | Group check-in at the end of Week 4. |
+| **Week 5-7** | Develop ranking system. Integrate Open-Meteo data for power scaling.                            | Vignesh (ranking system), Adrian (Open-Meteo integration), Jon (support), Hailey (Open-Meteo analysis) | Group check-in at the end of Week 7. |
+| **Week 8-9** | Visualize Pokémon distribution using GeoPandas and finalize the presentation.                  | Hailey (visualization), Jon (presentation finalization), Vignesh (presentation finalization), Adrian (final adjustments) | Group check-in at the end of Week 9. |
+
+### Additional Notes:
+- The group will check in once every **two weeks** to ensure everything is on track, discuss progress, and address any potential issues.
+- Tasks are distributed evenly but can be adjusted based on team availability and specific strengths.
+
 
 
 
