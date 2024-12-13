@@ -24,7 +24,7 @@
 
 #### **Step 1: Allocate Pokémon Types to Biomes**  
 - Assign Pokémon to specific biomes based on their characteristics and environmental traits.
-*(Lead: Jon)*  
+*(Lead: Jonathan)*  
 
 #### **Step 2: Identify Real-World Biomes**  
 - Locate real-world regions corresponding to these biomes and provide geographic coordinates for each biome.  
@@ -35,12 +35,12 @@
 - Example:  
   - Stronger Pokémon (e.g., Charizard) inhabit the most extreme parts of their biome (e.g., the hottest deserts).  
   - Weaker Pokémon (e.g., Charmander) stay in less extreme areas.  
-  *(Lead: Adrian)*  
+  *(Lead: Vignesh)*  
 
 #### **Step 4: Rank Real-World Biomes by Strength**  
 - Evaluate real-world locations based on their "biome strength."  
 - Example: The Lut Desert, the hottest desert globally, would be rated 100.
-*(Lead: Vig)* 
+*(Lead: Adrian)* 
 
 #### **Step 5: Allocate Pokémon to Precise Global Locations**  
 - Using the scaling criteria, assign Pokémon to specific real-world coordinates on a global map.  
