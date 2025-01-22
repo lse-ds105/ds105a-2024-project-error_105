@@ -1,0 +1,3911 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_17f12891a4d37341c71ae82ee2de6f08 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_17f12891a4d37341c71ae82ee2de6f08" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_17f12891a4d37341c71ae82ee2de6f08 = L.map(
+                "map_17f12891a4d37341c71ae82ee2de6f08",
+                {
+                    center: [11.825012837690526, 52.64738370578435],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c0ddfb12b7d4031254add52d56fcb4b3 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c0ddfb12b7d4031254add52d56fcb4b3.addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var marker_3a3b6c5f00440f6c535e82e87deb9159 = L.marker(
+                [-24.346783457900017, 125.9615630433902],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_fb8fd1891df44c0483a0a90219b03153 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3a3b6c5f00440f6c535e82e87deb9159.setIcon(icon_fb8fd1891df44c0483a0a90219b03153);
+        
+    
+        var popup_e86382f591ed6e5cd815c03820b80829 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_acc6278a5639a05c9b4746eed216abfe = $(`<div id="html_acc6278a5639a05c9b4746eed216abfe" style="width: 100.0%; height: 100.0%;">Rank: 1<br>Region: Gibson desert<br>Temperature: 45.7°C</div>`)[0];
+                popup_e86382f591ed6e5cd815c03820b80829.setContent(html_acc6278a5639a05c9b4746eed216abfe);
+            
+        
+
+        marker_3a3b6c5f00440f6c535e82e87deb9159.bindPopup(popup_e86382f591ed6e5cd815c03820b80829)
+        ;
+
+        
+    
+    
+            marker_3a3b6c5f00440f6c535e82e87deb9159.bindTooltip(
+                `<div>
+                     Rank 1: Gibson desert (45.7°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bb2a2b9fd7af85d13898645a526eceb9 = L.circleMarker(
+                [-24.346783457900017, 125.9615630433902],
+                {"bubblingMouseEvents": true, "color": "#67000dff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#67000dff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_bb2a2b9fd7af85d13898645a526eceb9.bindTooltip(
+                `<div>
+                     Rank 1: Gibson desert (45.7°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_62ac6095c054ad45c9030bba29e1f864 = L.marker(
+                [-26.274999496625536, 139.3852693573042],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_22169a7437008548fcaa734d0b8fe340 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_62ac6095c054ad45c9030bba29e1f864.setIcon(icon_22169a7437008548fcaa734d0b8fe340);
+        
+    
+        var popup_97cfae48995eb82b99cac57e23033b43 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f297f6a44764be3043fd05f9896bdd23 = $(`<div id="html_f297f6a44764be3043fd05f9896bdd23" style="width: 100.0%; height: 100.0%;">Rank: 2<br>Region: Simpson desert<br>Temperature: 45.1°C</div>`)[0];
+                popup_97cfae48995eb82b99cac57e23033b43.setContent(html_f297f6a44764be3043fd05f9896bdd23);
+            
+        
+
+        marker_62ac6095c054ad45c9030bba29e1f864.bindPopup(popup_97cfae48995eb82b99cac57e23033b43)
+        ;
+
+        
+    
+    
+            marker_62ac6095c054ad45c9030bba29e1f864.bindTooltip(
+                `<div>
+                     Rank 2: Simpson desert (45.1°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_64ce6c95e2187beeef4ee77cfa620e9d = L.circleMarker(
+                [-26.274999496625536, 139.3852693573042],
+                {"bubblingMouseEvents": true, "color": "#840610ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#840610ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_64ce6c95e2187beeef4ee77cfa620e9d.bindTooltip(
+                `<div>
+                     Rank 2: Simpson desert (45.1°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_791b4ed229a5dd92bf1b195ffe9d34cc = L.marker(
+                [-21.445277382079958, 128.10212220349948],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_50df6eb50fc2fb8bce0a64ebaecac281 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_791b4ed229a5dd92bf1b195ffe9d34cc.setIcon(icon_50df6eb50fc2fb8bce0a64ebaecac281);
+        
+    
+        var popup_f1d3022c677d406de339b9f4cc8cdd55 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_44164e8a43f573ee39854930d2cb2dc2 = $(`<div id="html_44164e8a43f573ee39854930d2cb2dc2" style="width: 100.0%; height: 100.0%;">Rank: 3<br>Region: Great Sandy-Tanami desert<br>Temperature: 44.6°C</div>`)[0];
+                popup_f1d3022c677d406de339b9f4cc8cdd55.setContent(html_44164e8a43f573ee39854930d2cb2dc2);
+            
+        
+
+        marker_791b4ed229a5dd92bf1b195ffe9d34cc.bindPopup(popup_f1d3022c677d406de339b9f4cc8cdd55)
+        ;
+
+        
+    
+    
+            marker_791b4ed229a5dd92bf1b195ffe9d34cc.bindTooltip(
+                `<div>
+                     Rank 3: Great Sandy-Tanami desert (44.6°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0cdc9876ee3346e29148aff3d6e3b02a = L.circleMarker(
+                [-21.445277382079958, 128.10212220349948],
+                {"bubblingMouseEvents": true, "color": "#9c0c13ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9c0c13ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_0cdc9876ee3346e29148aff3d6e3b02a.bindTooltip(
+                `<div>
+                     Rank 3: Great Sandy-Tanami desert (44.6°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_493b0d41dbe5a4d8427bd1c59e0cc03d = L.marker(
+                [-27.88456409916662, 145.19069257636534],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_40eb7c4d6f9cb9666e17f5d6d415b1c7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_493b0d41dbe5a4d8427bd1c59e0cc03d.setIcon(icon_40eb7c4d6f9cb9666e17f5d6d415b1c7);
+        
+    
+        var popup_1487ceb47b868233442c1751a31c8366 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_56504da99313e9c41a1c888602bbd8d6 = $(`<div id="html_56504da99313e9c41a1c888602bbd8d6" style="width: 100.0%; height: 100.0%;">Rank: 4<br>Region: Eastern Australia mulga shrublands<br>Temperature: 44.3°C</div>`)[0];
+                popup_1487ceb47b868233442c1751a31c8366.setContent(html_56504da99313e9c41a1c888602bbd8d6);
+            
+        
+
+        marker_493b0d41dbe5a4d8427bd1c59e0cc03d.bindPopup(popup_1487ceb47b868233442c1751a31c8366)
+        ;
+
+        
+    
+    
+            marker_493b0d41dbe5a4d8427bd1c59e0cc03d.bindTooltip(
+                `<div>
+                     Rank 4: Eastern Australia mulga shrublands (44.3°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ee67b49c1848ca52dd91b71dcabff7fb = L.circleMarker(
+                [-27.88456409916662, 145.19069257636534],
+                {"bubblingMouseEvents": true, "color": "#a80f15ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a80f15ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_ee67b49c1848ca52dd91b71dcabff7fb.bindTooltip(
+                `<div>
+                     Rank 4: Eastern Australia mulga shrublands (44.3°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a2bacfba5c78a506e69b1f1d17ae31b8 = L.marker(
+                [-24.552719781451856, 131.97898513917],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_b4de45cd6fff1fa457eb006e7a42e3b3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a2bacfba5c78a506e69b1f1d17ae31b8.setIcon(icon_b4de45cd6fff1fa457eb006e7a42e3b3);
+        
+    
+        var popup_61541a761918bff59d626c40b54c93f8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c19edd1d8c41709c384561283aa98230 = $(`<div id="html_c19edd1d8c41709c384561283aa98230" style="width: 100.0%; height: 100.0%;">Rank: 5<br>Region: Central Ranges xeric scrub<br>Temperature: 43.1°C</div>`)[0];
+                popup_61541a761918bff59d626c40b54c93f8.setContent(html_c19edd1d8c41709c384561283aa98230);
+            
+        
+
+        marker_a2bacfba5c78a506e69b1f1d17ae31b8.bindPopup(popup_61541a761918bff59d626c40b54c93f8)
+        ;
+
+        
+    
+    
+            marker_a2bacfba5c78a506e69b1f1d17ae31b8.bindTooltip(
+                `<div>
+                     Rank 5: Central Ranges xeric scrub (43.1°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bd3ad7e2aae351a5f17e431847fe641d = L.circleMarker(
+                [-24.552719781451856, 131.97898513917],
+                {"bubblingMouseEvents": true, "color": "#cb181dff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#cb181dff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_bd3ad7e2aae351a5f17e431847fe641d.bindTooltip(
+                `<div>
+                     Rank 5: Central Ranges xeric scrub (43.1°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4a0b24ae1a39c675430a0e38777a001a = L.marker(
+                [-33.291210736006626, 120.5933491243965],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_51de048a17d7ad04aea3a7550b95a098 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4a0b24ae1a39c675430a0e38777a001a.setIcon(icon_51de048a17d7ad04aea3a7550b95a098);
+        
+    
+        var popup_e846eadf6d06c92f6428e8331e06a592 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8b1bc717c42639fadbc5dd04d1b869f3 = $(`<div id="html_8b1bc717c42639fadbc5dd04d1b869f3" style="width: 100.0%; height: 100.0%;">Rank: 6<br>Region: Esperance mallee<br>Temperature: 41.6°C</div>`)[0];
+                popup_e846eadf6d06c92f6428e8331e06a592.setContent(html_8b1bc717c42639fadbc5dd04d1b869f3);
+            
+        
+
+        marker_4a0b24ae1a39c675430a0e38777a001a.bindPopup(popup_e846eadf6d06c92f6428e8331e06a592)
+        ;
+
+        
+    
+    
+            marker_4a0b24ae1a39c675430a0e38777a001a.bindTooltip(
+                `<div>
+                     Rank 6: Esperance mallee (41.6°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bcb3dd6458402d33896c53dcf6e5eca5 = L.circleMarker(
+                [-33.291210736006626, 120.5933491243965],
+                {"bubblingMouseEvents": true, "color": "#f14230ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f14230ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_bcb3dd6458402d33896c53dcf6e5eca5.bindTooltip(
+                `<div>
+                     Rank 6: Esperance mallee (41.6°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_452075be95f433154b49d4e4cb665385 = L.marker(
+                [-26.602173315109763, 119.20522480258802],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_a4ee4f4f883b3a40462b1018aef20300 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_452075be95f433154b49d4e4cb665385.setIcon(icon_a4ee4f4f883b3a40462b1018aef20300);
+        
+    
+        var popup_36af66b7b247c607ba2a2af639c6b54f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b6d7428cf6ecc36f58eaba7c744e2401 = $(`<div id="html_b6d7428cf6ecc36f58eaba7c744e2401" style="width: 100.0%; height: 100.0%;">Rank: 7<br>Region: Western Australian Mulga shrublands<br>Temperature: 41.2°C</div>`)[0];
+                popup_36af66b7b247c607ba2a2af639c6b54f.setContent(html_b6d7428cf6ecc36f58eaba7c744e2401);
+            
+        
+
+        marker_452075be95f433154b49d4e4cb665385.bindPopup(popup_36af66b7b247c607ba2a2af639c6b54f)
+        ;
+
+        
+    
+    
+            marker_452075be95f433154b49d4e4cb665385.bindTooltip(
+                `<div>
+                     Rank 7: Western Australian Mulga shrublands (41.2°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6d4c494931a310bb0a585fa636961d60 = L.circleMarker(
+                [-26.602173315109763, 119.20522480258802],
+                {"bubblingMouseEvents": true, "color": "#f5513aff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f5513aff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_6d4c494931a310bb0a585fa636961d60.bindTooltip(
+                `<div>
+                     Rank 7: Western Australian Mulga shrublands (41.2°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_16b8db44b4dee157e6436460a44855b9 = L.marker(
+                [-29.944534401496416, 116.6093102509253],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_5b05892d21f1e15c546aa2c761b1077b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_16b8db44b4dee157e6436460a44855b9.setIcon(icon_5b05892d21f1e15c546aa2c761b1077b);
+        
+    
+        var popup_63227d7cc13793447bcaf9db1319d161 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_765672dbb0d4c9b6c4b8b3e6546ee03b = $(`<div id="html_765672dbb0d4c9b6c4b8b3e6546ee03b" style="width: 100.0%; height: 100.0%;">Rank: 8<br>Region: Southwest Australia savanna<br>Temperature: 40.4°C</div>`)[0];
+                popup_63227d7cc13793447bcaf9db1319d161.setContent(html_765672dbb0d4c9b6c4b8b3e6546ee03b);
+            
+        
+
+        marker_16b8db44b4dee157e6436460a44855b9.bindPopup(popup_63227d7cc13793447bcaf9db1319d161)
+        ;
+
+        
+    
+    
+            marker_16b8db44b4dee157e6436460a44855b9.bindTooltip(
+                `<div>
+                     Rank 8: Southwest Australia savanna (40.4°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ba8befda1cf4773d062d42965c95831b = L.circleMarker(
+                [-29.944534401496416, 116.6093102509253],
+                {"bubblingMouseEvents": true, "color": "#fc6d4dff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc6d4dff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_ba8befda1cf4773d062d42965c95831b.bindTooltip(
+                `<div>
+                     Rank 8: Southwest Australia savanna (40.4°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3898a943636a33e475ada3c6e6667151 = L.marker(
+                [-31.38456136668727, 121.41923954046672],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_149f5d632833dd1ceaa26330df7c6684 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3898a943636a33e475ada3c6e6667151.setIcon(icon_149f5d632833dd1ceaa26330df7c6684);
+        
+    
+        var popup_ac54b44f119ac4a4db5cef6b285f20cc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d189b40af216781b9620d7bc2cc1e21a = $(`<div id="html_d189b40af216781b9620d7bc2cc1e21a" style="width: 100.0%; height: 100.0%;">Rank: 9<br>Region: Coolgardie woodlands<br>Temperature: 40.1°C</div>`)[0];
+                popup_ac54b44f119ac4a4db5cef6b285f20cc.setContent(html_d189b40af216781b9620d7bc2cc1e21a);
+            
+        
+
+        marker_3898a943636a33e475ada3c6e6667151.bindPopup(popup_ac54b44f119ac4a4db5cef6b285f20cc)
+        ;
+
+        
+    
+    
+            marker_3898a943636a33e475ada3c6e6667151.bindTooltip(
+                `<div>
+                     Rank 9: Coolgardie woodlands (40.1°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_488426e72956eba65089703a3798f225 = L.circleMarker(
+                [-31.38456136668727, 121.41923954046672],
+                {"bubblingMouseEvents": true, "color": "#fc7656ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc7656ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_488426e72956eba65089703a3798f225.bindTooltip(
+                `<div>
+                     Rank 9: Coolgardie woodlands (40.1°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4b158fb58b11646dcd3a47868eaf9779 = L.marker(
+                [-21.91496622586279, 118.54794989286708],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_8f5afcad69cf58122d7823423b676434 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4b158fb58b11646dcd3a47868eaf9779.setIcon(icon_8f5afcad69cf58122d7823423b676434);
+        
+    
+        var popup_5076b62c6749bb87e1e0e1bc8bf0a3a8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_61e3e1f0477386f12eb2cce1e8368356 = $(`<div id="html_61e3e1f0477386f12eb2cce1e8368356" style="width: 100.0%; height: 100.0%;">Rank: 10<br>Region: Pilbara shrublands<br>Temperature: 38.9°C</div>`)[0];
+                popup_5076b62c6749bb87e1e0e1bc8bf0a3a8.setContent(html_61e3e1f0477386f12eb2cce1e8368356);
+            
+        
+
+        marker_4b158fb58b11646dcd3a47868eaf9779.bindPopup(popup_5076b62c6749bb87e1e0e1bc8bf0a3a8)
+        ;
+
+        
+    
+    
+            marker_4b158fb58b11646dcd3a47868eaf9779.bindTooltip(
+                `<div>
+                     Rank 10: Pilbara shrublands (38.9°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d619d65bbf5dd0cd3054ee3356e81730 = L.circleMarker(
+                [-21.91496622586279, 118.54794989286708],
+                {"bubblingMouseEvents": true, "color": "#fc9c7dff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc9c7dff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_d619d65bbf5dd0cd3054ee3356e81730.bindTooltip(
+                `<div>
+                     Rank 10: Pilbara shrublands (38.9°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_80f7d5af9f4c48444cb1a3d3b9b1d6e3 = L.marker(
+                [7.826085996594244, 31.593103942113718],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_21e711bfb33ae1dc7228829ee1dfb92c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_80f7d5af9f4c48444cb1a3d3b9b1d6e3.setIcon(icon_21e711bfb33ae1dc7228829ee1dfb92c);
+        
+    
+        var popup_7bdf7b413affc2c797686438991282fb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b006efabb8847c656475b2604400a65d = $(`<div id="html_b006efabb8847c656475b2604400a65d" style="width: 100.0%; height: 100.0%;">Rank: 11<br>Region: Sudd flooded grasslands<br>Temperature: 38.5°C</div>`)[0];
+                popup_7bdf7b413affc2c797686438991282fb.setContent(html_b006efabb8847c656475b2604400a65d);
+            
+        
+
+        marker_80f7d5af9f4c48444cb1a3d3b9b1d6e3.bindPopup(popup_7bdf7b413affc2c797686438991282fb)
+        ;
+
+        
+    
+    
+            marker_80f7d5af9f4c48444cb1a3d3b9b1d6e3.bindTooltip(
+                `<div>
+                     Rank 11: Sudd flooded grasslands (38.5°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c0985ad0d9a1b46c89e3ddc6024f5b84 = L.circleMarker(
+                [7.826085996594244, 31.593103942113718],
+                {"bubblingMouseEvents": true, "color": "#fca88bff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fca88bff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_c0985ad0d9a1b46c89e3ddc6024f5b84.bindTooltip(
+                `<div>
+                     Rank 11: Sudd flooded grasslands (38.5°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_045f92ee0c91de5dd8051f5da58f843a = L.marker(
+                [-28.471209211599504, 128.56236878166],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_f75b2797481489a7e9c105c2fb897f7d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_045f92ee0c91de5dd8051f5da58f843a.setIcon(icon_f75b2797481489a7e9c105c2fb897f7d);
+        
+    
+        var popup_9c1d70e231df6bd1007221e8c92e9db2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eac57bb3bf8d15e63395e0505ddad016 = $(`<div id="html_eac57bb3bf8d15e63395e0505ddad016" style="width: 100.0%; height: 100.0%;">Rank: 12<br>Region: Great Victoria desert<br>Temperature: 38.4°C</div>`)[0];
+                popup_9c1d70e231df6bd1007221e8c92e9db2.setContent(html_eac57bb3bf8d15e63395e0505ddad016);
+            
+        
+
+        marker_045f92ee0c91de5dd8051f5da58f843a.bindPopup(popup_9c1d70e231df6bd1007221e8c92e9db2)
+        ;
+
+        
+    
+    
+            marker_045f92ee0c91de5dd8051f5da58f843a.bindTooltip(
+                `<div>
+                     Rank 12: Great Victoria desert (38.4°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0ee263bebb504794e1a8ba1c3c80e2a5 = L.circleMarker(
+                [-28.471209211599504, 128.56236878166],
+                {"bubblingMouseEvents": true, "color": "#fcab8fff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fcab8fff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_0ee263bebb504794e1a8ba1c3c80e2a5.bindTooltip(
+                `<div>
+                     Rank 12: Great Victoria desert (38.4°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0c27410d8cef67eddf45a45ae3105228 = L.marker(
+                [-24.312841515918684, 114.56948736404121],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_e91fbf7b1241c4340ff21cba519515a7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0c27410d8cef67eddf45a45ae3105228.setIcon(icon_e91fbf7b1241c4340ff21cba519515a7);
+        
+    
+        var popup_b5160c55c94d7f820fdfa51fad17ce08 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e0a397867dec049dd43b752d262a9500 = $(`<div id="html_e0a397867dec049dd43b752d262a9500" style="width: 100.0%; height: 100.0%;">Rank: 13<br>Region: Carnarvon xeric shrublands<br>Temperature: 38.1°C</div>`)[0];
+                popup_b5160c55c94d7f820fdfa51fad17ce08.setContent(html_e0a397867dec049dd43b752d262a9500);
+            
+        
+
+        marker_0c27410d8cef67eddf45a45ae3105228.bindPopup(popup_b5160c55c94d7f820fdfa51fad17ce08)
+        ;
+
+        
+    
+    
+            marker_0c27410d8cef67eddf45a45ae3105228.bindTooltip(
+                `<div>
+                     Rank 13: Carnarvon xeric shrublands (38.1°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_af9d2a352d4c17a798f66245e579d28b = L.circleMarker(
+                [-24.312841515918684, 114.56948736404121],
+                {"bubblingMouseEvents": true, "color": "#fcb59aff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fcb59aff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_af9d2a352d4c17a798f66245e579d28b.bindTooltip(
+                `<div>
+                     Rank 13: Carnarvon xeric shrublands (38.1°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_dff2e2cc4ff73e7bb815505ef85f167d = L.marker(
+                [-27.684985063322777, 19.069746408898773],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_1caed4454a2271b4de627ad402ce3e42 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_dff2e2cc4ff73e7bb815505ef85f167d.setIcon(icon_1caed4454a2271b4de627ad402ce3e42);
+        
+    
+        var popup_d8bd1dbeda78fd149316d778bda26902 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7cb9c502aed7d50591d28189c76e0f2a = $(`<div id="html_7cb9c502aed7d50591d28189c76e0f2a" style="width: 100.0%; height: 100.0%;">Rank: 14<br>Region: Gariep Karoo<br>Temperature: 38.1°C</div>`)[0];
+                popup_d8bd1dbeda78fd149316d778bda26902.setContent(html_7cb9c502aed7d50591d28189c76e0f2a);
+            
+        
+
+        marker_dff2e2cc4ff73e7bb815505ef85f167d.bindPopup(popup_d8bd1dbeda78fd149316d778bda26902)
+        ;
+
+        
+    
+    
+            marker_dff2e2cc4ff73e7bb815505ef85f167d.bindTooltip(
+                `<div>
+                     Rank 14: Gariep Karoo (38.1°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4ebf605c196fe962b1d7fa095fe67997 = L.circleMarker(
+                [-27.684985063322777, 19.069746408898773],
+                {"bubblingMouseEvents": true, "color": "#fcb59aff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fcb59aff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_4ebf605c196fe962b1d7fa095fe67997.bindTooltip(
+                `<div>
+                     Rank 14: Gariep Karoo (38.1°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ecc339efa5c5fe09664122936692aeb2 = L.marker(
+                [-38.184342742852124, -67.06861624110685],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_5c17448f0ae004d12cd63a59e65abd42 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ecc339efa5c5fe09664122936692aeb2.setIcon(icon_5c17448f0ae004d12cd63a59e65abd42);
+        
+    
+        var popup_fd8ef533be6328ead1df7cce29f53984 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_219e57a4acab3583e3c374d700865aa3 = $(`<div id="html_219e57a4acab3583e3c374d700865aa3" style="width: 100.0%; height: 100.0%;">Rank: 15<br>Region: Low Monte<br>Temperature: 37.9°C</div>`)[0];
+                popup_fd8ef533be6328ead1df7cce29f53984.setContent(html_219e57a4acab3583e3c374d700865aa3);
+            
+        
+
+        marker_ecc339efa5c5fe09664122936692aeb2.bindPopup(popup_fd8ef533be6328ead1df7cce29f53984)
+        ;
+
+        
+    
+    
+            marker_ecc339efa5c5fe09664122936692aeb2.bindTooltip(
+                `<div>
+                     Rank 15: Low Monte (37.9°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_05dad9a30c6066704e7c1853a21d28cf = L.circleMarker(
+                [-38.184342742852124, -67.06861624110685],
+                {"bubblingMouseEvents": true, "color": "#fcbba1ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fcbba1ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_05dad9a30c6066704e7c1853a21d28cf.bindTooltip(
+                `<div>
+                     Rank 15: Low Monte (37.9°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a23d489108a0d2df6de8ba672f51d158 = L.marker(
+                [-32.40593966457316, 146.16183440711174],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_ecfc1c363e142a9b713db215a3c9079d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a23d489108a0d2df6de8ba672f51d158.setIcon(icon_ecfc1c363e142a9b713db215a3c9079d);
+        
+    
+        var popup_c1debdc38562b41dbec96cd1958e77cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8b1b06bf64ec6a119b74488effaef0e2 = $(`<div id="html_8b1b06bf64ec6a119b74488effaef0e2" style="width: 100.0%; height: 100.0%;">Rank: 16<br>Region: Southeast Australia temperate savanna<br>Temperature: 37.7°C</div>`)[0];
+                popup_c1debdc38562b41dbec96cd1958e77cf.setContent(html_8b1b06bf64ec6a119b74488effaef0e2);
+            
+        
+
+        marker_a23d489108a0d2df6de8ba672f51d158.bindPopup(popup_c1debdc38562b41dbec96cd1958e77cf)
+        ;
+
+        
+    
+    
+            marker_a23d489108a0d2df6de8ba672f51d158.bindTooltip(
+                `<div>
+                     Rank 16: Southeast Australia temperate savanna (37.7°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_67cebb2cc1dc52e5313aa1045948f050 = L.circleMarker(
+                [-32.40593966457316, 146.16183440711174],
+                {"bubblingMouseEvents": true, "color": "#fdc1a9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fdc1a9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_67cebb2cc1dc52e5313aa1045948f050.bindTooltip(
+                `<div>
+                     Rank 16: Southeast Australia temperate savanna (37.7°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_943e6d0a8db19bc1945ffdd1d5bd03f7 = L.marker(
+                [-33.459137238422976, 20.80883863744169],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_41c1c57d7ab4be504666722767a0a5a1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_943e6d0a8db19bc1945ffdd1d5bd03f7.setIcon(icon_41c1c57d7ab4be504666722767a0a5a1);
+        
+    
+        var popup_73cb5c1def620b2d52aaeec62693add9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_24daf324c31ecd0095c9319b3c9d4ab8 = $(`<div id="html_24daf324c31ecd0095c9319b3c9d4ab8" style="width: 100.0%; height: 100.0%;">Rank: 17<br>Region: Fynbos shrubland<br>Temperature: 37.4°C</div>`)[0];
+                popup_73cb5c1def620b2d52aaeec62693add9.setContent(html_24daf324c31ecd0095c9319b3c9d4ab8);
+            
+        
+
+        marker_943e6d0a8db19bc1945ffdd1d5bd03f7.bindPopup(popup_73cb5c1def620b2d52aaeec62693add9)
+        ;
+
+        
+    
+    
+            marker_943e6d0a8db19bc1945ffdd1d5bd03f7.bindTooltip(
+                `<div>
+                     Rank 17: Fynbos shrubland (37.4°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8a79e2375c5216eae3e526f4d5171b13 = L.circleMarker(
+                [-33.459137238422976, 20.80883863744169],
+                {"bubblingMouseEvents": true, "color": "#fdcab4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fdcab4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_8a79e2375c5216eae3e526f4d5171b13.bindTooltip(
+                `<div>
+                     Rank 17: Fynbos shrubland (37.4°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_530ef6360c49e5cf81a99ae14468e3df = L.marker(
+                [6.404972044405235, -3.362598417998695],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_a2e65bd7a609a2c351c812eff82e4018 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_530ef6360c49e5cf81a99ae14468e3df.setIcon(icon_a2e65bd7a609a2c351c812eff82e4018);
+        
+    
+        var popup_294ad23326b6a2a81c1324b92ecbe38c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d8637758e1fab64497285894fa15a725 = $(`<div id="html_d8637758e1fab64497285894fa15a725" style="width: 100.0%; height: 100.0%;">Rank: 18<br>Region: Eastern Guinean forests<br>Temperature: 36.7°C</div>`)[0];
+                popup_294ad23326b6a2a81c1324b92ecbe38c.setContent(html_d8637758e1fab64497285894fa15a725);
+            
+        
+
+        marker_530ef6360c49e5cf81a99ae14468e3df.bindPopup(popup_294ad23326b6a2a81c1324b92ecbe38c)
+        ;
+
+        
+    
+    
+            marker_530ef6360c49e5cf81a99ae14468e3df.bindTooltip(
+                `<div>
+                     Rank 18: Eastern Guinean forests (36.7°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b6acc05bb6b733b979e9bef92c3a54ec = L.circleMarker(
+                [6.404972044405235, -3.362598417998695],
+                {"bubblingMouseEvents": true, "color": "#fedecfff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fedecfff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_b6acc05bb6b733b979e9bef92c3a54ec.bindTooltip(
+                `<div>
+                     Rank 18: Eastern Guinean forests (36.7°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f5194d691c31b094943a2203692c7b3a = L.marker(
+                [-18.251439663707252, -41.98072438117591],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_095d49414c21e701ecef6dc741ecf013 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f5194d691c31b094943a2203692c7b3a.setIcon(icon_095d49414c21e701ecef6dc741ecf013);
+        
+    
+        var popup_8a78524e6e83bdac6396b918059bd323 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6bfbce1d93aa002e3ae5d07adfc5d9fa = $(`<div id="html_6bfbce1d93aa002e3ae5d07adfc5d9fa" style="width: 100.0%; height: 100.0%;">Rank: 19<br>Region: Bahia interior forests<br>Temperature: 36.6°C</div>`)[0];
+                popup_8a78524e6e83bdac6396b918059bd323.setContent(html_6bfbce1d93aa002e3ae5d07adfc5d9fa);
+            
+        
+
+        marker_f5194d691c31b094943a2203692c7b3a.bindPopup(popup_8a78524e6e83bdac6396b918059bd323)
+        ;
+
+        
+    
+    
+            marker_f5194d691c31b094943a2203692c7b3a.bindTooltip(
+                `<div>
+                     Rank 19: Bahia interior forests (36.6°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f390aa6c4896bf7d0d8e1c57809a2c1a = L.circleMarker(
+                [-18.251439663707252, -41.98072438117591],
+                {"bubblingMouseEvents": true, "color": "#fee0d2ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee0d2ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_f390aa6c4896bf7d0d8e1c57809a2c1a.bindTooltip(
+                `<div>
+                     Rank 19: Bahia interior forests (36.6°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_62dc8ac96f7f2cbfcded5cd322fbe78f = L.marker(
+                [-28.624394255094245, -56.628201240529314],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_b0b7471774a5dcb376af598f7d7b0b86 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_62dc8ac96f7f2cbfcded5cd322fbe78f.setIcon(icon_b0b7471774a5dcb376af598f7d7b0b86);
+        
+    
+        var popup_6db73e5e524012627042d2f0c7fba2ea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fbf7e1a37f509967a07197a56b0223ba = $(`<div id="html_fbf7e1a37f509967a07197a56b0223ba" style="width: 100.0%; height: 100.0%;">Rank: 20<br>Region: Southern Cone Mesopotamian savanna<br>Temperature: 36.3°C</div>`)[0];
+                popup_6db73e5e524012627042d2f0c7fba2ea.setContent(html_fbf7e1a37f509967a07197a56b0223ba);
+            
+        
+
+        marker_62dc8ac96f7f2cbfcded5cd322fbe78f.bindPopup(popup_6db73e5e524012627042d2f0c7fba2ea)
+        ;
+
+        
+    
+    
+            marker_62dc8ac96f7f2cbfcded5cd322fbe78f.bindTooltip(
+                `<div>
+                     Rank 20: Southern Cone Mesopotamian savanna (36.3°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_171fb1ff62ea2a92606a82c579fbdc8f = L.circleMarker(
+                [-28.624394255094245, -56.628201240529314],
+                {"bubblingMouseEvents": true, "color": "#ffe5d9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe5d9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_171fb1ff62ea2a92606a82c579fbdc8f.bindTooltip(
+                `<div>
+                     Rank 20: Southern Cone Mesopotamian savanna (36.3°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1bf307c9996666d75be8467d0cf4c219 = L.marker(
+                [10.203302413588933, -14.010243609697229],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_9b990f94577c105fa21607a17970d518 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1bf307c9996666d75be8467d0cf4c219.setIcon(icon_9b990f94577c105fa21607a17970d518);
+        
+    
+        var popup_d66b1dc7c8087efce38f0169e118fcba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9246214822f5e603eba7820bc467bce4 = $(`<div id="html_9246214822f5e603eba7820bc467bce4" style="width: 100.0%; height: 100.0%;">Rank: 21<br>Region: Guinean mangroves<br>Temperature: 36.2°C</div>`)[0];
+                popup_d66b1dc7c8087efce38f0169e118fcba.setContent(html_9246214822f5e603eba7820bc467bce4);
+            
+        
+
+        marker_1bf307c9996666d75be8467d0cf4c219.bindPopup(popup_d66b1dc7c8087efce38f0169e118fcba)
+        ;
+
+        
+    
+    
+            marker_1bf307c9996666d75be8467d0cf4c219.bindTooltip(
+                `<div>
+                     Rank 21: Guinean mangroves (36.2°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5d9a3d74a32198169c4f72232ed69fda = L.circleMarker(
+                [10.203302413588933, -14.010243609697229],
+                {"bubblingMouseEvents": true, "color": "#ffe7dcff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe7dcff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_5d9a3d74a32198169c4f72232ed69fda.bindTooltip(
+                `<div>
+                     Rank 21: Guinean mangroves (36.2°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_754d03bc5712d00a7b9b152469b56dc8 = L.marker(
+                [-31.301682215166657, 23.417331843097962],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_f1e42347dbe7f40e5f349ed29a925498 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_754d03bc5712d00a7b9b152469b56dc8.setIcon(icon_f1e42347dbe7f40e5f349ed29a925498);
+        
+    
+        var popup_620e527c54335af32309ae457a786e7c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3d780d962714f2427652bb62ae951e36 = $(`<div id="html_3d780d962714f2427652bb62ae951e36" style="width: 100.0%; height: 100.0%;">Rank: 22<br>Region: Nama Karoo shrublands<br>Temperature: 36.1°C</div>`)[0];
+                popup_620e527c54335af32309ae457a786e7c.setContent(html_3d780d962714f2427652bb62ae951e36);
+            
+        
+
+        marker_754d03bc5712d00a7b9b152469b56dc8.bindPopup(popup_620e527c54335af32309ae457a786e7c)
+        ;
+
+        
+    
+    
+            marker_754d03bc5712d00a7b9b152469b56dc8.bindTooltip(
+                `<div>
+                     Rank 22: Nama Karoo shrublands (36.1°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f37be5157a64b26a00a78089b46b27ba = L.circleMarker(
+                [-31.301682215166657, 23.417331843097962],
+                {"bubblingMouseEvents": true, "color": "#ffe8deff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe8deff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_f37be5157a64b26a00a78089b46b27ba.bindTooltip(
+                `<div>
+                     Rank 22: Nama Karoo shrublands (36.1°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_16356db96b6d49b69f949887005635ca = L.marker(
+                [13.272966590474525, -87.47242414583292],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_5ca216b3a8b0e11c15dc39e51c061408 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_16356db96b6d49b69f949887005635ca.setIcon(icon_5ca216b3a8b0e11c15dc39e51c061408);
+        
+    
+        var popup_3ec0763c66c19aafc2d7a8b43aadc81d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_18fd0313ee8ee16eb4bfac7d0081204a = $(`<div id="html_18fd0313ee8ee16eb4bfac7d0081204a" style="width: 100.0%; height: 100.0%;">Rank: 23<br>Region: Central American dry forests<br>Temperature: 36.1°C</div>`)[0];
+                popup_3ec0763c66c19aafc2d7a8b43aadc81d.setContent(html_18fd0313ee8ee16eb4bfac7d0081204a);
+            
+        
+
+        marker_16356db96b6d49b69f949887005635ca.bindPopup(popup_3ec0763c66c19aafc2d7a8b43aadc81d)
+        ;
+
+        
+    
+    
+            marker_16356db96b6d49b69f949887005635ca.bindTooltip(
+                `<div>
+                     Rank 23: Central American dry forests (36.1°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fdc99f727cc7f4d226ed636ccc607011 = L.circleMarker(
+                [13.272966590474525, -87.47242414583292],
+                {"bubblingMouseEvents": true, "color": "#ffe8deff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe8deff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_fdc99f727cc7f4d226ed636ccc607011.bindTooltip(
+                `<div>
+                     Rank 23: Central American dry forests (36.1°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3a0ab90c855b76b10fd7e402e2048fad = L.marker(
+                [-30.724617662604217, 127.76321092751057],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_2655f29b3834f44d60a0c434538f4b4f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3a0ab90c855b76b10fd7e402e2048fad.setIcon(icon_2655f29b3834f44d60a0c434538f4b4f);
+        
+    
+        var popup_9ff3e7466df33ee9a4672c336def3fc7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_37bb5d9495a1682a1a2b94197b3c33b1 = $(`<div id="html_37bb5d9495a1682a1a2b94197b3c33b1" style="width: 100.0%; height: 100.0%;">Rank: 24<br>Region: Nullarbor Plains xeric shrublands<br>Temperature: 36.0°C</div>`)[0];
+                popup_9ff3e7466df33ee9a4672c336def3fc7.setContent(html_37bb5d9495a1682a1a2b94197b3c33b1);
+            
+        
+
+        marker_3a0ab90c855b76b10fd7e402e2048fad.bindPopup(popup_9ff3e7466df33ee9a4672c336def3fc7)
+        ;
+
+        
+    
+    
+            marker_3a0ab90c855b76b10fd7e402e2048fad.bindTooltip(
+                `<div>
+                     Rank 24: Nullarbor Plains xeric shrublands (36.0°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d043dee8e29226a4d210a805322a2c57 = L.circleMarker(
+                [-30.724617662604217, 127.76321092751057],
+                {"bubblingMouseEvents": true, "color": "#ffeae0ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffeae0ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_d043dee8e29226a4d210a805322a2c57.bindTooltip(
+                `<div>
+                     Rank 24: Nullarbor Plains xeric shrublands (36.0°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_60ad55b67e41c9900285a833eb1b3a14 = L.marker(
+                [-35.46401799552825, -60.80743688799227],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_41529ea3a1b5a28d8a36eecd1f5d6f2f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_60ad55b67e41c9900285a833eb1b3a14.setIcon(icon_41529ea3a1b5a28d8a36eecd1f5d6f2f);
+        
+    
+        var popup_82ae66b6083940784ed72e2651a04936 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_253eb9688055b08ebf34d1a04464eeb1 = $(`<div id="html_253eb9688055b08ebf34d1a04464eeb1" style="width: 100.0%; height: 100.0%;">Rank: 25<br>Region: Humid Pampas<br>Temperature: 35.8°C</div>`)[0];
+                popup_82ae66b6083940784ed72e2651a04936.setContent(html_253eb9688055b08ebf34d1a04464eeb1);
+            
+        
+
+        marker_60ad55b67e41c9900285a833eb1b3a14.bindPopup(popup_82ae66b6083940784ed72e2651a04936)
+        ;
+
+        
+    
+    
+            marker_60ad55b67e41c9900285a833eb1b3a14.bindTooltip(
+                `<div>
+                     Rank 25: Humid Pampas (35.8°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b72da1d701d0d8929c0168beb92bd40c = L.circleMarker(
+                [-35.46401799552825, -60.80743688799227],
+                {"bubblingMouseEvents": true, "color": "#ffede5ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffede5ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_b72da1d701d0d8929c0168beb92bd40c.bindTooltip(
+                `<div>
+                     Rank 25: Humid Pampas (35.8°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_220245eebed84866e85d2fbad5e4dde0 = L.marker(
+                [-3.63801436257372, 141.33238298948197],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_1d2c425e00cd24d9e3db41dc67fe1ef3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_220245eebed84866e85d2fbad5e4dde0.setIcon(icon_1d2c425e00cd24d9e3db41dc67fe1ef3);
+        
+    
+        var popup_e0d0ddfec180e2fad2983c059959eddf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f5d6b8fb09b0c76ffd1456a3a6cd9037 = $(`<div id="html_f5d6b8fb09b0c76ffd1456a3a6cd9037" style="width: 100.0%; height: 100.0%;">Rank: 26<br>Region: Northern New Guinea lowland rain and freshwater swamp forests<br>Temperature: 35.7°C</div>`)[0];
+                popup_e0d0ddfec180e2fad2983c059959eddf.setContent(html_f5d6b8fb09b0c76ffd1456a3a6cd9037);
+            
+        
+
+        marker_220245eebed84866e85d2fbad5e4dde0.bindPopup(popup_e0d0ddfec180e2fad2983c059959eddf)
+        ;
+
+        
+    
+    
+            marker_220245eebed84866e85d2fbad5e4dde0.bindTooltip(
+                `<div>
+                     Rank 26: Northern New Guinea lowland rain and freshwater swamp forests (35.7°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_04b4fde2b8ef33e75a4ee8f3fc22c8e0 = L.circleMarker(
+                [-3.63801436257372, 141.33238298948197],
+                {"bubblingMouseEvents": true, "color": "#ffefe7ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffefe7ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_04b4fde2b8ef33e75a4ee8f3fc22c8e0.bindTooltip(
+                `<div>
+                     Rank 26: Northern New Guinea lowland rain and freshwater swamp forests (35.7°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1b4b82c67a809fac1ab5ebee7bbbbde1 = L.marker(
+                [-30.084685424532964, 136.99678420245053],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_b8586ce01152da40ac37c1908093589d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1b4b82c67a809fac1ab5ebee7bbbbde1.setIcon(icon_b8586ce01152da40ac37c1908093589d);
+        
+    
+        var popup_7bf51cd5b5aed96cdf9684b44c3ede7d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8f82f6b76391e5faae8e31f5f7c210c0 = $(`<div id="html_8f82f6b76391e5faae8e31f5f7c210c0" style="width: 100.0%; height: 100.0%;">Rank: 27<br>Region: Tirari-Sturt stony desert<br>Temperature: 35.7°C</div>`)[0];
+                popup_7bf51cd5b5aed96cdf9684b44c3ede7d.setContent(html_8f82f6b76391e5faae8e31f5f7c210c0);
+            
+        
+
+        marker_1b4b82c67a809fac1ab5ebee7bbbbde1.bindPopup(popup_7bf51cd5b5aed96cdf9684b44c3ede7d)
+        ;
+
+        
+    
+    
+            marker_1b4b82c67a809fac1ab5ebee7bbbbde1.bindTooltip(
+                `<div>
+                     Rank 27: Tirari-Sturt stony desert (35.7°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fa662a01aeb4ee3cac3b62b76f882a95 = L.circleMarker(
+                [-30.084685424532964, 136.99678420245053],
+                {"bubblingMouseEvents": true, "color": "#ffefe7ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffefe7ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_fa662a01aeb4ee3cac3b62b76f882a95.bindTooltip(
+                `<div>
+                     Rank 27: Tirari-Sturt stony desert (35.7°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_91250a1b40ac338f4659c069a4305ca6 = L.marker(
+                [-34.16531941007006, -62.87872876878476],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_ab9257d912db1cbff001ef64f1011012 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_91250a1b40ac338f4659c069a4305ca6.setIcon(icon_ab9257d912db1cbff001ef64f1011012);
+        
+    
+        var popup_352bea1b9bd9dd716476ad4f962321ea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6c5ca6cd09845b9b1c77b6d06682da79 = $(`<div id="html_6c5ca6cd09845b9b1c77b6d06682da79" style="width: 100.0%; height: 100.0%;">Rank: 28<br>Region: Espinal<br>Temperature: 35.5°C</div>`)[0];
+                popup_352bea1b9bd9dd716476ad4f962321ea.setContent(html_6c5ca6cd09845b9b1c77b6d06682da79);
+            
+        
+
+        marker_91250a1b40ac338f4659c069a4305ca6.bindPopup(popup_352bea1b9bd9dd716476ad4f962321ea)
+        ;
+
+        
+    
+    
+            marker_91250a1b40ac338f4659c069a4305ca6.bindTooltip(
+                `<div>
+                     Rank 28: Espinal (35.5°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6d51044772655ed7b7286ee354644ff5 = L.circleMarker(
+                [-34.16531941007006, -62.87872876878476],
+                {"bubblingMouseEvents": true, "color": "#fff2ecff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff2ecff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_6d51044772655ed7b7286ee354644ff5.bindTooltip(
+                `<div>
+                     Rank 28: Espinal (35.5°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7d9c14f17487d8c30292d38158c763bd = L.marker(
+                [10.089365214176155, -74.05824977471248],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_30c491f983ae4f34794e882422c2c825 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7d9c14f17487d8c30292d38158c763bd.setIcon(icon_30c491f983ae4f34794e882422c2c825);
+        
+    
+        var popup_1cdf7c78d0c215e34d6c36e3d3a8e415 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d0950dfa1222447cd339176c3898c668 = $(`<div id="html_d0950dfa1222447cd339176c3898c668" style="width: 100.0%; height: 100.0%;">Rank: 29<br>Region: Sinú Valley dry forests<br>Temperature: 35.4°C</div>`)[0];
+                popup_1cdf7c78d0c215e34d6c36e3d3a8e415.setContent(html_d0950dfa1222447cd339176c3898c668);
+            
+        
+
+        marker_7d9c14f17487d8c30292d38158c763bd.bindPopup(popup_1cdf7c78d0c215e34d6c36e3d3a8e415)
+        ;
+
+        
+    
+    
+            marker_7d9c14f17487d8c30292d38158c763bd.bindTooltip(
+                `<div>
+                     Rank 29: Sinú Valley dry forests (35.4°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5c20f04d51767b51f0e85eaa35d6be9d = L.circleMarker(
+                [10.089365214176155, -74.05824977471248],
+                {"bubblingMouseEvents": true, "color": "#fff4eeff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff4eeff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_5c20f04d51767b51f0e85eaa35d6be9d.bindTooltip(
+                `<div>
+                     Rank 29: Sinú Valley dry forests (35.4°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_70215fca03a827a150522947ac893c5e = L.marker(
+                [-33.34097240906261, 20.228450776392016],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_ad6241a511c5a939f8c943f38aa4f54c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_70215fca03a827a150522947ac893c5e.setIcon(icon_ad6241a511c5a939f8c943f38aa4f54c);
+        
+    
+        var popup_c12456ad32a1f560b3305f33933315d3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_643bdfb9468f4d89ab1ea24ff81c4d69 = $(`<div id="html_643bdfb9468f4d89ab1ea24ff81c4d69" style="width: 100.0%; height: 100.0%;">Rank: 30<br>Region: Renosterveld shrubland<br>Temperature: 35.3°C</div>`)[0];
+                popup_c12456ad32a1f560b3305f33933315d3.setContent(html_643bdfb9468f4d89ab1ea24ff81c4d69);
+            
+        
+
+        marker_70215fca03a827a150522947ac893c5e.bindPopup(popup_c12456ad32a1f560b3305f33933315d3)
+        ;
+
+        
+    
+    
+            marker_70215fca03a827a150522947ac893c5e.bindTooltip(
+                `<div>
+                     Rank 30: Renosterveld shrubland (35.3°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_14008d1744f9bdd354030280c2226417 = L.circleMarker(
+                [-33.34097240906261, 20.228450776392016],
+                {"bubblingMouseEvents": true, "color": "#fff5f0ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff5f0ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_14008d1744f9bdd354030280c2226417.bindTooltip(
+                `<div>
+                     Rank 30: Renosterveld shrubland (35.3°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_44c277fa243cea6860a5e5897eacd1c5 = L.marker(
+                [48.74113799466631, 93.68490097157742],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_167a7a57b1c1a0abc7939518292e14b6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_44c277fa243cea6860a5e5897eacd1c5.setIcon(icon_167a7a57b1c1a0abc7939518292e14b6);
+        
+    
+        var popup_04913cdd794c0b826a1b93cb0d774430 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b89130999c6f1863141a274f91e890f3 = $(`<div id="html_b89130999c6f1863141a274f91e890f3" style="width: 100.0%; height: 100.0%;">Rank: 1<br>Region: Great Lakes Basin desert steppe<br>Temperature: -32.2°C</div>`)[0];
+                popup_04913cdd794c0b826a1b93cb0d774430.setContent(html_b89130999c6f1863141a274f91e890f3);
+            
+        
+
+        marker_44c277fa243cea6860a5e5897eacd1c5.bindPopup(popup_04913cdd794c0b826a1b93cb0d774430)
+        ;
+
+        
+    
+    
+            marker_44c277fa243cea6860a5e5897eacd1c5.bindTooltip(
+                `<div>
+                     Rank 1: Great Lakes Basin desert steppe (-32.2°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e092c8802856872865761e3f15eb39cd = L.circleMarker(
+                [48.74113799466631, 93.68490097157742],
+                {"bubblingMouseEvents": true, "color": "#f7fbffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f7fbffff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_e092c8802856872865761e3f15eb39cd.bindTooltip(
+                `<div>
+                     Rank 1: Great Lakes Basin desert steppe (-32.2°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d1f0eeec1c50a7f5a1609735c0a70e64 = L.marker(
+                [51.343495144125384, 94.41268975332633],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_9bcfd76489d681db368d534aa524416d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d1f0eeec1c50a7f5a1609735c0a70e64.setIcon(icon_9bcfd76489d681db368d534aa524416d);
+        
+    
+        var popup_5d63ddf51cc571235ef7d3e770d2e14c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1c9652cbf53eaebe0fa32c50b0ab08d1 = $(`<div id="html_1c9652cbf53eaebe0fa32c50b0ab08d1" style="width: 100.0%; height: 100.0%;">Rank: 2<br>Region: Sayan Intermontane steppe<br>Temperature: -26.8°C</div>`)[0];
+                popup_5d63ddf51cc571235ef7d3e770d2e14c.setContent(html_1c9652cbf53eaebe0fa32c50b0ab08d1);
+            
+        
+
+        marker_d1f0eeec1c50a7f5a1609735c0a70e64.bindPopup(popup_5d63ddf51cc571235ef7d3e770d2e14c)
+        ;
+
+        
+    
+    
+            marker_d1f0eeec1c50a7f5a1609735c0a70e64.bindTooltip(
+                `<div>
+                     Rank 2: Sayan Intermontane steppe (-26.8°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f9087bba132c4fb7d6c7b280204c232c = L.circleMarker(
+                [51.343495144125384, 94.41268975332633],
+                {"bubblingMouseEvents": true, "color": "#99c7e0ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99c7e0ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_f9087bba132c4fb7d6c7b280204c232c.bindTooltip(
+                `<div>
+                     Rank 2: Sayan Intermontane steppe (-26.8°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a7816ce26d83ed1841a27753b6f6a5c6 = L.marker(
+                [48.7183061972236, 131.25699581938744],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_35d6b729b48aad4fee76f4b6bf6d65d1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a7816ce26d83ed1841a27753b6f6a5c6.setIcon(icon_35d6b729b48aad4fee76f4b6bf6d65d1);
+        
+    
+        var popup_865b127ea9db8e1bd366ef13ce588d55 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7fc3f7790e8d9eab0358ac87e3cddd9a = $(`<div id="html_7fc3f7790e8d9eab0358ac87e3cddd9a" style="width: 100.0%; height: 100.0%;">Rank: 3<br>Region: Amur meadow steppe<br>Temperature: -25.4°C</div>`)[0];
+                popup_865b127ea9db8e1bd366ef13ce588d55.setContent(html_7fc3f7790e8d9eab0358ac87e3cddd9a);
+            
+        
+
+        marker_a7816ce26d83ed1841a27753b6f6a5c6.bindPopup(popup_865b127ea9db8e1bd366ef13ce588d55)
+        ;
+
+        
+    
+    
+            marker_a7816ce26d83ed1841a27753b6f6a5c6.bindTooltip(
+                `<div>
+                     Rank 3: Amur meadow steppe (-25.4°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_09b2c549b62e3448e26bcf81f662d6cc = L.circleMarker(
+                [48.7183061972236, 131.25699581938744],
+                {"bubblingMouseEvents": true, "color": "#6fb1d7ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6fb1d7ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_09b2c549b62e3448e26bcf81f662d6cc.bindTooltip(
+                `<div>
+                     Rank 3: Amur meadow steppe (-25.4°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c9f02c35141e1682cef3abd70ae6ce33 = L.marker(
+                [56.340969387334, 77.11605068649312],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_0a12f4af3377b11b4c200bddce528c06 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c9f02c35141e1682cef3abd70ae6ce33.setIcon(icon_0a12f4af3377b11b4c200bddce528c06);
+        
+    
+        var popup_177cc8d48f9661bcb4fde9167f99bd91 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_117b4b086fd8f73eb0acfe1cbfa66a85 = $(`<div id="html_117b4b086fd8f73eb0acfe1cbfa66a85" style="width: 100.0%; height: 100.0%;">Rank: 4<br>Region: Western Siberian hemiboreal forests<br>Temperature: -25.3°C</div>`)[0];
+                popup_177cc8d48f9661bcb4fde9167f99bd91.setContent(html_117b4b086fd8f73eb0acfe1cbfa66a85);
+            
+        
+
+        marker_c9f02c35141e1682cef3abd70ae6ce33.bindPopup(popup_177cc8d48f9661bcb4fde9167f99bd91)
+        ;
+
+        
+    
+    
+            marker_c9f02c35141e1682cef3abd70ae6ce33.bindTooltip(
+                `<div>
+                     Rank 4: Western Siberian hemiboreal forests (-25.3°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_41c3e2d8333f51475168d93aa2ef60be = L.circleMarker(
+                [56.340969387334, 77.11605068649312],
+                {"bubblingMouseEvents": true, "color": "#6cafd7ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6cafd7ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_41c3e2d8333f51475168d93aa2ef60be.bindTooltip(
+                `<div>
+                     Rank 4: Western Siberian hemiboreal forests (-25.3°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_58c0ad20abc8bd2cb0c250cf24591435 = L.marker(
+                [51.98370392504525, 69.96565852855242],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_a8b05afc8d767c8dadfd5c61de057c61 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_58c0ad20abc8bd2cb0c250cf24591435.setIcon(icon_a8b05afc8d767c8dadfd5c61de057c61);
+        
+    
+        var popup_a639fa9309cb75370ac3264c1d67e29d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_75683609603a5b124cfbd0a44313b054 = $(`<div id="html_75683609603a5b124cfbd0a44313b054" style="width: 100.0%; height: 100.0%;">Rank: 5<br>Region: Kazakh steppe<br>Temperature: -24.8°C</div>`)[0];
+                popup_a639fa9309cb75370ac3264c1d67e29d.setContent(html_75683609603a5b124cfbd0a44313b054);
+            
+        
+
+        marker_58c0ad20abc8bd2cb0c250cf24591435.bindPopup(popup_a639fa9309cb75370ac3264c1d67e29d)
+        ;
+
+        
+    
+    
+            marker_58c0ad20abc8bd2cb0c250cf24591435.bindTooltip(
+                `<div>
+                     Rank 5: Kazakh steppe (-24.8°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_480c9ecb731972b5c1742774c006368b = L.circleMarker(
+                [51.98370392504525, 69.96565852855242],
+                {"bubblingMouseEvents": true, "color": "#60a7d2ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#60a7d2ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_480c9ecb731972b5c1742774c006368b.bindTooltip(
+                `<div>
+                     Rank 5: Kazakh steppe (-24.8°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7e8bce1fcdc4d8344c13094cab20a11e = L.marker(
+                [36.28423855258029, 70.50829286348846],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_5e5f38d9afaf661e1c582b98eaf6ed23 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7e8bce1fcdc4d8344c13094cab20a11e.setIcon(icon_5e5f38d9afaf661e1c582b98eaf6ed23);
+        
+    
+        var popup_a26e3b6f6c2675f3ad69ab338f9e9685 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_03fe6360a55d14f079686abdf8b72258 = $(`<div id="html_03fe6360a55d14f079686abdf8b72258" style="width: 100.0%; height: 100.0%;">Rank: 6<br>Region: Hindu Kush alpine meadow<br>Temperature: -24.6°C</div>`)[0];
+                popup_a26e3b6f6c2675f3ad69ab338f9e9685.setContent(html_03fe6360a55d14f079686abdf8b72258);
+            
+        
+
+        marker_7e8bce1fcdc4d8344c13094cab20a11e.bindPopup(popup_a26e3b6f6c2675f3ad69ab338f9e9685)
+        ;
+
+        
+    
+    
+            marker_7e8bce1fcdc4d8344c13094cab20a11e.bindTooltip(
+                `<div>
+                     Rank 6: Hindu Kush alpine meadow (-24.6°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_693d9efbebcf6174f15aee1f3cce513c = L.circleMarker(
+                [36.28423855258029, 70.50829286348846],
+                {"bubblingMouseEvents": true, "color": "#5ca4d0ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5ca4d0ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_693d9efbebcf6174f15aee1f3cce513c.bindTooltip(
+                `<div>
+                     Rank 6: Hindu Kush alpine meadow (-24.6°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_679ffa7e14882695999f4a826ae3d858 = L.marker(
+                [51.90267857565003, 123.89502016424365],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_f70f8c468efd9a762e9bd876f3b3a5cd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_679ffa7e14882695999f4a826ae3d858.setIcon(icon_f70f8c468efd9a762e9bd876f3b3a5cd);
+        
+    
+        var popup_4cdd7f0031521bee2974de079343a0d8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a350115d0361f07cbf04601ffb3d5ef9 = $(`<div id="html_a350115d0361f07cbf04601ffb3d5ef9" style="width: 100.0%; height: 100.0%;">Rank: 7<br>Region: Da Hinggan-Dzhagdy Mountains conifer forests<br>Temperature: -24.6°C</div>`)[0];
+                popup_4cdd7f0031521bee2974de079343a0d8.setContent(html_a350115d0361f07cbf04601ffb3d5ef9);
+            
+        
+
+        marker_679ffa7e14882695999f4a826ae3d858.bindPopup(popup_4cdd7f0031521bee2974de079343a0d8)
+        ;
+
+        
+    
+    
+            marker_679ffa7e14882695999f4a826ae3d858.bindTooltip(
+                `<div>
+                     Rank 7: Da Hinggan-Dzhagdy Mountains conifer forests (-24.6°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bc08a82e7492fe83f88f581d998489ee = L.circleMarker(
+                [51.90267857565003, 123.89502016424365],
+                {"bubblingMouseEvents": true, "color": "#5ca4d0ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5ca4d0ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_bc08a82e7492fe83f88f581d998489ee.bindTooltip(
+                `<div>
+                     Rank 7: Da Hinggan-Dzhagdy Mountains conifer forests (-24.6°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_90cfebb0720571b4120734cdacec4a54 = L.marker(
+                [45.49918119404632, -68.92527523096754],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_3ae92c14147a33556933f554bafd4dd7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_90cfebb0720571b4120734cdacec4a54.setIcon(icon_3ae92c14147a33556933f554bafd4dd7);
+        
+    
+        var popup_225bdf8e55f0f137790bcf4dfe345aea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_64ecd4b27539efaea20238393ac00de7 = $(`<div id="html_64ecd4b27539efaea20238393ac00de7" style="width: 100.0%; height: 100.0%;">Rank: 8<br>Region: New England-Acadian forests<br>Temperature: -24.5°C</div>`)[0];
+                popup_225bdf8e55f0f137790bcf4dfe345aea.setContent(html_64ecd4b27539efaea20238393ac00de7);
+            
+        
+
+        marker_90cfebb0720571b4120734cdacec4a54.bindPopup(popup_225bdf8e55f0f137790bcf4dfe345aea)
+        ;
+
+        
+    
+    
+            marker_90cfebb0720571b4120734cdacec4a54.bindTooltip(
+                `<div>
+                     Rank 8: New England-Acadian forests (-24.5°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0ef8f9841854c1ed7090d80c3f626b3f = L.circleMarker(
+                [45.49918119404632, -68.92527523096754],
+                {"bubblingMouseEvents": true, "color": "#59a2cfff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#59a2cfff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_0ef8f9841854c1ed7090d80c3f626b3f.bindTooltip(
+                `<div>
+                     Rank 8: New England-Acadian forests (-24.5°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1c37b6e1460837fbdcf8cf106302896c = L.marker(
+                [46.493084905821284, -65.01129310052374],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_8d659c889752a97a97a6732237f78321 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1c37b6e1460837fbdcf8cf106302896c.setIcon(icon_8d659c889752a97a97a6732237f78321);
+        
+    
+        var popup_1d322959dad45cb4e562e4e26c01a23c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be638124219e765cdd3ab48d32aca31a = $(`<div id="html_be638124219e765cdd3ab48d32aca31a" style="width: 100.0%; height: 100.0%;">Rank: 9<br>Region: Gulf of St. Lawrence lowland forests<br>Temperature: -24.5°C</div>`)[0];
+                popup_1d322959dad45cb4e562e4e26c01a23c.setContent(html_be638124219e765cdd3ab48d32aca31a);
+            
+        
+
+        marker_1c37b6e1460837fbdcf8cf106302896c.bindPopup(popup_1d322959dad45cb4e562e4e26c01a23c)
+        ;
+
+        
+    
+    
+            marker_1c37b6e1460837fbdcf8cf106302896c.bindTooltip(
+                `<div>
+                     Rank 9: Gulf of St. Lawrence lowland forests (-24.5°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_37b8c6683f4f5ce322d15c227a8f9926 = L.circleMarker(
+                [46.493084905821284, -65.01129310052374],
+                {"bubblingMouseEvents": true, "color": "#59a2cfff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#59a2cfff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_37b8c6683f4f5ce322d15c227a8f9926.bindTooltip(
+                `<div>
+                     Rank 9: Gulf of St. Lawrence lowland forests (-24.5°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7aada28d810042a535b2c5146f44dd3e = L.marker(
+                [50.28513192403619, 73.1133803590196],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_e1c02e0be745975982b65876c0a876a6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7aada28d810042a535b2c5146f44dd3e.setIcon(icon_e1c02e0be745975982b65876c0a876a6);
+        
+    
+        var popup_933958a00b211da670a1d0b4f6db6b2a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e558a9ac0045f4b2bdf7f8c97018c6bf = $(`<div id="html_e558a9ac0045f4b2bdf7f8c97018c6bf" style="width: 100.0%; height: 100.0%;">Rank: 10<br>Region: Kazakh upland steppe<br>Temperature: -24.5°C</div>`)[0];
+                popup_933958a00b211da670a1d0b4f6db6b2a.setContent(html_e558a9ac0045f4b2bdf7f8c97018c6bf);
+            
+        
+
+        marker_7aada28d810042a535b2c5146f44dd3e.bindPopup(popup_933958a00b211da670a1d0b4f6db6b2a)
+        ;
+
+        
+    
+    
+            marker_7aada28d810042a535b2c5146f44dd3e.bindTooltip(
+                `<div>
+                     Rank 10: Kazakh upland steppe (-24.5°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4c3f541ec818a72f1e5b41afef36e48c = L.circleMarker(
+                [50.28513192403619, 73.1133803590196],
+                {"bubblingMouseEvents": true, "color": "#59a2cfff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#59a2cfff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_4c3f541ec818a72f1e5b41afef36e48c.bindTooltip(
+                `<div>
+                     Rank 10: Kazakh upland steppe (-24.5°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_caf18492a39992d087c3c26161d87cc1 = L.marker(
+                [54.41607515019459, 71.84481079066894],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_f7d579df7dc40bf452ff4ebf05f7691a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_caf18492a39992d087c3c26161d87cc1.setIcon(icon_f7d579df7dc40bf452ff4ebf05f7691a);
+        
+    
+        var popup_49a504e516d41ddd0ac8439395b74f94 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0338700ed1b96fb8236290d32d4fce17 = $(`<div id="html_0338700ed1b96fb8236290d32d4fce17" style="width: 100.0%; height: 100.0%;">Rank: 11<br>Region: Kazakh forest steppe<br>Temperature: -24.4°C</div>`)[0];
+                popup_49a504e516d41ddd0ac8439395b74f94.setContent(html_0338700ed1b96fb8236290d32d4fce17);
+            
+        
+
+        marker_caf18492a39992d087c3c26161d87cc1.bindPopup(popup_49a504e516d41ddd0ac8439395b74f94)
+        ;
+
+        
+    
+    
+            marker_caf18492a39992d087c3c26161d87cc1.bindTooltip(
+                `<div>
+                     Rank 11: Kazakh forest steppe (-24.4°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2f51ca44a30d6e5bea5d4a644521cafb = L.circleMarker(
+                [54.41607515019459, 71.84481079066894],
+                {"bubblingMouseEvents": true, "color": "#57a0ceff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#57a0ceff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_2f51ca44a30d6e5bea5d4a644521cafb.bindTooltip(
+                `<div>
+                     Rank 11: Kazakh forest steppe (-24.4°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0e870756d7df0d0f887f430284f0f670 = L.marker(
+                [48.437316722553035, 65.83622174369957],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_3c334f442ab9fd28ea829f96c5ac81e8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0e870756d7df0d0f887f430284f0f670.setIcon(icon_3c334f442ab9fd28ea829f96c5ac81e8);
+        
+    
+        var popup_d5dd24a70b0e4a7a0b97dc05be9f9864 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7370053687a13f9e310372729bf134d9 = $(`<div id="html_7370053687a13f9e310372729bf134d9" style="width: 100.0%; height: 100.0%;">Rank: 12<br>Region: Kazakh semi-desert<br>Temperature: -24.3°C</div>`)[0];
+                popup_d5dd24a70b0e4a7a0b97dc05be9f9864.setContent(html_7370053687a13f9e310372729bf134d9);
+            
+        
+
+        marker_0e870756d7df0d0f887f430284f0f670.bindPopup(popup_d5dd24a70b0e4a7a0b97dc05be9f9864)
+        ;
+
+        
+    
+    
+            marker_0e870756d7df0d0f887f430284f0f670.bindTooltip(
+                `<div>
+                     Rank 12: Kazakh semi-desert (-24.3°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7c916ae5d33c98b7bc4363024fac829e = L.circleMarker(
+                [48.437316722553035, 65.83622174369957],
+                {"bubblingMouseEvents": true, "color": "#549fceff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#549fceff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_7c916ae5d33c98b7bc4363024fac829e.bindTooltip(
+                `<div>
+                     Rank 12: Kazakh semi-desert (-24.3°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_47289f23aa8e50560c6c8b66baa25014 = L.marker(
+                [43.1498041178344, 80.3730446960803],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_864c3831da4b5e4de00498ba12e37dd6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_47289f23aa8e50560c6c8b66baa25014.setIcon(icon_864c3831da4b5e4de00498ba12e37dd6);
+        
+    
+        var popup_afc89bd1f07c6baa89464602f0df5170 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_53a35ffda8c2a1479dda5b77b055f97a = $(`<div id="html_53a35ffda8c2a1479dda5b77b055f97a" style="width: 100.0%; height: 100.0%;">Rank: 13<br>Region: Tian Shan montane conifer forests<br>Temperature: -23.0°C</div>`)[0];
+                popup_afc89bd1f07c6baa89464602f0df5170.setContent(html_53a35ffda8c2a1479dda5b77b055f97a);
+            
+        
+
+        marker_47289f23aa8e50560c6c8b66baa25014.bindPopup(popup_afc89bd1f07c6baa89464602f0df5170)
+        ;
+
+        
+    
+    
+            marker_47289f23aa8e50560c6c8b66baa25014.bindTooltip(
+                `<div>
+                     Rank 13: Tian Shan montane conifer forests (-23.0°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cc699e4c1075d2a09c0fbeb0b4abaf30 = L.circleMarker(
+                [43.1498041178344, 80.3730446960803],
+                {"bubblingMouseEvents": true, "color": "#3888c1ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3888c1ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_cc699e4c1075d2a09c0fbeb0b4abaf30.bindTooltip(
+                `<div>
+                     Rank 13: Tian Shan montane conifer forests (-23.0°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9411432c6f92978cbe7ad6e00f34cc4c = L.marker(
+                [47.04502612724456, -77.5361882686272],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_04eda51076efd18152f977f5d4ec2ea8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9411432c6f92978cbe7ad6e00f34cc4c.setIcon(icon_04eda51076efd18152f977f5d4ec2ea8);
+        
+    
+        var popup_65ce192d1caa9eafc6ce26fb6976cb54 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2cb1d9cfa803b1e2c90352df8e51e9fc = $(`<div id="html_2cb1d9cfa803b1e2c90352df8e51e9fc" style="width: 100.0%; height: 100.0%;">Rank: 14<br>Region: Eastern Canadian Forest-Boreal transition<br>Temperature: -23.0°C</div>`)[0];
+                popup_65ce192d1caa9eafc6ce26fb6976cb54.setContent(html_2cb1d9cfa803b1e2c90352df8e51e9fc);
+            
+        
+
+        marker_9411432c6f92978cbe7ad6e00f34cc4c.bindPopup(popup_65ce192d1caa9eafc6ce26fb6976cb54)
+        ;
+
+        
+    
+    
+            marker_9411432c6f92978cbe7ad6e00f34cc4c.bindTooltip(
+                `<div>
+                     Rank 14: Eastern Canadian Forest-Boreal transition (-23.0°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1596eb765397b4914298235abbce64ff = L.circleMarker(
+                [47.04502612724456, -77.5361882686272],
+                {"bubblingMouseEvents": true, "color": "#3888c1ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3888c1ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_1596eb765397b4914298235abbce64ff.bindTooltip(
+                `<div>
+                     Rank 14: Eastern Canadian Forest-Boreal transition (-23.0°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_24e99c5c3449cee214b1585d4ac8ae97 = L.marker(
+                [44.54151277703264, -76.67402854849615],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_b50ec65c5d7b535de176a46eba8179f7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_24e99c5c3449cee214b1585d4ac8ae97.setIcon(icon_b50ec65c5d7b535de176a46eba8179f7);
+        
+    
+        var popup_d2d391ed3929ad98bbb6512d5d4147ff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7576beaee16abbe9f119dd2aec5f49c7 = $(`<div id="html_7576beaee16abbe9f119dd2aec5f49c7" style="width: 100.0%; height: 100.0%;">Rank: 15<br>Region: Eastern Great Lakes lowland forests<br>Temperature: -21.5°C</div>`)[0];
+                popup_d2d391ed3929ad98bbb6512d5d4147ff.setContent(html_7576beaee16abbe9f119dd2aec5f49c7);
+            
+        
+
+        marker_24e99c5c3449cee214b1585d4ac8ae97.bindPopup(popup_d2d391ed3929ad98bbb6512d5d4147ff)
+        ;
+
+        
+    
+    
+            marker_24e99c5c3449cee214b1585d4ac8ae97.bindTooltip(
+                `<div>
+                     Rank 15: Eastern Great Lakes lowland forests (-21.5°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bcb421427b78dc277de3139f6f8ea056 = L.circleMarker(
+                [44.54151277703264, -76.67402854849615],
+                {"bubblingMouseEvents": true, "color": "#1d6cb1ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1d6cb1ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_bcb421427b78dc277de3139f6f8ea056.bindTooltip(
+                `<div>
+                     Rank 15: Eastern Great Lakes lowland forests (-21.5°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2c21f7547cc374c1b300571f30c63e8c = L.marker(
+                [42.00545100474454, -76.79630350257283],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_49b4cca7f6fe4a8e22be9f7e84153cc0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2c21f7547cc374c1b300571f30c63e8c.setIcon(icon_49b4cca7f6fe4a8e22be9f7e84153cc0);
+        
+    
+        var popup_beed8cb513716f6671d363d92a9cea35 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c5653e0a319ff900f062193a49f0a59c = $(`<div id="html_c5653e0a319ff900f062193a49f0a59c" style="width: 100.0%; height: 100.0%;">Rank: 16<br>Region: Allegheny Highlands forests<br>Temperature: -21.4°C</div>`)[0];
+                popup_beed8cb513716f6671d363d92a9cea35.setContent(html_c5653e0a319ff900f062193a49f0a59c);
+            
+        
+
+        marker_2c21f7547cc374c1b300571f30c63e8c.bindPopup(popup_beed8cb513716f6671d363d92a9cea35)
+        ;
+
+        
+    
+    
+            marker_2c21f7547cc374c1b300571f30c63e8c.bindTooltip(
+                `<div>
+                     Rank 16: Allegheny Highlands forests (-21.4°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_87869aea7ef473c2f3e6e400da8179f0 = L.circleMarker(
+                [42.00545100474454, -76.79630350257283],
+                {"bubblingMouseEvents": true, "color": "#1b6ab0ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1b6ab0ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_87869aea7ef473c2f3e6e400da8179f0.bindTooltip(
+                `<div>
+                     Rank 16: Allegheny Highlands forests (-21.4°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bb65de867dbe94d7ff1a26e02938e56b = L.marker(
+                [46.130627107817254, 127.79292180478691],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_0dcbd2c7357b426fd5e9277d79444497 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_bb65de867dbe94d7ff1a26e02938e56b.setIcon(icon_0dcbd2c7357b426fd5e9277d79444497);
+        
+    
+        var popup_50175edfa61156aaff109f6df8a723c5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aba827f2064a7132d310cfbccd82a1da = $(`<div id="html_aba827f2064a7132d310cfbccd82a1da" style="width: 100.0%; height: 100.0%;">Rank: 17<br>Region: Manchurian mixed forests<br>Temperature: -21.0°C</div>`)[0];
+                popup_50175edfa61156aaff109f6df8a723c5.setContent(html_aba827f2064a7132d310cfbccd82a1da);
+            
+        
+
+        marker_bb65de867dbe94d7ff1a26e02938e56b.bindPopup(popup_50175edfa61156aaff109f6df8a723c5)
+        ;
+
+        
+    
+    
+            marker_bb65de867dbe94d7ff1a26e02938e56b.bindTooltip(
+                `<div>
+                     Rank 17: Manchurian mixed forests (-21.0°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_37a7b625abdf7d42a6fef2f387d52b77 = L.circleMarker(
+                [46.130627107817254, 127.79292180478691],
+                {"bubblingMouseEvents": true, "color": "#1563aaff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1563aaff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_37a7b625abdf7d42a6fef2f387d52b77.bindTooltip(
+                `<div>
+                     Rank 17: Manchurian mixed forests (-21.0°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1d28b5d14ab7d151e454367384c7cfd4 = L.marker(
+                [34.81510935754237, 76.42599184931926],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_9b24f7340ce065a9608493ab6da7c932 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1d28b5d14ab7d151e454367384c7cfd4.setIcon(icon_9b24f7340ce065a9608493ab6da7c932);
+        
+    
+        var popup_27b8ec9600955302b766a7f8a5790993 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f373f927384ff961eb61cc07933e5d84 = $(`<div id="html_f373f927384ff961eb61cc07933e5d84" style="width: 100.0%; height: 100.0%;">Rank: 18<br>Region: Karakoram-West Tibetan Plateau alpine steppe<br>Temperature: -20.9°C</div>`)[0];
+                popup_27b8ec9600955302b766a7f8a5790993.setContent(html_f373f927384ff961eb61cc07933e5d84);
+            
+        
+
+        marker_1d28b5d14ab7d151e454367384c7cfd4.bindPopup(popup_27b8ec9600955302b766a7f8a5790993)
+        ;
+
+        
+    
+    
+            marker_1d28b5d14ab7d151e454367384c7cfd4.bindTooltip(
+                `<div>
+                     Rank 18: Karakoram-West Tibetan Plateau alpine steppe (-20.9°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9317be029cb418ab9c165425ff1b0bea = L.circleMarker(
+                [34.81510935754237, 76.42599184931926],
+                {"bubblingMouseEvents": true, "color": "#1461a9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1461a9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_9317be029cb418ab9c165425ff1b0bea.bindTooltip(
+                `<div>
+                     Rank 18: Karakoram-West Tibetan Plateau alpine steppe (-20.9°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_92950dc4ef531656335c1b9d70a872f8 = L.marker(
+                [38.38296021180931, 73.35508380327796],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_8276de0fe725089b3bbc148a385035e0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_92950dc4ef531656335c1b9d70a872f8.setIcon(icon_8276de0fe725089b3bbc148a385035e0);
+        
+    
+        var popup_c6452b90bcf25ba6e938850d228a542b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_50f756ee231d74700a80949118b841be = $(`<div id="html_50f756ee231d74700a80949118b841be" style="width: 100.0%; height: 100.0%;">Rank: 19<br>Region: Pamir alpine desert and tundra<br>Temperature: -20.9°C</div>`)[0];
+                popup_c6452b90bcf25ba6e938850d228a542b.setContent(html_50f756ee231d74700a80949118b841be);
+            
+        
+
+        marker_92950dc4ef531656335c1b9d70a872f8.bindPopup(popup_c6452b90bcf25ba6e938850d228a542b)
+        ;
+
+        
+    
+    
+            marker_92950dc4ef531656335c1b9d70a872f8.bindTooltip(
+                `<div>
+                     Rank 19: Pamir alpine desert and tundra (-20.9°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dffb72006daede2d59c1fd9fcd9ef277 = L.circleMarker(
+                [38.38296021180931, 73.35508380327796],
+                {"bubblingMouseEvents": true, "color": "#1461a9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1461a9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_dffb72006daede2d59c1fd9fcd9ef277.bindTooltip(
+                `<div>
+                     Rank 19: Pamir alpine desert and tundra (-20.9°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_89db45a927e11ba8629ceb72ea340df5 = L.marker(
+                [46.49865747933678, 123.96148967064512],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_f15da952b143d3b634ac1032134ee492 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_89db45a927e11ba8629ceb72ea340df5.setIcon(icon_f15da952b143d3b634ac1032134ee492);
+        
+    
+        var popup_49ba2ecd09490de05cd651f786e7f5d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a696fc7665a57fb80872b85960cf770e = $(`<div id="html_a696fc7665a57fb80872b85960cf770e" style="width: 100.0%; height: 100.0%;">Rank: 20<br>Region: Nenjiang River grassland<br>Temperature: -20.4°C</div>`)[0];
+                popup_49ba2ecd09490de05cd651f786e7f5d0.setContent(html_a696fc7665a57fb80872b85960cf770e);
+            
+        
+
+        marker_89db45a927e11ba8629ceb72ea340df5.bindPopup(popup_49ba2ecd09490de05cd651f786e7f5d0)
+        ;
+
+        
+    
+    
+            marker_89db45a927e11ba8629ceb72ea340df5.bindTooltip(
+                `<div>
+                     Rank 20: Nenjiang River grassland (-20.4°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4a9d56b97ea6ae782161d437dfa892f8 = L.circleMarker(
+                [46.49865747933678, 123.96148967064512],
+                {"bubblingMouseEvents": true, "color": "#0d58a1ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0d58a1ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_4a9d56b97ea6ae782161d437dfa892f8.bindTooltip(
+                `<div>
+                     Rank 20: Nenjiang River grassland (-20.4°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4d82d0408e8ca0505b7cfe45dfe6d64f = L.marker(
+                [38.65994839762418, 97.9856944881943],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_2b8a4fdfc8a3708a0ed02ee7bc63dd15 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4d82d0408e8ca0505b7cfe45dfe6d64f.setIcon(icon_2b8a4fdfc8a3708a0ed02ee7bc63dd15);
+        
+    
+        var popup_22559fa971b3cee071833b43291dc646 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_29202062d13b54f6d2b8e40793c77dd2 = $(`<div id="html_29202062d13b54f6d2b8e40793c77dd2" style="width: 100.0%; height: 100.0%;">Rank: 21<br>Region: Qilian Mountains subalpine meadows<br>Temperature: -20.1°C</div>`)[0];
+                popup_22559fa971b3cee071833b43291dc646.setContent(html_29202062d13b54f6d2b8e40793c77dd2);
+            
+        
+
+        marker_4d82d0408e8ca0505b7cfe45dfe6d64f.bindPopup(popup_22559fa971b3cee071833b43291dc646)
+        ;
+
+        
+    
+    
+            marker_4d82d0408e8ca0505b7cfe45dfe6d64f.bindTooltip(
+                `<div>
+                     Rank 21: Qilian Mountains subalpine meadows (-20.1°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_38f90e39a04ede773a931e7e8ce01ae9 = L.circleMarker(
+                [38.65994839762418, 97.9856944881943],
+                {"bubblingMouseEvents": true, "color": "#08529dff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#08529dff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_38f90e39a04ede773a931e7e8ce01ae9.bindTooltip(
+                `<div>
+                     Rank 21: Qilian Mountains subalpine meadows (-20.1°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a5ce5ea5dcace88f6e649cdbb2edfc38 = L.marker(
+                [36.17483636617563, 85.24463181367204],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_654fb5539a73fc12639adb5911680080 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a5ce5ea5dcace88f6e649cdbb2edfc38.setIcon(icon_654fb5539a73fc12639adb5911680080);
+        
+    
+        var popup_78b24d7477b7e68f8caecd29dea28ba9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6df461050a05523033a0edb4654d4338 = $(`<div id="html_6df461050a05523033a0edb4654d4338" style="width: 100.0%; height: 100.0%;">Rank: 22<br>Region: North Tibetan Plateau-Kunlun Mountains alpine desert<br>Temperature: -20.0°C</div>`)[0];
+                popup_78b24d7477b7e68f8caecd29dea28ba9.setContent(html_6df461050a05523033a0edb4654d4338);
+            
+        
+
+        marker_a5ce5ea5dcace88f6e649cdbb2edfc38.bindPopup(popup_78b24d7477b7e68f8caecd29dea28ba9)
+        ;
+
+        
+    
+    
+            marker_a5ce5ea5dcace88f6e649cdbb2edfc38.bindTooltip(
+                `<div>
+                     Rank 22: North Tibetan Plateau-Kunlun Mountains alpine desert (-20.0°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ea807f82e37a5f7d85e02dae81efda1d = L.circleMarker(
+                [36.17483636617563, 85.24463181367204],
+                {"bubblingMouseEvents": true, "color": "#08509bff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#08509bff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_ea807f82e37a5f7d85e02dae81efda1d.bindTooltip(
+                `<div>
+                     Rank 22: North Tibetan Plateau-Kunlun Mountains alpine desert (-20.0°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c64fc58daf12151b3239e7f4fced0485 = L.marker(
+                [41.458142037819854, -83.804950039547],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_97af658a53187ad22371165de6fbce79 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c64fc58daf12151b3239e7f4fced0485.setIcon(icon_97af658a53187ad22371165de6fbce79);
+        
+    
+        var popup_12a25abe92718a1d97ae006b0bfc6200 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_78b176f39d2eef3d5db18a0826390f66 = $(`<div id="html_78b176f39d2eef3d5db18a0826390f66" style="width: 100.0%; height: 100.0%;">Rank: 23<br>Region: Southern Great Lakes forests<br>Temperature: -19.7°C</div>`)[0];
+                popup_12a25abe92718a1d97ae006b0bfc6200.setContent(html_78b176f39d2eef3d5db18a0826390f66);
+            
+        
+
+        marker_c64fc58daf12151b3239e7f4fced0485.bindPopup(popup_12a25abe92718a1d97ae006b0bfc6200)
+        ;
+
+        
+    
+    
+            marker_c64fc58daf12151b3239e7f4fced0485.bindTooltip(
+                `<div>
+                     Rank 23: Southern Great Lakes forests (-19.7°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a8fb01c6f63cb7f43c5433d6025ba449 = L.circleMarker(
+                [41.458142037819854, -83.804950039547],
+                {"bubblingMouseEvents": true, "color": "#084a93ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#084a93ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_a8fb01c6f63cb7f43c5433d6025ba449.bindTooltip(
+                `<div>
+                     Rank 23: Southern Great Lakes forests (-19.7°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2b5cf11c019ca614fa6ac77664457929 = L.marker(
+                [48.650375286019276, 88.05712443315967],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_6c8459436f9826470fe966ab023427aa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2b5cf11c019ca614fa6ac77664457929.setIcon(icon_6c8459436f9826470fe966ab023427aa);
+        
+    
+        var popup_0953b2f322e2b553541a29418e932ee2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_14f697e7c16575ee2c69ba17972281db = $(`<div id="html_14f697e7c16575ee2c69ba17972281db" style="width: 100.0%; height: 100.0%;">Rank: 24<br>Region: Altai alpine meadow and tundra<br>Temperature: -19.2°C</div>`)[0];
+                popup_0953b2f322e2b553541a29418e932ee2.setContent(html_14f697e7c16575ee2c69ba17972281db);
+            
+        
+
+        marker_2b5cf11c019ca614fa6ac77664457929.bindPopup(popup_0953b2f322e2b553541a29418e932ee2)
+        ;
+
+        
+    
+    
+            marker_2b5cf11c019ca614fa6ac77664457929.bindTooltip(
+                `<div>
+                     Rank 24: Altai alpine meadow and tundra (-19.2°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b66223213687d48292dff59171c5b02c = L.circleMarker(
+                [48.650375286019276, 88.05712443315967],
+                {"bubblingMouseEvents": true, "color": "#084184ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#084184ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_b66223213687d48292dff59171c5b02c.bindTooltip(
+                `<div>
+                     Rank 24: Altai alpine meadow and tundra (-19.2°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9b155cc2fb5f792685b7b4e373c952ee = L.marker(
+                [38.74998652254176, -106.3821030334288],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_d4caeac56b1a5618822c0123a2962a69 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9b155cc2fb5f792685b7b4e373c952ee.setIcon(icon_d4caeac56b1a5618822c0123a2962a69);
+        
+    
+        var popup_ff98f2660d7aa7b1c58216235bf85a01 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a496460fa291c5f8c5903bf7062526e9 = $(`<div id="html_a496460fa291c5f8c5903bf7062526e9" style="width: 100.0%; height: 100.0%;">Rank: 25<br>Region: Colorado Rockies forests<br>Temperature: -19.1°C</div>`)[0];
+                popup_ff98f2660d7aa7b1c58216235bf85a01.setContent(html_a496460fa291c5f8c5903bf7062526e9);
+            
+        
+
+        marker_9b155cc2fb5f792685b7b4e373c952ee.bindPopup(popup_ff98f2660d7aa7b1c58216235bf85a01)
+        ;
+
+        
+    
+    
+            marker_9b155cc2fb5f792685b7b4e373c952ee.bindTooltip(
+                `<div>
+                     Rank 25: Colorado Rockies forests (-19.1°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d4f40abe6f4c14a5bbc2e85c31041a46 = L.circleMarker(
+                [38.74998652254176, -106.3821030334288],
+                {"bubblingMouseEvents": true, "color": "#083f82ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#083f82ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_d4f40abe6f4c14a5bbc2e85c31041a46.bindTooltip(
+                `<div>
+                     Rank 25: Colorado Rockies forests (-19.1°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3a605b547ce6598d91606d89734e8898 = L.marker(
+                [46.680748214184305, 135.1671404235551],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_b6e07277cce0e04d574bd4683151d535 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3a605b547ce6598d91606d89734e8898.setIcon(icon_b6e07277cce0e04d574bd4683151d535);
+        
+    
+        var popup_f8156695ac239fb36817bba000f61d31 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2fdf6a99ceb9317f4d065ac528eb2f21 = $(`<div id="html_2fdf6a99ceb9317f4d065ac528eb2f21" style="width: 100.0%; height: 100.0%;">Rank: 26<br>Region: Ussuri broadleaf and mixed forests<br>Temperature: -19.1°C</div>`)[0];
+                popup_f8156695ac239fb36817bba000f61d31.setContent(html_2fdf6a99ceb9317f4d065ac528eb2f21);
+            
+        
+
+        marker_3a605b547ce6598d91606d89734e8898.bindPopup(popup_f8156695ac239fb36817bba000f61d31)
+        ;
+
+        
+    
+    
+            marker_3a605b547ce6598d91606d89734e8898.bindTooltip(
+                `<div>
+                     Rank 26: Ussuri broadleaf and mixed forests (-19.1°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_03d47042d05602d590ce8f31bf973825 = L.circleMarker(
+                [46.680748214184305, 135.1671404235551],
+                {"bubblingMouseEvents": true, "color": "#083f82ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#083f82ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_03d47042d05602d590ce8f31bf973825.bindTooltip(
+                `<div>
+                     Rank 26: Ussuri broadleaf and mixed forests (-19.1°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9ac8cb4161da442d22b0825340d53371 = L.marker(
+                [41.789834741956554, 127.56669208708634],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_6a05f5e922d47bff5a9ce0e644ef7c81 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9ac8cb4161da442d22b0825340d53371.setIcon(icon_6a05f5e922d47bff5a9ce0e644ef7c81);
+        
+    
+        var popup_3e0793ddaa170fac74b6e2d594ff740f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d696bafca3f10135a7ce3ef99d06027d = $(`<div id="html_d696bafca3f10135a7ce3ef99d06027d" style="width: 100.0%; height: 100.0%;">Rank: 27<br>Region: Changbai Mountains mixed forests<br>Temperature: -19.0°C</div>`)[0];
+                popup_3e0793ddaa170fac74b6e2d594ff740f.setContent(html_d696bafca3f10135a7ce3ef99d06027d);
+            
+        
+
+        marker_9ac8cb4161da442d22b0825340d53371.bindPopup(popup_3e0793ddaa170fac74b6e2d594ff740f)
+        ;
+
+        
+    
+    
+            marker_9ac8cb4161da442d22b0825340d53371.bindTooltip(
+                `<div>
+                     Rank 27: Changbai Mountains mixed forests (-19.0°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7fa4116468019d06a7229c8b118cd7cc = L.circleMarker(
+                [41.789834741956554, 127.56669208708634],
+                {"bubblingMouseEvents": true, "color": "#083d7fff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#083d7fff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_7fa4116468019d06a7229c8b118cd7cc.bindTooltip(
+                `<div>
+                     Rank 27: Changbai Mountains mixed forests (-19.0°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_09acac177dca3177736870fa11c3c9d0 = L.marker(
+                [48.2471191929791, 90.33452652098191],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_20c0391173633285eaa9ac8755562b67 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_09acac177dca3177736870fa11c3c9d0.setIcon(icon_20c0391173633285eaa9ac8755562b67);
+        
+    
+        var popup_b9f921292dcb5bc2c1f2685f87f2dc07 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2cdf714530bdc3c3f6d6f954d63bc9e1 = $(`<div id="html_2cdf714530bdc3c3f6d6f954d63bc9e1" style="width: 100.0%; height: 100.0%;">Rank: 28<br>Region: Altai montane forest and forest steppe<br>Temperature: -18.4°C</div>`)[0];
+                popup_b9f921292dcb5bc2c1f2685f87f2dc07.setContent(html_2cdf714530bdc3c3f6d6f954d63bc9e1);
+            
+        
+
+        marker_09acac177dca3177736870fa11c3c9d0.bindPopup(popup_b9f921292dcb5bc2c1f2685f87f2dc07)
+        ;
+
+        
+    
+    
+            marker_09acac177dca3177736870fa11c3c9d0.bindTooltip(
+                `<div>
+                     Rank 28: Altai montane forest and forest steppe (-18.4°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a8da35fe5445f32f804eebb6c564a71f = L.circleMarker(
+                [48.2471191929791, 90.33452652098191],
+                {"bubblingMouseEvents": true, "color": "#08326eff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#08326eff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_a8da35fe5445f32f804eebb6c564a71f.bindTooltip(
+                `<div>
+                     Rank 28: Altai montane forest and forest steppe (-18.4°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5346238bad8141d6ac6464f152b2cdc5 = L.marker(
+                [40.190205042668104, -88.99704886388355],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_6ca70611ffbee7b4e1849b31f8c81b75 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5346238bad8141d6ac6464f152b2cdc5.setIcon(icon_6ca70611ffbee7b4e1849b31f8c81b75);
+        
+    
+        var popup_50ae1f263a3b6b2f37cd5b5b018f11fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c0623c855a0d0aef126478bbbb5aa06f = $(`<div id="html_c0623c855a0d0aef126478bbbb5aa06f" style="width: 100.0%; height: 100.0%;">Rank: 29<br>Region: Central US forest-grasslands transition<br>Temperature: -18.4°C</div>`)[0];
+                popup_50ae1f263a3b6b2f37cd5b5b018f11fe.setContent(html_c0623c855a0d0aef126478bbbb5aa06f);
+            
+        
+
+        marker_5346238bad8141d6ac6464f152b2cdc5.bindPopup(popup_50ae1f263a3b6b2f37cd5b5b018f11fe)
+        ;
+
+        
+    
+    
+            marker_5346238bad8141d6ac6464f152b2cdc5.bindTooltip(
+                `<div>
+                     Rank 29: Central US forest-grasslands transition (-18.4°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f70995e5fc9e7702d345a58edd3bd1d8 = L.circleMarker(
+                [40.190205042668104, -88.99704886388355],
+                {"bubblingMouseEvents": true, "color": "#08326eff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#08326eff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_f70995e5fc9e7702d345a58edd3bd1d8.bindTooltip(
+                `<div>
+                     Rank 29: Central US forest-grasslands transition (-18.4°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_16355ad334d5828c5661fddd2e677c60 = L.marker(
+                [45.84380344100127, 115.84182692055019],
+                {
+}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            var icon_2c0ceafd62f3c89f2535e0ff162fdd12 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_16355ad334d5828c5661fddd2e677c60.setIcon(icon_2c0ceafd62f3c89f2535e0ff162fdd12);
+        
+    
+        var popup_6a925674249dad45b9005de2dff5797e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e7b06e82016520815f8936bb2ba5ac6a = $(`<div id="html_e7b06e82016520815f8936bb2ba5ac6a" style="width: 100.0%; height: 100.0%;">Rank: 30<br>Region: Mongolian-Manchurian grassland<br>Temperature: -18.3°C</div>`)[0];
+                popup_6a925674249dad45b9005de2dff5797e.setContent(html_e7b06e82016520815f8936bb2ba5ac6a);
+            
+        
+
+        marker_16355ad334d5828c5661fddd2e677c60.bindPopup(popup_6a925674249dad45b9005de2dff5797e)
+        ;
+
+        
+    
+    
+            marker_16355ad334d5828c5661fddd2e677c60.bindTooltip(
+                `<div>
+                     Rank 30: Mongolian-Manchurian grassland (-18.3°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_152127e6d987eb7824fc0ab809c8e882 = L.circleMarker(
+                [45.84380344100127, 115.84182692055019],
+                {"bubblingMouseEvents": true, "color": "#08306bff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#08306bff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+        
+    
+            circle_marker_152127e6d987eb7824fc0ab809c8e882.bindTooltip(
+                `<div>
+                     Rank 30: Mongolian-Manchurian grassland (-18.3°C)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+    var color_map_c142d7edf37f5decdf28e4208ac7029a = {};
+
+    
+    color_map_c142d7edf37f5decdf28e4208ac7029a.color = d3.scale.threshold()
+              .domain([35.3, 35.32084168336673, 35.34168336673346, 35.362525050100196, 35.38336673346693, 35.40420841683366, 35.4250501002004, 35.445891783567134, 35.46673346693387, 35.4875751503006, 35.50841683366733, 35.529258517034066, 35.5501002004008, 35.57094188376753, 35.591783567134264, 35.612625250501, 35.63346693386773, 35.65430861723446, 35.6751503006012, 35.695991983967936, 35.71683366733467, 35.7376753507014, 35.758517034068134, 35.77935871743487, 35.8002004008016, 35.82104208416833, 35.841883767535066, 35.8627254509018, 35.88356713426853, 35.904408817635264, 35.925250501002004, 35.94609218436874, 35.96693386773547, 35.9877755511022, 36.008617234468936, 36.02945891783567, 36.0503006012024, 36.071142284569135, 36.09198396793587, 36.1128256513026, 36.13366733466933, 36.15450901803607, 36.175350701402806, 36.19619238476954, 36.21703406813627, 36.237875751503005, 36.25871743486974, 36.27955911823647, 36.3004008016032, 36.321242484969936, 36.34208416833667, 36.3629258517034, 36.383767535070135, 36.404609218436875, 36.42545090180361, 36.44629258517034, 36.46713426853707, 36.487975951903806, 36.50881763527054, 36.52965931863727, 36.550501002004005, 36.57134268537074, 36.59218436873747, 36.6130260521042, 36.63386773547094, 36.654709418837676, 36.67555110220441, 36.69639278557114, 36.717234468937875, 36.73807615230461, 36.75891783567134, 36.77975951903807, 36.800601202404806, 36.82144288577154, 36.84228456913827, 36.863126252505005, 36.883967935871745, 36.90480961923848, 36.92565130260521, 36.94649298597194, 36.967334669338676, 36.98817635270541, 37.00901803607214, 37.029859719438875, 37.05070140280561, 37.07154308617234, 37.09238476953907, 37.113226452905806, 37.134068136272546, 37.15490981963928, 37.17575150300601, 37.196593186372745, 37.21743486973948, 37.23827655310621, 37.25911823647294, 37.279959919839676, 37.30080160320641, 37.32164328657314, 37.342484969939875, 37.363326653306615, 37.38416833667335, 37.40501002004008, 37.42585170340681, 37.446693386773546, 37.46753507014028, 37.48837675350701, 37.509218436873745, 37.53006012024048, 37.55090180360721, 37.57174348697394, 37.59258517034068, 37.613426853707416, 37.63426853707415, 37.65511022044088, 37.675951903807615, 37.69679358717435, 37.71763527054108, 37.73847695390781, 37.759318637274546, 37.78016032064128, 37.80100200400801, 37.821843687374745, 37.84268537074148, 37.86352705410822, 37.88436873747495, 37.905210420841684, 37.926052104208416, 37.94689378757515, 37.96773547094188, 37.988577154308615, 38.00941883767535, 38.03026052104208, 38.051102204408814, 38.07194388777555, 38.09278557114229, 38.11362725450902, 38.13446893787575, 38.155310621242485, 38.17615230460922, 38.19699398797595, 38.217835671342684, 38.23867735470942, 38.25951903807615, 38.28036072144288, 38.301202404809615, 38.322044088176355, 38.34288577154309, 38.36372745490982, 38.384569138276554, 38.40541082164329, 38.42625250501002, 38.44709418837675, 38.467935871743485, 38.48877755511022, 38.50961923847695, 38.530460921843684, 38.551302605210424, 38.57214428857715, 38.59298597194389, 38.61382765531062, 38.634669338677355, 38.65551102204409, 38.67635270541082, 38.697194388777554, 38.71803607214429, 38.73887775551102, 38.75971943887775, 38.780561122244485, 38.80140280561122, 38.82224448897796, 38.84308617234469, 38.863927855711424, 38.88476953907816, 38.90561122244489, 38.92645290581162, 38.947294589178355, 38.96813627254509, 38.98897795591182, 39.009819639278554, 39.03066132264529, 39.05150300601203, 39.07234468937876, 39.09318637274549, 39.114028056112225, 39.13486973947896, 39.15571142284569, 39.176553106212424, 39.19739478957916, 39.21823647294589, 39.23907815631262, 39.259919839679355, 39.28076152304609, 39.30160320641282, 39.32244488977956, 39.343286573146294, 39.36412825651303, 39.38496993987976, 39.40581162324649, 39.426653306613225, 39.44749498997996, 39.46833667334669, 39.489178356713424, 39.51002004008016, 39.53086172344689, 39.55170340681363, 39.57254509018036, 39.593386773547095, 39.61422845691383, 39.63507014028056, 39.655911823647294, 39.67675350701403, 39.69759519038076, 39.71843687374749, 39.739278557114226, 39.76012024048096, 39.7809619238477, 39.80180360721443, 39.822645290581164, 39.8434869739479, 39.86432865731463, 39.88517034068136, 39.906012024048096, 39.92685370741483, 39.94769539078156, 39.968537074148294, 39.98937875751503, 40.01022044088177, 40.03106212424849, 40.05190380761523, 40.072745490981966, 40.0935871743487, 40.11442885771543, 40.135270541082164, 40.1561122244489, 40.17695390781563, 40.19779559118236, 40.218637274549096, 40.239478957915836, 40.26032064128256, 40.2811623246493, 40.302004008016034, 40.32284569138277, 40.3436873747495, 40.36452905811623, 40.385370741482966, 40.4062124248497, 40.42705410821643, 40.447895791583164, 40.4687374749499, 40.48957915831663, 40.51042084168337, 40.5312625250501, 40.552104208416836, 40.57294589178357, 40.5937875751503, 40.614629258517034, 40.63547094188377, 40.6563126252505, 40.67715430861723, 40.697995991983966, 40.7188376753507, 40.73967935871744, 40.76052104208417, 40.781362725450904, 40.80220440881764, 40.82304609218437, 40.8438877755511, 40.864729458917836, 40.88557114228457, 40.9064128256513, 40.927254509018034, 40.94809619238477, 40.96893787575151, 40.98977955911823, 41.01062124248497, 41.031462925851706, 41.05230460921844, 41.07314629258517, 41.093987975951904, 41.11482965931864, 41.13567134268537, 41.1565130260521, 41.177354709418836, 41.19819639278557, 41.2190380761523, 41.23987975951904, 41.260721442885774, 41.28156312625251, 41.30240480961924, 41.32324649298597, 41.344088176352706, 41.36492985971944, 41.38577154308617, 41.406613226452905, 41.42745490981964, 41.44829659318637, 41.46913827655311, 41.489979959919836, 41.510821643286576, 41.53166332665331, 41.55250501002004, 41.573346693386775, 41.59418837675351, 41.61503006012024, 41.63587174348697, 41.656713426853706, 41.67755511022044, 41.69839679358717, 41.719238476953905, 41.740080160320645, 41.76092184368738, 41.78176352705411, 41.80260521042084, 41.823446893787576, 41.84428857715431, 41.86513026052104, 41.885971943887775, 41.90681362725451, 41.92765531062124, 41.94849699398797, 41.96933867735471, 41.990180360721446, 42.01102204408818, 42.03186372745491, 42.052705410821645, 42.07354709418838, 42.09438877755511, 42.11523046092184, 42.136072144288576, 42.15691382765531, 42.17775551102204, 42.19859719438878, 42.219438877755515, 42.24028056112225, 42.26112224448898, 42.28196392785571, 42.302805611222446, 42.32364729458918, 42.34448897795591, 42.365330661322645, 42.38617234468938, 42.40701402805611, 42.42785571142285, 42.44869739478958, 42.469539078156316, 42.49038076152305, 42.51122244488978, 42.532064128256515, 42.55290581162325, 42.57374749498998, 42.59458917835671, 42.615430861723446, 42.63627254509018, 42.65711422845692, 42.677955911823645, 42.698797595190385, 42.71963927855712, 42.74048096192385, 42.76132264529058, 42.782164328657316, 42.80300601202405, 42.82384769539078, 42.844689378757515, 42.86553106212425, 42.88637274549098, 42.90721442885771, 42.92805611222445, 42.948897795591186, 42.96973947895792, 42.99058116232465, 43.011422845691385, 43.03226452905812, 43.05310621242485, 43.073947895791584, 43.094789579158316, 43.11563126252505, 43.13647294589178, 43.15731462925852, 43.17815631262525, 43.19899799599199, 43.21983967935872, 43.240681362725454, 43.26152304609219, 43.28236472945892, 43.30320641282565, 43.324048096192385, 43.34488977955912, 43.36573146292585, 43.38657314629259, 43.40741482965932, 43.42825651302606, 43.44909819639279, 43.46993987975952, 43.490781563126255, 43.51162324649299, 43.53246492985972, 43.553306613226454, 43.57414829659319, 43.59498997995992, 43.61583166332665, 43.636673346693385, 43.657515030060125, 43.67835671342685, 43.69919839679359, 43.720040080160324, 43.74088176352706, 43.76172344689379, 43.78256513026052, 43.803406813627255, 43.82424849699399, 43.84509018036073, 43.865931863727454, 43.886773547094194, 43.90761523046093, 43.92845691382766, 43.94929859719439, 43.970140280561125, 43.99098196392786, 44.01182364729459, 44.032665330661324, 44.05350701402806, 44.07434869739479, 44.09519038076152, 44.11603206412826, 44.13687374749499, 44.15771543086173, 44.17855711422846, 44.199398797595194, 44.22024048096193, 44.24108216432866, 44.26192384769539, 44.282765531062125, 44.30360721442886, 44.32444889779559, 44.345290581162324, 44.36613226452906, 44.3869739478958, 44.40781563126253, 44.42865731462926, 44.449498997995995, 44.47034068136273, 44.49118236472946, 44.512024048096194, 44.53286573146293, 44.55370741482966, 44.5745490981964, 44.595390781563125, 44.616232464929865, 44.63707414829659, 44.65791583166333, 44.678757515030064, 44.6995991983968, 44.72044088176353, 44.74128256513026, 44.762124248496995, 44.78296593186373, 44.80380761523046, 44.824649298597194, 44.845490981963934, 44.86633266533066, 44.8871743486974, 44.90801603206413, 44.928857715430865, 44.9496993987976, 44.97054108216433, 44.991382765531064, 45.0122244488978, 45.03306613226453, 45.05390781563126, 45.074749498998, 45.09559118236473, 45.11643286573147, 45.1372745490982, 45.158116232464934, 45.17895791583167, 45.1997995991984, 45.22064128256513, 45.241482965931866, 45.2623246492986, 45.28316633266533, 45.304008016032064, 45.3248496993988, 45.34569138276554, 45.36653306613226, 45.387374749499, 45.408216432865736, 45.42905811623247, 45.4498997995992, 45.470741482965934, 45.49158316633267, 45.5124248496994, 45.53326653306613, 45.554108216432866, 45.574949899799606, 45.59579158316634, 45.61663326653307, 45.637474949899804, 45.65831663326654, 45.67915831663327, 45.7])
+              .range(['#fff5f0ff', '#fff5f0ff', '#fff5efff', '#fff4efff', '#fff4efff', '#fff4eeff', '#fff3eeff', '#fff3edff', '#fff3edff', '#fff2ecff', '#fff2ecff', '#fff2ebff', '#fff1ebff', '#fff1eaff', '#fff1eaff', '#fff0e9ff', '#fff0e9ff', '#fff0e8ff', '#ffefe8ff', '#ffefe7ff', '#ffefe7ff', '#ffeee6ff', '#ffeee6ff', '#ffeee5ff', '#ffede5ff', '#ffede4ff', '#ffede4ff', '#ffece3ff', '#ffece3ff', '#ffece2ff', '#ffebe2ff', '#ffebe1ff', '#ffebe1ff', '#ffeae1ff', '#ffeae0ff', '#ffeae0ff', '#ffe9dfff', '#ffe9dfff', '#ffe9deff', '#ffe8deff', '#ffe8ddff', '#ffe8ddff', '#ffe7dcff', '#ffe7dcff', '#ffe7dbff', '#ffe6dbff', '#ffe6daff', '#ffe6daff', '#ffe5d9ff', '#ffe5d9ff', '#ffe5d8ff', '#ffe4d8ff', '#ffe4d7ff', '#ffe4d7ff', '#ffe3d6ff', '#ffe3d6ff', '#ffe3d5ff', '#ffe2d5ff', '#ffe2d4ff', '#ffe2d4ff', '#ffe1d3ff', '#ffe1d3ff', '#ffe1d3ff', '#fee0d2ff', '#fedfd1ff', '#fedfd0ff', '#fedecfff', '#fedecfff', '#feddceff', '#fedccdff', '#fedcccff', '#fedbccff', '#fedbcbff', '#fedacaff', '#fed9c9ff', '#fed9c8ff', '#fed8c8ff', '#fed8c7ff', '#fed7c6ff', '#fed6c5ff', '#fed6c4ff', '#fed5c4ff', '#fed5c3ff', '#fed4c2ff', '#fed4c1ff', '#fed3c0ff', '#fed2c0ff', '#fed2bfff', '#fed1beff', '#fed1bdff', '#fed0bdff', '#fecfbcff', '#fecfbbff', '#fecebaff', '#fdceb9ff', '#fdcdb9ff', '#fdccb8ff', '#fdccb7ff', '#fdcbb6ff', '#fdcbb5ff', '#fdcab5ff', '#fdc9b4ff', '#fdc9b3ff', '#fdc8b2ff', '#fdc8b1ff', '#fdc7b1ff', '#fdc6b0ff', '#fdc6afff', '#fdc5aeff', '#fdc5aeff', '#fdc4adff', '#fdc3acff', '#fdc3abff', '#fdc2aaff', '#fdc2aaff', '#fdc1a9ff', '#fdc0a8ff', '#fdc0a7ff', '#fdbfa6ff', '#fdbfa6ff', '#fdbea5ff', '#fdbda4ff', '#fdbda3ff', '#fdbca3ff', '#fdbca2ff', '#fcbba1ff', '#fcbaa0ff', '#fcba9fff', '#fcb99fff', '#fcb89eff', '#fcb89dff', '#fcb79cff', '#fcb69cff', '#fcb69bff', '#fcb59aff', '#fcb499ff', '#fcb499ff', '#fcb398ff', '#fcb297ff', '#fcb296ff', '#fcb196ff', '#fcb195ff', '#fcb094ff', '#fcaf93ff', '#fcaf93ff', '#fcae92ff', '#fcad91ff', '#fcad90ff', '#fcac90ff', '#fcab8fff', '#fcab8eff', '#fcaa8dff', '#fca98dff', '#fca98cff', '#fca88bff', '#fca78aff', '#fca789ff', '#fca689ff', '#fca588ff', '#fca587ff', '#fca486ff', '#fca386ff', '#fca385ff', '#fca284ff', '#fca183ff', '#fca183ff', '#fca082ff', '#fc9f81ff', '#fc9f80ff', '#fc9e80ff', '#fc9d7fff', '#fc9d7eff', '#fc9c7dff', '#fc9b7dff', '#fc9b7cff', '#fc9a7bff', '#fc997aff', '#fc997aff', '#fc9879ff', '#fc9778ff', '#fc9777ff', '#fc9677ff', '#fc9576ff', '#fc9575ff', '#fc9474ff', '#fc9374ff', '#fc9373ff', '#fc9272ff', '#fc9271ff', '#fc9171ff', '#fc9070ff', '#fc906fff', '#fc8f6fff', '#fc8e6eff', '#fc8e6eff', '#fc8d6dff', '#fc8c6cff', '#fc8c6cff', '#fc8b6bff', '#fc8a6aff', '#fc8a6aff', '#fc8969ff', '#fc8868ff', '#fc8868ff', '#fc8767ff', '#fc8766ff', '#fc8666ff', '#fc8565ff', '#fc8565ff', '#fc8464ff', '#fc8363ff', '#fc8363ff', '#fc8262ff', '#fc8161ff', '#fc8161ff', '#fc8060ff', '#fc7f5fff', '#fc7f5fff', '#fc7e5eff', '#fc7e5dff', '#fc7d5dff', '#fc7c5cff', '#fc7c5bff', '#fc7b5bff', '#fc7a5aff', '#fc7a5aff', '#fc7959ff', '#fc7858ff', '#fc7858ff', '#fc7757ff', '#fc7656ff', '#fc7656ff', '#fc7555ff', '#fc7554ff', '#fc7454ff', '#fc7353ff', '#fc7352ff', '#fc7252ff', '#fc7151ff', '#fc7151ff', '#fc7050ff', '#fc6f4fff', '#fc6f4fff', '#fc6e4eff', '#fc6d4dff', '#fc6d4dff', '#fc6c4cff', '#fc6c4bff', '#fc6b4bff', '#fb6a4aff', '#fb6a4aff', '#fb6949ff', '#fb6849ff', '#fb6748ff', '#fb6748ff', '#fa6647ff', '#fa6547ff', '#fa6446ff', '#fa6346ff', '#fa6345ff', '#f96245ff', '#f96144ff', '#f96044ff', '#f96043ff', '#f95f43ff', '#f85e42ff', '#f85d42ff', '#f85d41ff', '#f85c41ff', '#f85b40ff', '#f85a40ff', '#f75a3fff', '#f7593fff', '#f7583eff', '#f7573eff', '#f7573dff', '#f6563dff', '#f6553dff', '#f6543cff', '#f6543cff', '#f6533bff', '#f5523bff', '#f5513aff', '#f5513aff', '#f55039ff', '#f54f39ff', '#f44e38ff', '#f44e38ff', '#f44d37ff', '#f44c37ff', '#f44b36ff', '#f34b36ff', '#f34a35ff', '#f34935ff', '#f34834ff', '#f34734ff', '#f34733ff', '#f24633ff', '#f24532ff', '#f24432ff', '#f24431ff', '#f24331ff', '#f14230ff', '#f14130ff', '#f1412fff', '#f1402fff', '#f13f2fff', '#f03e2eff', '#f03e2eff', '#f03d2dff', '#f03c2dff', '#f03b2cff', '#ef3b2cff', '#ef3a2bff', '#ee3a2bff', '#ee392bff', '#ed382bff', '#ec382aff', '#ec372aff', '#eb372aff', '#eb362aff', '#ea3629ff', '#ea3529ff', '#e93429ff', '#e83429ff', '#e83329ff', '#e73328ff', '#e73228ff', '#e63228ff', '#e63128ff', '#e53127ff', '#e43027ff', '#e42f27ff', '#e32f27ff', '#e32e26ff', '#e22e26ff', '#e12d26ff', '#e12d26ff', '#e02c25ff', '#e02b25ff', '#df2b25ff', '#df2a25ff', '#de2a24ff', '#dd2924ff', '#dd2924ff', '#dc2824ff', '#dc2823ff', '#db2723ff', '#db2623ff', '#da2623ff', '#d92522ff', '#d92522ff', '#d82422ff', '#d82422ff', '#d72322ff', '#d62221ff', '#d62221ff', '#d52121ff', '#d52121ff', '#d42020ff', '#d42020ff', '#d31f20ff', '#d21e20ff', '#d21e1fff', '#d11d1fff', '#d11d1fff', '#d01c1fff', '#cf1c1eff', '#cf1b1eff', '#ce1b1eff', '#ce1a1eff', '#cd191dff', '#cd191dff', '#cc181dff', '#cb181dff', '#cb171dff', '#ca171cff', '#ca171cff', '#c9171cff', '#c8171cff', '#c8171cff', '#c7171cff', '#c7161cff', '#c6161bff', '#c5161bff', '#c5161bff', '#c4161bff', '#c3161bff', '#c3161bff', '#c2151bff', '#c2151bff', '#c1151aff', '#c0151aff', '#c0151aff', '#bf151aff', '#bf151aff', '#be141aff', '#bd141aff', '#bd141aff', '#bc1419ff', '#bc1419ff', '#bb1419ff', '#ba1419ff', '#ba1319ff', '#b91319ff', '#b81319ff', '#b81319ff', '#b71318ff', '#b71318ff', '#b61318ff', '#b51218ff', '#b51218ff', '#b41218ff', '#b41218ff', '#b31217ff', '#b21217ff', '#b21217ff', '#b11117ff', '#b11117ff', '#b01117ff', '#af1117ff', '#af1117ff', '#ae1116ff', '#ad1116ff', '#ad1016ff', '#ac1016ff', '#ac1016ff', '#ab1016ff', '#aa1016ff', '#aa1016ff', '#a91015ff', '#a90f15ff', '#a80f15ff', '#a70f15ff', '#a70f15ff', '#a60f15ff', '#a60f15ff', '#a50e15ff', '#a40e14ff', '#a30e14ff', '#a20e14ff', '#a10e14ff', '#a00d14ff', '#9f0d14ff', '#9e0d14ff', '#9d0d14ff', '#9c0c13ff', '#9b0c13ff', '#9a0c13ff', '#990c13ff', '#980b13ff', '#970b13ff', '#960b13ff', '#950b12ff', '#940a12ff', '#930a12ff', '#920a12ff', '#910a12ff', '#900912ff', '#8f0912ff', '#8e0912ff', '#8d0911ff', '#8c0811ff', '#8b0811ff', '#8a0811ff', '#890811ff', '#880711ff', '#870711ff', '#860711ff', '#850710ff', '#840710ff', '#830610ff', '#820610ff', '#810610ff', '#800610ff', '#7f0510ff', '#7e0510ff', '#7d050fff', '#7c050fff', '#7b040fff', '#7a040fff', '#79040fff', '#78040fff', '#77030fff', '#76030eff', '#75030eff', '#74030eff', '#73020eff', '#72020eff', '#71020eff', '#70020eff', '#6f010eff', '#6e010dff', '#6d010dff', '#6c010dff', '#6b000dff', '#6a000dff', '#69000dff', '#68000dff', '#67000dff']);
+    
+
+    color_map_c142d7edf37f5decdf28e4208ac7029a.x = d3.scale.linear()
+              .domain([35.3, 45.7])
+              .range([0, 450 - 50]);
+
+    color_map_c142d7edf37f5decdf28e4208ac7029a.legend = L.control({position: 'topright'});
+    color_map_c142d7edf37f5decdf28e4208ac7029a.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_c142d7edf37f5decdf28e4208ac7029a.legend.addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+
+    color_map_c142d7edf37f5decdf28e4208ac7029a.xAxis = d3.svg.axis()
+        .scale(color_map_c142d7edf37f5decdf28e4208ac7029a.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([35.3, 36.599999999999994, 37.9, 39.2, 40.5, 41.8, 43.1, 44.400000000000006, 45.7]);
+
+    color_map_c142d7edf37f5decdf28e4208ac7029a.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_c142d7edf37f5decdf28e4208ac7029a.g = color_map_c142d7edf37f5decdf28e4208ac7029a.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_c142d7edf37f5decdf28e4208ac7029a.g.selectAll("rect")
+        .data(color_map_c142d7edf37f5decdf28e4208ac7029a.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_c142d7edf37f5decdf28e4208ac7029a.x(color_map_c142d7edf37f5decdf28e4208ac7029a.color.domain()[i - 1]) : color_map_c142d7edf37f5decdf28e4208ac7029a.x.range()[0],
+            x1: i < color_map_c142d7edf37f5decdf28e4208ac7029a.color.domain().length ? color_map_c142d7edf37f5decdf28e4208ac7029a.x(color_map_c142d7edf37f5decdf28e4208ac7029a.color.domain()[i]) : color_map_c142d7edf37f5decdf28e4208ac7029a.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_c142d7edf37f5decdf28e4208ac7029a.g.call(color_map_c142d7edf37f5decdf28e4208ac7029a.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("Temperature Scale (Hottest Places)");
+    
+    var color_map_740e4da1d64c970db759d6fd0deeca85 = {};
+
+    
+    color_map_740e4da1d64c970db759d6fd0deeca85.color = d3.scale.threshold()
+              .domain([-32.2, -32.17214428857716, -32.14428857715431, -32.11643286573147, -32.088577154308624, -32.06072144288577, -32.03286573146293, -32.00501002004008, -31.977154308617237, -31.949298597194392, -31.921442885771548, -31.8935871743487, -31.865731462925854, -31.83787575150301, -31.810020040080165, -31.782164328657316, -31.75430861723447, -31.726452905811627, -31.698597194388782, -31.670741482965933, -31.64288577154309, -31.615030060120244, -31.5871743486974, -31.55931863727455, -31.531462925851706, -31.50360721442886, -31.475751503006016, -31.447895791583168, -31.420040080160323, -31.392184368737478, -31.364328657314633, -31.336472945891785, -31.30861723446894, -31.280761523046095, -31.25290581162325, -31.225050100200402, -31.197194388777557, -31.169338677354713, -31.141482965931868, -31.11362725450902, -31.085771543086175, -31.05791583166333, -31.030060120240485, -31.002204408817637, -30.97434869739479, -30.946492985971947, -30.918637274549102, -30.890781563126254, -30.86292585170341, -30.835070140280564, -30.80721442885772, -30.77935871743487, -30.751503006012026, -30.72364729458918, -30.695791583166336, -30.667935871743488, -30.640080160320643, -30.6122244488978, -30.584368737474954, -30.556513026052105, -30.52865731462926, -30.500801603206416, -30.47294589178357, -30.445090180360722, -30.417234468937878, -30.389378757515033, -30.361523046092188, -30.33366733466934, -30.305811623246495, -30.27795591182365, -30.250100200400805, -30.222244488977957, -30.194388777555112, -30.166533066132267, -30.138677354709422, -30.110821643286577, -30.08296593186373, -30.055110220440884, -30.02725450901804, -29.99939879759519, -29.971543086172346, -29.9436873747495, -29.915831663326657, -29.88797595190381, -29.860120240480963, -29.83226452905812, -29.804408817635274, -29.776553106212425, -29.74869739478958, -29.720841683366736, -29.69298597194389, -29.665130260521046, -29.637274549098198, -29.609418837675353, -29.581563126252508, -29.553707414829663, -29.525851703406815, -29.49799599198397, -29.470140280561125, -29.44228456913828, -29.414428857715432, -29.386573146292587, -29.358717434869742, -29.330861723446898, -29.30300601202405, -29.275150300601204, -29.24729458917836, -29.219438877755515, -29.191583166332666, -29.16372745490982, -29.135871743486977, -29.108016032064132, -29.080160320641284, -29.05230460921844, -29.024448897795594, -28.99659318637275, -28.9687374749499, -28.940881763527056, -28.91302605210421, -28.885170340681366, -28.857314629258518, -28.829458917835673, -28.80160320641283, -28.773747494989983, -28.745891783567135, -28.71803607214429, -28.690180360721445, -28.6623246492986, -28.634468937875752, -28.606613226452907, -28.578757515030063, -28.550901803607218, -28.523046092184373, -28.495190380761525, -28.46733466933868, -28.439478957915835, -28.411623246492987, -28.38376753507014, -28.355911823647297, -28.328056112224452, -28.300200400801607, -28.27234468937876, -28.244488977955914, -28.21663326653307, -28.18877755511022, -28.160921843687376, -28.13306613226453, -28.105210420841686, -28.07735470941884, -28.049498997995993, -28.02164328657315, -27.993787575150304, -27.965931863727455, -27.93807615230461, -27.910220440881766, -27.88236472945892, -27.854509018036076, -27.82665330661323, -27.798797595190383, -27.770941883767538, -27.74308617234469, -27.715230460921845, -27.687374749499, -27.659519038076155, -27.63166332665331, -27.603807615230462, -27.575951903807617, -27.548096192384772, -27.520240480961927, -27.49238476953908, -27.464529058116234, -27.43667334669339, -27.408817635270545, -27.3809619238477, -27.35310621242485, -27.325250501002007, -27.297394789579158, -27.269539078156313, -27.24168336673347, -27.213827655310624, -27.18597194388778, -27.15811623246493, -27.130260521042086, -27.10240480961924, -27.074549098196396, -27.046693386773548, -27.018837675350703, -26.990981963927858, -26.963126252505013, -26.93527054108217, -26.90741482965932, -26.879559118236475, -26.85170340681363, -26.823847695390782, -26.795991983967937, -26.768136272545092, -26.740280561122248, -26.7124248496994, -26.684569138276554, -26.65671342685371, -26.628857715430865, -26.601002004008016, -26.57314629258517, -26.545290581162327, -26.517434869739482, -26.489579158316637, -26.46172344689379, -26.433867735470944, -26.4060120240481, -26.37815631262525, -26.350300601202406, -26.32244488977956, -26.294589178356716, -26.26673346693387, -26.238877755511023, -26.21102204408818, -26.183166332665333, -26.155310621242485, -26.12745490981964, -26.099599198396795, -26.07174348697395, -26.043887775551106, -26.016032064128257, -25.988176352705413, -25.960320641282568, -25.93246492985972, -25.904609218436875, -25.87675350701403, -25.848897795591185, -25.82104208416834, -25.79318637274549, -25.765330661322647, -25.737474949899802, -25.709619238476957, -25.68176352705411, -25.653907815631264, -25.62605210420842, -25.598196392785574, -25.570340681362726, -25.54248496993988, -25.514629258517036, -25.486773547094188, -25.458917835671343, -25.4310621242485, -25.403206412825654, -25.37535070140281, -25.34749498997996, -25.319639278557116, -25.29178356713427, -25.263927855711426, -25.236072144288578, -25.208216432865733, -25.180360721442888, -25.152505010020043, -25.1246492985972, -25.09679358717435, -25.068937875751505, -25.041082164328657, -25.013226452905812, -24.985370741482967, -24.957515030060122, -24.929659318637277, -24.90180360721443, -24.873947895791584, -24.84609218436874, -24.818236472945895, -24.790380761523046, -24.7625250501002, -24.734669338677357, -24.706813627254512, -24.678957915831667, -24.65110220440882, -24.623246492985974, -24.59539078156313, -24.56753507014028, -24.539679358717436, -24.51182364729459, -24.483967935871746, -24.4561122244489, -24.428256513026053, -24.400400801603208, -24.372545090180363, -24.344689378757515, -24.31683366733467, -24.288977955911825, -24.26112224448898, -24.233266533066136, -24.205410821643287, -24.177555110220442, -24.149699398797594, -24.12184368737475, -24.093987975951904, -24.06613226452906, -24.038276553106215, -24.01042084168337, -23.98256513026052, -23.954709418837677, -23.926853707414832, -23.898997995991984, -23.87114228456914, -23.843286573146294, -23.81543086172345, -23.787575150300604, -23.75971943887776, -23.73186372745491, -23.704008016032063, -23.676152304609218, -23.648296593186373, -23.62044088176353, -23.592585170340683, -23.56472945891784, -23.536873747494994, -23.509018036072145, -23.4811623246493, -23.453306613226456, -23.425450901803607, -23.397595190380763, -23.369739478957918, -23.341883767535073, -23.314028056112228, -23.28617234468938, -23.258316633266535, -23.230460921843687, -23.202605210420842, -23.174749498997997, -23.146893787575152, -23.119038076152307, -23.09118236472946, -23.063326653306614, -23.03547094188377, -23.00761523046092, -22.979759519038076, -22.95190380761523, -22.924048096192386, -22.89619238476954, -22.868336673346697, -22.840480961923852, -22.812625250501, -22.784769539078155, -22.75691382765531, -22.729058116232466, -22.70120240480962, -22.673346693386776, -22.64549098196393, -22.617635270541086, -22.589779559118238, -22.561923847695393, -22.534068136272545, -22.5062124248497, -22.478356713426855, -22.45050100200401, -22.422645290581166, -22.394789579158317, -22.366933867735472, -22.339078156312627, -22.31122244488978, -22.283366733466934, -22.25551102204409, -22.227655310621245, -22.1997995991984, -22.17194388777555, -22.144088176352707, -22.11623246492986, -22.088376753507013, -22.06052104208417, -22.032665330661324, -22.00480961923848, -21.976953907815634, -21.94909819639279, -21.921242484969945, -21.893386773547093, -21.865531062124248, -21.837675350701403, -21.809819639278558, -21.781963927855713, -21.75410821643287, -21.726252505010024, -21.698396793587175, -21.67054108216433, -21.642685370741486, -21.614829659318637, -21.586973947895792, -21.559118236472948, -21.531262525050103, -21.503406813627258, -21.47555110220441, -21.447695390781565, -21.419839679358716, -21.39198396793587, -21.364128256513027, -21.336272545090182, -21.308416833667337, -21.28056112224449, -21.252705410821644, -21.224849699398796, -21.19699398797595, -21.169138276553106, -21.14128256513026, -21.113426853707416, -21.08557114228457, -21.057715430861727, -21.029859719438882, -21.002004008016034, -20.974148296593185, -20.94629258517034, -20.918436873747495, -20.89058116232465, -20.862725450901806, -20.83486973947896, -20.807014028056113, -20.779158316633268, -20.751302605210423, -20.723446893787575, -20.69559118236473, -20.667735470941885, -20.63987975951904, -20.612024048096195, -20.584168336673347, -20.556312625250502, -20.528456913827654, -20.50060120240481, -20.472745490981964, -20.44488977955912, -20.417034068136275, -20.38917835671343, -20.36132264529058, -20.333466933867737, -20.305611222444888, -20.277755511022043, -20.2498997995992, -20.222044088176354, -20.19418837675351, -20.166332665330664, -20.13847695390782, -20.11062124248497, -20.082765531062126, -20.054909819639278, -20.027054108216433, -19.999198396793588, -19.971342685370743, -19.9434869739479, -19.915631262525054, -19.887775551102205, -19.85991983967936, -19.832064128256512, -19.804208416833667, -19.776352705410822, -19.748496993987978, -19.720641282565133, -19.692785571142284, -19.66492985971944, -19.637074148296595, -19.609218436873746, -19.5813627254509, -19.553507014028057, -19.525651302605212, -19.497795591182367, -19.469939879759522, -19.442084168336674, -19.414228456913825, -19.38637274549098, -19.358517034068136, -19.33066132264529, -19.302805611222446, -19.2749498997996, -19.247094188376757, -19.21923847695391, -19.191382765531063, -19.16352705410822, -19.13567134268537, -19.107815631262525, -19.07995991983968, -19.052104208416836, -19.02424849699399, -18.996392785571143, -18.968537074148298, -18.94068136272545, -18.912825651302605, -18.88496993987976, -18.857114228456915, -18.82925851703407, -18.80140280561122, -18.773547094188377, -18.745691382765532, -18.717835671342684, -18.68997995991984, -18.662124248496994, -18.63426853707415, -18.606412825651304, -18.57855711422846, -18.550701402805615, -18.522845691382763, -18.494989979959918, -18.467134268537073, -18.43927855711423, -18.411422845691384, -18.38356713426854, -18.355711422845694, -18.32785571142285, -18.3])
+              .range(['#f7fbffff', '#f7fbffff', '#f7fbffff', '#f6fbffff', '#f6faffff', '#f5faffff', '#f5faffff', '#f5faffff', '#f4f9feff', '#f4f9feff', '#f3f9feff', '#f3f9feff', '#f3f8feff', '#f2f8feff', '#f2f8feff', '#f1f8feff', '#f1f7fdff', '#f1f7fdff', '#f0f7fdff', '#f0f7fdff', '#eff6fdff', '#eff6fdff', '#eff6fdff', '#eef6fdff', '#eef5fcff', '#edf5fcff', '#edf5fcff', '#edf5fcff', '#ecf4fcff', '#ecf4fcff', '#ebf4fcff', '#ebf4fcff', '#ebf3fbff', '#eaf3fbff', '#eaf3fbff', '#e9f2fbff', '#e9f2fbff', '#e9f2fbff', '#e8f2fbff', '#e8f1faff', '#e7f1faff', '#e7f1faff', '#e7f1faff', '#e6f0faff', '#e6f0faff', '#e5f0faff', '#e5f0faff', '#e5eff9ff', '#e4eff9ff', '#e4eff9ff', '#e3eff9ff', '#e3eef9ff', '#e3eef9ff', '#e2eef9ff', '#e2eef9ff', '#e1edf8ff', '#e1edf8ff', '#e1edf8ff', '#e0edf8ff', '#e0ecf8ff', '#dfecf8ff', '#dfecf8ff', '#dfecf8ff', '#deebf7ff', '#deebf7ff', '#ddebf7ff', '#ddeaf7ff', '#ddeaf7ff', '#dceaf7ff', '#dceaf7ff', '#dbe9f6ff', '#dbe9f6ff', '#dbe9f6ff', '#dae9f6ff', '#dae8f6ff', '#d9e8f6ff', '#d9e8f6ff', '#d9e8f6ff', '#d8e7f5ff', '#d8e7f5ff', '#d8e7f5ff', '#d7e7f5ff', '#d7e6f5ff', '#d6e6f5ff', '#d6e6f5ff', '#d6e6f5ff', '#d5e5f4ff', '#d5e5f4ff', '#d4e5f4ff', '#d4e5f4ff', '#d4e4f4ff', '#d3e4f4ff', '#d3e4f4ff', '#d3e4f4ff', '#d2e3f3ff', '#d2e3f3ff', '#d1e3f3ff', '#d1e3f3ff', '#d1e2f3ff', '#d0e2f3ff', '#d0e2f3ff', '#cfe1f2ff', '#cfe1f2ff', '#cfe1f2ff', '#cee1f2ff', '#cee0f2ff', '#cee0f2ff', '#cde0f2ff', '#cde0f2ff', '#ccdff1ff', '#ccdff1ff', '#ccdff1ff', '#cbdff1ff', '#cbdef1ff', '#cadef1ff', '#cadef1ff', '#cadef1ff', '#c9ddf0ff', '#c9ddf0ff', '#c8ddf0ff', '#c8ddf0ff', '#c8dcf0ff', '#c7dcf0ff', '#c7dcf0ff', '#c7dcf0ff', '#c6dbefff', '#c5dbefff', '#c5dbefff', '#c4daefff', '#c4daeeff', '#c3daeeff', '#c2daeeff', '#c2d9eeff', '#c1d9eeff', '#c0d9edff', '#c0d9edff', '#bfd8edff', '#bed8edff', '#bed8ecff', '#bdd7ecff', '#bcd7ecff', '#bcd7ecff', '#bbd7ecff', '#bbd6ebff', '#bad6ebff', '#b9d6ebff', '#b9d6ebff', '#b8d5eaff', '#b7d5eaff', '#b7d5eaff', '#b6d4eaff', '#b5d4eaff', '#b5d4e9ff', '#b4d4e9ff', '#b3d3e9ff', '#b3d3e9ff', '#b2d3e8ff', '#b2d3e8ff', '#b1d2e8ff', '#b0d2e8ff', '#b0d2e7ff', '#afd1e7ff', '#aed1e7ff', '#aed1e7ff', '#add1e7ff', '#acd0e6ff', '#acd0e6ff', '#abd0e6ff', '#aad0e6ff', '#aacfe5ff', '#a9cfe5ff', '#a9cfe5ff', '#a8cee5ff', '#a7cee5ff', '#a7cee4ff', '#a6cee4ff', '#a5cde4ff', '#a5cde4ff', '#a4cde3ff', '#a3cde3ff', '#a3cce3ff', '#a2cce3ff', '#a1cce3ff', '#a1cbe2ff', '#a0cbe2ff', '#9fcbe2ff', '#9fcbe2ff', '#9ecae1ff', '#9dcae1ff', '#9dc9e1ff', '#9cc9e1ff', '#9bc9e1ff', '#9ac8e1ff', '#99c8e0ff', '#98c7e0ff', '#98c7e0ff', '#97c6e0ff', '#96c6e0ff', '#95c5dfff', '#94c5dfff', '#94c4dfff', '#93c4dfff', '#92c4dfff', '#91c3dfff', '#90c3deff', '#8fc2deff', '#8fc2deff', '#8ec1deff', '#8dc1deff', '#8cc0deff', '#8bc0ddff', '#8bc0ddff', '#8abfddff', '#89bfddff', '#88beddff', '#87bedcff', '#86bddcff', '#86bddcff', '#85bcdcff', '#84bcdcff', '#83bbdcff', '#82bbdbff', '#81bbdbff', '#81badbff', '#80badbff', '#7fb9dbff', '#7eb9daff', '#7db8daff', '#7db8daff', '#7cb7daff', '#7bb7daff', '#7ab7daff', '#79b6d9ff', '#78b6d9ff', '#78b5d9ff', '#77b5d9ff', '#76b4d9ff', '#75b4d9ff', '#74b3d8ff', '#74b3d8ff', '#73b2d8ff', '#72b2d8ff', '#71b2d8ff', '#70b1d7ff', '#6fb1d7ff', '#6fb0d7ff', '#6eb0d7ff', '#6dafd7ff', '#6cafd7ff', '#6baed6ff', '#6baed6ff', '#6aaed6ff', '#69add6ff', '#69add5ff', '#68acd5ff', '#67acd5ff', '#67abd5ff', '#66abd4ff', '#65aad4ff', '#65aad4ff', '#64a9d4ff', '#63a9d3ff', '#63a9d3ff', '#62a8d3ff', '#61a8d3ff', '#61a7d2ff', '#60a7d2ff', '#5fa6d2ff', '#5fa6d2ff', '#5ea5d1ff', '#5da5d1ff', '#5da4d1ff', '#5ca4d1ff', '#5ba4d0ff', '#5ba3d0ff', '#5aa3d0ff', '#59a2d0ff', '#59a2cfff', '#58a1cfff', '#57a1cfff', '#57a0ceff', '#56a0ceff', '#55a0ceff', '#559fceff', '#549fcdff', '#539ecdff', '#539ecdff', '#529dcdff', '#529dccff', '#519cccff', '#509cccff', '#509bccff', '#4f9bcbff', '#4e9bcbff', '#4e9acbff', '#4d9acbff', '#4c99caff', '#4c99caff', '#4b98caff', '#4a98caff', '#4a97c9ff', '#4997c9ff', '#4897c9ff', '#4896c9ff', '#4796c8ff', '#4695c8ff', '#4695c8ff', '#4594c8ff', '#4494c7ff', '#4493c7ff', '#4393c7ff', '#4292c7ff', '#4292c6ff', '#4191c6ff', '#4191c6ff', '#4090c5ff', '#4090c5ff', '#3f8fc5ff', '#3f8fc5ff', '#3e8ec4ff', '#3d8ec4ff', '#3d8dc4ff', '#3c8dc4ff', '#3c8cc3ff', '#3b8cc3ff', '#3b8bc3ff', '#3a8bc2ff', '#3a8ac2ff', '#398ac2ff', '#3989c2ff', '#3888c1ff', '#3888c1ff', '#3787c1ff', '#3787c0ff', '#3686c0ff', '#3586c0ff', '#3585c0ff', '#3485bfff', '#3484bfff', '#3384bfff', '#3383bfff', '#3283beff', '#3282beff', '#3182beff', '#3181bdff', '#3080bdff', '#3080bdff', '#2f7fbdff', '#2f7fbcff', '#2e7ebcff', '#2e7ebcff', '#2d7dbcff', '#2c7dbbff', '#2c7cbbff', '#2b7cbbff', '#2b7bbaff', '#2a7bbaff', '#2a7abaff', '#297abaff', '#2979b9ff', '#2879b9ff', '#2878b9ff', '#2777b9ff', '#2777b8ff', '#2676b8ff', '#2676b8ff', '#2575b7ff', '#2475b7ff', '#2474b7ff', '#2374b7ff', '#2373b6ff', '#2273b6ff', '#2272b6ff', '#2172b6ff', '#2171b5ff', '#2071b5ff', '#2070b5ff', '#2070b4ff', '#1f6fb4ff', '#1f6eb3ff', '#1e6eb3ff', '#1e6db2ff', '#1e6db2ff', '#1d6cb2ff', '#1d6cb1ff', '#1c6bb1ff', '#1c6bb0ff', '#1b6ab0ff', '#1b6ab0ff', '#1b69afff', '#1a69afff', '#1a68aeff', '#1968aeff', '#1967aeff', '#1967adff', '#1866adff', '#1866acff', '#1765acff', '#1765acff', '#1764abff', '#1664abff', '#1663aaff', '#1563aaff', '#1562aaff', '#1562a9ff', '#1461a9ff', '#1461a8ff', '#1360a8ff', '#1360a8ff', '#135fa7ff', '#125fa7ff', '#125ea6ff', '#115ea6ff', '#115da6ff', '#115ca5ff', '#105ca5ff', '#105ba4ff', '#0f5ba4ff', '#0f5aa4ff', '#0f5aa3ff', '#0e59a3ff', '#0e59a2ff', '#0d58a2ff', '#0d58a2ff', '#0d57a1ff', '#0c57a1ff', '#0c56a0ff', '#0b56a0ff', '#0b55a0ff', '#0b559fff', '#0a549fff', '#0a549eff', '#09539eff', '#09539eff', '#09529dff', '#08529dff', '#08519cff', '#08519cff', '#08509bff', '#08509aff', '#084f99ff', '#084e99ff', '#084e98ff', '#084d97ff', '#084d96ff', '#084c96ff', '#084c95ff', '#084b94ff', '#084b93ff', '#084a92ff', '#084a92ff', '#084991ff', '#084990ff', '#08488fff', '#08488eff', '#08478eff', '#08478dff', '#08468cff', '#08458bff', '#08458aff', '#08448aff', '#084489ff', '#084388ff', '#084387ff', '#084287ff', '#084286ff', '#084185ff', '#084184ff', '#084083ff', '#084083ff', '#083f82ff', '#083f81ff', '#083e80ff', '#083d7fff', '#083d7fff', '#083c7eff', '#083c7dff', '#083b7cff', '#083b7bff', '#083a7bff', '#083a7aff', '#083979ff', '#083978ff', '#083878ff', '#083877ff', '#083776ff', '#083775ff', '#083674ff', '#083674ff', '#083573ff', '#083472ff', '#083471ff', '#083370ff', '#083370ff', '#08326fff', '#08326eff', '#08316dff', '#08316cff', '#08306cff', '#08306bff']);
+    
+
+    color_map_740e4da1d64c970db759d6fd0deeca85.x = d3.scale.linear()
+              .domain([-32.2, -18.3])
+              .range([0, 450 - 50]);
+
+    color_map_740e4da1d64c970db759d6fd0deeca85.legend = L.control({position: 'topright'});
+    color_map_740e4da1d64c970db759d6fd0deeca85.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_740e4da1d64c970db759d6fd0deeca85.legend.addTo(map_17f12891a4d37341c71ae82ee2de6f08);
+
+    color_map_740e4da1d64c970db759d6fd0deeca85.xAxis = d3.svg.axis()
+        .scale(color_map_740e4da1d64c970db759d6fd0deeca85.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([-32.2, -30.462500000000002, -28.725, -26.987500000000004, -25.25, -23.512500000000003, -21.775000000000002, -20.0375, -18.3]);
+
+    color_map_740e4da1d64c970db759d6fd0deeca85.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_740e4da1d64c970db759d6fd0deeca85.g = color_map_740e4da1d64c970db759d6fd0deeca85.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_740e4da1d64c970db759d6fd0deeca85.g.selectAll("rect")
+        .data(color_map_740e4da1d64c970db759d6fd0deeca85.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_740e4da1d64c970db759d6fd0deeca85.x(color_map_740e4da1d64c970db759d6fd0deeca85.color.domain()[i - 1]) : color_map_740e4da1d64c970db759d6fd0deeca85.x.range()[0],
+            x1: i < color_map_740e4da1d64c970db759d6fd0deeca85.color.domain().length ? color_map_740e4da1d64c970db759d6fd0deeca85.x(color_map_740e4da1d64c970db759d6fd0deeca85.color.domain()[i]) : color_map_740e4da1d64c970db759d6fd0deeca85.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_740e4da1d64c970db759d6fd0deeca85.g.call(color_map_740e4da1d64c970db759d6fd0deeca85.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("Temperature Scale (Coldest Places)");
+</script>
+</html>
