@@ -1,31 +1,101 @@
 region,max_temperature,min_temperature
-Great Lakes Basin desert steppe,-21.4,-32.2
-Sayan Intermontane steppe,-18.8,-26.8
-Amur meadow steppe,-12.3,-25.4
-Western Siberian hemiboreal forests,-2.3,-25.3
-Kazakh steppe,-16.9,-24.8
-Hindu Kush alpine meadow,-21.4,-24.6
-Da Hinggan-Dzhagdy Mountains conifer forests,-12.8,-24.6
-New England-Acadian forests,-10.2,-24.5
-Gulf of St. Lawrence lowland forests,-12.2,-24.5
-Kazakh upland steppe,-11.6,-24.5
-Kazakh forest steppe,-18.0,-24.4
-Kazakh semi-desert,-14.2,-24.3
-Tian Shan montane conifer forests,-6.7,-23.0
-Eastern Canadian Forest-Boreal transition,-13.5,-23.0
-Eastern Great Lakes lowland forests,-10.5,-21.5
-Allegheny Highlands forests,-11.1,-21.4
-Manchurian mixed forests,-11.0,-21.0
-Karakoram-West Tibetan Plateau alpine steppe,-15.2,-20.9
-Pamir alpine desert and tundra,-11.8,-20.9
-Nenjiang River grassland,-11.9,-20.4
-Qilian Mountains subalpine meadows,-2.2,-20.1
-North Tibetan Plateau-Kunlun Mountains alpine desert,-10.3,-20.0
-Southern Great Lakes forests,-9.4,-19.7
-Altai alpine meadow and tundra,-12.6,-19.2
-Colorado Rockies forests,-11.1,-19.1
-Ussuri broadleaf and mixed forests,-5.4,-19.1
-Changbai Mountains mixed forests,-8.4,-19.0
-Altai montane forest and forest steppe,-7.0,-18.4
-Central US forest-grasslands transition,-2.3,-18.4
-Mongolian-Manchurian grassland,-3.2,-18.3
+Great Lakes Basin desert steppe,-24.2,-37.3
+Daurian forest steppe,-22.8,-29.9
+Sayan Intermontane steppe,-17.9,-29.7
+Qilian Mountains subalpine meadows,-11.2,-29.2
+Altai steppe and semi-desert,-20.0,-28.6
+Eastern Gobi desert steppe,-14.3,-28.1
+Junggar Basin semi-desert,-17.5,-28.1
+North Tibetan Plateau-Kunlun Mountains alpine desert,-12.7,-26.4
+Tibetan Plateau alpine shrublands and meadows,-7.4,-26.3
+Ordos Plateau steppe,-9.7,-24.7
+Altai alpine meadow and tundra,-17.8,-24.7
+Mongolian-Manchurian grassland,-18.2,-24.6
+Karakoram-West Tibetan Plateau alpine steppe,-12.2,-24.6
+Altai montane forest and forest steppe,-11.1,-24.1
+Khangai Mountains alpine meadow,-19.7,-23.6
+Central Tibetan Plateau alpine steppe,-11.7,-23.2
+Da Hinggan-Dzhagdy Mountains conifer forests,-16.1,-22.5
+Amur meadow steppe,-10.9,-22.1
+Kazakh steppe,-15.0,-21.8
+Khangai Mountains conifer forests,-17.1,-21.1
+Qaidam Basin semi-desert,-4.8,-20.8
+Hindu Kush alpine meadow,-14.0,-20.3
+Gobi Lakes Valley desert steppe,-9.5,-20.3
+Ussuri broadleaf and mixed forests,-4.2,-20.1
+Selenge-Orkhon forest steppe,-14.8,-19.9
+Sayan alpine meadows and tundra,-16.7,-19.8
+Southeast Tibet shrublands and meadows,-4.6,-19.7
+Taklimakan desert,-0.1,-19.7
+Sayan montane conifer forests,-11.8,-19.2
+Kazakh semi-desert,-10.1,-19.2
+Helanshan montane conifer forests,-13.9,-19.2
+Alashan Plateau semi-desert,-4.6,-19.1
+Kazakh forest steppe,-13.5,-18.9
+Kazakh upland steppe,-6.1,-18.4
+Pamir alpine desert and tundra,-8.3,-18.4
+South Siberian forest steppe,-11.8,-18.1
+Western Himalayan subalpine conifer forests,-5.3,-17.1
+Western Siberian hemiboreal forests,-12.1,-16.8
+Nenjiang River grassland,-12.2,-16.3
+Tarim Basin deciduous forests and steppe,1.0,-16.2
+Snake-Columbia shrub steppe,-5.1,-16.0
+Manchurian mixed forests,-9.1,-15.9
+Montana Valley and Foothill grasslands,-7.5,-15.8
+Wyoming Basin shrub steppe,0.1,-15.8
+Qilian Mountains conifer forests,-6.3,-15.7
+Suiphun-Khanka meadows and forest meadows,-7.4,-15.2
+Great Basin montane forests,-4.0,-14.6
+Tian Shan montane conifer forests,-8.4,-14.3
+Colorado Rockies forests,-3.7,-13.7
+Hengduan Mountains subalpine conifer forests,-4.4,-13.6
+Central Asian northern desert,-3.4,-13.5
+Changbai Mountains mixed forests,-0.5,-13.4
+Northeast China Plain deciduous forests,-8.4,-13.1
+Emin Valley steppe,-4.8,-12.5
+Central China Loess Plateau mixed forests,-6.0,-12.2
+New England-Acadian forests,-0.7,-12.1
+Nujiang Langcang Gorge alpine conifer and mixed forests,-4.6,-12.0
+Gulf of St. Lawrence lowland forests,-1.9,-11.9
+Eastern Cascades forests,0.4,-11.8
+Nebraska Sand Hills mixed grasslands,10.7,-11.7
+Eastern Himalayan alpine shrub and meadows,-3.1,-11.4
+Yarlung Zanbo arid steppe,8.5,-11.1
+Wasatch and Uinta montane forests,4.0,-11.0
+South Central Rockies forests,-0.8,-10.9
+Central Asian riparian woodlands,-2.4,-10.8
+Northwestern Himalayan alpine shrub and meadows,-3.3,-10.8
+Eastern Canadian Forest-Boreal transition,-2.5,-10.5
+Colorado Plateau shrublands,7.6,-10.4
+Northern Rockies conifer forests,0.4,-10.3
+Hokkaido montane conifer forests,-7.1,-10.2
+Great Basin shrub steppe,3.0,-9.9
+Eastern Anatolian montane steppe,-4.2,-9.9
+Central US forest-grasslands transition,5.2,-9.4
+Central British Columbia Mountain forests,-2.7,-9.2
+Blue Mountains forests,1.5,-9.1
+Qionglai-Minshan conifer forests,-1.7,-9.1
+Zagros Mountains forest steppe,-4.1,-9.0
+Southern Great Lakes forests,2.6,-8.7
+Western Himalayan alpine shrub and meadows,1.7,-8.7
+Alps conifer and mixed forests,-4.8,-8.6
+Western shortgrass prairie,14.2,-8.5
+Central Tallgrass prairie,9.2,-8.2
+Allegheny Highlands forests,1.3,-8.2
+Tian Shan montane steppe and meadows,-2.7,-7.8
+Flint Hills tallgrass prairie,8.0,-7.8
+Palouse prairie,4.7,-7.7
+Ozark Highlands mixed forests,7.4,-7.5
+Huang He Plain mixed forests,2.0,-7.2
+Central-Southern US mixed grasslands,10.9,-7.0
+Northeast Himalayan subalpine conifer forests,10.4,-7.0
+Qin Ling Mountains deciduous forests,1.8,-6.9
+Canadian Aspen forests and parklands,-1.9,-6.8
+Northern Shortgrass prairie,4.5,-6.6
+Okanogan dry forests,1.3,-6.5
+Pyrenees conifer and mixed forests,1.9,-6.4
+Sierra Nevada forests,2.2,-6.4
+Jian Nan subtropical evergreen forests,5.6,-6.3
+Hokkaido deciduous forests,-2.9,-6.1
+Willamette Valley oak savanna,9.8,-6.1
+Upper Midwest US forest-savanna transition,0.6,-5.9
