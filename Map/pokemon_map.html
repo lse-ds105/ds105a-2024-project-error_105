@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0494a4e97c6074ccf760de98aac95f5e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0494a4e97c6074ccf760de98aac95f5e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0494a4e97c6074ccf760de98aac95f5e = L.map(
+                "map_0494a4e97c6074ccf760de98aac95f5e",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_60522ef070198c4a393e1524eeed141f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_60522ef070198c4a393e1524eeed141f.addTo(map_0494a4e97c6074ccf760de98aac95f5e);
+        
+    
+            var feature_group_1ee0f2d621c9cc76bffda149967f3b4e = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_590f9c819348d49057fec17c21b00c34 = L.marker(
+                [19.4219, -155.2872],
+                {
+}
+            ).addTo(feature_group_1ee0f2d621c9cc76bffda149967f3b4e);
+        
+    
+        var custom_icon_f25f2f0393bed0141e5944fa1aaa9c54 = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+  "iconSize": [80, 80],
+});
+        marker_590f9c819348d49057fec17c21b00c34.setIcon(custom_icon_f25f2f0393bed0141e5944fa1aaa9c54);
+        
+    
+        var popup_36ccc277ce26fb80731300ec136c8bb3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ead2f3772e8732cdcff70e8fb01b6572 = $(`<div id="html_ead2f3772e8732cdcff70e8fb01b6572" style="width: 100.0%; height: 100.0%;">A fire-type Pokémon.</div>`)[0];
+                popup_36ccc277ce26fb80731300ec136c8bb3.setContent(html_ead2f3772e8732cdcff70e8fb01b6572);
+            
+        
+
+        marker_590f9c819348d49057fec17c21b00c34.bindPopup(popup_36ccc277ce26fb80731300ec136c8bb3)
+        ;
+
+        
+    
+    
+            var marker_1b12c263d41c2e40f2e10b94f30735ff = L.marker(
+                [-82.8628, 135.0],
+                {
+}
+            ).addTo(feature_group_1ee0f2d621c9cc76bffda149967f3b4e);
+        
+    
+        var custom_icon_f11ff920e608b2f8554f8025aaad03c7 = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+  "iconSize": [80, 80],
+});
+        marker_1b12c263d41c2e40f2e10b94f30735ff.setIcon(custom_icon_f11ff920e608b2f8554f8025aaad03c7);
+        
+    
+        var popup_75b268eab0141994f48a54d15be3a26b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_98a6859d0710982568485c2699e14df5 = $(`<div id="html_98a6859d0710982568485c2699e14df5" style="width: 100.0%; height: 100.0%;">A grass-type Pokémon.</div>`)[0];
+                popup_75b268eab0141994f48a54d15be3a26b.setContent(html_98a6859d0710982568485c2699e14df5);
+            
+        
+
+        marker_1b12c263d41c2e40f2e10b94f30735ff.bindPopup(popup_75b268eab0141994f48a54d15be3a26b)
+        ;
+
+        
+    
+    
+            var marker_c049bd5d37dcbd3c350a0b335eec690b = L.marker(
+                [-25.2744, 133.7751],
+                {
+}
+            ).addTo(feature_group_1ee0f2d621c9cc76bffda149967f3b4e);
+        
+    
+        var custom_icon_3d78962cc20984505e83bab0f54bc783 = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
+  "iconSize": [80, 80],
+});
+        marker_c049bd5d37dcbd3c350a0b335eec690b.setIcon(custom_icon_3d78962cc20984505e83bab0f54bc783);
+        
+    
+        var popup_149d11141a362ed07fd3765671f164f5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f7a8a803e36aa3cab0947a5a494999bb = $(`<div id="html_f7a8a803e36aa3cab0947a5a494999bb" style="width: 100.0%; height: 100.0%;">A water-type Pokémon.</div>`)[0];
+                popup_149d11141a362ed07fd3765671f164f5.setContent(html_f7a8a803e36aa3cab0947a5a494999bb);
+            
+        
+
+        marker_c049bd5d37dcbd3c350a0b335eec690b.bindPopup(popup_149d11141a362ed07fd3765671f164f5)
+        ;
+
+        
+    
+    
+            feature_group_1ee0f2d621c9cc76bffda149967f3b4e.addTo(map_0494a4e97c6074ccf760de98aac95f5e);
+        
+    
+            var feature_group_6ae5ae251e158c1d3ee21425c8f247bd = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_d1dd8ec10d48af7bb1c8204193ca2e1b = L.marker(
+                [64.2008, -149.4937],
+                {
+}
+            ).addTo(feature_group_6ae5ae251e158c1d3ee21425c8f247bd);
+        
+    
+        var custom_icon_092486941ee1b5518a8707f470352eb7 = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png",
+  "iconSize": [80, 80],
+});
+        marker_d1dd8ec10d48af7bb1c8204193ca2e1b.setIcon(custom_icon_092486941ee1b5518a8707f470352eb7);
+        
+    
+        var popup_e4869c34a8382d5f52375123482f18cb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b8066490b5f2dd534d405512d5e531a3 = $(`<div id="html_b8066490b5f2dd534d405512d5e531a3" style="width: 100.0%; height: 100.0%;">An ice-type Legendary Pokémon.</div>`)[0];
+                popup_e4869c34a8382d5f52375123482f18cb.setContent(html_b8066490b5f2dd534d405512d5e531a3);
+            
+        
+
+        marker_d1dd8ec10d48af7bb1c8204193ca2e1b.bindPopup(popup_e4869c34a8382d5f52375123482f18cb)
+        ;
+
+        
+    
+    
+            var marker_c9498dc6f41f0e6ffc64265c7e37b8eb = L.marker(
+                [64.9631, -19.0208],
+                {
+}
+            ).addTo(feature_group_6ae5ae251e158c1d3ee21425c8f247bd);
+        
+    
+        var custom_icon_91b0c9d29183d5c4e150c6b64680f778 = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
+  "iconSize": [80, 80],
+});
+        marker_c9498dc6f41f0e6ffc64265c7e37b8eb.setIcon(custom_icon_91b0c9d29183d5c4e150c6b64680f778);
+        
+    
+        var popup_288b0c3526d69ea15e00a0daee74f2ed = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bab959454e62ca98a381bf45258afd01 = $(`<div id="html_bab959454e62ca98a381bf45258afd01" style="width: 100.0%; height: 100.0%;">An ice and psychic-type Pokémon.</div>`)[0];
+                popup_288b0c3526d69ea15e00a0daee74f2ed.setContent(html_bab959454e62ca98a381bf45258afd01);
+            
+        
+
+        marker_c9498dc6f41f0e6ffc64265c7e37b8eb.bindPopup(popup_288b0c3526d69ea15e00a0daee74f2ed)
+        ;
+
+        
+    
+    
+            feature_group_6ae5ae251e158c1d3ee21425c8f247bd.addTo(map_0494a4e97c6074ccf760de98aac95f5e);
+        
+    
+            var layer_control_54c14068d7570948647dc12e15ee6df6_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_60522ef070198c4a393e1524eeed141f,
+                },
+                overlays :  {
+                    "Fire Pok\u00e9mon" : feature_group_1ee0f2d621c9cc76bffda149967f3b4e,
+                    "Ice Pok\u00e9mon" : feature_group_6ae5ae251e158c1d3ee21425c8f247bd,
+                },
+            };
+            let layer_control_54c14068d7570948647dc12e15ee6df6 = L.control.layers(
+                layer_control_54c14068d7570948647dc12e15ee6df6_layers.base_layers,
+                layer_control_54c14068d7570948647dc12e15ee6df6_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_0494a4e97c6074ccf760de98aac95f5e);
+
+        
+</script>
+</html>
