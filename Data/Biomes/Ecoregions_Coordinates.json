@@ -1,0 +1,5106 @@
+{
+    "Mangroves": {
+        "Central African mangroves": {
+            "centroid": [
+                3.4071927434031792,
+                7.127127382611599
+            ]
+        },
+        "Myanmar Coast mangroves": {
+            "centroid": [
+                14.978442780159757,
+                96.05778091800249
+            ]
+        },
+        "Sunda Shelf mangroves": {
+            "centroid": [
+                0.8421284853282557,
+                110.58945023391861
+            ]
+        },
+        "Southern Atlantic Brazilian mangroves": {
+            "centroid": [
+                -16.508762796629536,
+                -40.4634704156108
+            ]
+        },
+        "East African mangroves": {
+            "centroid": [
+                -5.050021286966242,
+                40.238749434426296
+            ]
+        },
+        "Guinean mangroves": {
+            "centroid": [
+                10.203302413588933,
+                -14.010243609697229
+            ]
+        },
+        "Southern Africa mangroves": {
+            "centroid": [
+                -28.837217509950623,
+                31.69035634633759
+            ]
+        },
+        "Sundarbans mangroves": {
+            "centroid": [
+                22.19376705523311,
+                89.69290025152588
+            ]
+        },
+        "Madagascar mangroves": {
+            "centroid": [
+                -17.12637725109567,
+                45.22245472059953
+            ]
+        },
+        "Indochina mangroves": {
+            "centroid": [
+                10.742780465441935,
+                104.25354495837321
+            ]
+        },
+        "Mesoamerican Gulf-Caribbean mangroves": {
+            "centroid": [
+                18.187877345545356,
+                -88.97369779758078
+            ]
+        },
+        "Southern Mesoamerican Pacific mangroves": {
+            "centroid": [
+                12.618559129504519,
+                -88.23353138944582
+            ]
+        },
+        "Red Sea mangroves": {
+            "centroid": [
+                11.522241981011922,
+                45.750150548136205
+            ]
+        },
+        "New Guinea mangroves": {
+            "centroid": [
+                -5.090901544084203,
+                138.0533243050718
+            ]
+        },
+        "Indus River Delta-Arabian Sea mangroves": {
+            "centroid": [
+                23.366126856881817,
+                68.85387390695152
+            ]
+        },
+        "Northern Mesoamerican Pacific mangroves": {
+            "centroid": [
+                23.381354785106144,
+                -107.07734005282454
+            ]
+        },
+        "Amazon-Orinoco-Southern Caribbean mangroves": {
+            "centroid": [
+                4.5670410881669845,
+                -55.96170120910551
+            ]
+        },
+        "Bahamian-Antillean mangroves": {
+            "centroid": [
+                22.80983938259796,
+                -77.74409966963354
+            ]
+        },
+        "South American Pacific mangroves": {
+            "centroid": [
+                1.9967340596103078,
+                -78.93348424314402
+            ]
+        }
+    },
+    "Temperate Conifer Forests": {
+        "Eastern Himalayan subalpine conifer forests": {
+            "centroid": [
+                27.948129392227326,
+                91.20134878345878
+            ]
+        },
+        "Helanshan montane conifer forests": {
+            "centroid": [
+                38.617963544595284,
+                105.86100349816759
+            ]
+        },
+        "Hengduan Mountains subalpine conifer forests": {
+            "centroid": [
+                29.194900820558537,
+                100.27070572591626
+            ]
+        },
+        "Mediterranean conifer and mixed forests": {
+            "centroid": [
+                35.395588965671976,
+                0.9022264495101009
+            ]
+        },
+        "Northeast Himalayan subalpine conifer forests": {
+            "centroid": [
+                29.46980439531501,
+                94.68759622678401
+            ]
+        },
+        "Nujiang Langcang Gorge alpine conifer and mixed forests": {
+            "centroid": [
+                29.070190792035778,
+                97.74017818214652
+            ]
+        },
+        "Qilian Mountains conifer forests": {
+            "centroid": [
+                35.51530788180018,
+                102.42011982829176
+            ]
+        },
+        "Qionglai-Minshan conifer forests": {
+            "centroid": [
+                30.564240229431032,
+                102.99025070937863
+            ]
+        },
+        "Tian Shan montane conifer forests": {
+            "centroid": [
+                43.1498041178344,
+                80.3730446960803
+            ]
+        },
+        "Queen Charlotte Islands conifer forests": {
+            "centroid": [
+                53.35779443979469,
+                -132.19225545127418
+            ]
+        },
+        "Northern Pacific Alaskan coastal forests": {
+            "centroid": [
+                57.67376893958692,
+                -136.59737320997158
+            ]
+        },
+        "Alberta-British Columbia foothills forests": {
+            "centroid": [
+                55.051769316093235,
+                -117.91483856398307
+            ]
+        },
+        "British Columbia coastal conifer forests": {
+            "centroid": [
+                52.33073207262343,
+                -126.29059074470733
+            ]
+        },
+        "Central-Southern Cascades Forests": {
+            "centroid": [
+                43.91835113935016,
+                -122.02894891124818
+            ]
+        },
+        "Central British Columbia Mountain forests": {
+            "centroid": [
+                55.418198386059316,
+                -124.69320698671056
+            ]
+        },
+        "Central Pacific Northwest coastal forests": {
+            "centroid": [
+                48.263216894416786,
+                -125.40740828984282
+            ]
+        },
+        "Great Basin montane forests": {
+            "centroid": [
+                39.15191787708615,
+                -116.46888428495821
+            ]
+        },
+        "Klamath-Siskiyou forests": {
+            "centroid": [
+                41.36514597815255,
+                -123.19883470101941
+            ]
+        },
+        "Sierra Nevada forests": {
+            "centroid": [
+                37.97437445567398,
+                -119.64165048860815
+            ]
+        },
+        "North Cascades conifer forests": {
+            "centroid": [
+                48.42370636500678,
+                -120.92264049365122
+            ]
+        },
+        "Northern Rockies conifer forests": {
+            "centroid": [
+                50.239084013386766,
+                -117.07086989743935
+            ]
+        },
+        "Alps conifer and mixed forests": {
+            "centroid": [
+                46.440971052187635,
+                10.536008563429432
+            ]
+        },
+        "Carpathian montane forests": {
+            "centroid": [
+                47.9517199533154,
+                23.32573348263859
+            ]
+        },
+        "Hokkaido montane conifer forests": {
+            "centroid": [
+                43.6020154549334,
+                143.06254586437893
+            ]
+        },
+        "Honshu alpine conifer forests": {
+            "centroid": [
+                38.15811409958638,
+                139.3278868485156
+            ]
+        },
+        "Sayan montane conifer forests": {
+            "centroid": [
+                52.585045034577874,
+                94.79248488810371
+            ]
+        },
+        "Blue Mountains forests": {
+            "centroid": [
+                44.81202540606686,
+                -118.61837452315152
+            ]
+        },
+        "Colorado Rockies forests": {
+            "centroid": [
+                38.74998652254176,
+                -106.3821030334288
+            ]
+        },
+        "Fraser Plateau and Basin conifer forests": {
+            "centroid": [
+                52.71446500158669,
+                -124.21539287422533
+            ]
+        },
+        "Okanogan dry forests": {
+            "centroid": [
+                50.37081524314767,
+                -120.53337750504377
+            ]
+        },
+        "Piney Woods": {
+            "centroid": [
+                32.24481312202093,
+                -93.817538769019
+            ]
+        },
+        "South Central Rockies forests": {
+            "centroid": [
+                44.77761546148722,
+                -111.80470495668534
+            ]
+        },
+        "Wasatch and Uinta montane forests": {
+            "centroid": [
+                39.72944625672519,
+                -111.53362457831643
+            ]
+        },
+        "Altai montane forest and forest steppe": {
+            "centroid": [
+                48.2471191929791,
+                90.33452652098191
+            ]
+        },
+        "Da Hinggan-Dzhagdy Mountains conifer forests": {
+            "centroid": [
+                51.90267857565003,
+                123.89502016424365
+            ]
+        },
+        "Khangai Mountains conifer forests": {
+            "centroid": [
+                48.41172432489166,
+                98.75888677690197
+            ]
+        },
+        "Scandinavian coastal conifer forests": {
+            "centroid": [
+                63.015971642967,
+                8.442602322757795
+            ]
+        },
+        "Western Himalayan subalpine conifer forests": {
+            "centroid": [
+                32.36178384712138,
+                76.73966453497066
+            ]
+        },
+        "Arizona Mountains forests": {
+            "centroid": [
+                34.23649697716106,
+                -109.5854740182425
+            ]
+        },
+        "Eastern Cascades forests": {
+            "centroid": [
+                43.04707492415838,
+                -121.19066526238171
+            ]
+        },
+        "Northern California coastal forests": {
+            "centroid": [
+                39.64670356764431,
+                -123.53864100765831
+            ]
+        },
+        "Puget lowland forests": {
+            "centroid": [
+                48.52791323189751,
+                -123.47995423136172
+            ]
+        },
+        "Caledon conifer forests": {
+            "centroid": [
+                57.17576490614072,
+                -4.204720196124588
+            ]
+        },
+        "East Afghan montane conifer forests": {
+            "centroid": [
+                32.48210672431246,
+                68.68251847228957
+            ]
+        },
+        "Elburz Range forest steppe": {
+            "centroid": [
+                36.899527588022764,
+                52.53814917310423
+            ]
+        },
+        "Northern Anatolian conifer and deciduous forests": {
+            "centroid": [
+                40.454558456401976,
+                35.40216748177011
+            ]
+        },
+        "Atlantic coastal pine barrens": {
+            "centroid": [
+                40.244041741537536,
+                -73.80197162320269
+            ]
+        }
+    },
+    "Deserts & Xeric Shrublands": {
+        "Aldabra Island xeric scrub": {
+            "centroid": [
+                -9.398419302315117,
+                46.367424031506275
+            ]
+        },
+        "Kaokoveld desert": {
+            "centroid": [
+                -17.99194767464668,
+                12.51238454598164
+            ]
+        },
+        "Namib Desert": {
+            "centroid": [
+                -23.969382359797514,
+                15.089411489311775
+            ]
+        },
+        "Gibson desert": {
+            "centroid": [
+                -24.346783457900017,
+                125.9615630433902
+            ]
+        },
+        "Gariep Karoo": {
+            "centroid": [
+                -27.684985063322777,
+                19.069746408898773
+            ]
+        },
+        "Kalahari xeric savanna": {
+            "centroid": [
+                -24.007107266769154,
+                21.79560803186934
+            ]
+        },
+        "Namaqualand-Richtersveld steppe": {
+            "centroid": [
+                -29.08146960348417,
+                17.12244157098439
+            ]
+        },
+        "Succulent Karoo xeric shrublands": {
+            "centroid": [
+                -32.11996673226097,
+                20.149744237774268
+            ]
+        },
+        "Carnarvon xeric shrublands": {
+            "centroid": [
+                -24.312841515918684,
+                114.56948736404121
+            ]
+        },
+        "Nullarbor Plains xeric shrublands": {
+            "centroid": [
+                -30.724617662604217,
+                127.76321092751057
+            ]
+        },
+        "Pilbara shrublands": {
+            "centroid": [
+                -21.91496622586279,
+                118.54794989286708
+            ]
+        },
+        "Western Australian Mulga shrublands": {
+            "centroid": [
+                -26.602173315109763,
+                119.20522480258802
+            ]
+        },
+        "Alashan Plateau semi-desert": {
+            "centroid": [
+                41.4903679055043,
+                101.58902257487601
+            ]
+        },
+        "Saharan Atlantic coastal desert": {
+            "centroid": [
+                22.1457302982323,
+                -15.736171597795659
+            ]
+        },
+        "East Sahara Desert": {
+            "centroid": [
+                24.971235918842467,
+                21.612564387067028
+            ]
+        },
+        "East Saharan montane xeric woodlands": {
+            "centroid": [
+                16.482559048111753,
+                22.945570712409523
+            ]
+        },
+        "Eastern Gobi desert steppe": {
+            "centroid": [
+                43.89011514616268,
+                108.9505789556111
+            ]
+        },
+        "Gobi Lakes Valley desert steppe": {
+            "centroid": [
+                45.42690150272366,
+                100.33645863824195
+            ]
+        },
+        "North Arabian highland shrublands": {
+            "centroid": [
+                27.07396969131408,
+                41.476465641825264
+            ]
+        },
+        "North Saharan Xeric Steppe and Woodland": {
+            "centroid": [
+                30.149349739998573,
+                9.624353493361301
+            ]
+        },
+        "Qaidam Basin semi-desert": {
+            "centroid": [
+                37.7198618952003,
+                93.7216534579662
+            ]
+        },
+        "Red Sea coastal desert": {
+            "centroid": [
+                24.619709651445486,
+                34.88584328314927
+            ]
+        },
+        "South Sahara desert": {
+            "centroid": [
+                21.969592324105562,
+                8.266228705169274
+            ]
+        },
+        "Tibesti-Jebel Uweinat montane xeric woodlands": {
+            "centroid": [
+                21.104914250702222,
+                17.98526945133528
+            ]
+        },
+        "West Sahara desert": {
+            "centroid": [
+                28.531243423610576,
+                1.4512414810432908
+            ]
+        },
+        "West Saharan montane xeric woodlands": {
+            "centroid": [
+                23.358901972071614,
+                5.915648721754667
+            ]
+        },
+        "Djibouti xeric shrublands": {
+            "centroid": [
+                11.957972995856625,
+                40.955787286664275
+            ]
+        },
+        "Eritrean coastal desert": {
+            "centroid": [
+                12.835593790764957,
+                42.780801858051205
+            ]
+        },
+        "Nama Karoo shrublands": {
+            "centroid": [
+                -31.301682215166657,
+                23.417331843097962
+            ]
+        },
+        "Namibian savanna woodlands": {
+            "centroid": [
+                -19.186103198556413,
+                14.18097337484862
+            ]
+        },
+        "Taklimakan desert": {
+            "centroid": [
+                40.088064589525416,
+                85.19662949638935
+            ]
+        },
+        "Madagascar spiny thickets": {
+            "centroid": [
+                -24.30940849650602,
+                44.84699743938646
+            ]
+        },
+        "Madagascar succulent woodlands": {
+            "centroid": [
+                -22.482686979036902,
+                44.80820084278345
+            ]
+        },
+        "Ile Europa and Bassas da India xeric scrub": {
+            "centroid": [
+                -22.339100403389928,
+                40.35486010388393
+            ]
+        },
+        "St. Peter and St. Paul Rocks": {
+            "centroid": [
+                0.912051325028964,
+                -29.30960260963978
+            ]
+        },
+        "Indus Valley desert": {
+            "centroid": [
+                31.26910812266646,
+                71.50586393129284
+            ]
+        },
+        "Baja California desert": {
+            "centroid": [
+                27.80222137682829,
+                -113.54278958946416
+            ]
+        },
+        "Gulf of California xeric scrub": {
+            "centroid": [
+                26.61389758721158,
+                -111.99717015405662
+            ]
+        },
+        "Central Ranges xeric scrub": {
+            "centroid": [
+                -24.552719781451856,
+                131.97898513917
+            ]
+        },
+        "Great Sandy-Tanami desert": {
+            "centroid": [
+                -21.445277382079958,
+                128.10212220349948
+            ]
+        },
+        "Great Victoria desert": {
+            "centroid": [
+                -28.471209211599504,
+                128.56236878166
+            ]
+        },
+        "Simpson desert": {
+            "centroid": [
+                -26.274999496625536,
+                139.3852693573042
+            ]
+        },
+        "Tirari-Sturt stony desert": {
+            "centroid": [
+                -30.084685424532964,
+                136.99678420245053
+            ]
+        },
+        "Chihuahuan desert": {
+            "centroid": [
+                29.629729634199084,
+                -105.17270817948474
+            ]
+        },
+        "Colorado Plateau shrublands": {
+            "centroid": [
+                37.04973037004232,
+                -109.62150456519393
+            ]
+        },
+        "Great Basin shrub steppe": {
+            "centroid": [
+                39.50296899486083,
+                -115.80539567510893
+            ]
+        },
+        "Mojave desert": {
+            "centroid": [
+                35.69724904818952,
+                -115.90611996674734
+            ]
+        },
+        "Snake-Columbia shrub steppe": {
+            "centroid": [
+                42.68980755454539,
+                -116.40050293625781
+            ]
+        },
+        "Sonoran desert": {
+            "centroid": [
+                31.902993254690216,
+                -112.96414070932205
+            ]
+        },
+        "Wyoming Basin shrub steppe": {
+            "centroid": [
+                42.42654494335129,
+                -108.39440317449333
+            ]
+        },
+        "Arabian sand desert": {
+            "centroid": [
+                21.8751985869774,
+                49.32541408447739
+            ]
+        },
+        "Central Asian northern desert": {
+            "centroid": [
+                45.032131936349025,
+                65.59864390438192
+            ]
+        },
+        "Central Persian desert basins": {
+            "centroid": [
+                33.46581237741169,
+                56.03722297069005
+            ]
+        },
+        "East Arabian fog shrublands and sand desert": {
+            "centroid": [
+                21.113518457222618,
+                58.36269489405308
+            ]
+        },
+        "Kazakh semi-desert": {
+            "centroid": [
+                48.437316722553035,
+                65.83622174369957
+            ]
+        },
+        "Kopet Dag semi-desert": {
+            "centroid": [
+                38.320068425164,
+                55.44897173759492
+            ]
+        },
+        "North Arabian desert": {
+            "centroid": [
+                30.575942609098476,
+                41.29072693745719
+            ]
+        },
+        "Red Sea-Arabian Desert shrublands": {
+            "centroid": [
+                23.127351446435956,
+                40.07020742746153
+            ]
+        },
+        "Arabian-Persian Gulf coastal plain desert": {
+            "centroid": [
+                25.283576465750176,
+                50.69676798426149
+            ]
+        },
+        "South Arabian plains and plateau desert": {
+            "centroid": [
+                18.353718216488442,
+                52.95645875480313
+            ]
+        },
+        "Arabian desert": {
+            "centroid": [
+                24.254906537865015,
+                44.13769963624371
+            ]
+        },
+        "Southwest Arabian Escarpment shrublands and woodlands": {
+            "centroid": [
+                17.476540737908614,
+                42.78018114812938
+            ]
+        },
+        "Tamaulipan mezquital": {
+            "centroid": [
+                27.49044270926785,
+                -99.68695592674543
+            ]
+        },
+        "San Lucan xeric scrub": {
+            "centroid": [
+                23.597412000094426,
+                -109.94502455277767
+            ]
+        },
+        "Caspian lowland desert": {
+            "centroid": [
+                46.24941589417866,
+                50.041097529958165
+            ]
+        },
+        "Central Asian riparian woodlands": {
+            "centroid": [
+                43.59357597291787,
+                64.40244197914551
+            ]
+        },
+        "Great Lakes Basin desert steppe": {
+            "centroid": [
+                48.74113799466631,
+                93.68490097157742
+            ]
+        },
+        "Junggar Basin semi-desert": {
+            "centroid": [
+                45.66598582938039,
+                88.87268742064339
+            ]
+        },
+        "Mesopotamian shrub desert": {
+            "centroid": [
+                33.952323929647136,
+                40.997166530778166
+            ]
+        },
+        "Registan-North Pakistan sandy desert": {
+            "centroid": [
+                30.301564690674738,
+                63.1529636651371
+            ]
+        },
+        "South Iran Nubo-Sindian desert and semi-desert": {
+            "centroid": [
+                27.74477098861066,
+                57.4724221373005
+            ]
+        },
+        "Socotra Island xeric shrublands": {
+            "centroid": [
+                12.492621680648808,
+                53.79973072131544
+            ]
+        },
+        "Hobyo grasslands and shrublands": {
+            "centroid": [
+                4.54720484364198,
+                47.713090154143245
+            ]
+        },
+        "Somali montane xeric woodlands": {
+            "centroid": [
+                10.374865110409496,
+                49.279266289878095
+            ]
+        },
+        "Southwest Arabian highland xeric scrub": {
+            "centroid": [
+                15.539310252735431,
+                44.442544092782185
+            ]
+        },
+        "Southwest Arabian coastal xeric shrublands": {
+            "centroid": [
+                14.718013982556451,
+                44.7057129342593
+            ]
+        },
+        "Deccan thorn scrub forests": {
+            "centroid": [
+                15.8791511214753,
+                76.83625957932549
+            ]
+        },
+        "Godavari-Krishna mangroves": {
+            "centroid": [
+                16.444147389872178,
+                82.29680241598902
+            ]
+        },
+        "Aravalli west thorn scrub forests": {
+            "centroid": [
+                27.770847835171136,
+                71.8272049010368
+            ]
+        },
+        "Thar desert": {
+            "centroid": [
+                27.316973281733635,
+                71.93236064217403
+            ]
+        },
+        "Central Mexican matorral": {
+            "centroid": [
+                21.416954692854166,
+                -101.20213436244137
+            ]
+        },
+        "Meseta Central matorral": {
+            "centroid": [
+                23.7369779845752,
+                -101.83155728323443
+            ]
+        },
+        "Tamaulipan matorral": {
+            "centroid": [
+                25.084129247878234,
+                -99.4951534001837
+            ]
+        },
+        "Motagua Valley thornscrub": {
+            "centroid": [
+                14.979051388272733,
+                -89.70809447911024
+            ]
+        },
+        "Tehuac\u00e1n Valley matorral": {
+            "centroid": [
+                18.820775928651887,
+                -97.60937983309837
+            ]
+        },
+        "Afghan Mountains semi-desert": {
+            "centroid": [
+                35.280172046515005,
+                67.532907389685
+            ]
+        },
+        "Azerbaijan shrub desert and steppe": {
+            "centroid": [
+                40.354096925102795,
+                47.67048170932865
+            ]
+        },
+        "Badghyz and Karabil semi-desert": {
+            "centroid": [
+                36.63825152334975,
+                64.55145706609048
+            ]
+        },
+        "Baluchistan xeric woodlands": {
+            "centroid": [
+                30.034927530758115,
+                68.11247194744544
+            ]
+        },
+        "Central Afghan Mountains xeric woodlands": {
+            "centroid": [
+                33.23532477259672,
+                65.75092737628566
+            ]
+        },
+        "Central Asian southern desert": {
+            "centroid": [
+                40.58922914386785,
+                60.844848218550624
+            ]
+        },
+        "Paropamisus xeric woodlands": {
+            "centroid": [
+                36.00686276001466,
+                67.20147005606496
+            ]
+        },
+        "Gal\u00e1pagos Islands xeric scrub": {
+            "centroid": [
+                -0.547217366796465,
+                -90.89868334792142
+            ]
+        },
+        "Atacama desert": {
+            "centroid": [
+                -22.29958642691072,
+                -69.62565456035885
+            ]
+        },
+        "Caribbean shrublands": {
+            "centroid": [
+                15.345185841473045,
+                -62.71692393556557
+            ]
+        },
+        "Paraguan\u00e1 xeric scrub": {
+            "centroid": [
+                10.836560585605666,
+                -70.08742460582324
+            ]
+        },
+        "Sechura desert": {
+            "centroid": [
+                -13.254970236415627,
+                -75.16090421039094
+            ]
+        },
+        "Araya and Paria xeric scrub": {
+            "centroid": [
+                10.621418860358988,
+                -63.48212961240857
+            ]
+        },
+        "Cuban cactus scrub": {
+            "centroid": [
+                20.863016158044726,
+                -77.22928202530773
+            ]
+        },
+        "Guajira-Barranquilla xeric scrub": {
+            "centroid": [
+                11.06164209481463,
+                -73.1108146286714
+            ]
+        },
+        "La Costa xeric shrublands": {
+            "centroid": [
+                9.727715315168346,
+                -66.15786410084634
+            ]
+        },
+        "Malpelo Island xeric scrub": {
+            "centroid": [
+                3.9762817165759747,
+                -81.59670369363216
+            ]
+        }
+    },
+    "Flooded Grasslands & Savannas": {
+        "Etosha Pan halophytics": {
+            "centroid": [
+                -18.831604754249557,
+                16.15763910081212
+            ]
+        },
+        "Inner Niger Delta flooded savanna": {
+            "centroid": [
+                15.501075223987362,
+                -3.6498632500737354
+            ]
+        },
+        "Zambezian flooded grasslands": {
+            "centroid": [
+                -12.807323952368543,
+                25.944701885169398
+            ]
+        },
+        "Makgadikgadi halophytics": {
+            "centroid": [
+                -20.757502496472913,
+                25.328063251785114
+            ]
+        },
+        "Saharan halophytics": {
+            "centroid": [
+                30.923932327537337,
+                12.460637653435336
+            ]
+        },
+        "East African halophytics": {
+            "centroid": [
+                -3.6856787740483807,
+                36.2481186130561
+            ]
+        },
+        "Lake Chad flooded savanna": {
+            "centroid": [
+                13.205387019973784,
+                13.757440304450666
+            ]
+        },
+        "Sudd flooded grasslands": {
+            "centroid": [
+                7.826085996594244,
+                31.593103942113718
+            ]
+        },
+        "Zambezian coastal flooded savanna": {
+            "centroid": [
+                -18.687917344614103,
+                35.73015203506208
+            ]
+        },
+        "Bohai Sea saline meadow": {
+            "centroid": [
+                38.06980762283246,
+                118.61739062583007
+            ]
+        },
+        "Yellow Sea saline meadow": {
+            "centroid": [
+                33.78000934983074,
+                120.29180920852897
+            ]
+        },
+        "Nile Delta flooded savanna": {
+            "centroid": [
+                28.5666258739896,
+                31.66012102778363
+            ]
+        },
+        "Rann of Kutch seasonal salt marsh": {
+            "centroid": [
+                23.84650138408215,
+                69.97287083248544
+            ]
+        },
+        "Everglades flooded grasslands": {
+            "centroid": [
+                26.18215591913255,
+                -80.76121588897729
+            ]
+        },
+        "Amur meadow steppe": {
+            "centroid": [
+                48.7183061972236,
+                131.25699581938744
+            ]
+        },
+        "Suiphun-Khanka meadows and forest meadows": {
+            "centroid": [
+                45.16497882244734,
+                132.58895455681395
+            ]
+        },
+        "Nenjiang River grassland": {
+            "centroid": [
+                46.49865747933678,
+                123.96148967064512
+            ]
+        },
+        "Tigris-Euphrates alluvial salt marsh": {
+            "centroid": [
+                31.636829568293123,
+                47.10606885540616
+            ]
+        },
+        "Cuban wetlands": {
+            "centroid": [
+                22.135504401119693,
+                -80.59304881908763
+            ]
+        },
+        "Enriquillo wetlands": {
+            "centroid": [
+                18.483828103434963,
+                -71.52181375318814
+            ]
+        },
+        "Orinoco wetlands": {
+            "centroid": [
+                9.487224040316814,
+                -62.29059055106561
+            ]
+        },
+        "Paran\u00e1 flooded savanna": {
+            "centroid": [
+                -31.042824015298397,
+                -59.532253461742826
+            ]
+        },
+        "Pantanal": {
+            "centroid": [
+                -18.054175088084897,
+                -57.210484271834524
+            ]
+        },
+        "Southern Cone Mesopotamian savanna": {
+            "centroid": [
+                -28.624394255094245,
+                -56.628201240529314
+            ]
+        },
+        "Guayaquil flooded grasslands": {
+            "centroid": [
+                -2.081052039356999,
+                -79.65011052411519
+            ]
+        }
+    },
+    "Montane Grasslands & Shrublands": {
+        "Mulanje Montane forest-grassland": {
+            "centroid": [
+                -15.682085824100751,
+                35.4616929214279
+            ]
+        },
+        "Rwenzori-Virunga montane moorlands": {
+            "centroid": [
+                -0.23526264783319403,
+                29.770592612157213
+            ]
+        },
+        "East African montane moorlands": {
+            "centroid": [
+                -0.46680540773301377,
+                36.374735252319326
+            ]
+        },
+        "North Tibetan Plateau-Kunlun Mountains alpine desert": {
+            "centroid": [
+                36.17483636617563,
+                85.24463181367204
+            ]
+        },
+        "Tibetan Plateau alpine shrublands and meadows": {
+            "centroid": [
+                33.31119274088961,
+                94.6490814505087
+            ]
+        },
+        "Central Tibetan Plateau alpine steppe": {
+            "centroid": [
+                33.4152468460836,
+                87.93815188626614
+            ]
+        },
+        "Eastern Himalayan alpine shrub and meadows": {
+            "centroid": [
+                28.63619503992358,
+                90.64930130439595
+            ]
+        },
+        "Qilian Mountains subalpine meadows": {
+            "centroid": [
+                38.65994839762418,
+                97.9856944881943
+            ]
+        },
+        "Ethiopian montane moorlands": {
+            "centroid": [
+                9.76400485681054,
+                39.021045670047776
+            ]
+        },
+        "Kinabalu montane alpine meadows": {
+            "centroid": [
+                6.104419213156768,
+                116.61109460398896
+            ]
+        },
+        "Mediterranean High Atlas juniper steppe": {
+            "centroid": [
+                31.7493508429326,
+                -6.256920266451722
+            ]
+        },
+        "Southeast Tibet shrublands and meadows": {
+            "centroid": [
+                32.59954826544288,
+                99.12780819558317
+            ]
+        },
+        "Yarlung Zanbo arid steppe": {
+            "centroid": [
+                29.15989089828031,
+                88.92249353963236
+            ]
+        },
+        "Angolan montane forest-grassland": {
+            "centroid": [
+                -12.559449630332985,
+                15.090385965974889
+            ]
+        },
+        "Ethiopian montane grasslands and woodlands": {
+            "centroid": [
+                10.657645255700286,
+                38.61656637174148
+            ]
+        },
+        "Highveld grasslands": {
+            "centroid": [
+                -27.79187843807857,
+                27.763014210968915
+            ]
+        },
+        "Jos Plateau forest-grassland": {
+            "centroid": [
+                9.741460490028697,
+                9.078791492278562
+            ]
+        },
+        "Madagascar ericoid thickets": {
+            "centroid": [
+                -17.685340187451978,
+                47.82350381387689
+            ]
+        },
+        "Nyanga-Chimanimani Montane forest-grassland": {
+            "centroid": [
+                -18.959319541416683,
+                32.71502506369634
+            ]
+        },
+        "Southern Rift Montane forest-grassland": {
+            "centroid": [
+                -9.853268716516373,
+                34.04372696883163
+            ]
+        },
+        "Ordos Plateau steppe": {
+            "centroid": [
+                38.11015887689955,
+                108.11008862210534
+            ]
+        },
+        "Australian Alps montane grasslands": {
+            "centroid": [
+                -36.65880039295697,
+                147.7390682956524
+            ]
+        },
+        "Papuan Central Range sub-alpine grasslands": {
+            "centroid": [
+                -4.8197817284047515,
+                140.48757345041892
+            ]
+        },
+        "Altai alpine meadow and tundra": {
+            "centroid": [
+                48.650375286019276,
+                88.05712443315967
+            ]
+        },
+        "Khangai Mountains alpine meadow": {
+            "centroid": [
+                47.495290380713186,
+                99.30474380594563
+            ]
+        },
+        "Sayan alpine meadows and tundra": {
+            "centroid": [
+                51.97299479391558,
+                96.35459523249583
+            ]
+        },
+        "Tian Shan montane steppe and meadows": {
+            "centroid": [
+                42.80963900043217,
+                81.62712995433898
+            ]
+        },
+        "Western Himalayan alpine shrub and meadows": {
+            "centroid": [
+                30.490081048235403,
+                81.028530168126
+            ]
+        },
+        "New Zealand South Island montane grasslands": {
+            "centroid": [
+                -43.69699073012266,
+                170.49532789262815
+            ]
+        },
+        "Karakoram-West Tibetan Plateau alpine steppe": {
+            "centroid": [
+                34.81510935754237,
+                76.42599184931926
+            ]
+        },
+        "Kopet Dag woodlands and forest steppe": {
+            "centroid": [
+                37.81251899149795,
+                57.96814104273048
+            ]
+        },
+        "Kuh Rud and Eastern Iran montane woodlands": {
+            "centroid": [
+                30.99506306641166,
+                58.125232116809634
+            ]
+        },
+        "Northwestern Himalayan alpine shrub and meadows": {
+            "centroid": [
+                34.00394329808208,
+                75.24193209767817
+            ]
+        },
+        "Pamir alpine desert and tundra": {
+            "centroid": [
+                38.38296021180931,
+                73.35508380327796
+            ]
+        },
+        "Ghorat-Hazarajat alpine meadow": {
+            "centroid": [
+                34.28754923285845,
+                66.30684064914428
+            ]
+        },
+        "Hindu Kush alpine meadow": {
+            "centroid": [
+                36.28423855258029,
+                70.50829286348846
+            ]
+        },
+        "Sulaiman Range alpine meadows": {
+            "centroid": [
+                31.301460932322403,
+                68.08561407516873
+            ]
+        },
+        "Central Andean puna": {
+            "centroid": [
+                -20.55695250991273,
+                -68.17340547962877
+            ]
+        },
+        "Northern Andean p\u00e1ramo": {
+            "centroid": [
+                1.6463165730370146,
+                -76.44403472192616
+            ]
+        },
+        "Santa Marta p\u00e1ramo": {
+            "centroid": [
+                10.818646185688205,
+                -73.66296983170467
+            ]
+        },
+        "Central Andean dry puna": {
+            "centroid": [
+                -21.19179700944059,
+                -67.90035572514665
+            ]
+        },
+        "Southern Andean steppe": {
+            "centroid": [
+                -30.597938973987894,
+                -69.32507264796696
+            ]
+        },
+        "Central Andean wet puna": {
+            "centroid": [
+                -13.480128997969393,
+                -72.53842941731159
+            ]
+        },
+        "Cordillera Central p\u00e1ramo": {
+            "centroid": [
+                -7.498335270402999,
+                -77.92592568996928
+            ]
+        },
+        "High Monte": {
+            "centroid": [
+                -28.959875788356353,
+                -67.5678393905174
+            ]
+        },
+        "Cordillera de Merida p\u00e1ramo": {
+            "centroid": [
+                8.752075322515525,
+                -70.94018244078731
+            ]
+        }
+    },
+    "Temperate Broadleaf & Mixed Forests": {
+        "Eastern Himalayan broadleaf forests": {
+            "centroid": [
+                27.679084788466234,
+                92.09216456963546
+            ]
+        },
+        "Northern Triangle temperate forests": {
+            "centroid": [
+                27.31182821024613,
+                97.06430422113868
+            ]
+        },
+        "Daba Mountains evergreen forests": {
+            "centroid": [
+                31.705000219641448,
+                108.62273140904627
+            ]
+        },
+        "Cantabrian mixed forests": {
+            "centroid": [
+                43.01002651756911,
+                -5.2079893757005
+            ]
+        },
+        "Manchurian mixed forests": {
+            "centroid": [
+                46.130627107817254,
+                127.79292180478691
+            ]
+        },
+        "Pyrenees conifer and mixed forests": {
+            "centroid": [
+                42.69533319971464,
+                0.6523119701789314
+            ]
+        },
+        "Qin Ling Mountains deciduous forests": {
+            "centroid": [
+                33.56601813599543,
+                108.49730060185658
+            ]
+        },
+        "Azores temperate mixed forests": {
+            "centroid": [
+                38.37075365101017,
+                -27.31815764798377
+            ]
+        },
+        "Central China Loess Plateau mixed forests": {
+            "centroid": [
+                38.29812960547675,
+                113.3053509749103
+            ]
+        },
+        "Central Korean deciduous forests": {
+            "centroid": [
+                37.163165197189635,
+                127.49409646982225
+            ]
+        },
+        "Changjiang Plain evergreen forests": {
+            "centroid": [
+                30.678014615783233,
+                116.36056191331663
+            ]
+        },
+        "Huang He Plain mixed forests": {
+            "centroid": [
+                35.74470083672437,
+                115.96037264079689
+            ]
+        },
+        "Madeira evergreen forests": {
+            "centroid": [
+                32.75827778984731,
+                -16.94215950145164
+            ]
+        },
+        "Northeast China Plain deciduous forests": {
+            "centroid": [
+                43.75701365238873,
+                124.0148357841446
+            ]
+        },
+        "Sichuan Basin evergreen broadleaf forests": {
+            "centroid": [
+                30.194298149229223,
+                105.1938210516223
+            ]
+        },
+        "Southern Korea evergreen forests": {
+            "centroid": [
+                34.75082494777319,
+                127.51700938161761
+            ]
+        },
+        "Fiordland temperate forests": {
+            "centroid": [
+                -45.39519307945895,
+                167.34284751854972
+            ]
+        },
+        "Nelson Coast temperate forests": {
+            "centroid": [
+                -41.66762633860275,
+                172.1202276451421
+            ]
+        },
+        "Westland temperate forests": {
+            "centroid": [
+                -43.56918018525151,
+                169.7145326398414
+            ]
+        },
+        "Rodope montane mixed forests": {
+            "centroid": [
+                42.230468802385175,
+                24.300478428978604
+            ]
+        },
+        "Richmond temperate forests": {
+            "centroid": [
+                -41.59979422342404,
+                173.3933339833725
+            ]
+        },
+        "Allegheny Highlands forests": {
+            "centroid": [
+                42.00545100474454,
+                -76.79630350257283
+            ]
+        },
+        "Appalachian-Blue Ridge forests": {
+            "centroid": [
+                37.3926435574081,
+                -81.10297812627643
+            ]
+        },
+        "Appalachian mixed mesophytic forests": {
+            "centroid": [
+                38.16200980626384,
+                -82.35913285119327
+            ]
+        },
+        "Eastern Canadian Forest-Boreal transition": {
+            "centroid": [
+                47.04502612724456,
+                -77.5361882686272
+            ]
+        },
+        "Gulf of St. Lawrence lowland forests": {
+            "centroid": [
+                46.493084905821284,
+                -65.01129310052374
+            ]
+        },
+        "Western Great Lakes forests": {
+            "centroid": [
+                47.17356504040021,
+                -90.73738563223078
+            ]
+        },
+        "Appenine deciduous montane forests": {
+            "centroid": [
+                42.86858716774805,
+                12.640707955946217
+            ]
+        },
+        "Crimean Submediterranean forest complex": {
+            "centroid": [
+                44.60638793393454,
+                38.22402600940015
+            ]
+        },
+        "Dinaric Mountains mixed forests": {
+            "centroid": [
+                44.080438307782934,
+                17.40425242023173
+            ]
+        },
+        "Hokkaido deciduous forests": {
+            "centroid": [
+                44.19002132718972,
+                142.98134708528008
+            ]
+        },
+        "Nihonkai evergreen forests": {
+            "centroid": [
+                36.331487735579366,
+                135.93147533275123
+            ]
+        },
+        "Nihonkai montane deciduous forests": {
+            "centroid": [
+                38.43243756953396,
+                139.23606383309286
+            ]
+        },
+        "Taiheiyo evergreen forests": {
+            "centroid": [
+                34.38146947998126,
+                134.58782860604614
+            ]
+        },
+        "Taiheiyo montane deciduous forests": {
+            "centroid": [
+                36.17616041165346,
+                138.3744110301608
+            ]
+        },
+        "Ussuri broadleaf and mixed forests": {
+            "centroid": [
+                46.680748214184305,
+                135.1671404235551
+            ]
+        },
+        "New Zealand North Island temperate forests": {
+            "centroid": [
+                -39.24476202390478,
+                176.10876812254372
+            ]
+        },
+        "Northland temperate kauri forests": {
+            "centroid": [
+                -36.59718525639599,
+                174.62993119137715
+            ]
+        },
+        "Tasmanian temperate forests": {
+            "centroid": [
+                -41.71657104556415,
+                147.6174815679764
+            ]
+        },
+        "Western Himalayan broadleaf forests": {
+            "centroid": [
+                32.326898366124524,
+                76.81406030007572
+            ]
+        },
+        "Appalachian Piedmont forests": {
+            "centroid": [
+                35.124825244216595,
+                -81.53910587166561
+            ]
+        },
+        "Interior Plateau US Hardwood Forests": {
+            "centroid": [
+                37.01839899222109,
+                -86.23732332414392
+            ]
+        },
+        "Ozark Highlands mixed forests": {
+            "centroid": [
+                37.16798254754736,
+                -92.41880716839857
+            ]
+        },
+        "Ozark Mountain forests": {
+            "centroid": [
+                35.053994276705254,
+                -94.00380069998766
+            ]
+        },
+        "Upper Midwest US forest-savanna transition": {
+            "centroid": [
+                44.66737661795065,
+                -91.64692155061732
+            ]
+        },
+        "European Atlantic mixed forests": {
+            "centroid": [
+                49.730304101810255,
+                3.101347748767785
+            ]
+        },
+        "Balkan mixed forests": {
+            "centroid": [
+                43.00613732386288,
+                23.83495057946129
+            ]
+        },
+        "Baltic mixed forests": {
+            "centroid": [
+                54.48854272936837,
+                13.713319837471419
+            ]
+        },
+        "Caspian Hyrcanian mixed forests": {
+            "centroid": [
+                37.33031820430897,
+                51.39244684365925
+            ]
+        },
+        "Caucasus mixed forests": {
+            "centroid": [
+                41.93204988605394,
+                44.291992977873065
+            ]
+        },
+        "Central European mixed forests": {
+            "centroid": [
+                51.46876246672874,
+                23.668088261182387
+            ]
+        },
+        "Changbai Mountains mixed forests": {
+            "centroid": [
+                41.789834741956554,
+                127.56669208708634
+            ]
+        },
+        "English Lowlands beech forests": {
+            "centroid": [
+                51.51373288804862,
+                -0.8552619249537174
+            ]
+        },
+        "Euxine-Colchic broadleaf forests": {
+            "centroid": [
+                41.2072842209011,
+                35.02706941292272
+            ]
+        },
+        "Pannonian mixed forests": {
+            "centroid": [
+                46.76278496452707,
+                19.60681662577801
+            ]
+        },
+        "Sarmatic mixed forests": {
+            "centroid": [
+                57.147120492636894,
+                32.10378860704032
+            ]
+        },
+        "Western European broadleaf forests": {
+            "centroid": [
+                48.407183630594965,
+                8.02302043213913
+            ]
+        },
+        "Western Siberian hemiboreal forests": {
+            "centroid": [
+                56.340969387334,
+                77.11605068649312
+            ]
+        },
+        "North Atlantic moist mixed forests": {
+            "centroid": [
+                55.973859181637145,
+                -6.9188577804675315
+            ]
+        },
+        "Chatham Island temperate forests": {
+            "centroid": [
+                -43.9377863488,
+                -176.48618594953334
+            ]
+        },
+        "Eastern Australian temperate forests": {
+            "centroid": [
+                -31.408902012289257,
+                150.84995774229952
+            ]
+        },
+        "Southeast Australia temperate forests": {
+            "centroid": [
+                -36.00551723055449,
+                146.4542584799812
+            ]
+        },
+        "East Central Texas forests": {
+            "centroid": [
+                30.898429056853328,
+                -96.63935033749266
+            ]
+        },
+        "Eastern Great Lakes lowland forests": {
+            "centroid": [
+                44.54151277703264,
+                -76.67402854849615
+            ]
+        },
+        "Mississippi lowland forests": {
+            "centroid": [
+                33.16144977971711,
+                -90.87679540621757
+            ]
+        },
+        "New England-Acadian forests": {
+            "centroid": [
+                45.49918119404632,
+                -68.92527523096754
+            ]
+        },
+        "Northeast US Coastal forests": {
+            "centroid": [
+                41.11673746516052,
+                -74.05092918371473
+            ]
+        },
+        "Southern Great Lakes forests": {
+            "centroid": [
+                41.458142037819854,
+                -83.804950039547
+            ]
+        },
+        "Celtic broadleaf forests": {
+            "centroid": [
+                53.60561830165453,
+                -4.169861435724176
+            ]
+        },
+        "Central Anatolian steppe and woodlands": {
+            "centroid": [
+                38.77511928043948,
+                33.833845331956596
+            ]
+        },
+        "East European forest steppe": {
+            "centroid": [
+                53.00371969852676,
+                42.04348004233598
+            ]
+        },
+        "Eastern Anatolian deciduous forests": {
+            "centroid": [
+                38.70805731959717,
+                38.98169866337069
+            ]
+        },
+        "Po Basin mixed forests": {
+            "centroid": [
+                45.21651583330082,
+                10.716264055814268
+            ]
+        },
+        "Tarim Basin deciduous forests and steppe": {
+            "centroid": [
+                40.137013397906735,
+                83.17558514525652
+            ]
+        },
+        "Zagros Mountains forest steppe": {
+            "centroid": [
+                33.107639988340836,
+                49.43971834624781
+            ]
+        },
+        "Rakiura Island temperate forests": {
+            "centroid": [
+                -46.987920481053536,
+                167.89017977421048
+            ]
+        },
+        "Tasmanian temperate rain forests": {
+            "centroid": [
+                -42.071999649086,
+                145.8667110190057
+            ]
+        },
+        "San F\u00e9lix-San Ambrosio Islands temperate forests": {
+            "centroid": [
+                -26.324521062544875,
+                -79.96272952301472
+            ]
+        },
+        "Tasmanian Central Highland forests": {
+            "centroid": [
+                -41.83834533565005,
+                146.642470348835
+            ]
+        },
+        "Valdivian temperate forests": {
+            "centroid": [
+                -40.68766615819427,
+                -72.26527403952412
+            ]
+        },
+        "New Zealand South Island temperate forests": {
+            "centroid": [
+                -46.174847233801664,
+                168.42700935618305
+            ]
+        },
+        "Juan Fern\u00e1ndez Islands temperate forests": {
+            "centroid": [
+                -33.67619360517745,
+                -79.5510012037797
+            ]
+        },
+        "Magellanic subpolar forests": {
+            "centroid": [
+                -51.468294134919255,
+                -72.14016680721207
+            ]
+        }
+    },
+    "Mediterranean Forests, Woodlands & Scrub": {
+        "Canary Islands dry woodlands and forests": {
+            "centroid": [
+                28.198698272287817,
+                -16.591329206296788
+            ]
+        },
+        "Corsican montane broadleaf and mixed forests": {
+            "centroid": [
+                42.085139546160164,
+                9.0269095481603
+            ]
+        },
+        "Coolgardie woodlands": {
+            "centroid": [
+                -31.38456136668727,
+                121.41923954046672
+            ]
+        },
+        "Esperance mallee": {
+            "centroid": [
+                -33.291210736006626,
+                120.5933491243965
+            ]
+        },
+        "Hampton mallee and woodlands": {
+            "centroid": [
+                -31.94330156069782,
+                127.57641011808911
+            ]
+        },
+        "Jarrah-Karri forest and shrublands": {
+            "centroid": [
+                -34.58115876325161,
+                116.2202931645537
+            ]
+        },
+        "Albany thickets": {
+            "centroid": [
+                -33.08919999432738,
+                25.652074624945108
+            ]
+        },
+        "Fynbos shrubland": {
+            "centroid": [
+                -33.459137238422976,
+                20.80883863744169
+            ]
+        },
+        "Renosterveld shrubland": {
+            "centroid": [
+                -33.34097240906261,
+                20.228450776392016
+            ]
+        },
+        "Southwest Australia savanna": {
+            "centroid": [
+                -29.944534401496416,
+                116.6093102509253
+            ]
+        },
+        "Southwest Australia woodlands": {
+            "centroid": [
+                -32.963417742961624,
+                116.33169708847355
+            ]
+        },
+        "Crete Mediterranean forests": {
+            "centroid": [
+                35.222348960560105,
+                24.843032358664214
+            ]
+        },
+        "Iberian conifer forests": {
+            "centroid": [
+                39.954131860495046,
+                -2.4629172484407875
+            ]
+        },
+        "Iberian sclerophyllous and semi-deciduous forests": {
+            "centroid": [
+                39.77563967668823,
+                -3.646029638841356
+            ]
+        },
+        "Mediterranean Acacia-Argania dry woodlands and succulent thickets": {
+            "centroid": [
+                30.343730447896117,
+                -9.251300383640576
+            ]
+        },
+        "Mediterranean dry woodlands and steppe": {
+            "centroid": [
+                33.72710937714287,
+                4.091388086089771
+            ]
+        },
+        "Northeast Spain and Southern France Mediterranean forests": {
+            "centroid": [
+                42.66335899045935,
+                3.3380640997058713
+            ]
+        },
+        "Northwest Iberian montane forests": {
+            "centroid": [
+                41.63315669705106,
+                -5.6046507756228
+            ]
+        },
+        "Pindus Mountains mixed forests": {
+            "centroid": [
+                40.30154147223897,
+                21.13749836423978
+            ]
+        },
+        "South Apennine mixed montane forests": {
+            "centroid": [
+                39.31427817890075,
+                15.633312450508567
+            ]
+        },
+        "Southeast Iberian shrubs and woodlands": {
+            "centroid": [
+                37.162305319532116,
+                -1.9366513507076617
+            ]
+        },
+        "Southwest Iberian Mediterranean sclerophyllous and mixed forests": {
+            "centroid": [
+                38.1538628283793,
+                -7.282878405932079
+            ]
+        },
+        "Anatolian conifer and deciduous mixed forests": {
+            "centroid": [
+                39.04066476019181,
+                29.248921142340244
+            ]
+        },
+        "Cyprus Mediterranean forests": {
+            "centroid": [
+                35.047648036744945,
+                33.233348866408605
+            ]
+        },
+        "Mediterranean woodlands and forests": {
+            "centroid": [
+                34.788524405789836,
+                1.349215429414103
+            ]
+        },
+        "Southern Anatolian montane conifer and deciduous forests": {
+            "centroid": [
+                36.885995231459994,
+                33.31098020254901
+            ]
+        },
+        "Flinders-Lofty montane woodlands": {
+            "centroid": [
+                -32.15823631798384,
+                138.90953829118087
+            ]
+        },
+        "Eyre and York mallee": {
+            "centroid": [
+                -33.48832321618116,
+                135.97423274659366
+            ]
+        },
+        "Murray-Darling woodlands and mallee": {
+            "centroid": [
+                -34.35000165721359,
+                141.9284157222665
+            ]
+        },
+        "Naracoorte woodlands": {
+            "centroid": [
+                -36.90356367309836,
+                140.39423509717057
+            ]
+        },
+        "California interior chaparral and woodlands": {
+            "centroid": [
+                37.4135470241978,
+                -121.14441452531173
+            ]
+        },
+        "California montane chaparral and woodlands": {
+            "centroid": [
+                33.719584090271226,
+                -117.5669304493583
+            ]
+        },
+        "Santa Lucia Montane Chaparral & Woodlands": {
+            "centroid": [
+                36.067521662337306,
+                -121.35602909578034
+            ]
+        },
+        "Illyrian deciduous forests": {
+            "centroid": [
+                42.292117104047215,
+                18.210945818134984
+            ]
+        },
+        "Tyrrhenian-Adriatic sclerophyllous and mixed forests": {
+            "centroid": [
+                39.710214099027255,
+                13.178919424845004
+            ]
+        },
+        "California coastal sage and chaparral": {
+            "centroid": [
+                32.97405004109317,
+                -117.22282439588784
+            ]
+        },
+        "Aegean and Western Turkey sclerophyllous and mixed forests": {
+            "centroid": [
+                38.75722421201012,
+                24.806741866105007
+            ]
+        },
+        "Eastern Mediterranean conifer-broadleaf forests": {
+            "centroid": [
+                35.747115731367984,
+                37.376812403707675
+            ]
+        },
+        "Italian sclerophyllous and semi-deciduous forests": {
+            "centroid": [
+                42.82560276311165,
+                12.429462240229503
+            ]
+        },
+        "Chilean Matorral": {
+            "centroid": [
+                -31.221789550586323,
+                -70.959358886135
+            ]
+        }
+    },
+    "Tropical & Subtropical Coniferous Forests": {
+        "Luzon tropical pine forests": {
+            "centroid": [
+                16.980581761919364,
+                120.93343812999987
+            ]
+        },
+        "Northeast India-Myanmar pine forests": {
+            "centroid": [
+                25.467989273142752,
+                94.54428896484444
+            ]
+        },
+        "Sumatran tropical pine forests": {
+            "centroid": [
+                2.4230633943276882,
+                98.33085165768418
+            ]
+        },
+        "Himalayan subtropical pine forests": {
+            "centroid": [
+                30.709764873923955,
+                78.89949089476198
+            ]
+        },
+        "Sierra de la Laguna pine-oak forests": {
+            "centroid": [
+                23.446453387739147,
+                -109.93000347518917
+            ]
+        },
+        "Central American pine-oak forests": {
+            "centroid": [
+                14.734042748497862,
+                -88.92035146493414
+            ]
+        },
+        "Sierra Madre de Oaxaca pine-oak forests": {
+            "centroid": [
+                17.29555912458393,
+                -96.2732779638297
+            ]
+        },
+        "Sierra Madre Occidental pine-oak forests": {
+            "centroid": [
+                26.342418837693824,
+                -106.54047301507771
+            ]
+        },
+        "Sierra Madre Oriental pine-oak forests": {
+            "centroid": [
+                25.096392957419027,
+                -100.80778251192015
+            ]
+        },
+        "Sierra Madre del Sur pine-oak forests": {
+            "centroid": [
+                17.37876972948415,
+                -98.91743755566819
+            ]
+        },
+        "Trans-Mexican Volcanic Belt pine-oak forests": {
+            "centroid": [
+                19.839786977293834,
+                -101.14836530146792
+            ]
+        },
+        "Hispaniolan pine forests": {
+            "centroid": [
+                18.848028357846253,
+                -71.38304841544269
+            ]
+        },
+        "Cuban pine forests": {
+            "centroid": [
+                21.963064396767415,
+                -81.88167083195049
+            ]
+        },
+        "Bahamian pineyards": {
+            "centroid": [
+                24.18966036324993,
+                -76.24583192042513
+            ]
+        },
+        "Bermuda subtropical conifer forests": {
+            "centroid": [
+                32.31143669354223,
+                -64.75636624135977
+            ]
+        }
+    },
+    "Temperate Grasslands, Savannas & Shrublands": {
+        "Mongolian-Manchurian grassland": {
+            "centroid": [
+                45.84380344100127,
+                115.84182692055019
+            ]
+        },
+        "Amsterdam-Saint Paul Islands temperate grasslands": {
+            "centroid": [
+                -37.96332326915541,
+                77.53305677296873
+            ]
+        },
+        "Tristan Da Cunha-Gough Islands shrub and grasslands": {
+            "centroid": [
+                -38.49802922573946,
+                -11.33695714135444
+            ]
+        },
+        "Eastern Australia mulga shrublands": {
+            "centroid": [
+                -27.88456409916662,
+                145.19069257636534
+            ]
+        },
+        "Southeast Australia temperate savanna": {
+            "centroid": [
+                -32.40593966457316,
+                146.16183440711174
+            ]
+        },
+        "Edwards Plateau savanna": {
+            "centroid": [
+                30.603270288871997,
+                -99.92290899249201
+            ]
+        },
+        "Nebraska Sand Hills mixed grasslands": {
+            "centroid": [
+                42.07166529102318,
+                -100.78986025465083
+            ]
+        },
+        "Western shortgrass prairie": {
+            "centroid": [
+                36.78628669135453,
+                -102.72556175550797
+            ]
+        },
+        "Daurian forest steppe": {
+            "centroid": [
+                49.969965151088395,
+                112.47232038621209
+            ]
+        },
+        "Kazakh upland steppe": {
+            "centroid": [
+                50.28513192403619,
+                73.1133803590196
+            ]
+        },
+        "Sayan Intermontane steppe": {
+            "centroid": [
+                51.343495144125384,
+                94.41268975332633
+            ]
+        },
+        "Selenge-Orkhon forest steppe": {
+            "centroid": [
+                49.04430723850494,
+                101.21998225556854
+            ]
+        },
+        "Canterbury-Otago tussock grasslands": {
+            "centroid": [
+                -44.60154092788709,
+                170.70727791205232
+            ]
+        },
+        "Montana Valley and Foothill grasslands": {
+            "centroid": [
+                46.62716716115227,
+                -111.69567889872829
+            ]
+        },
+        "Northern Shortgrass prairie": {
+            "centroid": [
+                47.55583031175631,
+                -105.63968241960043
+            ]
+        },
+        "Palouse prairie": {
+            "centroid": [
+                46.66218464650571,
+                -119.10159105828723
+            ]
+        },
+        "Al-Hajar foothill xeric woodlands and shrublands": {
+            "centroid": [
+                23.477506518997444,
+                57.46093804529288
+            ]
+        },
+        "Al-Hajar montane woodlands and shrublands": {
+            "centroid": [
+                23.14893373788971,
+                57.90600035819046
+            ]
+        },
+        "Altai steppe and semi-desert": {
+            "centroid": [
+                48.460159551190145,
+                82.57869986344535
+            ]
+        },
+        "Emin Valley steppe": {
+            "centroid": [
+                46.21718446059286,
+                83.44551061443605
+            ]
+        },
+        "Kazakh steppe": {
+            "centroid": [
+                51.98370392504525,
+                69.96565852855242
+            ]
+        },
+        "South Siberian forest steppe": {
+            "centroid": [
+                55.026744526548995,
+                92.72295679739631
+            ]
+        },
+        "Tian Shan foothill arid steppe": {
+            "centroid": [
+                43.291616778869084,
+                77.17393159938446
+            ]
+        },
+        "California Central Valley grasslands": {
+            "centroid": [
+                37.30580042752791,
+                -120.54278205742737
+            ]
+        },
+        "Canadian Aspen forests and parklands": {
+            "centroid": [
+                49.39040069806108,
+                -102.7929197552445
+            ]
+        },
+        "Central-Southern US mixed grasslands": {
+            "centroid": [
+                37.391687833310456,
+                -98.8344634753039
+            ]
+        },
+        "Central US forest-grasslands transition": {
+            "centroid": [
+                40.190205042668104,
+                -88.99704886388355
+            ]
+        },
+        "Central Tallgrass prairie": {
+            "centroid": [
+                41.12805936331629,
+                -94.36929972582844
+            ]
+        },
+        "Cross-Timbers savanna-woodland": {
+            "centroid": [
+                33.5585734250308,
+                -97.53189411193269
+            ]
+        },
+        "Flint Hills tallgrass prairie": {
+            "centroid": [
+                38.20438785067657,
+                -96.56334387378078
+            ]
+        },
+        "Mid-Atlantic US coastal savannas": {
+            "centroid": [
+                35.669709879261774,
+                -77.63119822011807
+            ]
+        },
+        "Northern Tallgrass prairie": {
+            "centroid": [
+                48.79838510709723,
+                -97.4261712760448
+            ]
+        },
+        "Southeast US mixed woodlands and savannas": {
+            "centroid": [
+                27.700257534694977,
+                -80.3780822661012
+            ]
+        },
+        "Southeast US conifer savannas": {
+            "centroid": [
+                32.17431319135985,
+                -84.82338388639025
+            ]
+        },
+        "Texas blackland prairies": {
+            "centroid": [
+                31.570563088682288,
+                -96.89166022245057
+            ]
+        },
+        "Willamette Valley oak savanna": {
+            "centroid": [
+                44.87485886986391,
+                -122.98177152721141
+            ]
+        },
+        "Alai-Western Tian Shan steppe": {
+            "centroid": [
+                40.990766435914715,
+                68.00025561830971
+            ]
+        },
+        "Central Anatolian steppe": {
+            "centroid": [
+                38.731337945600984,
+                33.04236436942318
+            ]
+        },
+        "Eastern Anatolian montane steppe": {
+            "centroid": [
+                38.83818530895035,
+                44.29188443036767
+            ]
+        },
+        "Faroe Islands boreal grasslands": {
+            "centroid": [
+                62.06340688337104,
+                -6.890413426503724
+            ]
+        },
+        "Gissaro-Alai open woodlands": {
+            "centroid": [
+                40.040176632030246,
+                70.22889150336867
+            ]
+        },
+        "Kazakh forest steppe": {
+            "centroid": [
+                54.41607515019459,
+                71.84481079066894
+            ]
+        },
+        "Pontic steppe": {
+            "centroid": [
+                48.60472483948449,
+                42.28328918899731
+            ]
+        },
+        "Syrian xeric grasslands and shrublands": {
+            "centroid": [
+                35.03180054499941,
+                39.64411946604184
+            ]
+        },
+        "Low Monte": {
+            "centroid": [
+                -38.184342742852124,
+                -67.06861624110685
+            ]
+        },
+        "Patagonian steppe": {
+            "centroid": [
+                -45.342124190660236,
+                -69.23400256407159
+            ]
+        },
+        "Espinal": {
+            "centroid": [
+                -34.16531941007006,
+                -62.87872876878476
+            ]
+        },
+        "Humid Pampas": {
+            "centroid": [
+                -35.46401799552825,
+                -60.80743688799227
+            ]
+        }
+    },
+    "Tropical & Subtropical Dry Broadleaf Forests": {
+        "Lesser Sundas deciduous forests": {
+            "centroid": [
+                -8.580294280822871,
+                119.67568551707555
+            ]
+        },
+        "Maranh\u00e3o Baba\u00e7u forests": {
+            "centroid": [
+                -4.29480004062247,
+                -43.730000465263764
+            ]
+        },
+        "Sumba deciduous forests": {
+            "centroid": [
+                -9.760878738855729,
+                119.94907106874862
+            ]
+        },
+        "Timor and Wetar deciduous forests": {
+            "centroid": [
+                -9.20923994891658,
+                125.0815368678957
+            ]
+        },
+        "Southeast Indochina dry evergreen forests": {
+            "centroid": [
+                13.205130222213937,
+                106.17934572970447
+            ]
+        },
+        "Southern Vietnam lowland dry forests": {
+            "centroid": [
+                13.52375993002691,
+                108.56827008514672
+            ]
+        },
+        "Cape Verde Islands dry forests": {
+            "centroid": [
+                15.882584434078995,
+                -23.913517676537428
+            ]
+        },
+        "Madagascar dry deciduous forests": {
+            "centroid": [
+                -16.904965699832555,
+                46.378609274854256
+            ]
+        },
+        "Zambezian evergreen dry forests": {
+            "centroid": [
+                -13.326320336638307,
+                24.079362775900876
+            ]
+        },
+        "Central Indochina dry forests": {
+            "centroid": [
+                15.468507597473572,
+                103.33175169510146
+            ]
+        },
+        "Irrawaddy dry forests": {
+            "centroid": [
+                20.710695762247195,
+                95.505743605744
+            ]
+        },
+        "Caatinga": {
+            "centroid": [
+                -8.632327940832877,
+                -39.84680654168006
+            ]
+        },
+        "Brazilian Atlantic dry forests": {
+            "centroid": [
+                -12.437266968800566,
+                -43.273179010903064
+            ]
+        },
+        "New Caledonia dry forests": {
+            "centroid": [
+                -21.345660370887508,
+                165.26052743622193
+            ]
+        },
+        "Islas Revillagigedo dry forests": {
+            "centroid": [
+                18.777196019210354,
+                -111.41610866991842
+            ]
+        },
+        "Sri Lanka dry-zone dry evergreen forests": {
+            "centroid": [
+                7.784713280159302,
+                80.8075673695602
+            ]
+        },
+        "Marianas tropical dry forests": {
+            "centroid": [
+                14.505602267741327,
+                145.15372097189132
+            ]
+        },
+        "Yucat\u00e1n dry forests": {
+            "centroid": [
+                20.451122638257775,
+                -89.22008560591787
+            ]
+        },
+        "Central American dry forests": {
+            "centroid": [
+                13.272966590474525,
+                -87.47242414583292
+            ]
+        },
+        "Fiji tropical dry forests": {
+            "centroid": [
+                -17.323847091495704,
+                178.20199804264442
+            ]
+        },
+        "Hawai'i tropical dry forests": {
+            "centroid": [
+                20.126306675812824,
+                -156.28220286096843
+            ]
+        },
+        "Jalisco dry forests": {
+            "centroid": [
+                19.572608320018325,
+                -104.22383925062357
+            ]
+        },
+        "Sierra de la Laguna dry forests": {
+            "centroid": [
+                23.561509840998095,
+                -109.90130441853631
+            ]
+        },
+        "Sinaloan dry forests": {
+            "centroid": [
+                24.277422433271678,
+                -106.55110300301288
+            ]
+        },
+        "Yap tropical dry forests": {
+            "centroid": [
+                9.545413970086022,
+                138.19855985828343
+            ]
+        },
+        "Central Deccan Plateau dry deciduous forests": {
+            "centroid": [
+                18.78705279825142,
+                78.41332643258652
+            ]
+        },
+        "Chhota-Nagpur dry deciduous forests": {
+            "centroid": [
+                23.62667415763679,
+                85.4479817417814
+            ]
+        },
+        "East Deccan dry-evergreen forests": {
+            "centroid": [
+                11.896731637925523,
+                79.66751364052365
+            ]
+        },
+        "Khathiar-Gir dry deciduous forests": {
+            "centroid": [
+                24.476093377855744,
+                75.21899081363514
+            ]
+        },
+        "Narmada Valley dry deciduous forests": {
+            "centroid": [
+                22.758433226272775,
+                77.88886176413824
+            ]
+        },
+        "North Deccan dry deciduous forests": {
+            "centroid": [
+                20.483053780411996,
+                83.28464405676822
+            ]
+        },
+        "South Deccan Plateau dry deciduous forests": {
+            "centroid": [
+                11.695949951902877,
+                77.6891999987456
+            ]
+        },
+        "Sonoran-Sinaloan subtropical dry forest": {
+            "centroid": [
+                27.97063346399775,
+                -109.57740877407544
+            ]
+        },
+        "Baj\u00edo dry forests": {
+            "centroid": [
+                20.463432423676554,
+                -102.06115168672848
+            ]
+        },
+        "Balsas dry forests": {
+            "centroid": [
+                18.468234911021387,
+                -100.15045417484227
+            ]
+        },
+        "Chiapas Depression dry forests": {
+            "centroid": [
+                16.25614467722368,
+                -92.7945141853116
+            ]
+        },
+        "Southern Pacific dry forests": {
+            "centroid": [
+                16.64314477350985,
+                -97.45852007399343
+            ]
+        },
+        "Veracruz dry forests": {
+            "centroid": [
+                19.055661827741083,
+                -96.42058565755217
+            ]
+        },
+        "Chiquitano dry forests": {
+            "centroid": [
+                -16.11154098921144,
+                -60.50983089100575
+            ]
+        },
+        "Lara-Falc\u00f3n dry forests": {
+            "centroid": [
+                10.910067415645168,
+                -69.18743429819244
+            ]
+        },
+        "Lesser Antillean dry forests": {
+            "centroid": [
+                14.523454346998458,
+                -61.34957027900742
+            ]
+        },
+        "Apure-Villavicencio dry forests": {
+            "centroid": [
+                7.009327329748796,
+                -71.00151268695926
+            ]
+        },
+        "Ecuadorian dry forests": {
+            "centroid": [
+                -1.3600574600694266,
+                -80.23315866756262
+            ]
+        },
+        "Hispaniolan dry forests": {
+            "centroid": [
+                18.880254508512795,
+                -71.77469064227114
+            ]
+        },
+        "Jamaican dry forests": {
+            "centroid": [
+                18.04304088477094,
+                -77.41773064731288
+            ]
+        },
+        "Magdalena Valley dry forests": {
+            "centroid": [
+                3.8686226490743683,
+                -75.06663425388685
+            ]
+        },
+        "Maracaibo dry forests": {
+            "centroid": [
+                10.059080173914522,
+                -71.42041492775823
+            ]
+        },
+        "Puerto Rican dry forests": {
+            "centroid": [
+                18.03376914166189,
+                -66.53245700288912
+            ]
+        },
+        "Sin\u00fa Valley dry forests": {
+            "centroid": [
+                10.089365214176155,
+                -74.05824977471248
+            ]
+        },
+        "Trinidad and Tobago dry forest": {
+            "centroid": [
+                10.624486562696312,
+                -61.4775614504912
+            ]
+        },
+        "Bolivian montane dry forests": {
+            "centroid": [
+                -18.852284693043305,
+                -65.4066025178345
+            ]
+        },
+        "Cauca Valley dry forests": {
+            "centroid": [
+                4.763942087344533,
+                -76.05330536857608
+            ]
+        },
+        "Cuban dry forests": {
+            "centroid": [
+                21.672798791081767,
+                -78.84907233838963
+            ]
+        },
+        "Panamanian dry forests": {
+            "centroid": [
+                8.161265711456707,
+                -80.29026613033584
+            ]
+        },
+        "Pat\u00eda valley dry forests": {
+            "centroid": [
+                1.890645623482568,
+                -77.19095086633294
+            ]
+        },
+        "Tumbes-Piura dry forests": {
+            "centroid": [
+                -5.173021861253385,
+                -80.1867669608274
+            ]
+        }
+    },
+    "Tropical & Subtropical Moist Broadleaf Forests": {
+        "Mount Cameroon and Bioko montane forests": {
+            "centroid": [
+                4.138268795696976,
+                9.11705386030747
+            ]
+        },
+        "Vogelkop montane rain forests": {
+            "centroid": [
+                -1.2731487497074445,
+                133.14845142057345
+            ]
+        },
+        "Nicobar Islands rain forests": {
+            "centroid": [
+                7.507909448884115,
+                93.59301243908385
+            ]
+        },
+        "Palawan rain forests": {
+            "centroid": [
+                9.972086779616445,
+                118.73081711494412
+            ]
+        },
+        "Northeast Brazil restingas": {
+            "centroid": [
+                -2.8153340677170817,
+                -42.43455844611171
+            ]
+        },
+        "Congolian coastal forests": {
+            "centroid": [
+                -0.29426802771076377,
+                10.793262628601678
+            ]
+        },
+        "Central Congolian lowland forests": {
+            "centroid": [
+                -1.342297806236656,
+                21.779950016280733
+            ]
+        },
+        "Cross-Sanaga-Bioko coastal forests": {
+            "centroid": [
+                5.129817858006106,
+                9.348414904213994
+            ]
+        },
+        "Eastern Congolian swamp forests": {
+            "centroid": [
+                -0.3117772963967002,
+                20.479657418552677
+            ]
+        },
+        "Granitic Seychelles forests": {
+            "centroid": [
+                -5.2712033840666885,
+                54.8062003788863
+            ]
+        },
+        "Mascarene forests": {
+            "centroid": [
+                -20.77486173261119,
+                56.457593523597716
+            ]
+        },
+        "Northeast Congolian lowland forests": {
+            "centroid": [
+                1.776464026937003,
+                25.105841410851614
+            ]
+        },
+        "Northwest Congolian lowland forests": {
+            "centroid": [
+                1.708633385734085,
+                14.15528015327011
+            ]
+        },
+        "Western Congolian swamp forests": {
+            "centroid": [
+                1.0760392486399348,
+                18.008545275489553
+            ]
+        },
+        "Banda Sea Islands moist deciduous forests": {
+            "centroid": [
+                -7.34669310648634,
+                130.92863667873334
+            ]
+        },
+        "Buru rain forests": {
+            "centroid": [
+                -3.4307203408839335,
+                126.63873940368943
+            ]
+        },
+        "Halmahera rain forests": {
+            "centroid": [
+                0.5701546461115305,
+                127.96008903766136
+            ]
+        },
+        "Seram rain forests": {
+            "centroid": [
+                -3.2434507420179175,
+                129.36922139278607
+            ]
+        },
+        "Sulawesi montane rain forests": {
+            "centroid": [
+                -2.0398075449502393,
+                120.79490356717088
+            ]
+        },
+        "Andaman Islands rain forests": {
+            "centroid": [
+                12.289251899560684,
+                92.78268883138476
+            ]
+        },
+        "Borneo lowland rain forests": {
+            "centroid": [
+                0.9969097129168462,
+                114.11583412315137
+            ]
+        },
+        "Borneo peat swamp forests": {
+            "centroid": [
+                0.36267295555641305,
+                113.04682494272203
+            ]
+        },
+        "Cardamom Mountains rain forests": {
+            "centroid": [
+                12.134961475710805,
+                103.13199093930979
+            ]
+        },
+        "Chin Hills-Arakan Yoma montane forests": {
+            "centroid": [
+                21.87742347230488,
+                93.74344871318719
+            ]
+        },
+        "Christmas and Cocos Islands tropical forests": {
+            "centroid": [
+                -10.688149864103414,
+                104.51923438156997
+            ]
+        },
+        "Eastern Java-Bali montane rain forests": {
+            "centroid": [
+                -8.030941199210057,
+                113.1741580771983
+            ]
+        },
+        "Kayah-Karen montane rain forests": {
+            "centroid": [
+                18.25380288438813,
+                98.30729709024206
+            ]
+        },
+        "Luang Prabang montane rain forests": {
+            "centroid": [
+                18.5301683691474,
+                102.22050478512445
+            ]
+        },
+        "Luzon montane rain forests": {
+            "centroid": [
+                16.38110396461082,
+                121.3332204766536
+            ]
+        },
+        "Maldives-Lakshadweep-Chagos Archipelago tropical moist forests": {
+            "centroid": [
+                8.223306574326605,
+                94.61378451210925
+            ]
+        },
+        "Mentawai Islands rain forests": {
+            "centroid": [
+                -2.080844729779067,
+                99.52017463588227
+            ]
+        },
+        "Mindanao-Eastern Visayas rain forests": {
+            "centroid": [
+                8.55517395618273,
+                124.75821313938688
+            ]
+        },
+        "Mindanao montane rain forests": {
+            "centroid": [
+                7.562643941818313,
+                125.09590636066689
+            ]
+        },
+        "Mindoro rain forests": {
+            "centroid": [
+                12.93802907762954,
+                121.07046746717785
+            ]
+        },
+        "Mizoram-Manipur-Kachin rain forests": {
+            "centroid": [
+                23.897342258444397,
+                94.25247180139432
+            ]
+        },
+        "Nansei Islands subtropical evergreen forests": {
+            "centroid": [
+                27.496324659187017,
+                128.23901743677484
+            ]
+        },
+        "Northern Annamites rain forests": {
+            "centroid": [
+                17.735659717725586,
+                105.37622286327654
+            ]
+        },
+        "Northern Triangle subtropical forests": {
+            "centroid": [
+                26.33024270616527,
+                97.17310792044812
+            ]
+        },
+        "Peninsular Malaysian montane rain forests": {
+            "centroid": [
+                4.846504731885266,
+                101.63391797680839
+            ]
+        },
+        "Peninsular Malaysian peat swamp forests": {
+            "centroid": [
+                3.1943283379716174,
+                102.70248023441829
+            ]
+        },
+        "Peninsular Malaysian rain forests": {
+            "centroid": [
+                3.9346587318337023,
+                102.31035393317508
+            ]
+        },
+        "South Taiwan monsoon rain forests": {
+            "centroid": [
+                22.389020298470015,
+                120.68450178387944
+            ]
+        },
+        "Southern Annamites montane rain forests": {
+            "centroid": [
+                14.141037780325073,
+                107.69385005402634
+            ]
+        },
+        "Southwest Borneo freshwater swamp forests": {
+            "centroid": [
+                -1.7874845875150502,
+                112.91894470233045
+            ]
+        },
+        "Sulu Archipelago rain forests": {
+            "centroid": [
+                5.596154631657082,
+                120.58237055845372
+            ]
+        },
+        "Sumatran lowland rain forests": {
+            "centroid": [
+                -0.6303782198965853,
+                101.33772542149747
+            ]
+        },
+        "Sumatran montane rain forests": {
+            "centroid": [
+                0.3868302445680112,
+                99.97331694104007
+            ]
+        },
+        "Taiwan subtropical evergreen forests": {
+            "centroid": [
+                23.84893346081958,
+                120.98027068892057
+            ]
+        },
+        "Tenasserim-South Thailand semi-evergreen rain forests": {
+            "centroid": [
+                10.346794085625229,
+                99.23423528008333
+            ]
+        },
+        "Western Java montane rain forests": {
+            "centroid": [
+                -7.091975818353277,
+                108.22595333485519
+            ]
+        },
+        "Borneo montane rain forests": {
+            "centroid": [
+                2.30633621195306,
+                115.11605955624724
+            ]
+        },
+        "Serra do Mar coastal forests": {
+            "centroid": [
+                -24.603675955210402,
+                -46.74659571502226
+            ]
+        },
+        "Tocantins/Pindare moist forests": {
+            "centroid": [
+                -3.011241229294425,
+                -47.437584100892636
+            ]
+        },
+        "Palau tropical moist forests": {
+            "centroid": [
+                7.4253860002609,
+                134.51915544960022
+            ]
+        },
+        "Comoros forests": {
+            "centroid": [
+                -12.061740598129145,
+                43.945388852132126
+            ]
+        },
+        "Eastern Guinean forests": {
+            "centroid": [
+                6.404972044405235,
+                -3.362598417998695
+            ]
+        },
+        "Guinean montane forests": {
+            "centroid": [
+                10.094785019490322,
+                -10.87957561362833
+            ]
+        },
+        "Knysna-Amatole montane forests": {
+            "centroid": [
+                -33.97900872068985,
+                23.229167694392125
+            ]
+        },
+        "Madagascar humid forests": {
+            "centroid": [
+                -18.907581403625347,
+                48.61125472320374
+            ]
+        },
+        "S\u00e3o Tom\u00e9, Pr\u00edncipe, and Annob\u00f3n forests": {
+            "centroid": [
+                0.4525857313239034,
+                6.729799085052457
+            ]
+        },
+        "East African montane forests": {
+            "centroid": [
+                0.14737806498567307,
+                35.809758578294634
+            ]
+        },
+        "Eastern Arc forests": {
+            "centroid": [
+                -7.035120400363419,
+                36.876213149701975
+            ]
+        },
+        "Greater Negros-Panay rain forests": {
+            "centroid": [
+                10.771849434966654,
+                122.94852762256416
+            ]
+        },
+        "Hainan Island monsoon rain forests": {
+            "centroid": [
+                19.15812881843323,
+                109.58772858628548
+            ]
+        },
+        "Himalayan subtropical broadleaf forests": {
+            "centroid": [
+                27.66822735551074,
+                84.80945037334328
+            ]
+        },
+        "Jian Nan subtropical evergreen forests": {
+            "centroid": [
+                26.04249505986127,
+                114.02533674205982
+            ]
+        },
+        "Luzon rain forests": {
+            "centroid": [
+                15.75573047291777,
+                121.54451974529836
+            ]
+        },
+        "Meghalaya subtropical forests": {
+            "centroid": [
+                25.728174622751656,
+                91.95295862819577
+            ]
+        },
+        "Myanmar coastal rain forests": {
+            "centroid": [
+                17.341586850277224,
+                95.87242489165168
+            ]
+        },
+        "Northern Indochina subtropical forests": {
+            "centroid": [
+                22.187406779389516,
+                100.74444750358234
+            ]
+        },
+        "Northern Thailand-Laos moist deciduous forests": {
+            "centroid": [
+                18.526864317322723,
+                100.7312519608424
+            ]
+        },
+        "Northern Vietnam lowland rain forests": {
+            "centroid": [
+                18.316870461528488,
+                106.17233582174569
+            ]
+        },
+        "South China Sea Islands": {
+            "centroid": [
+                13.589150330997889,
+                113.90922172750629
+            ]
+        },
+        "Sumatran freshwater swamp forests": {
+            "centroid": [
+                -0.42833606273206154,
+                102.37135869228041
+            ]
+        },
+        "Sumatran peat swamp forests": {
+            "centroid": [
+                -0.7538935641138105,
+                103.21749659193473
+            ]
+        },
+        "Sundaland heath forests": {
+            "centroid": [
+                -0.88809408017673,
+                113.77130723103811
+            ]
+        },
+        "Western Java rain forests": {
+            "centroid": [
+                -6.9195113417670635,
+                107.8776313144084
+            ]
+        },
+        "Atlantic Coast restingas": {
+            "centroid": [
+                -22.42975588046463,
+                -44.037510069506446
+            ]
+        },
+        "Bahia coastal forests": {
+            "centroid": [
+                -16.73212755842042,
+                -39.91479793309044
+            ]
+        },
+        "Bahia interior forests": {
+            "centroid": [
+                -18.251439663707252,
+                -41.98072438117591
+            ]
+        },
+        "Caatinga Enclaves moist forests": {
+            "centroid": [
+                -4.202957643605776,
+                -40.09205264578839
+            ]
+        },
+        "Pernambuco coastal forests": {
+            "centroid": [
+                -8.806727377639007,
+                -35.63617085923651
+            ]
+        },
+        "Guizhou Plateau broadleaf and mixed forests": {
+            "centroid": [
+                28.143994589940352,
+                107.89532771212826
+            ]
+        },
+        "Albertine Rift montane forests": {
+            "centroid": [
+                -2.4318041849775773,
+                29.39037875697362
+            ]
+        },
+        "Cameroon Highlands forests": {
+            "centroid": [
+                6.466148613950686,
+                11.081421475862156
+            ]
+        },
+        "Cross-Niger transition forests": {
+            "centroid": [
+                5.456003048804689,
+                7.418570685258951
+            ]
+        },
+        "Ethiopian montane forests": {
+            "centroid": [
+                7.714035005059046,
+                36.34288880838602
+            ]
+        },
+        "Kwazulu Natal-Cape coastal forests": {
+            "centroid": [
+                -30.195450650916236,
+                30.666734607667546
+            ]
+        },
+        "Madagascar subhumid forests": {
+            "centroid": [
+                -19.106145936406328,
+                47.14764695364909
+            ]
+        },
+        "Maputaland coastal forests and woodlands": {
+            "centroid": [
+                -26.35170821602883,
+                32.53878387548909
+            ]
+        },
+        "Niger Delta swamp forests": {
+            "centroid": [
+                5.113674276154489,
+                6.387006184247508
+            ]
+        },
+        "Nigerian lowland forests": {
+            "centroid": [
+                6.834388714792127,
+                4.920554861225746
+            ]
+        },
+        "Southern Swahili coastal forests and woodlands": {
+            "centroid": [
+                -16.746987885055738,
+                37.728077068843945
+            ]
+        },
+        "Western Guinean lowland forests": {
+            "centroid": [
+                6.990769861575759,
+                -9.492079114641205
+            ]
+        },
+        "Brahmaputra Valley semi-evergreen forests": {
+            "centroid": [
+                26.856407086428852,
+                93.1662921040162
+            ]
+        },
+        "Chao Phraya freshwater swamp forests": {
+            "centroid": [
+                14.680684273316457,
+                100.40459258722484
+            ]
+        },
+        "Chao Phraya lowland moist deciduous forests": {
+            "centroid": [
+                13.456794521977946,
+                100.28421558968203
+            ]
+        },
+        "Eastern Java-Bali rain forests": {
+            "centroid": [
+                -7.567828239877282,
+                112.29077319758417
+            ]
+        },
+        "Irrawaddy freshwater swamp forests": {
+            "centroid": [
+                16.817262410100486,
+                95.5305071545382
+            ]
+        },
+        "Irrawaddy moist deciduous forests": {
+            "centroid": [
+                21.222572790996754,
+                95.59212148950655
+            ]
+        },
+        "Lower Gangetic Plains moist deciduous forests": {
+            "centroid": [
+                24.667616388330323,
+                88.27964398393817
+            ]
+        },
+        "Northern Khorat Plateau moist deciduous forests": {
+            "centroid": [
+                17.947463613802366,
+                103.14125943897476
+            ]
+        },
+        "Red River freshwater swamp forests": {
+            "centroid": [
+                20.834418271095412,
+                105.99258750911653
+            ]
+        },
+        "South China-Vietnam subtropical evergreen forests": {
+            "centroid": [
+                22.237355426113723,
+                109.62448701328054
+            ]
+        },
+        "Sundarbans freshwater swamp forests": {
+            "centroid": [
+                22.729099658464122,
+                89.17831974746929
+            ]
+        },
+        "Tonle Sap-Mekong peat swamp forests": {
+            "centroid": [
+                10.913578567055525,
+                105.2755784562054
+            ]
+        },
+        "Tonle Sap freshwater swamp forests": {
+            "centroid": [
+                11.62254372964534,
+                104.91411878499463
+            ]
+        },
+        "Alto Paran\u00e1 Atlantic forests": {
+            "centroid": [
+                -23.453027626554825,
+                -51.806390878660885
+            ]
+        },
+        "Fernando de Noronha-Atol das Rocas moist forests": {
+            "centroid": [
+                -3.8582743430639392,
+                -32.43224764131676
+            ]
+        },
+        "Pernambuco interior forests": {
+            "centroid": [
+                -8.897971292392555,
+                -36.16871957934688
+            ]
+        },
+        "Trindade-Martin Vaz Islands tropical forests": {
+            "centroid": [
+                -20.498235911201686,
+                -30.262708469902687
+            ]
+        },
+        "Yunnan Plateau subtropical evergreen forests": {
+            "centroid": [
+                25.435958504939677,
+                103.05162000359164
+            ]
+        },
+        "New Caledonia rain forests": {
+            "centroid": [
+                -21.297896208741133,
+                165.82696313399032
+            ]
+        },
+        "Admiralty Islands lowland rain forests": {
+            "centroid": [
+                -2.0978921880194057,
+                146.9377885157643
+            ]
+        },
+        "Biak-Numfoor rain forests": {
+            "centroid": [
+                -0.9491367222826632,
+                135.81197668734282
+            ]
+        },
+        "Central Range Papuan montane rain forests": {
+            "centroid": [
+                -5.038867742694143,
+                141.35128706126807
+            ]
+        },
+        "Huon Peninsula montane rain forests": {
+            "centroid": [
+                -6.111194042585512,
+                146.7519752787712
+            ]
+        },
+        "Louisiade Archipelago rain forests": {
+            "centroid": [
+                -11.217311901838483,
+                153.1111366165302
+            ]
+        },
+        "New Britain-New Ireland lowland rain forests": {
+            "centroid": [
+                -5.012028329402789,
+                150.5774479700785
+            ]
+        },
+        "New Britain-New Ireland montane rain forests": {
+            "centroid": [
+                -5.177900329219584,
+                151.26337163263216
+            ]
+        },
+        "Northern New Guinea lowland rain and freshwater swamp forests": {
+            "centroid": [
+                -3.63801436257372,
+                141.33238298948197
+            ]
+        },
+        "Northern New Guinea montane rain forests": {
+            "centroid": [
+                -2.9336831750361885,
+                139.8077326512689
+            ]
+        },
+        "Solomon Islands rain forests": {
+            "centroid": [
+                -8.149523853153418,
+                158.32629437555408
+            ]
+        },
+        "Southeast Papuan rain forests": {
+            "centroid": [
+                -8.832525057157104,
+                147.82537356977218
+            ]
+        },
+        "Southern New Guinea freshwater swamp forests": {
+            "centroid": [
+                -6.720194381415826,
+                140.14120634442992
+            ]
+        },
+        "Southern New Guinea lowland rain forests": {
+            "centroid": [
+                -6.37143908976543,
+                140.81096261854788
+            ]
+        },
+        "Trobriand Islands rain forests": {
+            "centroid": [
+                -9.434444816059152,
+                151.1669606992506
+            ]
+        },
+        "Vanuatu rain forests": {
+            "centroid": [
+                -15.884296238113429,
+                167.59992192755428
+            ]
+        },
+        "Vogelkop-Aru lowland rain forests": {
+            "centroid": [
+                -2.800042980509441,
+                133.34907028212984
+            ]
+        },
+        "Yapen rain forests": {
+            "centroid": [
+                -1.7451011782986883,
+                136.178252813473
+            ]
+        },
+        "Sulawesi lowland rain forests": {
+            "centroid": [
+                -2.1591681915941017,
+                121.77458188754093
+            ]
+        },
+        "South Western Ghats montane rain forests": {
+            "centroid": [
+                10.909226630621909,
+                76.465096221671
+            ]
+        },
+        "Sri Lanka lowland rain forests": {
+            "centroid": [
+                6.776849119721414,
+                80.39088050476013
+            ]
+        },
+        "Sri Lanka montane rain forests": {
+            "centroid": [
+                6.978646631170429,
+                80.81252699109837
+            ]
+        },
+        "Central American Atlantic moist forests": {
+            "centroid": [
+                14.33756198788869,
+                -85.65892514340351
+            ]
+        },
+        "Chiapas montane forests": {
+            "centroid": [
+                16.863901304409964,
+                -92.16961804423069
+            ]
+        },
+        "Chimalapas montane forests": {
+            "centroid": [
+                16.689841493840913,
+                -94.1093126469481
+            ]
+        },
+        "Oaxacan montane forests": {
+            "centroid": [
+                18.319674829075993,
+                -96.5581982808893
+            ]
+        },
+        "Pet\u00e9n-Veracruz moist forests": {
+            "centroid": [
+                17.239699488553406,
+                -91.97558505202058
+            ]
+        },
+        "Sierra de los Tuxtlas": {
+            "centroid": [
+                18.330372663627692,
+                -94.96037140242119
+            ]
+        },
+        "Sierra Madre de Chiapas moist forests": {
+            "centroid": [
+                14.961920401033268,
+                -91.95530547678248
+            ]
+        },
+        "Veracruz montane forests": {
+            "centroid": [
+                20.612402585464427,
+                -98.40204583971529
+            ]
+        },
+        "Yucat\u00e1n moist forests": {
+            "centroid": [
+                19.1813010270753,
+                -89.03076699887181
+            ]
+        },
+        "Fiji tropical moist forests": {
+            "centroid": [
+                -17.463571946641725,
+                178.78832603808326
+            ]
+        },
+        "Hawai'i tropical moist forests": {
+            "centroid": [
+                20.429915233588673,
+                -156.41450729253324
+            ]
+        },
+        "Kermadec Islands subtropical moist forests": {
+            "centroid": [
+                -29.356691520607338,
+                -177.97091042850613
+            ]
+        },
+        "Marquesas tropical moist forests": {
+            "centroid": [
+                -9.364788012784327,
+                -139.57129669982865
+            ]
+        },
+        "Samoan tropical moist forests": {
+            "centroid": [
+                -13.77449762296933,
+                -172.04835055306015
+            ]
+        },
+        "Society Islands tropical moist forests": {
+            "centroid": [
+                -17.418459254521835,
+                -149.97623618885885
+            ]
+        },
+        "Norfolk Island subtropical forests": {
+            "centroid": [
+                -29.034527366594276,
+                167.95327894286817
+            ]
+        },
+        "North Western Ghats montane rain forests": {
+            "centroid": [
+                15.25826673275101,
+                74.60215915271452
+            ]
+        },
+        "South Western Ghats moist deciduous forests": {
+            "centroid": [
+                10.757840416566626,
+                76.81641534581047
+            ]
+        },
+        "Central American montane forests": {
+            "centroid": [
+                14.69652764382846,
+                -89.05865642415546
+            ]
+        },
+        "Pantanos de Centla": {
+            "centroid": [
+                18.09111441781923,
+                -92.31905761270454
+            ]
+        },
+        "Veracruz moist forests": {
+            "centroid": [
+                21.981915384796647,
+                -98.2862873052348
+            ]
+        },
+        "Cook Islands tropical moist forests": {
+            "centroid": [
+                -20.719806996811663,
+                -158.69607031149553
+            ]
+        },
+        "Ogasawara subtropical moist forests": {
+            "centroid": [
+                26.2741876411537,
+                142.08447642100552
+            ]
+        },
+        "Western Polynesian tropical moist forests": {
+            "centroid": [
+                -5.262586939037934,
+                -175.26074002838146
+            ]
+        },
+        "Northern Swahili coastal forests": {
+            "centroid": [
+                -2.3105053395013995,
+                41.43372918523318
+            ]
+        },
+        "Lord Howe Island subtropical forests": {
+            "centroid": [
+                -31.556546294817434,
+                159.077945392833
+            ]
+        },
+        "Queensland tropical rain forests": {
+            "centroid": [
+                -19.216294819024203,
+                147.14639610161976
+            ]
+        },
+        "East Deccan moist deciduous forests": {
+            "centroid": [
+                20.506541663696847,
+                82.02612085966244
+            ]
+        },
+        "Malabar Coast moist forests": {
+            "centroid": [
+                13.013807015439024,
+                75.16052354190542
+            ]
+        },
+        "North Western Ghats moist deciduous forests": {
+            "centroid": [
+                17.28468285241989,
+                74.13812207321656
+            ]
+        },
+        "Orissa semi-evergreen forests": {
+            "centroid": [
+                20.257899614106957,
+                85.78930270537526
+            ]
+        },
+        "Upper Gangetic Plains moist deciduous forests": {
+            "centroid": [
+                27.035371646158406,
+                80.17691911335544
+            ]
+        },
+        "Carolines tropical moist forests": {
+            "centroid": [
+                6.6637220531671035,
+                157.88661215492138
+            ]
+        },
+        "Central Polynesian tropical moist forests": {
+            "centroid": [
+                0.7465434456673727,
+                -157.87649229016827
+            ]
+        },
+        "Eastern Micronesia tropical moist forests": {
+            "centroid": [
+                3.7214580309497096,
+                172.02635189450854
+            ]
+        },
+        "Tongan tropical moist forests": {
+            "centroid": [
+                -19.629818154728166,
+                -173.42442002723934
+            ]
+        },
+        "Tuamotu tropical moist forests": {
+            "centroid": [
+                -17.730307349878373,
+                -142.15274093347523
+            ]
+        },
+        "Tubuai tropical moist forests": {
+            "centroid": [
+                -24.39914938330802,
+                -148.58436923052793
+            ]
+        },
+        "Bolivian Yungas": {
+            "centroid": [
+                -15.717659174672585,
+                -67.08700674729975
+            ]
+        },
+        "Cayos Miskitos-San Andr\u00e9s and Providencia moist forests": {
+            "centroid": [
+                13.362446310362866,
+                -82.15199651569687
+            ]
+        },
+        "Cocos Island moist forests": {
+            "centroid": [
+                5.5299908116100935,
+                -87.06148214084217
+            ]
+        },
+        "Cordillera La Costa montane forests": {
+            "centroid": [
+                10.24213896079507,
+                -66.31156896531007
+            ]
+        },
+        "Eastern Panamanian montane forests": {
+            "centroid": [
+                8.02591284267494,
+                -77.84509903139462
+            ]
+        },
+        "Guianan Highlands moist forests": {
+            "centroid": [
+                4.262652274653116,
+                -63.08145828796164
+            ]
+        },
+        "Guianan piedmont moist forests": {
+            "centroid": [
+                4.106576423016021,
+                -64.05392152597535
+            ]
+        },
+        "Japur\u00e1-Solim\u00f5es-Negro moist forests": {
+            "centroid": [
+                -0.9568616582770948,
+                -65.45391776272146
+            ]
+        },
+        "Leeward Islands moist forests": {
+            "centroid": [
+                16.57205255569679,
+                -62.213822779502536
+            ]
+        },
+        "Maraj\u00f3 v\u00e1rzea": {
+            "centroid": [
+                -0.32772236007224237,
+                -50.350366216981165
+            ]
+        },
+        "Orinoco Delta swamp forests": {
+            "centroid": [
+                8.82800302725026,
+                -61.17321636468375
+            ]
+        },
+        "Pantepui forests & shrublands": {
+            "centroid": [
+                4.773410062246057,
+                -64.29420007822507
+            ]
+        },
+        "Purus-Madeira moist forests": {
+            "centroid": [
+                -6.859341733437662,
+                -63.51502218148109
+            ]
+        },
+        "Rio Negro campinarana": {
+            "centroid": [
+                0.8607335309745541,
+                -65.25426405932936
+            ]
+        },
+        "Talamancan montane forests": {
+            "centroid": [
+                9.29930418948691,
+                -82.96591219746558
+            ]
+        },
+        "Tapaj\u00f3s-Xingu moist forests": {
+            "centroid": [
+                -5.899228199897558,
+                -54.428079504183614
+            ]
+        },
+        "Ucayali moist forests": {
+            "centroid": [
+                -7.5218428118968825,
+                -75.96950701953934
+            ]
+        },
+        "Venezuelan Andes montane forests": {
+            "centroid": [
+                8.780883279604465,
+                -70.84133522474671
+            ]
+        },
+        "Caqueta moist forests": {
+            "centroid": [
+                0.749354502271875,
+                -71.99030242477949
+            ]
+        },
+        "Catatumbo moist forests": {
+            "centroid": [
+                9.060669812546042,
+                -72.2213617565425
+            ]
+        },
+        "Cauca Valley montane forests": {
+            "centroid": [
+                4.881266702026857,
+                -75.96211476306155
+            ]
+        },
+        "Choc\u00f3-Dari\u00e9n moist forests": {
+            "centroid": [
+                5.7673418020552,
+                -77.34676026164185
+            ]
+        },
+        "Cordillera Oriental montane forests": {
+            "centroid": [
+                5.959927475366538,
+                -73.38310740055441
+            ]
+        },
+        "Cuban moist forests": {
+            "centroid": [
+                21.267145115793546,
+                -78.02915161003637
+            ]
+        },
+        "Eastern Cordillera Real montane forests": {
+            "centroid": [
+                -2.7529388008390425,
+                -78.4815043968727
+            ]
+        },
+        "Guianan freshwater swamp forests": {
+            "centroid": [
+                5.707639967228269,
+                -55.74012028634233
+            ]
+        },
+        "Guianan lowland moist forests": {
+            "centroid": [
+                4.266041727012573,
+                -56.426088535277266
+            ]
+        },
+        "Gurupa v\u00e1rzea": {
+            "centroid": [
+                -1.9742014740087435,
+                -53.52264945095048
+            ]
+        },
+        "Isthmian-Atlantic moist forests": {
+            "centroid": [
+                10.205768271295321,
+                -82.47349612949286
+            ]
+        },
+        "Jamaican moist forests": {
+            "centroid": [
+                18.189742920956583,
+                -77.28413345950055
+            ]
+        },
+        "Juru\u00e1-Purus moist forests": {
+            "centroid": [
+                -5.360354392662105,
+                -66.54995611325528
+            ]
+        },
+        "Madeira-Tapaj\u00f3s moist forests": {
+            "centroid": [
+                -8.864995264576315,
+                -60.32644474364266
+            ]
+        },
+        "Magdalena Valley montane forests": {
+            "centroid": [
+                5.541490256569085,
+                -74.50503840340262
+            ]
+        },
+        "Mato Grosso tropical dry forests": {
+            "centroid": [
+                -10.21448308839446,
+                -53.46974990537617
+            ]
+        },
+        "Monte Alegre v\u00e1rzea": {
+            "centroid": [
+                -4.385415333419539,
+                -60.668036279633135
+            ]
+        },
+        "Napo moist forests": {
+            "centroid": [
+                -1.9792821962535883,
+                -75.82018279004866
+            ]
+        },
+        "Negro-Branco moist forests": {
+            "centroid": [
+                2.2515338350716667,
+                -67.56948389052994
+            ]
+        },
+        "Northwest Andean montane forests": {
+            "centroid": [
+                2.2032641638028796,
+                -77.60747279995667
+            ]
+        },
+        "Puerto Rican moist forests": {
+            "centroid": [
+                18.255777439477836,
+                -66.46587611175187
+            ]
+        },
+        "Purus v\u00e1rzea": {
+            "centroid": [
+                -4.103520265209392,
+                -67.38299004501027
+            ]
+        },
+        "Santa Marta montane forests": {
+            "centroid": [
+                10.795618986625945,
+                -73.65476093311985
+            ]
+        },
+        "Solim\u00f5es-Japur\u00e1 moist forests": {
+            "centroid": [
+                -2.197885187835081,
+                -71.25761716726741
+            ]
+        },
+        "Southern Andean Yungas": {
+            "centroid": [
+                -23.251945599639217,
+                -64.65464521188194
+            ]
+        },
+        "Southwest Amazon moist forests": {
+            "centroid": [
+                -9.573160362764867,
+                -70.2645479554847
+            ]
+        },
+        "Trinidad and Tobago moist forest": {
+            "centroid": [
+                10.460433699712242,
+                -61.24398461017915
+            ]
+        },
+        "Uatum\u00e3-Trombetas moist forests": {
+            "centroid": [
+                -0.31868217788235814,
+                -56.91347166926008
+            ]
+        },
+        "Western Ecuador moist forests": {
+            "centroid": [
+                -0.3553058673209362,
+                -79.50046609023788
+            ]
+        },
+        "Windward Islands moist forests": {
+            "centroid": [
+                14.358760929815864,
+                -61.19674764096718
+            ]
+        },
+        "Xingu-Tocantins-Araguaia moist forests": {
+            "centroid": [
+                -5.5732573329292165,
+                -50.86257653917585
+            ]
+        },
+        "Araucaria moist forests": {
+            "centroid": [
+                -26.412762558304422,
+                -51.22039198055885
+            ]
+        },
+        "Costa Rican seasonal moist forests": {
+            "centroid": [
+                10.426144078438199,
+                -85.04717129842301
+            ]
+        },
+        "Hispaniolan moist forests": {
+            "centroid": [
+                18.947400396939717,
+                -71.0847884515127
+            ]
+        },
+        "Iquitos v\u00e1rzea": {
+            "centroid": [
+                -6.227301403727082,
+                -73.41632747449037
+            ]
+        },
+        "Isthmian-Pacific moist forests": {
+            "centroid": [
+                8.413751656818736,
+                -82.02359186425497
+            ]
+        },
+        "Magdalena-Urab\u00e1 moist forests": {
+            "centroid": [
+                8.259468088122452,
+                -74.89506172540436
+            ]
+        },
+        "Mara\u00f1\u00f3n dry forests": {
+            "centroid": [
+                -6.358257002737875,
+                -78.29847011836846
+            ]
+        },
+        "Peruvian Yungas": {
+            "centroid": [
+                -10.711386407398557,
+                -74.88816282159128
+            ]
+        },
+        "Rapa Nui and Sala y G\u00f3mez subtropical forests": {
+            "centroid": [
+                -27.12305325309881,
+                -109.35713175927616
+            ]
+        }
+    },
+    "Tropical & Subtropical Grasslands, Savannas & Shrublands": {
+        "Kalahari Acacia woodlands": {
+            "centroid": [
+                -20.295060743770847,
+                20.397815758730044
+            ]
+        },
+        "Serengeti volcanic grasslands": {
+            "centroid": [
+                -2.8140123664561116,
+                36.851352248219676
+            ]
+        },
+        "Campos Rupestres montane savanna": {
+            "centroid": [
+                -19.031345685812614,
+                -43.8239075412737
+            ]
+        },
+        "Angolan mopane woodlands": {
+            "centroid": [
+                -18.504396874643827,
+                14.971637997543475
+            ]
+        },
+        "Zambezian Baikiaea woodlands": {
+            "centroid": [
+                -17.284784983404382,
+                20.580213884510975
+            ]
+        },
+        "Zambezian mopane woodlands": {
+            "centroid": [
+                -19.242543397748683,
+                29.665664971343052
+            ]
+        },
+        "Kimberly tropical savanna": {
+            "centroid": [
+                -16.4520114682106,
+                126.7197955904648
+            ]
+        },
+        "Central bushveld": {
+            "centroid": [
+                -24.328478946152035,
+                27.757867229731065
+            ]
+        },
+        "Central Zambezian wet miombo woodlands": {
+            "centroid": [
+                -10.100374953957004,
+                28.542868468821393
+            ]
+        },
+        "East Sudanian savanna": {
+            "centroid": [
+                8.42686767225813,
+                26.619477141200026
+            ]
+        },
+        "Itigi-Sumbu thicket": {
+            "centroid": [
+                -6.9409211366573,
+                32.68719252233545
+            ]
+        },
+        "Limpopo lowveld": {
+            "centroid": [
+                -25.321338473008,
+                31.742095986992794
+            ]
+        },
+        "Masai xeric grasslands and shrublands": {
+            "centroid": [
+                3.1244495966490358,
+                37.269141990255235
+            ]
+        },
+        "Northern Acacia-Commiphora bushlands and thickets": {
+            "centroid": [
+                0.1938921679522199,
+                37.55600281229714
+            ]
+        },
+        "Northern Congolian Forest-Savanna": {
+            "centroid": [
+                5.533545311992234,
+                22.046126700240258
+            ]
+        },
+        "Sahelian Acacia savanna": {
+            "centroid": [
+                15.794740370042623,
+                14.654615944605808
+            ]
+        },
+        "Southern Acacia-Commiphora bushlands and thickets": {
+            "centroid": [
+                -4.266155567272057,
+                35.41489457483146
+            ]
+        },
+        "Zambezian-Limpopo mixed woodlands": {
+            "centroid": [
+                -18.195199127153785,
+                31.06670437338429
+            ]
+        },
+        "Dry miombo woodlands": {
+            "centroid": [
+                -13.82124254614884,
+                32.450159812527346
+            ]
+        },
+        "Southwest Arabian montane woodlands and grasslands": {
+            "centroid": [
+                16.777505012289705,
+                43.11652433286585
+            ]
+        },
+        "Cerrado": {
+            "centroid": [
+                -14.994906710706937,
+                -49.72562782414743
+            ]
+        },
+        "Angolan scarp savanna and woodlands": {
+            "centroid": [
+                -9.218641908161851,
+                14.195908108170926
+            ]
+        },
+        "Angolan wet miombo woodlands": {
+            "centroid": [
+                -11.698669197343612,
+                17.698972641479134
+            ]
+        },
+        "Ascension scrub and grasslands": {
+            "centroid": [
+                -7.937442307075518,
+                -14.363080297956094
+            ]
+        },
+        "Drakensberg Escarpment savanna and thicket": {
+            "centroid": [
+                -30.64389600002112,
+                29.56244551502663
+            ]
+        },
+        "Drakensberg grasslands": {
+            "centroid": [
+                -30.174117187946177,
+                28.700356966076523
+            ]
+        },
+        "Guinean forest-savanna": {
+            "centroid": [
+                8.97140820738752,
+                -1.3702130233106404
+            ]
+        },
+        "Mandara Plateau woodlands": {
+            "centroid": [
+                10.515301145698432,
+                13.699935690965075
+            ]
+        },
+        "Southern Congolian forest-savanna": {
+            "centroid": [
+                -5.729455219626935,
+                21.93136464329884
+            ]
+        },
+        "West Sudanian savanna": {
+            "centroid": [
+                11.947924052364387,
+                -0.8941142662886987
+            ]
+        },
+        "St. Helena scrub and woodlands": {
+            "centroid": [
+                -15.960400848921045,
+                -5.716797520103392
+            ]
+        },
+        "Victoria Basin forest-savanna": {
+            "centroid": [
+                -0.0724762997202162,
+                32.10206636691413
+            ]
+        },
+        "Western Congolian forest-savanna": {
+            "centroid": [
+                -5.056069576811444,
+                15.063522542959852
+            ]
+        },
+        "Terai-Duar savanna and grasslands": {
+            "centroid": [
+                27.537891004909337,
+                84.43808154729199
+            ]
+        },
+        "Arnhem Land tropical savanna": {
+            "centroid": [
+                -12.968444639389585,
+                133.2995440733084
+            ]
+        },
+        "Brigalow tropical savanna": {
+            "centroid": [
+                -25.383446828087028,
+                148.9786879832357
+            ]
+        },
+        "Cape York Peninsula tropical savanna": {
+            "centroid": [
+                -14.001550941576248,
+                142.9999648542346
+            ]
+        },
+        "Carpentaria tropical savanna": {
+            "centroid": [
+                -17.50310246735293,
+                139.22230453593784
+            ]
+        },
+        "Einasleigh upland savanna": {
+            "centroid": [
+                -18.60116401077434,
+                144.79363436234922
+            ]
+        },
+        "Mitchell Grass Downs": {
+            "centroid": [
+                -21.604885391240696,
+                141.17433454655296
+            ]
+        },
+        "Trans Fly savanna and grasslands": {
+            "centroid": [
+                -8.629976353132683,
+                141.4208647339917
+            ]
+        },
+        "Victoria Plains tropical savanna": {
+            "centroid": [
+                -17.219637001939386,
+                130.85494085262908
+            ]
+        },
+        "Hawai'i tropical high shrublands": {
+            "centroid": [
+                19.61362221503088,
+                -155.65538623005295
+            ]
+        },
+        "Horn of Africa xeric bushlands": {
+            "centroid": [
+                8.98233371923055,
+                47.37037990077554
+            ]
+        },
+        "Somali Acacia-Commiphora bushlands and thickets": {
+            "centroid": [
+                5.020946339094779,
+                42.58743590405988
+            ]
+        },
+        "South Arabian fog woodlands, shrublands, and dune": {
+            "centroid": [
+                15.523932291008675,
+                50.696143028220675
+            ]
+        },
+        "Western Gulf coastal grasslands": {
+            "centroid": [
+                28.149967640531912,
+                -96.23820536636362
+            ]
+        },
+        "Clipperton Island shrub and grasslands": {
+            "centroid": [
+                10.301112837634337,
+                -109.22125792798433
+            ]
+        },
+        "Hawai'i tropical low shrublands": {
+            "centroid": [
+                20.73705180988595,
+                -157.00347436338785
+            ]
+        },
+        "Northwest Hawai'i scrub": {
+            "centroid": [
+                26.44039991347848,
+                -172.59323644565518
+            ]
+        },
+        "Beni savanna": {
+            "centroid": [
+                -13.676148976626013,
+                -65.48424367446815
+            ]
+        },
+        "Guianan savanna": {
+            "centroid": [
+                3.109897863256115,
+                -59.08119521253144
+            ]
+        },
+        "Dry Chaco": {
+            "centroid": [
+                -25.00873365928261,
+                -62.63188434371371
+            ]
+        },
+        "Llanos": {
+            "centroid": [
+                6.72207166417231,
+                -68.15775673010127
+            ]
+        },
+        "Belizian pine savannas": {
+            "centroid": [
+                17.211751594601854,
+                -88.56499784270702
+            ]
+        },
+        "Humid Chaco": {
+            "centroid": [
+                -26.207969140844995,
+                -58.65746972227651
+            ]
+        },
+        "Miskito pine forests": {
+            "centroid": [
+                14.406328345411824,
+                -83.91234970472243
+            ]
+        },
+        "Uruguayan savanna": {
+            "centroid": [
+                -31.535272580809576,
+                -54.94809204573109
+            ]
+        }
+    },
+    "Boreal Forests/Taiga": {
+        "Alaska Peninsula montane taiga": {
+            "centroid": [
+                57.119339949408264,
+                -157.02469297374523
+            ]
+        },
+        "Central Canadian Shield forests": {
+            "centroid": [
+                49.85543046782225,
+                -78.85631103552913
+            ]
+        },
+        "Cook Inlet taiga": {
+            "centroid": [
+                61.42919295120691,
+                -150.80985013198017
+            ]
+        },
+        "Copper Plateau taiga": {
+            "centroid": [
+                62.16990259997762,
+                -145.32002103497095
+            ]
+        },
+        "Eastern Canadian forests": {
+            "centroid": [
+                50.60559813879596,
+                -63.638381712699505
+            ]
+        },
+        "Eastern Canadian Shield taiga": {
+            "centroid": [
+                55.102335433140695,
+                -68.63724882365852
+            ]
+        },
+        "Interior Alaska-Yukon lowland taiga": {
+            "centroid": [
+                64.72797109655282,
+                -153.37465003610413
+            ]
+        },
+        "Mid-Canada Boreal Plains forests": {
+            "centroid": [
+                54.83909806625907,
+                -108.36580951598022
+            ]
+        },
+        "Midwest Canadian Shield forests": {
+            "centroid": [
+                54.26123326631851,
+                -96.04530775585702
+            ]
+        },
+        "Muskwa-Slave Lake taiga": {
+            "centroid": [
+                59.914620811233114,
+                -118.45831763852775
+            ]
+        },
+        "Northern Canadian Shield taiga": {
+            "centroid": [
+                61.486657391379055,
+                -105.06769288057133
+            ]
+        },
+        "Southern Hudson Bay taiga": {
+            "centroid": [
+                53.814140386689004,
+                -85.49135221559648
+            ]
+        },
+        "Watson Highlands taiga": {
+            "centroid": [
+                61.5229947579381,
+                -132.62673599164236
+            ]
+        },
+        "Northern Cordillera forests": {
+            "centroid": [
+                58.45227262049424,
+                -128.9625208165415
+            ]
+        },
+        "Northwest Territories taiga": {
+            "centroid": [
+                65.39774443296804,
+                -123.9015489582962
+            ]
+        },
+        "East Siberian taiga": {
+            "centroid": [
+                61.56053149206861,
+                112.88046922666923
+            ]
+        },
+        "Iceland boreal birch forests and alpine tundra": {
+            "centroid": [
+                65.06438152988312,
+                -18.731917917711375
+            ]
+        },
+        "Kamchatka-Kurile meadows and sparse forests": {
+            "centroid": [
+                55.35998141124596,
+                158.43376272483894
+            ]
+        },
+        "Kamchatka taiga": {
+            "centroid": [
+                56.095489328123826,
+                160.35478217441266
+            ]
+        },
+        "Northeast Siberian taiga": {
+            "centroid": [
+                65.49904186465082,
+                147.29426493307486
+            ]
+        },
+        "Okhotsk-Manchurian taiga": {
+            "centroid": [
+                51.9459261061764,
+                136.4144779351067
+            ]
+        },
+        "Sakhalin Island taiga": {
+            "centroid": [
+                50.58172499719661,
+                142.79345126377265
+            ]
+        },
+        "Trans-Baikal conifer forests": {
+            "centroid": [
+                50.902125679522825,
+                109.88093866322211
+            ]
+        },
+        "West Siberian taiga": {
+            "centroid": [
+                61.38200400216197,
+                75.14044685440739
+            ]
+        },
+        "Scandinavian and Russian taiga": {
+            "centroid": [
+                63.17573833648608,
+                36.85680165750664
+            ]
+        },
+        "Urals montane forest and taiga": {
+            "centroid": [
+                59.15052276209132,
+                58.41680414549151
+            ]
+        }
+    },
+    "Tundra": {
+        "Ahklun and Kilbuck Upland Tundra": {
+            "centroid": [
+                60.072339379409335,
+                -159.95396820981927
+            ]
+        },
+        "Aleutian Islands tundra": {
+            "centroid": [
+                53.04578727753876,
+                -173.43756624018755
+            ]
+        },
+        "Beringia lowland tundra": {
+            "centroid": [
+                60.9053488851592,
+                -160.89307740337003
+            ]
+        },
+        "Brooks-British Range tundra": {
+            "centroid": [
+                68.37932774480802,
+                -149.12724118807844
+            ]
+        },
+        "Kalaallit Nunaat High Arctic tundra": {
+            "centroid": [
+                81.65730002789047,
+                -40.87179908680918
+            ]
+        },
+        "Pacific Coastal Mountain icefields and tundra": {
+            "centroid": [
+                59.438295151929125,
+                -139.23137705387526
+            ]
+        },
+        "Novosibirsk Islands Arctic desert": {
+            "centroid": [
+                75.07541338303871,
+                142.05992090585198
+            ]
+        },
+        "Wrangel Island Arctic desert": {
+            "centroid": [
+                71.21518754330363,
+                -179.48195523955968
+            ]
+        },
+        "Alaska-St. Elias Range tundra": {
+            "centroid": [
+                62.13277547547787,
+                -147.09922130540738
+            ]
+        },
+        "Arctic coastal tundra": {
+            "centroid": [
+                70.37256765158578,
+                -155.11877112003475
+            ]
+        },
+        "Arctic foothills tundra": {
+            "centroid": [
+                69.16798869970731,
+                -155.4981496251492
+            ]
+        },
+        "Beringia upland tundra": {
+            "centroid": [
+                65.36279932052335,
+                -164.14752121591755
+            ]
+        },
+        "Canadian Low Arctic tundra": {
+            "centroid": [
+                65.75614598895739,
+                -99.13115906940823
+            ]
+        },
+        "Davis Highlands tundra": {
+            "centroid": [
+                69.20185573286388,
+                -68.58692452008297
+            ]
+        },
+        "Canadian High Arctic tundra": {
+            "centroid": [
+                75.73023222126506,
+                -84.45300137076175
+            ]
+        },
+        "Interior Yukon-Alaska alpine tundra": {
+            "centroid": [
+                64.86407186875563,
+                -144.97752132165772
+            ]
+        },
+        "Canadian Middle Arctic Tundra": {
+            "centroid": [
+                69.06278125695016,
+                -91.08110141448437
+            ]
+        },
+        "Ogilvie-MacKenzie alpine tundra": {
+            "centroid": [
+                64.43428031151687,
+                -131.97052986914537
+            ]
+        },
+        "Torngat Mountain tundra": {
+            "centroid": [
+                58.687010455720035,
+                -64.05101068216037
+            ]
+        },
+        "Kalaallit Nunaat Arctic steppe": {
+            "centroid": [
+                69.62876285697395,
+                -38.91020076734502
+            ]
+        },
+        "Russian Arctic desert": {
+            "centroid": [
+                79.66061406999177,
+                51.73853386994074
+            ]
+        },
+        "Russian Bering tundra": {
+            "centroid": [
+                63.50402201029859,
+                169.81053406842292
+            ]
+        },
+        "Cherskii-Kolyma mountain tundra": {
+            "centroid": [
+                65.83012913270245,
+                144.37527559602933
+            ]
+        },
+        "Chukchi Peninsula tundra": {
+            "centroid": [
+                67.624046458596,
+                177.25286410208395
+            ]
+        },
+        "Kola Peninsula tundra": {
+            "centroid": [
+                68.48076027079537,
+                35.96190405016703
+            ]
+        },
+        "Northeast Siberian coastal tundra": {
+            "centroid": [
+                70.87548539505822,
+                147.11904429188417
+            ]
+        },
+        "Northwest Russian-Novaya Zemlya tundra": {
+            "centroid": [
+                68.294035276499,
+                57.09495538038216
+            ]
+        },
+        "Scandinavian Montane Birch forest and grasslands": {
+            "centroid": [
+                65.34603606103715,
+                13.78923888861843
+            ]
+        },
+        "Taimyr-Central Siberian tundra": {
+            "centroid": [
+                72.3164681133716,
+                100.98398844784465
+            ]
+        },
+        "Trans-Baikal Bald Mountain tundra": {
+            "centroid": [
+                56.185074704377854,
+                122.27436705214163
+            ]
+        },
+        "Yamal-Gydan tundra": {
+            "centroid": [
+                69.06936464947026,
+                76.2553864620324
+            ]
+        },
+        "Kamchatka tundra": {
+            "centroid": [
+                56.576460259847074,
+                159.87730826756294
+            ]
+        },
+        "Adelie Land tundra": {
+            "centroid": [
+                -68.57656608075645,
+                151.25535876196534
+            ]
+        },
+        "Central South Antarctic Peninsula tundra": {
+            "centroid": [
+                -70.40589280635284,
+                -67.12147761916832
+            ]
+        },
+        "East Antarctic tundra": {
+            "centroid": [
+                -67.91054055145852,
+                91.09957927467123
+            ]
+        },
+        "Ellsworth Land tundra": {
+            "centroid": [
+                -73.44633643902503,
+                -98.3280377646656
+            ]
+        },
+        "Ellsworth Mountains tundra": {
+            "centroid": [
+                -78.86006167353855,
+                -84.82604685899281
+            ]
+        },
+        "Enderby Land tundra": {
+            "centroid": [
+                -67.65740538401481,
+                50.137070637386394
+            ]
+        },
+        "Northeast Antarctic Peninsula tundra": {
+            "centroid": [
+                -64.12761516829829,
+                -58.47490207241026
+            ]
+        },
+        "Northwest Antarctic Peninsula tundra": {
+            "centroid": [
+                -65.3537748582281,
+                -62.64009323329984
+            ]
+        },
+        "North Victoria Land tundra": {
+            "centroid": [
+                -72.72162304319944,
+                164.88114495751464
+            ]
+        },
+        "Prince Charles Mountains tundra": {
+            "centroid": [
+                -72.18131539828222,
+                66.52089804140283
+            ]
+        },
+        "Scotia Sea Islands tundra": {
+            "centroid": [
+                -58.9548300173434,
+                -45.36978854659156
+            ]
+        },
+        "South Antarctic Peninsula tundra": {
+            "centroid": [
+                -74.10501749241054,
+                -64.36307908123271
+            ]
+        },
+        "South Orkney Islands tundra": {
+            "centroid": [
+                -60.67022512596833,
+                -45.29356634524587
+            ]
+        },
+        "South Victoria Land tundra": {
+            "centroid": [
+                -77.7086753552398,
+                162.09126156651828
+            ]
+        },
+        "Southern Indian Ocean Islands tundra": {
+            "centroid": [
+                -49.48319498270124,
+                67.59200670539799
+            ]
+        },
+        "Transantarctic Mountains tundra": {
+            "centroid": [
+                -85.82815961454199,
+                -177.3805713380788
+            ]
+        },
+        "Dronning Maud Land tundra": {
+            "centroid": [
+                -72.36993397782612,
+                14.099358594461254
+            ]
+        },
+        "Marie Byrd Land tundra": {
+            "centroid": [
+                -76.55900990502434,
+                -134.69906302032751
+            ]
+        },
+        "Antipodes Subantarctic Islands tundra": {
+            "centroid": [
+                -51.508030097289755,
+                167.0229607626829
+            ]
+        }
+    }
+}
