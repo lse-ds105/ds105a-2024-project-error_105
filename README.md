@@ -25,7 +25,7 @@ pip install -r requirements.txt
 ## Data Sources 
 
 ## Project Structure 
-```
+```bash
 /project-root
 ├── Data/                 
 │   ├── Biomes Data/           # Biomes data files
