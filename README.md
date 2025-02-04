@@ -25,6 +25,7 @@ pip install -r requirements.txt
 ## Data Sources 
 
 ## Project Structure 
+```
 /project-root
 ├── Data/                 
 │   ├── Biomes Data/           # Biomes data files
@@ -40,7 +41,7 @@ pip install -r requirements.txt
 ├── docs/                      # GitHub Pages entry point, assorted diagrams and media files
 ├── README.md                  # Project documentation
 └── requirements.txt           # Dependencies
-
+```
 
 
 
