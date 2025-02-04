@@ -198,3 +198,64 @@ pokemon_gdf = gpd.GeoDataFrame(pokemon_ranked, geometry='geometry')
 
 
 ### Why must you be careful around pokemon? Cos they might just peek-a-chu!
+
+
+# **PokéMap Project**
+
+## **1. Introduction**
+Welcome to the **PokéMap Project**! This initiative maps Pokémon of specific types—fire, water, and ice—based on real-world environmental data. By integrating Pokémon characteristics with geographic and weather data, we create an immersive visualization of where Pokémon would most likely reside in the real world.
+
+### **Purpose of the Project**
+- Combine Pokémon traits and environmental data to simulate realistic Pokémon habitats.
+- Provide a fun and data-driven visualization tool for Pokémon fans and researchers.
+
+### **Data Sources Used**
+Click on each source below to learn more:
+
+- **[PokeAPI](#)**  
+  <button onclick="showPopup('pokeapi')">Learn More</button>
+  
+- **[Open-Meteo API](#)**  
+  <button onclick="showPopup('openmeteo')">Learn More</button>
+
+- **[Google Earth Engine Dataset](#)**  
+  <button onclick="showPopup('googleearth')">Learn More</button>
+
+---
+
+## **Popups for Data Sources**
+
+<div id="pokeapi" style="display:none;">
+  <h3>PokeAPI</h3>
+  <p>PokeAPI provides detailed information about Pokémon, including their types, stats, and descriptions, which were used to determine their affinities for specific environments.</p>
+  <button onclick="closePopup('pokeapi')">Close</button>
+</div>
+
+<div id="openmeteo" style="display:none;">
+  <h3>Open-Meteo API</h3>
+  <p>The Open-Meteo API was used to retrieve historical and forecasted weather data, helping identify the hottest, coldest, and wettest places in the world.</p>
+  <button onclick="closePopup('openmeteo')">Close</button>
+</div>
+
+<div id="googleearth" style="display:none;">
+  <h3>Google Earth Engine Dataset</h3>
+  <p>Google Earth Engine's global biome data provided insights into vegetation, terrain, and habitat classifications, refining where Pokémon would likely reside.</p>
+  <button onclick="closePopup('googleearth')">Close</button>
+</div>
+
+---
+
+<script>
+function showPopup(id) {
+  document.getElementById(id).style.display = 'block';
+}
+
+function closePopup(id) {
+  document.getElementById(id).style.display = 'none';
+}
+</script>
+
+---
+
+### **[Back to Top](#pokemap-project)**
+
