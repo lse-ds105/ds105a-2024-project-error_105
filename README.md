@@ -27,15 +27,15 @@ pip install -r requirements.txt
 ## Project Structure 
 ```bash
 /project-root
-├── Data/                 
-│   ├── Biomes Data/           # Biomes data files
-│   ├── Pokemon Data/          # Pokémon data files
-│   ├── Weather Data/          # Weather data files
+├── data/                 
+│   ├── biomes_data/           # Biomes data files
+│   ├── pokemon_data/          # Pokémon data files
+│   ├── weather_data/          # Weather data files
 │   └── main.db                # SQL Tables
-├── Code/              
-│   ├── Data Collection/       # Scripts for data collection
-│   ├── Data Processing/       # Scripts for data processing
-│   └── Data Visualisation/    # Scripts for generating visualizations
+├── code/              
+│   ├── data_collection/       # Code for data collection
+│   ├── data_processing/       # Code for data processing
+│   └── Data Visualisation/    # Code for generating visualizations
 │
 ├── map/                       # Maps and visualizations
 ├── docs/                      # GitHub Pages entry point, assorted diagrams and media files
