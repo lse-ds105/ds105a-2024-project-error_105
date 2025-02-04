@@ -20,6 +20,7 @@ Provide instructions on how to set up the project.
 git clone https://github.com/your-repo.git
 cd your-repo
 pip install -r requirements.txt
+```
 
 ## Data Sources 
 
