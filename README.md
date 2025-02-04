@@ -15,12 +15,41 @@ The goal of our project is to analyse the data of Pokemon, and map it to locatio
 
 ## Installation
 Provide instructions on how to set up the project.
-
+### Step 1: Cloning Repository
 ```bash
-git clone https://github.com/your-repo.git
-cd your-repo
-pip install -r requirements.txt
+git clone git@github.com:lse-ds105/ds105a-2024-project-error_105.git
 ```
+
+This will download the repository's content to a folder named ds105a-2024-project-error_105 in your current working directory.
+### Step 2: Set Up a Virtual Environment
+A virtual environment helps isolate project dependencies and avoid conflicts. This set of bash commands assumes that user is already operating from base folder of repository. If you are not already in directory is named 'ds105a-2024-project_105'(to be copy pasted to access directory!)
+   ```bash
+   cd /path/to/ds105a-2024-project_105
+   ```
+1. Create a virtual environment:
+   ```bash
+   python -m venv .venv
+   ```
+
+2. Activate the virtual environment:
+   - On macOS/Linux:
+     ```bash
+     source .venv/bin/activate
+     ```
+   - On Windows:
+     ```bash
+     .venv\Scripts\activate
+     ```
+(.venv) should appear in terminal prompt at this stage!
+3. Install the required libraries:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Ensure same kernel (.venv) is used when running jupyter notebooks!
+---
+
+### Step 3: Set Up Your `.env` File
+The `.env` file is used to store sensitive information like API credentials securely.
 
 ## Data Sources 
 
