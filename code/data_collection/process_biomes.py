@@ -16,14 +16,14 @@ def authenticate_earth_engine():
         key_path = os.getenv("GEE_PRIVATE_KEY_PATH")
 
         if not service_account or not key_path:
-            raise ValueError("❌ Missing Earth Engine credentials. Check your .env file.")
+            raise ValueError("Missing Earth Engine credentials. Check your .env file.")
 
         # Authenticate with Earth Engine
         credentials = ee.ServiceAccountCredentials(service_account, key_path)
         ee.Initialize(credentials)
-        print("✅ Successfully authenticated with Google Earth Engine.")
+        print("Successfully authenticated with Google Earth Engine.")
     except Exception as e:
-        print(f"❌ Error during authentication: {e}")
+        print(f"Error during authentication: {e}")
 
 def process_biome_batch(ecoregions, biome_names, combined_data, batch_num, total_batches):
     """
@@ -69,7 +69,7 @@ def process_biome_batch(ecoregions, biome_names, combined_data, batch_num, total
 
 def main():
     # Default output directory and filename
-    output_dir = "Data/Biomes"
+    output_dir = "data/biomes_data"
     output_filename = "Ecoregions_Coordinates.json"
 
     # Build the full output file path
@@ -78,7 +78,7 @@ def main():
     # Ensure the directory exists
     os.makedirs(output_dir, exist_ok=True)
 
-    print(f"📂 Output will be saved to: {output_file}")
+    print(f"Output will be saved to: {output_file}")
 
     # Authenticate with Earth Engine
     authenticate_earth_engine()
@@ -104,16 +104,16 @@ def main():
             process_biome_batch(ecoregions, biome_batch, combined_biome_data, i // batch_size + 1, total_batches)
             total_biomes_processed += len(biome_batch)
         except Exception as e:
-            print(f"❌ Error processing batch {i // batch_size + 1}: {e}")
+            print(f"Error processing batch {i // batch_size + 1}: {e}")
 
     # Save the combined data to a JSON file
     with open(output_file, "w") as json_file:
         json.dump(combined_biome_data, json_file, indent=4)
 
     # Final summary
-    print(f"\n=== ✅ Processing Completed ✅ ===")
+    print(f"\n=== Processing Completed ===")
     print(f"Total biomes processed: {total_biomes_processed}")
-    print(f"📂 Output saved to: {output_file}")
+    print(f"Output saved to: {output_file}")
 
 if __name__ == "__main__":
     main()
