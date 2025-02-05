@@ -198,3 +198,189 @@ pokemon_gdf = gpd.GeoDataFrame(pokemon_ranked, geometry='geometry')
 
 
 ### Why must you be careful around pokemon? Cos they might just peek-a-chu!
+
+
+---
+title: PokéMap Project
+---
+
+<!-- Begin Modal Styles -->
+<style>
+  /* Modal Background */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  /* Modal Content */
+  .modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+  /* Close Button */
+  .close {
+    color: #aaa;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+  }
+  /* Basic button style */
+  button {
+    padding: 8px 16px;
+    font-size: 14px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+</style>
+<!-- End Modal Styles -->
+
+# PokéMap Project
+
+## 1. Introduction
+
+Welcome to the **PokéMap Project**! This initiative maps Pokémon of specific types—fire, water, and ice—based on real-world environmental data. By integrating Pokémon characteristics with geographic and weather data, we create an immersive visualization of where Pokémon would most likely reside in the real world.
+
+### Purpose of the Project
+- Combine Pokémon traits and environmental data to simulate realistic Pokémon habitats.
+- Provide a fun and data-driven visualization tool for Pokémon fans and researchers.
+
+### Data Sources Used
+Click on each source below to learn more:
+
+- **PokeAPI**  
+  <button onclick="openModal('modal-pokeapi')">Learn More</button>
+  
+- **Open-Meteo API**  
+  <button onclick="openModal('modal-openmeteo')">Learn More</button>
+  
+- **Google Earth Engine Dataset**  
+  <button onclick="openModal('modal-googleearth')">Learn More</button>
+
+---
+
+## 2. Our Process
+
+### Pokémon Data Analysis
+1. **Ranking Pokémon**  
+   Pokémon were ranked on a scale of 1-100 based on their affinity for heat, cold, or wet conditions.
+   - Fire Pokémon (e.g., Charizard) ranked high for heat.
+   - Ice Pokémon (e.g., Articuno) ranked high for cold.
+   - Water Pokémon (e.g., Blastoise) ranked high for wet conditions.
+2. **Matching Pokémon to Locations**  
+   - Fire Pokémon matched with the top 100 hottest places globally.
+   - Ice Pokémon matched with the top 100 coldest places.
+   - Water Pokémon matched with the top 100 wettest places.
+
+### Biome Data Analysis
+1. **Data Extraction**  
+   Biome classifications were extracted from the Google Earth Engine dataset.
+2. **Location Refinement**  
+   Biome data helped filter out unsuitable matches (e.g., avoiding aquatic biomes for fire Pokémon).
+
+### Weather Data Analysis
+1. **Using the Open-Meteo API**  
+   Historical and forecasted weather data were retrieved to identify extreme weather regions.
+2. **Processing and Matching**  
+   Extreme weather regions were matched with Pokémon ranking scores.
+
+### Integration of All Data
+- **Combining Data**: Integrated Pokémon, biome, and weather data using Python scripts.
+- **Mapping with Folium**: Created interactive maps showing the top 100 locations for each Pokémon type.
+
+---
+
+## 3. Final Findings
+
+### Map Representation
+An interactive map created with Folium displays:
+- Markers for the top 100 locations for fire, water, and ice Pokémon.
+- Overlays for biome classifications and weather trends.
+
+### Conclusion
+The PokéMap project demonstrates how multiple datasets can be integrated to simulate realistic Pokémon habitats. It’s both a fun tool for fans and an innovative application of data science.
+
+---
+
+<!-- Begin Modal HTML -->
+
+<!-- Modal for PokeAPI -->
+<div id="modal-pokeapi" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-pokeapi')">&times;</span>
+    <h3>PokeAPI</h3>
+    <p>
+      PokeAPI provides detailed information about Pokémon, including types, stats, and descriptions.
+      This data was used to determine Pokémon affinities for specific environmental conditions.
+    </p>
+  </div>
+</div>
+
+<!-- Modal for Open-Meteo API -->
+<div id="modal-openmeteo" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-openmeteo')">&times;</span>
+    <h3>Open-Meteo API</h3>
+    <p>
+      The Open-Meteo API was used to retrieve historical and forecasted weather data,
+      helping identify the hottest, coldest, and wettest regions in the world.
+    </p>
+  </div>
+</div>
+
+<!-- Modal for Google Earth Engine Dataset -->
+<div id="modal-googleearth" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-googleearth')">&times;</span>
+    <h3>Google Earth Engine Dataset</h3>
+    <p>
+      The Google Earth Engine Dataset provides global biome data, including vegetation,
+      terrain, and habitat classifications, which refined our Pokémon location matches.
+    </p>
+  </div>
+</div>
+
+<!-- End Modal HTML -->
+
+<!-- Begin Modal Scripts -->
+<script>
+  // Open modal function
+  function openModal(id) {
+    document.getElementById(id).style.display = "block";
+  }
+
+  // Close modal function
+  function closeModal(id) {
+    document.getElementById(id).style.display = "none";
+  }
+
+  // Close modal if user clicks outside of modal content
+  window.onclick = function(event) {
+    const modals = document.getElementsByClassName("modal");
+    for (let i = 0; i < modals.length; i++) {
+      if (event.target == modals[i]) {
+        modals[i].style.display = "none";
+      }
+    }
+  }
+</script>
+<!-- End Modal Scripts -->
+
