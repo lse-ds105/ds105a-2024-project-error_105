@@ -6,15 +6,30 @@
     <title>PokéMap Project</title>
     <!-- Link to W3.CSS -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        #map-container {
+            margin: 20px 0;
+        }
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+        #contribute-section {
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+    </style>
 </head>
 <body>
 
     <!-- Navigation Bar -->
     <div class="w3-bar w3-black">
         <a href="index.html" class="w3-bar-item w3-button w3-hover-teal">Home</a>
-        <a href="visualizations.html" class="w3-bar-item w3-button w3-hover-teal">Data Visualizations</a>
+        <a href="process.html" class="w3-bar-item w3-button w3-hover-teal">Our Process</a>
+        <a href="visualizations.html" class="w3-bar-item w3-button w3-hover-teal">Findings</a>
         <a href="sources.html" class="w3-bar-item w3-button w3-hover-teal">Data Sources</a>
-        <a href="summary.html" class="w3-bar-item w3-button w3-hover-teal">Summary Map</a>
+        <a href="summary.html" class="w3-bar-item w3-button w3-hover-teal">PokeMap</a>
     </div>
 
     <!-- Main Content -->
@@ -25,7 +40,7 @@
         <!-- Introduction Section -->
         <h2>Introduction</h2>
         <p>
-            This project combines Pokémon lore with real-world climatological and ecological data to create a scientifically plausible mapping of Pokémon habitats.
+            This project combines Pokémon lore with real-world climatological and ecological data to create a scientifically plausible mapping of Pokémon habitats. The primary objective is to determine where Fire, Water, and Ice-type Pokémon would reside using a ranking scale based on their stats and corresponding environmental factors, such as temperature and rainfall. The analysis simulates a "real-world Pokémon map," reflecting extreme environments for the most powerful Pokémon.
         </p>
         <ul>
             <li><strong>Fire-Type Pokémon:</strong> Mapped to the hottest places on Earth.</li>
@@ -37,12 +52,22 @@
             <strong>Goal:</strong> To integrate Pokémon attributes, climate data, and biomes into a single cohesive map to visualize where Pokémon would live if they existed in the real world.
         </p>
 
-        <!-- Link to the Map -->
-        <p>
-            <strong>Interactive Map:</strong> <a href="map.html" class="w3-text-blue w3-hover-teal">Access the Map Here</a>
-        </p>
+        <!-- Embed the Map -->
+        <h2>Interactive Map</h2>
+        <div id="map-container">
+            <iframe src="map.html" title="Interactive PokéMap"></iframe>
+        </div>
+
+        <!-- Contribute Section -->
+        <div id="contribute-section">
+            <p>
+                <strong>Interested to contribute?</strong> We are looking into expanding our analysis into more Pokémon types! 
+                For more details, visit the <a href="contribute.html" class="w3-text-blue w3-hover-teal">Looking to Contribute</a> page.
+            </p>
+        </div>
     </div>
 
 </body>
 </html>
+
 
