@@ -6,15 +6,89 @@
     <title>PokéMap Project</title>
     <!-- Link to W3.CSS -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Pokémon Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <style>
+        /* General Styles */
+        body {
+            font-family: 'Press Start 2P', cursive;
+            background-color: #ffffff;
+            color: #2c3e50;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        /* Navigation Bar (Pokéball-like color scheme) */
+        .w3-bar {
+            background-color: #e60012; /* Red like Pokéball */
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+        }
+        .w3-bar a {
+            color: white;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+        .w3-bar a:hover {
+            background-color: #ffcb05;
+            color: #2c3e50;
+        }
+
+        /* Pikachu Animation */
+        #pikachu {
+            position: absolute;
+            top: 0;
+            left: -100px;
+            animation: run 5s linear infinite;
+            width: 100px;
+        }
+
+        /* Pikachu Running Keyframes */
+        @keyframes run {
+            0% { left: -100px; }
+            100% { left: 100%; }
+        }
+
+        /* Heading and Section Styles */
+        h1 {
+            text-align: center;
+            color: #e60012;
+            text-shadow: 2px 2px #ffcb05;
+        }
+
+        h2 {
+            color: #3b4cca;
+        }
+
+        /* List Styles */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            padding-left: 25px;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/5/53/Poké_Ball_icon.svg') no-repeat left center;
+            background-size: 20px 20px;
+        }
+
+        /* Map Container */
         #map-container {
             margin: 20px 0;
+            border: 2px solid #3b4cca;
+            border-radius: 15px;
+            overflow: hidden;
         }
         iframe {
             width: 100%;
             height: 600px;
             border: none;
         }
+
+        /* Contribute Section */
         #contribute-section {
             margin-top: 20px;
             font-size: 1.1em;
@@ -22,15 +96,17 @@
     </style>
 </head>
 <body>
+    <!-- Pikachu Animation -->
+    <img id="pikachu" src="pikachu.png" >
 
     <!-- Navigation Bar -->
-    <div class="w3-bar w3-black">
-        <a href="index.html" class="w3-bar-item w3-button w3-hover-teal">Home</a>
-        <a href="process.html" class="w3-bar-item w3-button w3-hover-teal">Our Process</a>
-        <a href="visualisations.html" class="w3-bar-item w3-button w3-hover-teal">Findings</a>
-        <a href="sources.html" class="w3-bar-item w3-button w3-hover-teal">Data Sources</a>
-        <a href="contribute.html" class="w3-bar-item w3-button w3-hover-teal">Contribute</a>
-        <a href="our_team.html" class="w3-bar-item w3-button w3-hover-teal">Our Team</a>
+    <div class="w3-bar">
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="process.html" class="w3-bar-item w3-button">Our Process</a>
+        <a href="visualisations.html" class="w3-bar-item w3-button">Findings</a>
+        <a href="sources.html" class="w3-bar-item w3-button">Data Sources</a>
+        <a href="contribute.html" class="w3-bar-item w3-button">Contribute</a>
+        <a href="our_team.html" class="w3-bar-item w3-button">Our Team</a>
     </div>
 
     <!-- Main Content -->
@@ -41,16 +117,15 @@
         <!-- Introduction Section -->
         <h2>Introduction</h2>
         <p>
-            This project combines Pokémon lore with real-world climatological and ecological data to create a scientifically plausible mapping of Pokémon habitats. The primary objective is to determine where Fire, Water, and Ice-type Pokémon would reside using a ranking scale based on their stats and corresponding environmental factors, such as temperature and rainfall. 
+            This project combines Pokémon lore with real-world climatological and ecological data to create a scientifically plausible mapping of Pokémon habitats. 
         </p>
         <ul>
             <li><strong>Fire-Type Pokémon:</strong> Mapped to the hottest places on Earth.</li>
             <li><strong>Water-Type Pokémon:</strong> Linked to the wettest regions.</li>
             <li><strong>Ice-Type Pokémon:</strong> Thrive in the coldest environments.</li>
         </ul>
-
         <p>
-            <strong>Goal:</strong> To integrate Pokémon attributes, climate data, and biomes into a single cohesive map to visualize where Pokémon would live if they existed in the real world.
+            <strong>Goal:</strong> To integrate Pokémon attributes, climate data, and biomes into a single cohesive map.
         </p>
 
         <!-- Embed the Map -->
@@ -63,12 +138,10 @@
         <div id="contribute-section">
             <p>
                 <strong>Interested to contribute?</strong> We are looking into expanding our analysis into more Pokémon types! 
-                For more details, visit the <a href="contribute.html" class="w3-text-blue w3-hover-teal">Looking to Contribute</a> page.
+                For more details, visit the <a href="contribute.html" class="w3-text-blue">Looking to Contribute</a> page.
             </p>
         </div>
     </div>
-
 </body>
 </html>
-
 
