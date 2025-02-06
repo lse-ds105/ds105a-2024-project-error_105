@@ -1,49 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PokéMap Project</title>
-    <link rel="stylesheet" href="styles.css">
+  <title>PokéMap Project</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
-<body>
-    <header>
-        <h1>PokéMap Project</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Introduction</a></li>
-                <li><a href="process.html">Our Process</a></li>
-                <li><a href="visualizations.html">Data Visualizations</a></li>
-                <li><a href="sources.html">Data Sources</a></li>
-                <li><a href="map.html">Summary Map</a></li>
-            </ul>
-        </nav>
-    </header>
+<body class="w3-light-grey">
 
-    <main>
-        <section>
-            <h2>Introduction</h2>
-            <p>This project analyzes how Pokémon types—Fire, Water, and Ice—might be distributed in the real world based on their natural affinities for specific climates and biomes.</p>
-            <p>By leveraging data from Pokémon attributes and real-world environmental metrics, we rank Pokémon and assign them to suitable locations in the real world.</p>
-        </section>
+  <!-- Navigation Bar -->
+  <div class="w3-bar w3-black">
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="visualizations.html" class="w3-bar-item w3-button">Data Visualizations</a>
+    <a href="sources.html" class="w3-bar-item w3-button">Data Sources</a>
+    <a href="summary.html" class="w3-bar-item w3-button">Summary Map</a>
+  </div>
 
-        <section>
-            <h3>Purpose of the Analysis</h3>
-            <p>The goal is to combine environmental data with Pokémon characteristics to create an engaging and scientifically plausible mapping of Pokémon habitats.</p>
-        </section>
+  <!-- Header -->
+  <header class="w3-container w3-teal w3-center w3-padding-32">
+    <h1>Welcome to the PokéMap Project!</h1>
+    <p>Mapping Pokémon habitats based on real-world climate and biomes</p>
+  </header>
 
-        <section>
-            <h3>Data Sources Used</h3>
-            <ul>
-                <li><strong>PokeAPI:</strong> Provides Pokémon details such as types, stats, and attributes.</li>
-                <li><strong>Google Earth Engine:</strong> Offers detailed biome data, including centroids of over 1,500 biomes.</li>
-                <li><strong>Open-Meteo:</strong> Supplies climate data like temperatures and rainfall patterns.</li>
-            </ul>
-        </section>
-    </main>
+  <!-- Introduction Section -->
+  <div class="w3-content w3-padding">
+    <h2>Introduction</h2>
+    <p>This project combines Pokémon lore with real-world climatological and ecological data to create a scientifically plausible mapping of Pokémon habitats.</p>
+    <ul>
+      <li><b>Fire-Type Pokémon:</b> Mapped to the hottest places on Earth.</li>
+      <li><b>Water-Type Pokémon:</b> Linked to the wettest regions.</li>
+      <li><b>Ice-Type Pokémon:</b> Thrive in the coldest environments.</li>
+    </ul>
+    <p><b>Goal:</b> To integrate Pokémon attributes, climate data, and biomes into a single cohesive map to visualize where Pokémon would live if they existed in the real world.</p>
+    <p><b>Interactive Map:</b> <a href="summary.html">Access the Map Here</a></p>
+  </div>
 
-    <footer>
-        <p>&copy; 2025 PokéMap Project</p>
-    </footer>
 </body>
 </html>
