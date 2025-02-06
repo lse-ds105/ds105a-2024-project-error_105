@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Team</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    h2 {
+      color: #2c3e50;
+    }
+    .team-container {
+      padding: 64px 0;
+      text-align: center;
+    }
+    .team-container h2 {
+      margin-bottom: 10px;
+    }
+    .team-container p {
+      font-style: italic;
+      color: #7f8c8d;
+    }
+    .team-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .team-member {
+      width: 22%;
+      text-align: center;
+      padding: 10px;
+    }
+    .team-member img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      cursor: pointer;
+      transition: opacity 0.3s ease;
+    }
+    .team-member img:hover {
+      opacity: 0.8;
+    }
+    .team-member h3 {
+      margin-top: 10px;
+      font-size: 1.1em;
+    }
+    .team-member p {
+      color: #7f8c8d;
+      margin-top: 5px;
+    }
+    .email {
+      font-size: 0.9em;
+      color: #2980b9;
+    }
+    .reminder {
+      margin-top: 50px;
+      font-weight: bold;
+      color: #e74c3c;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    table, th, td {
+      border: 1px solid #bdc3c7;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f4f4f9;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="team-container" id="team">
+    <h2>OUR TEAM</h2>
+    <p>Meet the team - our office rats:</p>
+
+    <div class="team-row">
+      <div class="team-member">
+        <img src="vignesh.jpg" alt="Vignesh Narayanan" class="w3-circle">
+        <h3>Vignesh Narayanan</h3>
+        <p>Lead Developer</p>
+        <p class="email">vignesh.narayanan@gmail.com</p>
+      </div>
+      <div class="team-member">
+        <img src="hanle.jpg" alt="Hanle Yang" class="w3-circle">
+        <h3>Hanle Yang</h3>
+        <p>Data Analyst</p>
+        <p class="email">hanle.yang@gmail.com</p>
+      </div>
+      <div class="team-member">
+        <img src="jonathan.jpg" alt="Jonathan Chang" class="w3-circle">
+        <h3>Jonathan Chang</h3>
+        <p>Geospatial Specialist</p>
+        <p class="email">jonathan.chang@gmail.com</p>
+      </div>
+      <div class="team-member">
+        <img src="adrian.jpg" alt="Adrian Chang" class="w3-circle">
+        <h3>Adrian Chang</h3>
+        <p>Project Manager</p>
+        <p class="email">adrian.chang@gmail.com</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reminder -->
+  <div class="reminder">
+    <p>Reminder: Contributions of each team member should be listed below in the table format!</p>
+  </div>
+
+  <!-- Contributions Table -->
+  <table>
+    <thead>
+      <tr>
+        <th>Team Member</th>
+        <th>Contribution</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Vignesh Narayanan</td>
+        <td>GOAT</td>
+        <td>To be completed</td>
+      </tr>
+      <tr>
+        <td>Hanle Yang</td>
+        <td>XXX</td>
+        <td>To be completed</td>
+      </tr>
+      <tr>
+        <td>Jonathan Chang</td>
+        <td>XXX</td>
+        <td>To be completed</td>
+      </tr>
+      <tr>
+        <td>Adrian Chang</td>
+        <td>XXX</td>
+        <td>To be completed</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>

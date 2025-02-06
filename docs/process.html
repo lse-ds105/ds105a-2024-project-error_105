@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon Biome Mapping Project</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    .step {
+      background-color: #f4f4f9;
+      border-left: 5px solid #3498db;
+      margin: 20px 0;
+      padding: 10px 20px;
+    }
+    .comments-section {
+      margin-top: 40px;
+      border-top: 2px solid #bdc3c7;
+      padding-top: 20px;
+    }
+    .comment-box {
+      margin-bottom: 20px;
+    }
+    textarea {
+      width: 100%;
+      height: 100px;
+      margin-bottom: 10px;
+    }
+    button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <h1>Pokémon Biome Mapping Project</h1>
+  <p>This project maps Pokémon to real-world biomes based on their strengths and types, leveraging Pokémon data, geographic information, and climate datasets.</p>
+
+  <!-- Step 1 -->
+  <div class="step">
+    <h2>Step 1: Pokémon Data Analysis (Using PokeAPI)</h2>
+    <p>This step focuses on extracting, processing, and ranking Pokémon data using the <strong>PokeAPI</strong>.</p>
+    <h3>Key Activities:</h3>
+    <ul>
+      <li><strong>Comprehensive Pokémon Data Extraction:</strong> Queried the PokeAPI to retrieve Pokémon stats, types, and sprite images using asynchronous methods.</li>
+      <li><strong>Ranking Pokémon:</strong> Calculated total stat scores and assigned rankings on a scale of 1–100, with the strongest Pokémon matched to extreme environments.</li>
+      <li><strong>Filtering Pokémon by Type:</strong> Specialized filtering for Fire, Ice, and Water types to match them to specific biomes.</li>
+      <li><strong>Data Storage:</strong> Stored structured data in JSON files and an SQLite database for further analysis.</li>
+    </ul>
+    <p><strong>Outputs:</strong> Cleaned Pokémon dataset with rankings, stats, and types.</p>
+  </div>
+
+  <!-- Step 2 -->
+  <div class="step">
+    <h2>Step 2: Extracting Biomes from Google Earth Engine</h2>
+    <p>This step identifies real-world biomes using the <strong>Google Earth Engine (GEE)</strong> API.</p>
+    <h3>Key Activities:</h3>
+    <ul>
+      <li>Utilized the <strong>Ecoregions 2017 Resolve Dataset</strong> to classify biomes such as deserts, forests, and tundras.</li>
+      <li>Calculated centroids for 1,500+ biomes globally to represent each biome.</li>
+      <li>Authenticated Google Earth Engine using a service account to automate the data extraction process.</li>
+      <li>Batch-processed biome data to optimize runtime and ensure consistency.</li>
+    </ul>
+    <p><strong>Outputs:</strong> A structured dataset of biome centroids with geographic coordinates.</p>
+  </div>
+
+  <!-- Step 3 -->
+  <div class="step">
+    <h2>Step 3: Climate Data Analysis (Using Open-Meteo)</h2>
+    <p>Fetched and analyzed climate data for the identified biome centroids to rank the hottest, coldest, and wettest locations. We also leveraged forecasted climate data to predict where Pokémon might move in the future.</p>
+    <h3>Key Activities:</h3>
+    <ul>
+      <li><strong>Data Collection:</strong> Used <strong>Open-Meteo</strong> to retrieve both historical and forecasted temperature and rainfall data for biome centroids.</li>
+      <li><strong>Asynchronous Requests:</strong> Leveraged <strong>asyncio</strong> to process large volumes of data efficiently.</li>
+      <li><strong>Daily Updates:</strong> Updated maps on a daily, refreshable basis to reflect real-time and forecasted Pokémon migrations based on climate trends.</li>
+      <li><strong>Pokémon Movement Tracker:</strong> Investigated how much Pokémon moved between biomes over time, enabling a Pokémon movement tracker feature.</li>
+    </ul>
+    <p><strong>Outputs:</strong> Ranked list of locations based on climatic extremes and Pokémon migration patterns.</p>
+  </div>
+
+  <!-- Step 4 -->
+  <div class="step">
+    <h2>Step 4: Mapping Pokémon to Biomes</h2>
+    <p>This step matches ranked Pokémon to biomes based on their types and strengths and visualizes the results on an interactive map.</p>
+    <h3>Key Activities:</h3>
+    <ul>
+      <li><strong>Matching Pokémon to Biomes:</strong> Assigned Pokémon to biomes based on rankings, e.g., the strongest Fire-type Pokémon matched to the hottest biome.</li>
+      <li><strong>Interactive Mapping:</strong> Used <strong>Folium</strong> to create interactive maps showing Pokémon distributions across biomes.</li>
+      <li><strong>Geographical Analysis:</strong> Performed regression analysis to understand how latitude and longitude influence climate extremes and Pokémon distribution.</li>
+    </ul>
+    <p><strong>Outputs:</strong> Interactive maps displaying Pokémon distributions and movements.</p>
+  </div>
+
+  <!-- Comments Section -->
+  <div class="comments-section">
+    <h2>Comments Section</h2>
+    <form>
+      <div class="comment-box">
+        <label for="comment">Leave a Comment:</label>
+        <textarea id="comment" name="comment" placeholder="Type your comment here..."></textarea>
+      </div>
+      <button type="submit">Submit Comment</button>
+    </form>
+  </div>
+</body>
+</html>
+

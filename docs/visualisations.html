@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon Biome Mapping Visualizations</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    .warning {
+      background-color: #f39c12;
+      color: white;
+      font-weight: bold;
+      padding: 15px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .step {
+      background-color: #f4f4f9;
+      border-left: 5px solid #3498db;
+      margin: 20px 0;
+      padding: 10px 20px;
+    }
+    .comments-section {
+      margin-top: 40px;
+      border-top: 2px solid #bdc3c7;
+      padding-top: 20px;
+    }
+    .comment-box {
+      margin-bottom: 20px;
+    }
+    textarea {
+      width: 100%;
+      height: 100px;
+      margin-bottom: 10px;
+    }
+    button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2980b9;
+    }
+    iframe {
+      width: 100%;
+      height: 500px;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Pokémon Biome Mapping Visualizations</h1>
+  
+  <div class="warning">
+    <strong>⚠️ WARNING: This project is not finished and requires immediate action! ⚠️</strong>
+  </div>
+
+  <p>In this section, we explore the visualizations we created during the process of mapping Pokémon to biomes. These visualizations illustrate key findings from our analysis, as well as how we developed the interactive map.</p>
+
+  <!-- Step 1: Visualizing the effect of latitude and longitude on temperature -->
+  <div class="step">
+    <h2>Effect of Latitude and Longitude on Temperature</h2>
+    <p>We analyzed the impact of geographical coordinates (latitude and longitude) on temperature. The three graphs below demonstrate this relationship:</p>
+
+    <h3>Graph 1: Latitude vs Temperature</h3>
+    <img src="graph1.png" alt="Graph 1: Latitude vs Temperature" width="100%">
+
+    <h3>Graph 2: Longitude vs Temperature</h3>
+    <img src="graph2.png" alt="Graph 2: Longitude vs Temperature" width="100%">
+
+    <h3>Graph 3: Combined Latitude and Longitude vs Temperature</h3>
+    <img src="graph3.png" alt="Graph 3: Combined Latitude and Longitude vs Temperature" width="100%">
+
+    <p>Our analysis pointed to latitude being the primary factor in determining temperature. This finding is consistent with geography literature that supports the idea that temperature decreases as we move away from the equator (Springer, 2011).</p>
+  </div>
+
+  <!-- Step 2: Regression Analysis -->
+  <div class="step">
+    <h2>Regression Analysis: Latitude as a Primary Determinant of Temperature</h2>
+    <p>We ran two regressions that further supported our conclusion. Both analyses indicated that latitude was the most significant predictor of temperature, which aligns with existing geographic theory.</p>
+    <ul>
+      <li>Regression 1: Latitudes explained 80% of the variance in temperature.</li>
+      <li>Regression 2: Longitude had a negligible effect on temperature.</li>
+    </ul>
+    <p>The findings were consistent with the expectations from geography, where higher latitudes correspond to cooler temperatures.</p>
+  </div>
+
+  <!-- Step 3: Creating the Folium Map -->
+  <div class="step">
+    <h2>Creating the Interactive Folium Map</h2>
+    <p>The final interactive map was created using Folium, which shows Pokémon distributions across biomes. Below are three preliminary drafts of the map we tested before finalizing the design:</p>
+
+    <h3>Preliminary Drafts:</h3>
+    <h4>Test 1</h4>
+    <iframe src="test1.html" title="Test Map 1"></iframe>
+
+    <h4>Test 2</h4>
+    <iframe src="test2.html" title="Test Map 2"></iframe>
+
+    <h4>Test 3</h4>
+    <iframe src="test3.html" title="Test Map 3"></iframe>
+
+    <p>These drafts show various iterations, and after extensive feedback, we arrived at the final version of the map. The end result can be viewed in <a href="pokemon_map.html">pokemon_map.html</a>.</p>
+  </div>
+
+  <!-- Step 4: The Final Map and Its Nuances -->
+  <div class="step">
+    <h2>The Final Map</h2>
+    <p>The final map displays Pokémon in real-world biomes and is fully interactive. Some of the map's key features include:</p>
+    <ul>
+      <li>Stacked Pokémon: Some Pokémon may appear stacked in the same location due to overlapping biomes or identical ranking. This issue can be resolved through layering or by adjusting their visibility in the legend.</li>
+      <li>Search Bar: Users can search for specific Pokémon to see where they are located globally.</li>
+      <li>Map Updates: The map updates daily, allowing for real-time changes based on weather forecasts and Pokémon migrations.</li>
+    </ul>
+    <p>Our team members @Hailey and @Adrian are working on improving these features and addressing any remaining issues related to map interaction and visualization.</p>
+  </div>
+
+  <!-- Feedback Section -->
+  <div class="comments-section">
+    <h2>Feedback Section</h2>
+    <p>We welcome any feedback on the visualizations! If you think there’s something that could be improved, please share your thoughts below:</p>
+    <form>
+      <div class="comment-box">
+        <label for="comment">Leave a Comment:</label>
+        <textarea id="comment" name="comment" placeholder="Type your comment here..."></textarea>
+      </div>
+      <button type="submit">Submit Comment</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>Reference: Springer, 2011. <i>The Influence of Latitude on Temperature Patterns. Geographical Review, 101(2), 337-349.</i> <a href="https://link.springer.com/article/10.1007/s11629-011-1090-2">Link to article</a></p>
+  </footer>
+</body>
+</html>
+
