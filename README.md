@@ -74,7 +74,7 @@ cp .env.template .env
 To run the `process_biomes.py` script, open your terminal and navigate to the directory where the `proess_biomes.py` script is located. Then, use the following command:
 
 ```bash
-python your_script_name.py
+python process_biomes.py
 ```
 
 ## Data Sources 

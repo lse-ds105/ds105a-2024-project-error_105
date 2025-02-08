@@ -4,8 +4,7 @@ import ee
 from dotenv import load_dotenv
 
 # Load environment variables from .env file
-# Provide the path to your .env file
-env_path = 'ds105a-2024-project-error_105/.env'  # Replace with the actual path to your .env file
+env_path = 'ds105a-2024-project-error_105/.env' 
 load_dotenv(dotenv_path=env_path)
 
 def authenticate_earth_engine():
