@@ -41,15 +41,41 @@ A virtual environment helps isolate project dependencies and avoid conflicts. Th
      .venv\Scripts\activate
      ```
 (.venv) should appear in terminal prompt at this stage!
+
 3. Install the required libraries:
    ```bash
    pip install -r requirements.txt
    ```
-4. Ensure same kernel (.venv) is used when running jupyter notebooks!
----
 
-### Step 3: Set Up Your `.env` File
+4. Ensure same kernel (.venv) is used when running jupyter notebooks!
+
+### Step 3: Set Up Your Service Account
+To run the code, you will need to set up your own Google Cloud service account for authentication.
+
+1. Go to [Google Cloud Console](https://console.cloud.google.com/).
+2. Create a new project or use an existing one.
+3. Navigate to **IAM & Admin** > **Service Accounts**.
+4. Create a new service account and grant it appropriate permissions for accessing your resources.
+5. Download the JSON key for the service account.
+6. Save the JSON file as `service-account.json` in the root directory of the project.
+
+### Step 4: Set Up Your `.env` File
 The `.env` file is used to store sensitive information like API credentials securely.
+
+Set up your environment variables in a `.env` file at the root of the repository. The code below will copy the template file to a new `.env` file.
+
+```bash
+cp .env.template .env
+```
+
+## Usage
+### **Running the Python Script**
+
+To run the `process_biomes.py` script, open your terminal and navigate to the directory where the `proess_biomes.py` script is located. Then, use the following command:
+
+```bash
+python your_script_name.py
+```
 
 ## Data Sources 
 
