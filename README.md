@@ -98,6 +98,7 @@ python process_biomes.py
 └── requirements.txt           # Dependencies
 ```
 
+FOR FINAL EDITOR OF THE README MENTION SOMEWHERE THE SEQUENCE IN WHICH THE NOTEBOOKS SHOULD BE RUN \, I ASSUME IT IS 1A, 1C so and so forth right, because NB2C rn is throwing an error code which is vvvvv bad
 
 
 
