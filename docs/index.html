@@ -6,12 +6,12 @@
     <title>PokéMap Project</title>
     <!-- Link to W3.CSS -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <!-- Professional Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Pokémon Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <style>
         /* General Styles */
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: Arial, sans-serif;
             background-color: #ffffff;
             color: #2c3e50;
             margin: 0;
@@ -24,34 +24,40 @@
             background-color: #e60012; /* Red like Pokéball */
             color: white;
             display: flex;
-            justify-content: center;
+            justify-content: space-around; /* Space out links evenly */
             align-items: center;
             padding: 1rem;
         }
+
         .w3-bar a {
             color: white;
             font-weight: bold;
-            margin: 0 10px;
             text-decoration: none;
+            font-size: 1.2em; /* Slightly increase font size */
+            padding: 0 20px; /* Add padding for spacing */
+            flex-grow: 1; /* Make each link grow equally */
+            text-align: center; /* Center-align text within each section */
         }
+
         .w3-bar a:hover {
             background-color: #ffcb05;
             color: #2c3e50;
+            border-radius: 5px; /* Optional: add rounded corners on hover */
         }
 
         /* Pikachu Animation */
         #pikachu {
             position: absolute;
-            bottom: 20px; /* Ensures Pikachu runs in the blank row */
-            left: -150px;
+            bottom: 0;
+            left: -100px;
             animation: run 5s linear infinite;
             width: 100px;
         }
 
         /* Pikachu Running Keyframes */
         @keyframes run {
-            0% { left: -150px; }
-            100% { left: 110%; }
+            0% { left: -100px; }
+            100% { left: 100%; }
         }
 
         /* Heading and Section Styles */
@@ -95,36 +101,24 @@
             font-size: 1.1em;
         }
 
-        /* User Guide Section */
+        /* User Guide */
         #user-guide {
-            margin-top: 30px;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 10px;
         }
 
-        #user-guide ul {
-            padding-left: 20px;
-        }
-        #user-guide ul li {
-            margin-bottom: 10px;
-        }
-
-        /* Link Styles */
-        a {
-            color: #3b4cca;
-            text-decoration: underline;
-        }
-        a:hover {
-            color: #e60012;
-        }
-
-        /* Blank Row for Pikachu */
-        .pikachu-runway {
-            height: 100px; /* Blank space for Pikachu to run */
-            background-color: #f5f5f5; /* Subtle gray to separate it from main content */
-            position: relative;
+        #user-guide h2 {
+            color: #2c3e50;
         }
     </style>
 </head>
 <body>
+    <!-- Pikachu Animation -->
+    <img id="pikachu" src="pikachu.png" alt="Pikachu running">
+
     <!-- Navigation Bar -->
     <div class="w3-bar">
         <a href="index.html" class="w3-bar-item w3-button">Home</a>
@@ -143,7 +137,7 @@
         <!-- Introduction Section -->
         <h2>Introduction</h2>
         <p>
-            This project combines Pokémon lore with real-world climatological and ecological data to create a scientifically plausible mapping of Pokémon habitats.
+            This project combines Pokémon lore with real-world climatological and ecological data to create a scientifically plausible mapping of Pokémon habitats. 
         </p>
         <ul>
             <li><strong>Fire-Type Pokémon:</strong> Mapped to the hottest places on Earth.</li>
@@ -160,31 +154,31 @@
             <iframe src="../visuals/html_files/pokemon_map.html" title="Interactive PokéMap"></iframe>
         </div>
 
-        <!-- User Guide Section -->
+        <!-- User Guide -->
         <div id="user-guide">
             <h2>User Guide</h2>
-            <p>The interactive map offers the following features to enhance your experience:</p>
+            <p>
+                This map allows users to explore Pokémon habitats interactively. Here are the features of the map:
+            </p>
             <ul>
-                <li>Use the filter menu in the top-right corner to show only <strong>Fire</strong>, <strong>Water</strong>, or <strong>Ice</strong> Pokémon. You can also toggle the heatmap layer on or off.</li>
-                <li>Click on a Pokémon's image on the map to view its <strong>ranking</strong> and detailed habitat information.</li>
-                <li>Zoom in and out using the map's controls to explore specific regions more closely or get a global view.</li>
+                <li>You can filter Pokémon habitats by <strong>Fire</strong>, <strong>Water</strong>, or <strong>Ice</strong> types using the filter in the top-right corner.</li>
+                <li>Click on Pokémon icons to view their ranking and habitat details.</li>
+                <li>Use the zoom controls to explore specific areas in greater detail.</li>
+                <li>The heatmap layer can be toggled on/off for better clarity.</li>
             </ul>
         </div>
 
         <!-- Contribute Section -->
         <div id="contribute-section">
             <p>
-                <strong>Interested in contributing?</strong> We are looking to expand our analysis into more Pokémon types! 
-                For more details, visit the <a href="contribute.html">Contribute</a> page.
+                <strong>Interested to contribute?</strong> We are looking into expanding our analysis into more Pokémon types! 
+                For more details, visit the <a href="contribute.html" class="w3-text-blue">Looking to Contribute</a> page.
             </p>
         </div>
     </div>
 
     <!-- Blank Row for Pikachu -->
-    <div class="pikachu-runway">
-        <!-- Pikachu Animation -->
-        <img id="pikachu" src="pikachu.png" alt="Running Pikachu">
-    </div>
+    <div style="height: 100px;"></div>
 </body>
 </html>
 
