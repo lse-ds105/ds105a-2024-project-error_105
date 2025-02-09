@@ -1,0 +1,1534 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d27281003e5a3956561a95b64d18a200 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d27281003e5a3956561a95b64d18a200" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d27281003e5a3956561a95b64d18a200 = L.map(
+                "map_d27281003e5a3956561a95b64d18a200",
+                {
+                    center: [11.825012837690526, 52.64738370578435],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_813f2393ce1e0e66c63196fe5ac895b8 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_813f2393ce1e0e66c63196fe5ac895b8.addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+            var circle_marker_0e267563fe34e2518c01e1f624c96869 = L.circleMarker(
+                [-24.346783457900017, 125.9615630433902],
+                {"bubblingMouseEvents": true, "color": "#313695ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#313695ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_93ffe5b15c00b18bcc0cbf774cae26ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5fdb7479ede226f84e62063163d5d936 = $(`<div id="html_5fdb7479ede226f84e62063163d5d936" style="width: 100.0%; height: 100.0%;">Region: Gibson desert<br>Temperature: 45.7°C</div>`)[0];
+                popup_93ffe5b15c00b18bcc0cbf774cae26ef.setContent(html_5fdb7479ede226f84e62063163d5d936);
+            
+        
+
+        circle_marker_0e267563fe34e2518c01e1f624c96869.bindPopup(popup_93ffe5b15c00b18bcc0cbf774cae26ef)
+        ;
+
+        
+    
+    
+            var circle_marker_1fce08a396c2fa19d88a474bfae3b6df = L.circleMarker(
+                [-26.274999496625536, 139.3852693573042],
+                {"bubblingMouseEvents": true, "color": "#323b97ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#323b97ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_04743a28cae5c08ef86a2f6b5af818e8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa9f622873277b2ccf5063fa6e0fe79e = $(`<div id="html_aa9f622873277b2ccf5063fa6e0fe79e" style="width: 100.0%; height: 100.0%;">Region: Simpson desert<br>Temperature: 45.1°C</div>`)[0];
+                popup_04743a28cae5c08ef86a2f6b5af818e8.setContent(html_aa9f622873277b2ccf5063fa6e0fe79e);
+            
+        
+
+        circle_marker_1fce08a396c2fa19d88a474bfae3b6df.bindPopup(popup_04743a28cae5c08ef86a2f6b5af818e8)
+        ;
+
+        
+    
+    
+            var circle_marker_691e9bc091ea965af63a3c0adb65e7bd = L.circleMarker(
+                [-21.445277382079958, 128.10212220349948],
+                {"bubblingMouseEvents": true, "color": "#343f99ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#343f99ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_946567e75b8b25829b110a02f26d036c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eed46b69906ec8fcb8079f6d38d4f79a = $(`<div id="html_eed46b69906ec8fcb8079f6d38d4f79a" style="width: 100.0%; height: 100.0%;">Region: Great Sandy-Tanami desert<br>Temperature: 44.6°C</div>`)[0];
+                popup_946567e75b8b25829b110a02f26d036c.setContent(html_eed46b69906ec8fcb8079f6d38d4f79a);
+            
+        
+
+        circle_marker_691e9bc091ea965af63a3c0adb65e7bd.bindPopup(popup_946567e75b8b25829b110a02f26d036c)
+        ;
+
+        
+    
+    
+            var circle_marker_33306f170c1c638d07dd9f4d67eeea4c = L.circleMarker(
+                [-27.88456409916662, 145.19069257636534],
+                {"bubblingMouseEvents": true, "color": "#34419bff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#34419bff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_4d7a5db1e3683695db96bb68e0249dce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3aae1fc588a5c7cfbeb9effe89d24444 = $(`<div id="html_3aae1fc588a5c7cfbeb9effe89d24444" style="width: 100.0%; height: 100.0%;">Region: Eastern Australia mulga shrublands<br>Temperature: 44.3°C</div>`)[0];
+                popup_4d7a5db1e3683695db96bb68e0249dce.setContent(html_3aae1fc588a5c7cfbeb9effe89d24444);
+            
+        
+
+        circle_marker_33306f170c1c638d07dd9f4d67eeea4c.bindPopup(popup_4d7a5db1e3683695db96bb68e0249dce)
+        ;
+
+        
+    
+    
+            var circle_marker_33c35b806a4a626f815a644abf4156e0 = L.circleMarker(
+                [-24.552719781451856, 131.97898513917],
+                {"bubblingMouseEvents": true, "color": "#374b9fff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#374b9fff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_13572c2aef510c3dd50131a454ccd93a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d2a26a885661217ae74c798e40fba701 = $(`<div id="html_d2a26a885661217ae74c798e40fba701" style="width: 100.0%; height: 100.0%;">Region: Central Ranges xeric scrub<br>Temperature: 43.1°C</div>`)[0];
+                popup_13572c2aef510c3dd50131a454ccd93a.setContent(html_d2a26a885661217ae74c798e40fba701);
+            
+        
+
+        circle_marker_33c35b806a4a626f815a644abf4156e0.bindPopup(popup_13572c2aef510c3dd50131a454ccd93a)
+        ;
+
+        
+    
+    
+            var circle_marker_7a7a739d26e142fd3a683d7c5aafd062 = L.circleMarker(
+                [-33.291210736006626, 120.5933491243965],
+                {"bubblingMouseEvents": true, "color": "#3b57a5ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3b57a5ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_c9e791b889cd24cb932f92087a7df651 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a8ef510921d4b584408e78643bf35483 = $(`<div id="html_a8ef510921d4b584408e78643bf35483" style="width: 100.0%; height: 100.0%;">Region: Esperance mallee<br>Temperature: 41.6°C</div>`)[0];
+                popup_c9e791b889cd24cb932f92087a7df651.setContent(html_a8ef510921d4b584408e78643bf35483);
+            
+        
+
+        circle_marker_7a7a739d26e142fd3a683d7c5aafd062.bindPopup(popup_c9e791b889cd24cb932f92087a7df651)
+        ;
+
+        
+    
+    
+            var circle_marker_545c8083e736cdefa337ed8b0e79fc86 = L.circleMarker(
+                [-26.602173315109763, 119.20522480258802],
+                {"bubblingMouseEvents": true, "color": "#3c5aa7ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3c5aa7ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_621570b5e5de395fe4f65e8ec6daeab4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ff2fa0209c01c5103cf46a140712c226 = $(`<div id="html_ff2fa0209c01c5103cf46a140712c226" style="width: 100.0%; height: 100.0%;">Region: Western Australian Mulga shrublands<br>Temperature: 41.2°C</div>`)[0];
+                popup_621570b5e5de395fe4f65e8ec6daeab4.setContent(html_ff2fa0209c01c5103cf46a140712c226);
+            
+        
+
+        circle_marker_545c8083e736cdefa337ed8b0e79fc86.bindPopup(popup_621570b5e5de395fe4f65e8ec6daeab4)
+        ;
+
+        
+    
+    
+            var circle_marker_38a29bda4e6dd59b7b74babb6cdda8b3 = L.circleMarker(
+                [-29.944534401496416, 116.6093102509253],
+                {"bubblingMouseEvents": true, "color": "#3e61aaff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3e61aaff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_5938e5311b0d0b449b18df1789dd2d7a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b6f21dbae56d575faaf92873508eae37 = $(`<div id="html_b6f21dbae56d575faaf92873508eae37" style="width: 100.0%; height: 100.0%;">Region: Southwest Australia savanna<br>Temperature: 40.4°C</div>`)[0];
+                popup_5938e5311b0d0b449b18df1789dd2d7a.setContent(html_b6f21dbae56d575faaf92873508eae37);
+            
+        
+
+        circle_marker_38a29bda4e6dd59b7b74babb6cdda8b3.bindPopup(popup_5938e5311b0d0b449b18df1789dd2d7a)
+        ;
+
+        
+    
+    
+            var circle_marker_6a7c7660557f9f16fbdaccbe5949ff4e = L.circleMarker(
+                [-31.38456136668727, 121.41923954046672],
+                {"bubblingMouseEvents": true, "color": "#3f63abff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3f63abff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_526c9c5e2824ec54083857966adce6e7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_13639f1acee59699ca9d71c2f50c14d3 = $(`<div id="html_13639f1acee59699ca9d71c2f50c14d3" style="width: 100.0%; height: 100.0%;">Region: Coolgardie woodlands<br>Temperature: 40.1°C</div>`)[0];
+                popup_526c9c5e2824ec54083857966adce6e7.setContent(html_13639f1acee59699ca9d71c2f50c14d3);
+            
+        
+
+        circle_marker_6a7c7660557f9f16fbdaccbe5949ff4e.bindPopup(popup_526c9c5e2824ec54083857966adce6e7)
+        ;
+
+        
+    
+    
+            var circle_marker_82aaa6de42772df493a9b1e598070453 = L.circleMarker(
+                [-21.91496622586279, 118.54794989286708],
+                {"bubblingMouseEvents": true, "color": "#426db0ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#426db0ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_e4c98ae1d27613a14672b3d066653487 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_de5840846dbd25dc7db6bda9d899ef1b = $(`<div id="html_de5840846dbd25dc7db6bda9d899ef1b" style="width: 100.0%; height: 100.0%;">Region: Pilbara shrublands<br>Temperature: 38.9°C</div>`)[0];
+                popup_e4c98ae1d27613a14672b3d066653487.setContent(html_de5840846dbd25dc7db6bda9d899ef1b);
+            
+        
+
+        circle_marker_82aaa6de42772df493a9b1e598070453.bindPopup(popup_e4c98ae1d27613a14672b3d066653487)
+        ;
+
+        
+    
+    
+            var circle_marker_dc40b48c816412e561c756e116630427 = L.circleMarker(
+                [7.826085996594244, 31.593103942113718],
+                {"bubblingMouseEvents": true, "color": "#4370b2ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4370b2ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_09fb9188e381f36fe2812a50db291d50 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4304dd5fa0537d38928b4701bca9e8c4 = $(`<div id="html_4304dd5fa0537d38928b4701bca9e8c4" style="width: 100.0%; height: 100.0%;">Region: Sudd flooded grasslands<br>Temperature: 38.5°C</div>`)[0];
+                popup_09fb9188e381f36fe2812a50db291d50.setContent(html_4304dd5fa0537d38928b4701bca9e8c4);
+            
+        
+
+        circle_marker_dc40b48c816412e561c756e116630427.bindPopup(popup_09fb9188e381f36fe2812a50db291d50)
+        ;
+
+        
+    
+    
+            var circle_marker_9db97230942f1b5a5e5b3dba38aa79bf = L.circleMarker(
+                [-28.471209211599504, 128.56236878166],
+                {"bubblingMouseEvents": true, "color": "#4471b2ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4471b2ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_33f00e23e4b94d83f376dbf8e79f28c3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_33634198ade4567a159fa02edee24e33 = $(`<div id="html_33634198ade4567a159fa02edee24e33" style="width: 100.0%; height: 100.0%;">Region: Great Victoria desert<br>Temperature: 38.4°C</div>`)[0];
+                popup_33f00e23e4b94d83f376dbf8e79f28c3.setContent(html_33634198ade4567a159fa02edee24e33);
+            
+        
+
+        circle_marker_9db97230942f1b5a5e5b3dba38aa79bf.bindPopup(popup_33f00e23e4b94d83f376dbf8e79f28c3)
+        ;
+
+        
+    
+    
+            var circle_marker_414093e400dda3eb66de181503d35c71 = L.circleMarker(
+                [-24.312841515918684, 114.56948736404121],
+                {"bubblingMouseEvents": true, "color": "#4473b3ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4473b3ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_22398b6a06d002a2d9c8ffba610644fc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa4ed2d02a2251c85fa710542dab6471 = $(`<div id="html_aa4ed2d02a2251c85fa710542dab6471" style="width: 100.0%; height: 100.0%;">Region: Carnarvon xeric shrublands<br>Temperature: 38.1°C</div>`)[0];
+                popup_22398b6a06d002a2d9c8ffba610644fc.setContent(html_aa4ed2d02a2251c85fa710542dab6471);
+            
+        
+
+        circle_marker_414093e400dda3eb66de181503d35c71.bindPopup(popup_22398b6a06d002a2d9c8ffba610644fc)
+        ;
+
+        
+    
+    
+            var circle_marker_610bbdebde77b6f375fc332c527fc2ab = L.circleMarker(
+                [-27.684985063322777, 19.069746408898773],
+                {"bubblingMouseEvents": true, "color": "#4473b3ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4473b3ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_3cacb5ca31a4cafdc45cd44e085210eb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_25989ec6b0c17d827beedeb7def9f7b6 = $(`<div id="html_25989ec6b0c17d827beedeb7def9f7b6" style="width: 100.0%; height: 100.0%;">Region: Gariep Karoo<br>Temperature: 38.1°C</div>`)[0];
+                popup_3cacb5ca31a4cafdc45cd44e085210eb.setContent(html_25989ec6b0c17d827beedeb7def9f7b6);
+            
+        
+
+        circle_marker_610bbdebde77b6f375fc332c527fc2ab.bindPopup(popup_3cacb5ca31a4cafdc45cd44e085210eb)
+        ;
+
+        
+    
+    
+            var circle_marker_b4004f3f6be200d3a6ff6c6cec2c295e = L.circleMarker(
+                [-38.184342742852124, -67.06861624110685],
+                {"bubblingMouseEvents": true, "color": "#4575b4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4575b4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_6b787fd824c9317ae7d5e73e76a64aff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_619e03d4dc3a4385f361a91e12a6bc69 = $(`<div id="html_619e03d4dc3a4385f361a91e12a6bc69" style="width: 100.0%; height: 100.0%;">Region: Low Monte<br>Temperature: 37.9°C</div>`)[0];
+                popup_6b787fd824c9317ae7d5e73e76a64aff.setContent(html_619e03d4dc3a4385f361a91e12a6bc69);
+            
+        
+
+        circle_marker_b4004f3f6be200d3a6ff6c6cec2c295e.bindPopup(popup_6b787fd824c9317ae7d5e73e76a64aff)
+        ;
+
+        
+    
+    
+            var circle_marker_b5b79d3c9067dfe1304e327ee58a3e80 = L.circleMarker(
+                [-32.40593966457316, 146.16183440711174],
+                {"bubblingMouseEvents": true, "color": "#4676b5ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4676b5ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_904f98433db868f1b7682d15c8c1d93a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f2b1591ac870b5cf26b5bb222b88db49 = $(`<div id="html_f2b1591ac870b5cf26b5bb222b88db49" style="width: 100.0%; height: 100.0%;">Region: Southeast Australia temperate savanna<br>Temperature: 37.7°C</div>`)[0];
+                popup_904f98433db868f1b7682d15c8c1d93a.setContent(html_f2b1591ac870b5cf26b5bb222b88db49);
+            
+        
+
+        circle_marker_b5b79d3c9067dfe1304e327ee58a3e80.bindPopup(popup_904f98433db868f1b7682d15c8c1d93a)
+        ;
+
+        
+    
+    
+            var circle_marker_e46140d681441f00f992adea463dc75b = L.circleMarker(
+                [-33.459137238422976, 20.80883863744169],
+                {"bubblingMouseEvents": true, "color": "#4879b6ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4879b6ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_f60dd6182ae1c0bd02e84deb556f485b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6b5a1e6880bbe38557bc50a7bbcae944 = $(`<div id="html_6b5a1e6880bbe38557bc50a7bbcae944" style="width: 100.0%; height: 100.0%;">Region: Fynbos shrubland<br>Temperature: 37.4°C</div>`)[0];
+                popup_f60dd6182ae1c0bd02e84deb556f485b.setContent(html_6b5a1e6880bbe38557bc50a7bbcae944);
+            
+        
+
+        circle_marker_e46140d681441f00f992adea463dc75b.bindPopup(popup_f60dd6182ae1c0bd02e84deb556f485b)
+        ;
+
+        
+    
+    
+            var circle_marker_02d852b499405b2944da3f0cd546801e = L.circleMarker(
+                [6.404972044405235, -3.362598417998695],
+                {"bubblingMouseEvents": true, "color": "#4c7eb9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4c7eb9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_a4388aaaa0c99b9f244d0211f8ebe28c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_21318f292518979243507e1ba8862673 = $(`<div id="html_21318f292518979243507e1ba8862673" style="width: 100.0%; height: 100.0%;">Region: Eastern Guinean forests<br>Temperature: 36.7°C</div>`)[0];
+                popup_a4388aaaa0c99b9f244d0211f8ebe28c.setContent(html_21318f292518979243507e1ba8862673);
+            
+        
+
+        circle_marker_02d852b499405b2944da3f0cd546801e.bindPopup(popup_a4388aaaa0c99b9f244d0211f8ebe28c)
+        ;
+
+        
+    
+    
+            var circle_marker_08c38eac0cac48da31c4cb183e6028db = L.circleMarker(
+                [-18.251439663707252, -41.98072438117591],
+                {"bubblingMouseEvents": true, "color": "#4d7eb9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4d7eb9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_e8841a0282fb0a73b21d3b14ab38523f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5a12d574c4c90cdc30b76994fe6744ba = $(`<div id="html_5a12d574c4c90cdc30b76994fe6744ba" style="width: 100.0%; height: 100.0%;">Region: Bahia interior forests<br>Temperature: 36.6°C</div>`)[0];
+                popup_e8841a0282fb0a73b21d3b14ab38523f.setContent(html_5a12d574c4c90cdc30b76994fe6744ba);
+            
+        
+
+        circle_marker_08c38eac0cac48da31c4cb183e6028db.bindPopup(popup_e8841a0282fb0a73b21d3b14ab38523f)
+        ;
+
+        
+    
+    
+            var circle_marker_302fce2f72fcc0730fd196cedf8f0ba7 = L.circleMarker(
+                [-28.624394255094245, -56.628201240529314],
+                {"bubblingMouseEvents": true, "color": "#4f81baff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4f81baff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_4a51392b0e5f90f9385b21af25ec7dd9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c4704338bcd653b46f7c1122ec347e0f = $(`<div id="html_c4704338bcd653b46f7c1122ec347e0f" style="width: 100.0%; height: 100.0%;">Region: Southern Cone Mesopotamian savanna<br>Temperature: 36.3°C</div>`)[0];
+                popup_4a51392b0e5f90f9385b21af25ec7dd9.setContent(html_c4704338bcd653b46f7c1122ec347e0f);
+            
+        
+
+        circle_marker_302fce2f72fcc0730fd196cedf8f0ba7.bindPopup(popup_4a51392b0e5f90f9385b21af25ec7dd9)
+        ;
+
+        
+    
+    
+            var circle_marker_2de756fb2c5453f7a15abd600946ad8b = L.circleMarker(
+                [10.203302413588933, -14.010243609697229],
+                {"bubblingMouseEvents": true, "color": "#4f81bbff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4f81bbff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_c836e46681569a0e3802315aab92c935 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7f8152a41d91bf999d52d7170fefe736 = $(`<div id="html_7f8152a41d91bf999d52d7170fefe736" style="width: 100.0%; height: 100.0%;">Region: Guinean mangroves<br>Temperature: 36.2°C</div>`)[0];
+                popup_c836e46681569a0e3802315aab92c935.setContent(html_7f8152a41d91bf999d52d7170fefe736);
+            
+        
+
+        circle_marker_2de756fb2c5453f7a15abd600946ad8b.bindPopup(popup_c836e46681569a0e3802315aab92c935)
+        ;
+
+        
+    
+    
+            var circle_marker_da02fe12ba40f8ed770148cdbf06adb8 = L.circleMarker(
+                [-31.301682215166657, 23.417331843097962],
+                {"bubblingMouseEvents": true, "color": "#5082bbff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5082bbff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_d6d784aa5f5a7aa1bdd73f48e2116f89 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_463d9b65cc0d20d23dc92ec759024a38 = $(`<div id="html_463d9b65cc0d20d23dc92ec759024a38" style="width: 100.0%; height: 100.0%;">Region: Nama Karoo shrublands<br>Temperature: 36.1°C</div>`)[0];
+                popup_d6d784aa5f5a7aa1bdd73f48e2116f89.setContent(html_463d9b65cc0d20d23dc92ec759024a38);
+            
+        
+
+        circle_marker_da02fe12ba40f8ed770148cdbf06adb8.bindPopup(popup_d6d784aa5f5a7aa1bdd73f48e2116f89)
+        ;
+
+        
+    
+    
+            var circle_marker_859198063d1387d36e53bbfb329471da = L.circleMarker(
+                [13.272966590474525, -87.47242414583292],
+                {"bubblingMouseEvents": true, "color": "#5082bbff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5082bbff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_0925f213129732d7a63df510bbffc12f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_43f406716ea3d78d55f41f40bf5529fd = $(`<div id="html_43f406716ea3d78d55f41f40bf5529fd" style="width: 100.0%; height: 100.0%;">Region: Central American dry forests<br>Temperature: 36.1°C</div>`)[0];
+                popup_0925f213129732d7a63df510bbffc12f.setContent(html_43f406716ea3d78d55f41f40bf5529fd);
+            
+        
+
+        circle_marker_859198063d1387d36e53bbfb329471da.bindPopup(popup_0925f213129732d7a63df510bbffc12f)
+        ;
+
+        
+    
+    
+            var circle_marker_be393aa64480d1b41b273d64e0d70b60 = L.circleMarker(
+                [-30.724617662604217, 127.76321092751057],
+                {"bubblingMouseEvents": true, "color": "#5083bbff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5083bbff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_545750fba8fe1092df45401f1053805c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ecd2fd817c1ae7a2a6e289514ea82279 = $(`<div id="html_ecd2fd817c1ae7a2a6e289514ea82279" style="width: 100.0%; height: 100.0%;">Region: Nullarbor Plains xeric shrublands<br>Temperature: 36.0°C</div>`)[0];
+                popup_545750fba8fe1092df45401f1053805c.setContent(html_ecd2fd817c1ae7a2a6e289514ea82279);
+            
+        
+
+        circle_marker_be393aa64480d1b41b273d64e0d70b60.bindPopup(popup_545750fba8fe1092df45401f1053805c)
+        ;
+
+        
+    
+    
+            var circle_marker_ee48332a1c04ffef90220affdc1c2b2a = L.circleMarker(
+                [-35.46401799552825, -60.80743688799227],
+                {"bubblingMouseEvents": true, "color": "#5284bcff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5284bcff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_167f040d8db537876ea4720d3a36e6ac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a16631bb10465db112eadbd2671d5350 = $(`<div id="html_a16631bb10465db112eadbd2671d5350" style="width: 100.0%; height: 100.0%;">Region: Humid Pampas<br>Temperature: 35.8°C</div>`)[0];
+                popup_167f040d8db537876ea4720d3a36e6ac.setContent(html_a16631bb10465db112eadbd2671d5350);
+            
+        
+
+        circle_marker_ee48332a1c04ffef90220affdc1c2b2a.bindPopup(popup_167f040d8db537876ea4720d3a36e6ac)
+        ;
+
+        
+    
+    
+            var circle_marker_22a333bbc5aae13cb65f44225ffc6067 = L.circleMarker(
+                [-3.63801436257372, 141.33238298948197],
+                {"bubblingMouseEvents": true, "color": "#5285bcff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5285bcff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_3f687097dab510e5cd0a862cd8bbf337 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_83344914355d265f031e7cd7fa44182e = $(`<div id="html_83344914355d265f031e7cd7fa44182e" style="width: 100.0%; height: 100.0%;">Region: Northern New Guinea lowland rain and freshwater swamp forests<br>Temperature: 35.7°C</div>`)[0];
+                popup_3f687097dab510e5cd0a862cd8bbf337.setContent(html_83344914355d265f031e7cd7fa44182e);
+            
+        
+
+        circle_marker_22a333bbc5aae13cb65f44225ffc6067.bindPopup(popup_3f687097dab510e5cd0a862cd8bbf337)
+        ;
+
+        
+    
+    
+            var circle_marker_8a0a967b5200cb1198432bcf485c20b5 = L.circleMarker(
+                [-30.084685424532964, 136.99678420245053],
+                {"bubblingMouseEvents": true, "color": "#5285bcff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5285bcff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_d9fd60b20bcd05082747d911fa0b27b1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1fac2e315b324a6db22579d200126b18 = $(`<div id="html_1fac2e315b324a6db22579d200126b18" style="width: 100.0%; height: 100.0%;">Region: Tirari-Sturt stony desert<br>Temperature: 35.7°C</div>`)[0];
+                popup_d9fd60b20bcd05082747d911fa0b27b1.setContent(html_1fac2e315b324a6db22579d200126b18);
+            
+        
+
+        circle_marker_8a0a967b5200cb1198432bcf485c20b5.bindPopup(popup_d9fd60b20bcd05082747d911fa0b27b1)
+        ;
+
+        
+    
+    
+            var circle_marker_7642f15ec0eadc5bb7419d3db7846c2d = L.circleMarker(
+                [-34.16531941007006, -62.87872876878476],
+                {"bubblingMouseEvents": true, "color": "#5386bdff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5386bdff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_75db6ce9a01681e3c441a40d0a4bd08d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_581b1da5a5c7bdff6cc76577f152f6e9 = $(`<div id="html_581b1da5a5c7bdff6cc76577f152f6e9" style="width: 100.0%; height: 100.0%;">Region: Espinal<br>Temperature: 35.5°C</div>`)[0];
+                popup_75db6ce9a01681e3c441a40d0a4bd08d.setContent(html_581b1da5a5c7bdff6cc76577f152f6e9);
+            
+        
+
+        circle_marker_7642f15ec0eadc5bb7419d3db7846c2d.bindPopup(popup_75db6ce9a01681e3c441a40d0a4bd08d)
+        ;
+
+        
+    
+    
+            var circle_marker_3add652f427febf01cadc036c9ed6f18 = L.circleMarker(
+                [10.089365214176155, -74.05824977471248],
+                {"bubblingMouseEvents": true, "color": "#5487beff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5487beff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_785b82be94205e97581e8dc83886e08b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c9cf97209f4a6782045aaaaca3948110 = $(`<div id="html_c9cf97209f4a6782045aaaaca3948110" style="width: 100.0%; height: 100.0%;">Region: Sinú Valley dry forests<br>Temperature: 35.4°C</div>`)[0];
+                popup_785b82be94205e97581e8dc83886e08b.setContent(html_c9cf97209f4a6782045aaaaca3948110);
+            
+        
+
+        circle_marker_3add652f427febf01cadc036c9ed6f18.bindPopup(popup_785b82be94205e97581e8dc83886e08b)
+        ;
+
+        
+    
+    
+            var circle_marker_c3e8a3dd263f1af717be2e5e1dc41d81 = L.circleMarker(
+                [-33.34097240906261, 20.228450776392016],
+                {"bubblingMouseEvents": true, "color": "#5588beff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5588beff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_079003a674a1b4d5e69ba2660bbfd663 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cad4a18ad30310cb71509686c664c4d3 = $(`<div id="html_cad4a18ad30310cb71509686c664c4d3" style="width: 100.0%; height: 100.0%;">Region: Renosterveld shrubland<br>Temperature: 35.3°C</div>`)[0];
+                popup_079003a674a1b4d5e69ba2660bbfd663.setContent(html_cad4a18ad30310cb71509686c664c4d3);
+            
+        
+
+        circle_marker_c3e8a3dd263f1af717be2e5e1dc41d81.bindPopup(popup_079003a674a1b4d5e69ba2660bbfd663)
+        ;
+
+        
+    
+    
+            var circle_marker_2a784e9135b048d0af677c4537f78b3b = L.circleMarker(
+                [48.74113799466631, 93.68490097157742],
+                {"bubblingMouseEvents": true, "color": "#a50026ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a50026ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_f31bc9c09e75575f6c9ebbf40e7f642b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_efad016bfec75efe7af1799ffa0bd914 = $(`<div id="html_efad016bfec75efe7af1799ffa0bd914" style="width: 100.0%; height: 100.0%;">Region: Great Lakes Basin desert steppe<br>Temperature: -32.2°C</div>`)[0];
+                popup_f31bc9c09e75575f6c9ebbf40e7f642b.setContent(html_efad016bfec75efe7af1799ffa0bd914);
+            
+        
+
+        circle_marker_2a784e9135b048d0af677c4537f78b3b.bindPopup(popup_f31bc9c09e75575f6c9ebbf40e7f642b)
+        ;
+
+        
+    
+    
+            var circle_marker_4d5223d4e9db26d9aab3eba5b3244a16 = L.circleMarker(
+                [51.343495144125384, 94.41268975332633],
+                {"bubblingMouseEvents": true, "color": "#c82126ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c82126ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_0003b5f67df96b96c4d92f3ad044cc3e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b635650f52419dad9cb7c2ad17aec882 = $(`<div id="html_b635650f52419dad9cb7c2ad17aec882" style="width: 100.0%; height: 100.0%;">Region: Sayan Intermontane steppe<br>Temperature: -26.8°C</div>`)[0];
+                popup_0003b5f67df96b96c4d92f3ad044cc3e.setContent(html_b635650f52419dad9cb7c2ad17aec882);
+            
+        
+
+        circle_marker_4d5223d4e9db26d9aab3eba5b3244a16.bindPopup(popup_0003b5f67df96b96c4d92f3ad044cc3e)
+        ;
+
+        
+    
+    
+            var circle_marker_b95dfeb4720b67a354b55d1d2cf5e4d8 = L.circleMarker(
+                [48.7183061972236, 131.25699581938744],
+                {"bubblingMouseEvents": true, "color": "#d12a27ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d12a27ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_6744835e4d01f27b82f3d53f565471b9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7236b10b648b2d367b3a826066392975 = $(`<div id="html_7236b10b648b2d367b3a826066392975" style="width: 100.0%; height: 100.0%;">Region: Amur meadow steppe<br>Temperature: -25.4°C</div>`)[0];
+                popup_6744835e4d01f27b82f3d53f565471b9.setContent(html_7236b10b648b2d367b3a826066392975);
+            
+        
+
+        circle_marker_b95dfeb4720b67a354b55d1d2cf5e4d8.bindPopup(popup_6744835e4d01f27b82f3d53f565471b9)
+        ;
+
+        
+    
+    
+            var circle_marker_0cf0791871accbbb7f19a8f3cec6d9fa = L.circleMarker(
+                [56.340969387334, 77.11605068649312],
+                {"bubblingMouseEvents": true, "color": "#d22a27ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d22a27ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_788b0427b4174a6e88d6b270283684ca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c74e414db2c9bf597905b2fb760e8046 = $(`<div id="html_c74e414db2c9bf597905b2fb760e8046" style="width: 100.0%; height: 100.0%;">Region: Western Siberian hemiboreal forests<br>Temperature: -25.3°C</div>`)[0];
+                popup_788b0427b4174a6e88d6b270283684ca.setContent(html_c74e414db2c9bf597905b2fb760e8046);
+            
+        
+
+        circle_marker_0cf0791871accbbb7f19a8f3cec6d9fa.bindPopup(popup_788b0427b4174a6e88d6b270283684ca)
+        ;
+
+        
+    
+    
+            var circle_marker_aa380842cb544fdecc4b4bf65236490a = L.circleMarker(
+                [51.98370392504525, 69.96565852855242],
+                {"bubblingMouseEvents": true, "color": "#d52d27ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d52d27ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_07c5ca1a36628ea4dec366b89fb46a26 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ac60924c91153bbfb46d5e7911ba603a = $(`<div id="html_ac60924c91153bbfb46d5e7911ba603a" style="width: 100.0%; height: 100.0%;">Region: Kazakh steppe<br>Temperature: -24.8°C</div>`)[0];
+                popup_07c5ca1a36628ea4dec366b89fb46a26.setContent(html_ac60924c91153bbfb46d5e7911ba603a);
+            
+        
+
+        circle_marker_aa380842cb544fdecc4b4bf65236490a.bindPopup(popup_07c5ca1a36628ea4dec366b89fb46a26)
+        ;
+
+        
+    
+    
+            var circle_marker_881509647b0433ff40895bb1abebaf80 = L.circleMarker(
+                [36.28423855258029, 70.50829286348846],
+                {"bubblingMouseEvents": true, "color": "#d62f27ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62f27ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_5e8dbe8c84a1c79f23fa239d168f0d9a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5bce38172407147e4b1197ac0ec879a3 = $(`<div id="html_5bce38172407147e4b1197ac0ec879a3" style="width: 100.0%; height: 100.0%;">Region: Hindu Kush alpine meadow<br>Temperature: -24.6°C</div>`)[0];
+                popup_5e8dbe8c84a1c79f23fa239d168f0d9a.setContent(html_5bce38172407147e4b1197ac0ec879a3);
+            
+        
+
+        circle_marker_881509647b0433ff40895bb1abebaf80.bindPopup(popup_5e8dbe8c84a1c79f23fa239d168f0d9a)
+        ;
+
+        
+    
+    
+            var circle_marker_e02ca29d784507431dbcab01f7e4d70f = L.circleMarker(
+                [51.90267857565003, 123.89502016424365],
+                {"bubblingMouseEvents": true, "color": "#d62f27ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62f27ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_4b58a1a7fa33dc08b4ab483c0d74a1d5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_11fb6a46bd05f86369c1f50316056534 = $(`<div id="html_11fb6a46bd05f86369c1f50316056534" style="width: 100.0%; height: 100.0%;">Region: Da Hinggan-Dzhagdy Mountains conifer forests<br>Temperature: -24.6°C</div>`)[0];
+                popup_4b58a1a7fa33dc08b4ab483c0d74a1d5.setContent(html_11fb6a46bd05f86369c1f50316056534);
+            
+        
+
+        circle_marker_e02ca29d784507431dbcab01f7e4d70f.bindPopup(popup_4b58a1a7fa33dc08b4ab483c0d74a1d5)
+        ;
+
+        
+    
+    
+            var circle_marker_0933e03f0e00974d5a372237c8abbd6b = L.circleMarker(
+                [45.49918119404632, -68.92527523096754],
+                {"bubblingMouseEvents": true, "color": "#d72f27ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d72f27ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_103800518ef917d55b554fb0281c7ef5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_385bf5651a3d7ac27e559c9648997e7a = $(`<div id="html_385bf5651a3d7ac27e559c9648997e7a" style="width: 100.0%; height: 100.0%;">Region: New England-Acadian forests<br>Temperature: -24.5°C</div>`)[0];
+                popup_103800518ef917d55b554fb0281c7ef5.setContent(html_385bf5651a3d7ac27e559c9648997e7a);
+            
+        
+
+        circle_marker_0933e03f0e00974d5a372237c8abbd6b.bindPopup(popup_103800518ef917d55b554fb0281c7ef5)
+        ;
+
+        
+    
+    
+            var circle_marker_114cd43fcc98d065d44dda2d170973d6 = L.circleMarker(
+                [46.493084905821284, -65.01129310052374],
+                {"bubblingMouseEvents": true, "color": "#d72f27ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d72f27ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_5d9d85bde9038f84635d77b0a3a0b425 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_96b54e2a57586d38aa440cdaffa68de4 = $(`<div id="html_96b54e2a57586d38aa440cdaffa68de4" style="width: 100.0%; height: 100.0%;">Region: Gulf of St. Lawrence lowland forests<br>Temperature: -24.5°C</div>`)[0];
+                popup_5d9d85bde9038f84635d77b0a3a0b425.setContent(html_96b54e2a57586d38aa440cdaffa68de4);
+            
+        
+
+        circle_marker_114cd43fcc98d065d44dda2d170973d6.bindPopup(popup_5d9d85bde9038f84635d77b0a3a0b425)
+        ;
+
+        
+    
+    
+            var circle_marker_e7d56f863797f0b9f9789d6690cc72e3 = L.circleMarker(
+                [50.28513192403619, 73.1133803590196],
+                {"bubblingMouseEvents": true, "color": "#d72f27ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d72f27ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_fd310c496c7d2562232f25b4c8e407c3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f79c31ea547534673c282985560a06eb = $(`<div id="html_f79c31ea547534673c282985560a06eb" style="width: 100.0%; height: 100.0%;">Region: Kazakh upland steppe<br>Temperature: -24.5°C</div>`)[0];
+                popup_fd310c496c7d2562232f25b4c8e407c3.setContent(html_f79c31ea547534673c282985560a06eb);
+            
+        
+
+        circle_marker_e7d56f863797f0b9f9789d6690cc72e3.bindPopup(popup_fd310c496c7d2562232f25b4c8e407c3)
+        ;
+
+        
+    
+    
+            var circle_marker_d4814abdcefb53f2814570cc5e98ea9c = L.circleMarker(
+                [54.41607515019459, 71.84481079066894],
+                {"bubblingMouseEvents": true, "color": "#d73027ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d73027ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_b73489bf0a167e4a2d1327616296d5cc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b0551710f0e95cb8f3cea87916fe288f = $(`<div id="html_b0551710f0e95cb8f3cea87916fe288f" style="width: 100.0%; height: 100.0%;">Region: Kazakh forest steppe<br>Temperature: -24.4°C</div>`)[0];
+                popup_b73489bf0a167e4a2d1327616296d5cc.setContent(html_b0551710f0e95cb8f3cea87916fe288f);
+            
+        
+
+        circle_marker_d4814abdcefb53f2814570cc5e98ea9c.bindPopup(popup_b73489bf0a167e4a2d1327616296d5cc)
+        ;
+
+        
+    
+    
+            var circle_marker_908d096728c7c7483f7f8b469867d54f = L.circleMarker(
+                [48.437316722553035, 65.83622174369957],
+                {"bubblingMouseEvents": true, "color": "#d83127ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d83127ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_957b173d0c92cf907476f784b59763a8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2ba918c35616df40d4866ba83969f817 = $(`<div id="html_2ba918c35616df40d4866ba83969f817" style="width: 100.0%; height: 100.0%;">Region: Kazakh semi-desert<br>Temperature: -24.3°C</div>`)[0];
+                popup_957b173d0c92cf907476f784b59763a8.setContent(html_2ba918c35616df40d4866ba83969f817);
+            
+        
+
+        circle_marker_908d096728c7c7483f7f8b469867d54f.bindPopup(popup_957b173d0c92cf907476f784b59763a8)
+        ;
+
+        
+    
+    
+            var circle_marker_c7e0e26d0006adc9e892ddeab3f99de8 = L.circleMarker(
+                [43.1498041178344, 80.3730446960803],
+                {"bubblingMouseEvents": true, "color": "#dd3b2cff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dd3b2cff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_35e9d81ca452c8b775e0945155ebf09e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1f76ae7fcba550bd58d79e9dcf60a70f = $(`<div id="html_1f76ae7fcba550bd58d79e9dcf60a70f" style="width: 100.0%; height: 100.0%;">Region: Tian Shan montane conifer forests<br>Temperature: -23.0°C</div>`)[0];
+                popup_35e9d81ca452c8b775e0945155ebf09e.setContent(html_1f76ae7fcba550bd58d79e9dcf60a70f);
+            
+        
+
+        circle_marker_c7e0e26d0006adc9e892ddeab3f99de8.bindPopup(popup_35e9d81ca452c8b775e0945155ebf09e)
+        ;
+
+        
+    
+    
+            var circle_marker_dc770861717d6f39270071654eacf546 = L.circleMarker(
+                [47.04502612724456, -77.5361882686272],
+                {"bubblingMouseEvents": true, "color": "#dd3b2cff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dd3b2cff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_4468b2bb2dfb958b798ea79fd4517fc4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_beefd2f9c341b3c6c8011b6bb4d83213 = $(`<div id="html_beefd2f9c341b3c6c8011b6bb4d83213" style="width: 100.0%; height: 100.0%;">Region: Eastern Canadian Forest-Boreal transition<br>Temperature: -23.0°C</div>`)[0];
+                popup_4468b2bb2dfb958b798ea79fd4517fc4.setContent(html_beefd2f9c341b3c6c8011b6bb4d83213);
+            
+        
+
+        circle_marker_dc770861717d6f39270071654eacf546.bindPopup(popup_4468b2bb2dfb958b798ea79fd4517fc4)
+        ;
+
+        
+    
+    
+            var circle_marker_2f00e7d924d2ca55dc42669c447212b5 = L.circleMarker(
+                [44.54151277703264, -76.67402854849615],
+                {"bubblingMouseEvents": true, "color": "#e24731ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e24731ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_09d2ff89410f76360fe9d1f4af8ffb61 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2ee3cc9c3905a5b338cca61047bec11e = $(`<div id="html_2ee3cc9c3905a5b338cca61047bec11e" style="width: 100.0%; height: 100.0%;">Region: Eastern Great Lakes lowland forests<br>Temperature: -21.5°C</div>`)[0];
+                popup_09d2ff89410f76360fe9d1f4af8ffb61.setContent(html_2ee3cc9c3905a5b338cca61047bec11e);
+            
+        
+
+        circle_marker_2f00e7d924d2ca55dc42669c447212b5.bindPopup(popup_09d2ff89410f76360fe9d1f4af8ffb61)
+        ;
+
+        
+    
+    
+            var circle_marker_45aa39712a1b9d203ae09920e8a4a51f = L.circleMarker(
+                [42.00545100474454, -76.79630350257283],
+                {"bubblingMouseEvents": true, "color": "#e34732ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34732ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_3563484b4ec86f030b9bd3da227376ac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_697e2291f8fc5d45e1d49cd5981b3a53 = $(`<div id="html_697e2291f8fc5d45e1d49cd5981b3a53" style="width: 100.0%; height: 100.0%;">Region: Allegheny Highlands forests<br>Temperature: -21.4°C</div>`)[0];
+                popup_3563484b4ec86f030b9bd3da227376ac.setContent(html_697e2291f8fc5d45e1d49cd5981b3a53);
+            
+        
+
+        circle_marker_45aa39712a1b9d203ae09920e8a4a51f.bindPopup(popup_3563484b4ec86f030b9bd3da227376ac)
+        ;
+
+        
+    
+    
+            var circle_marker_2243fcbae6b6c26af66aea379c7937f3 = L.circleMarker(
+                [46.130627107817254, 127.79292180478691],
+                {"bubblingMouseEvents": true, "color": "#e44a33ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e44a33ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_7e48c12e21b2c74c2ee825f7671e04ec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f804bd03ad0fd2a9c8470b6645f7f237 = $(`<div id="html_f804bd03ad0fd2a9c8470b6645f7f237" style="width: 100.0%; height: 100.0%;">Region: Manchurian mixed forests<br>Temperature: -21.0°C</div>`)[0];
+                popup_7e48c12e21b2c74c2ee825f7671e04ec.setContent(html_f804bd03ad0fd2a9c8470b6645f7f237);
+            
+        
+
+        circle_marker_2243fcbae6b6c26af66aea379c7937f3.bindPopup(popup_7e48c12e21b2c74c2ee825f7671e04ec)
+        ;
+
+        
+    
+    
+            var circle_marker_66f6f78f49c73bb023b81f78a53a69ff = L.circleMarker(
+                [34.81510935754237, 76.42599184931926],
+                {"bubblingMouseEvents": true, "color": "#e44b33ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e44b33ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_008e973fac147ab6885626b67c173af3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a2010b80d540522eef8e3c008939f1c5 = $(`<div id="html_a2010b80d540522eef8e3c008939f1c5" style="width: 100.0%; height: 100.0%;">Region: Karakoram-West Tibetan Plateau alpine steppe<br>Temperature: -20.9°C</div>`)[0];
+                popup_008e973fac147ab6885626b67c173af3.setContent(html_a2010b80d540522eef8e3c008939f1c5);
+            
+        
+
+        circle_marker_66f6f78f49c73bb023b81f78a53a69ff.bindPopup(popup_008e973fac147ab6885626b67c173af3)
+        ;
+
+        
+    
+    
+            var circle_marker_a64030e01ce28e8367369a19dde381e5 = L.circleMarker(
+                [38.38296021180931, 73.35508380327796],
+                {"bubblingMouseEvents": true, "color": "#e44b33ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e44b33ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_12a394a9bf7cd076c1358fcf30188208 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_45cee804c6427a9d7541cf2abfce10df = $(`<div id="html_45cee804c6427a9d7541cf2abfce10df" style="width: 100.0%; height: 100.0%;">Region: Pamir alpine desert and tundra<br>Temperature: -20.9°C</div>`)[0];
+                popup_12a394a9bf7cd076c1358fcf30188208.setContent(html_45cee804c6427a9d7541cf2abfce10df);
+            
+        
+
+        circle_marker_a64030e01ce28e8367369a19dde381e5.bindPopup(popup_12a394a9bf7cd076c1358fcf30188208)
+        ;
+
+        
+    
+    
+            var circle_marker_ae6d0d5eb94a4905f8aa8958e610c69d = L.circleMarker(
+                [46.49865747933678, 123.96148967064512],
+                {"bubblingMouseEvents": true, "color": "#e64f35ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e64f35ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_bdfe5df1e7f9344bbfd6e1eb82fdbabd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d747dabbe3714feb61dc24621a6e144 = $(`<div id="html_5d747dabbe3714feb61dc24621a6e144" style="width: 100.0%; height: 100.0%;">Region: Nenjiang River grassland<br>Temperature: -20.4°C</div>`)[0];
+                popup_bdfe5df1e7f9344bbfd6e1eb82fdbabd.setContent(html_5d747dabbe3714feb61dc24621a6e144);
+            
+        
+
+        circle_marker_ae6d0d5eb94a4905f8aa8958e610c69d.bindPopup(popup_bdfe5df1e7f9344bbfd6e1eb82fdbabd)
+        ;
+
+        
+    
+    
+            var circle_marker_ac6e9802119369fd4d89040ad4d9ad92 = L.circleMarker(
+                [38.65994839762418, 97.9856944881943],
+                {"bubblingMouseEvents": true, "color": "#e75236ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e75236ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_3d0945da7e43572a984d0810bfc2310d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e41606630a283d6b1eec5b11dd1cd5b4 = $(`<div id="html_e41606630a283d6b1eec5b11dd1cd5b4" style="width: 100.0%; height: 100.0%;">Region: Qilian Mountains subalpine meadows<br>Temperature: -20.1°C</div>`)[0];
+                popup_3d0945da7e43572a984d0810bfc2310d.setContent(html_e41606630a283d6b1eec5b11dd1cd5b4);
+            
+        
+
+        circle_marker_ac6e9802119369fd4d89040ad4d9ad92.bindPopup(popup_3d0945da7e43572a984d0810bfc2310d)
+        ;
+
+        
+    
+    
+            var circle_marker_1f0b2a365d234616527bfe14cbe2cabd = L.circleMarker(
+                [36.17483636617563, 85.24463181367204],
+                {"bubblingMouseEvents": true, "color": "#e85237ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e85237ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_c1c31f264efaae564eaf759652958a02 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ecdae00632c57551ad07361159cb34cb = $(`<div id="html_ecdae00632c57551ad07361159cb34cb" style="width: 100.0%; height: 100.0%;">Region: North Tibetan Plateau-Kunlun Mountains alpine desert<br>Temperature: -20.0°C</div>`)[0];
+                popup_c1c31f264efaae564eaf759652958a02.setContent(html_ecdae00632c57551ad07361159cb34cb);
+            
+        
+
+        circle_marker_1f0b2a365d234616527bfe14cbe2cabd.bindPopup(popup_c1c31f264efaae564eaf759652958a02)
+        ;
+
+        
+    
+    
+            var circle_marker_55259ae5f8667b64084f761ec880e4d7 = L.circleMarker(
+                [41.458142037819854, -83.804950039547],
+                {"bubblingMouseEvents": true, "color": "#e95538ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e95538ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_ec24a2268d41aabc73d9282a3c17d4e5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bdba917f4a6510a2afa2d1fb14dc5c8a = $(`<div id="html_bdba917f4a6510a2afa2d1fb14dc5c8a" style="width: 100.0%; height: 100.0%;">Region: Southern Great Lakes forests<br>Temperature: -19.7°C</div>`)[0];
+                popup_ec24a2268d41aabc73d9282a3c17d4e5.setContent(html_bdba917f4a6510a2afa2d1fb14dc5c8a);
+            
+        
+
+        circle_marker_55259ae5f8667b64084f761ec880e4d7.bindPopup(popup_ec24a2268d41aabc73d9282a3c17d4e5)
+        ;
+
+        
+    
+    
+            var circle_marker_c9bd19990209e10b9e39e6c2e6a7327d = L.circleMarker(
+                [48.650375286019276, 88.05712443315967],
+                {"bubblingMouseEvents": true, "color": "#eb5939ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#eb5939ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_dba6679d36d551f31f5d5c0afa03d90b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a778f7751b8024c39bfe96bb1c6007f5 = $(`<div id="html_a778f7751b8024c39bfe96bb1c6007f5" style="width: 100.0%; height: 100.0%;">Region: Altai alpine meadow and tundra<br>Temperature: -19.2°C</div>`)[0];
+                popup_dba6679d36d551f31f5d5c0afa03d90b.setContent(html_a778f7751b8024c39bfe96bb1c6007f5);
+            
+        
+
+        circle_marker_c9bd19990209e10b9e39e6c2e6a7327d.bindPopup(popup_dba6679d36d551f31f5d5c0afa03d90b)
+        ;
+
+        
+    
+    
+            var circle_marker_7666ad887623b7a0babb64e7904f5d7d = L.circleMarker(
+                [38.74998652254176, -106.3821030334288],
+                {"bubblingMouseEvents": true, "color": "#eb593aff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#eb593aff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_59639d0cf696588cccff155b6d526ccb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f01df8354f004b909b30c74f3722909c = $(`<div id="html_f01df8354f004b909b30c74f3722909c" style="width: 100.0%; height: 100.0%;">Region: Colorado Rockies forests<br>Temperature: -19.1°C</div>`)[0];
+                popup_59639d0cf696588cccff155b6d526ccb.setContent(html_f01df8354f004b909b30c74f3722909c);
+            
+        
+
+        circle_marker_7666ad887623b7a0babb64e7904f5d7d.bindPopup(popup_59639d0cf696588cccff155b6d526ccb)
+        ;
+
+        
+    
+    
+            var circle_marker_7255175ee2941eba977d8e47ea403f02 = L.circleMarker(
+                [46.680748214184305, 135.1671404235551],
+                {"bubblingMouseEvents": true, "color": "#eb593aff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#eb593aff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_be035f922ec7b6c96da97f14bb30e6d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_74c82cd0c3b9dddfd7cf0164052fc629 = $(`<div id="html_74c82cd0c3b9dddfd7cf0164052fc629" style="width: 100.0%; height: 100.0%;">Region: Ussuri broadleaf and mixed forests<br>Temperature: -19.1°C</div>`)[0];
+                popup_be035f922ec7b6c96da97f14bb30e6d0.setContent(html_74c82cd0c3b9dddfd7cf0164052fc629);
+            
+        
+
+        circle_marker_7255175ee2941eba977d8e47ea403f02.bindPopup(popup_be035f922ec7b6c96da97f14bb30e6d0)
+        ;
+
+        
+    
+    
+            var circle_marker_f0d26fcbd550205504a4ab59f4900156 = L.circleMarker(
+                [41.789834741956554, 127.56669208708634],
+                {"bubblingMouseEvents": true, "color": "#ec5a3aff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ec5a3aff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_8e3b1b448a6cf9c7bf3c666ad630fa72 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6e9c370b1d8b1bffd81b6caf714617e1 = $(`<div id="html_6e9c370b1d8b1bffd81b6caf714617e1" style="width: 100.0%; height: 100.0%;">Region: Changbai Mountains mixed forests<br>Temperature: -19.0°C</div>`)[0];
+                popup_8e3b1b448a6cf9c7bf3c666ad630fa72.setContent(html_6e9c370b1d8b1bffd81b6caf714617e1);
+            
+        
+
+        circle_marker_f0d26fcbd550205504a4ab59f4900156.bindPopup(popup_8e3b1b448a6cf9c7bf3c666ad630fa72)
+        ;
+
+        
+    
+    
+            var circle_marker_af11c4ecb6c450018a94555849abf321 = L.circleMarker(
+                [48.2471191929791, 90.33452652098191],
+                {"bubblingMouseEvents": true, "color": "#ee5f3cff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ee5f3cff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_79c49129b7626366dea7bd329ca62960 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cce1ce415595de48e5087e5a9043a020 = $(`<div id="html_cce1ce415595de48e5087e5a9043a020" style="width: 100.0%; height: 100.0%;">Region: Altai montane forest and forest steppe<br>Temperature: -18.4°C</div>`)[0];
+                popup_79c49129b7626366dea7bd329ca62960.setContent(html_cce1ce415595de48e5087e5a9043a020);
+            
+        
+
+        circle_marker_af11c4ecb6c450018a94555849abf321.bindPopup(popup_79c49129b7626366dea7bd329ca62960)
+        ;
+
+        
+    
+    
+            var circle_marker_d2f6ba6a2b8fb8449ffa90423682674d = L.circleMarker(
+                [40.190205042668104, -88.99704886388355],
+                {"bubblingMouseEvents": true, "color": "#ee5f3cff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ee5f3cff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_3c9b529d715af4ecc0840306aec00bde = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6f9307e25cb31e222f080e7c5542e03d = $(`<div id="html_6f9307e25cb31e222f080e7c5542e03d" style="width: 100.0%; height: 100.0%;">Region: Central US forest-grasslands transition<br>Temperature: -18.4°C</div>`)[0];
+                popup_3c9b529d715af4ecc0840306aec00bde.setContent(html_6f9307e25cb31e222f080e7c5542e03d);
+            
+        
+
+        circle_marker_d2f6ba6a2b8fb8449ffa90423682674d.bindPopup(popup_3c9b529d715af4ecc0840306aec00bde)
+        ;
+
+        
+    
+    
+            var circle_marker_3a36efa104edbb9c41f15bbd4cad27bd = L.circleMarker(
+                [45.84380344100127, 115.84182692055019],
+                {"bubblingMouseEvents": true, "color": "#ee603dff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ee603dff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+    
+        var popup_6ac7a33a9366b42a2f4872c49b349273 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_87985a39364f97e190c9e1c61ddeba30 = $(`<div id="html_87985a39364f97e190c9e1c61ddeba30" style="width: 100.0%; height: 100.0%;">Region: Mongolian-Manchurian grassland<br>Temperature: -18.3°C</div>`)[0];
+                popup_6ac7a33a9366b42a2f4872c49b349273.setContent(html_87985a39364f97e190c9e1c61ddeba30);
+            
+        
+
+        circle_marker_3a36efa104edbb9c41f15bbd4cad27bd.bindPopup(popup_6ac7a33a9366b42a2f4872c49b349273)
+        ;
+
+        
+    
+    
+    var color_map_edc7111a615d87efb283231f4ebef5c5 = {};
+
+    
+    color_map_edc7111a615d87efb283231f4ebef5c5.color = d3.scale.threshold()
+              .domain([-32.2, -32.043887775551106, -31.88777555110221, -31.731663326653308, -31.57555110220441, -31.419438877755514, -31.263326653306617, -31.107214428857716, -30.95110220440882, -30.794989979959922, -30.638877755511025, -30.482765531062128, -30.326653306613228, -30.17054108216433, -30.014428857715433, -29.858316633266536, -29.70220440881764, -29.54609218436874, -29.38997995991984, -29.233867735470945, -29.077755511022048, -28.92164328657315, -28.76553106212425, -28.609418837675353, -28.453306613226456, -28.29719438877756, -28.141082164328658, -27.98496993987976, -27.828857715430864, -27.672745490981967, -27.51663326653307, -27.360521042084173, -27.204408817635272, -27.048296593186375, -26.892184368737478, -26.73607214428858, -26.57995991983968, -26.423847695390783, -26.267735470941886, -26.11162324649299, -25.955511022044092, -25.79939879759519, -25.643286573146295, -25.487174348697398, -25.331062124248497, -25.1749498997996, -25.018837675350703, -24.862725450901806, -24.70661322645291, -24.55050100200401, -24.39438877755511, -24.238276553106214, -24.082164328657317, -23.926052104208416, -23.76993987975952, -23.613827655310622, -23.457715430861725, -23.30160320641283, -23.14549098196393, -22.989378757515034, -22.833266533066137, -22.677154308617236, -22.52104208416834, -22.36492985971944, -22.20881763527054, -22.052705410821645, -21.896593186372748, -21.74048096192385, -21.584368737474954, -21.428256513026056, -21.27214428857716, -21.11603206412826, -20.959919839679362, -20.80380761523046, -20.647695390781564, -20.491583166332667, -20.33547094188377, -20.179358717434873, -20.023246492985976, -19.86713426853708, -19.711022044088182, -19.554909819639278, -19.39879759519038, -19.242685370741484, -19.086573146292587, -18.93046092184369, -18.774348697394792, -18.618236472945895, -18.462124248496995, -18.306012024048098, -18.149899799599197, -17.9937875751503, -17.837675350701403, -17.681563126252506, -17.52545090180361, -17.369338677354712, -17.213226452905815, -17.057114228456918, -16.901002004008017, -16.74488977955912, -16.58877755511022, -16.432665330661322, -16.276553106212425, -16.12044088176353, -15.964328657314631, -15.808216432865734, -15.652104208416834, -15.495991983967937, -15.33987975951904, -15.183767535070142, -15.027655310621245, -14.871543086172345, -14.715430861723448, -14.55931863727455, -14.403206412825654, -14.247094188376757, -14.090981963927856, -13.934869739478959, -13.778757515030062, -13.622645290581165, -13.466533066132268, -13.310420841683367, -13.15430861723447, -12.998196392785573, -12.842084168336676, -12.685971943887779, -12.529859719438878, -12.373747494989981, -12.217635270541084, -12.061523046092187, -11.90541082164329, -11.74929859719439, -11.593186372745492, -11.437074148296595, -11.280961923847698, -11.124849699398801, -10.9687374749499, -10.812625250501004, -10.656513026052107, -10.50040080160321, -10.344288577154312, -10.188176352705412, -10.032064128256515, -9.875951903807618, -9.71983967935872, -9.563727454909824, -9.407615230460923, -9.251503006012026, -9.095390781563129, -8.939278557114232, -8.783166332665335, -8.627054108216434, -8.470941883767537, -8.31482965931864, -8.158717434869743, -8.002605210420846, -7.8464929859719454, -7.690380761523048, -7.534268537074151, -7.378156312625254, -7.222044088176357, -7.065931863727453, -6.909819639278556, -6.753707414829659, -6.597595190380762, -6.441482965931861, -6.285370741482964, -6.129258517034067, -5.97314629258517, -5.817034068136273, -5.6609218436873725, -5.5048096192384754, -5.348697394789578, -5.192585170340681, -5.036472945891784, -4.880360721442884, -4.724248496993987, -4.56813627254509, -4.4120240480961925, -4.2559118236472955, -4.099799599198395, -3.943687374749498, -3.7875751503006008, -3.6314629258517037, -3.4753507014028067, -3.319238476953906, -3.163126252505009, -3.007014028056112, -2.850901803607215, -2.694789579158318, -2.5386773547094172, -2.38256513026052, -2.226452905811623, -2.070340681362726, -1.914228456913829, -1.7581162324649284, -1.6020040080160314, -1.4458917835671343, -1.2897795591182373, -1.1336673346693402, -0.9775551102204396, -0.8214428857715426, -0.6653306613226455, -0.5092184368737485, -0.3531062124248514, -0.1969939879759508, -0.04088176352705375, 0.1152304609218433, 0.27134268537074036, 0.4274549098196374, 0.5835671342685345, 0.7396793587174315, 0.8957915831663357, 1.0519038076152256, 1.2080160320641298, 1.3641282565130197, 1.5202404809619239, 1.676352705410828, 1.832464929859718, 1.9885771543086221, 2.144689378757512, 2.3008016032064162, 2.4569138276553133, 2.6130260521042104, 2.7691382765531074, 2.9252505010020045, 3.0813627254509015, 3.2374749498998057, 3.3935871743486956, 3.5496993987975998, 3.7058116232464897, 3.861923847695394, 4.018036072144291, 4.174148296593188, 4.330260521042085, 4.486372745490982, 4.642484969939879, 4.798597194388783, 4.954709418837673, 5.110821643286577, 5.266933867735467, 5.4230460921843715, 5.5791583166332686, 5.735270541082166, 5.891382765531063, 6.04749498997996, 6.203607214428857, 6.359719438877761, 6.515831663326651, 6.671943887775555, 6.828056112224445, 6.984168336673349, 7.140280561122246, 7.296392785571143, 7.45250501002004, 7.608617234468937, 7.764729458917834, 7.9208416833667386, 8.076953907815628, 8.233066132264533, 8.389178356713423, 8.545290581162327, 8.701402805611224, 8.85751503006012, 9.013627254509018, 9.169739478957915, 9.325851703406812, 9.481963927855716, 9.638076152304606, 9.79418837675351, 9.9503006012024, 10.106412825651304, 10.262525050100201, 10.418637274549098, 10.574749498997996, 10.730861723446893, 10.88697394789579, 11.043086172344694, 11.199198396793584, 11.355310621242488, 11.511422845691378, 11.667535070140282, 11.823647294589179, 11.979759519038076, 12.135871743486973, 12.29198396793587, 12.448096192384767, 12.604208416833671, 12.760320641282561, 12.916432865731466, 13.072545090180355, 13.22865731462926, 13.384769539078157, 13.540881763527054, 13.69699398797595, 13.853106212424848, 14.009218436873745, 14.165330661322649, 14.321442885771539, 14.477555110220443, 14.633667334669333, 14.789779559118237, 14.945891783567134, 15.102004008016031, 15.258116232464928, 15.414228456913825, 15.570340681362723, 15.726452905811627, 15.882565130260517, 16.03867735470942, 16.19478957915831, 16.350901803607215, 16.507014028056112, 16.66312625250501, 16.819238476953906, 16.975350701402803, 17.1314629258517, 17.287575150300604, 17.443687374749494, 17.5997995991984, 17.75591182364729, 17.912024048096193, 18.068136272545097, 18.224248496993987, 18.38036072144289, 18.536472945891788, 18.692585170340685, 18.848697394789582, 19.00480961923848, 19.160921843687376, 19.31703406813628, 19.47314629258517, 19.629258517034074, 19.785370741482964, 19.94148296593187, 20.097595190380765, 20.253707414829663, 20.40981963927856, 20.565931863727457, 20.722044088176354, 20.878156312625258, 21.034268537074148, 21.190380761523052, 21.346492985971942, 21.502605210420846, 21.658717434869743, 21.81482965931864, 21.970941883767537, 22.127054108216434, 22.28316633266533, 22.439278557114235, 22.595390781563125, 22.75150300601203, 22.90761523046092, 23.063727454909824, 23.21983967935872, 23.375951903807618, 23.532064128256515, 23.688176352705412, 23.84428857715431, 24.000400801603213, 24.156513026052103, 24.312625250501007, 24.468737474949897, 24.6248496993988, 24.7809619238477, 24.937074148296595, 25.093186372745492, 25.24929859719439, 25.405410821643287, 25.56152304609219, 25.71763527054108, 25.873747494989985, 26.029859719438875, 26.18597194388778, 26.342084168336676, 26.498196392785573, 26.65430861723447, 26.810420841683367, 26.966533066132264, 27.12264529058117, 27.27875751503006, 27.434869739478962, 27.590981963927852, 27.747094188376757, 27.903206412825654, 28.05931863727455, 28.215430861723448, 28.371543086172345, 28.527655310621242, 28.683767535070146, 28.839879759519036, 28.99599198396794, 29.15210420841683, 29.308216432865734, 29.46432865731463, 29.62044088176353, 29.776553106212425, 29.932665330661322, 30.08877755511022, 30.244889779559124, 30.401002004008014, 30.557114228456918, 30.713226452905808, 30.869338677354712, 31.02545090180361, 31.181563126252506, 31.337675350701403, 31.4937875751503, 31.649899799599197, 31.8060120240481, 31.96212424849699, 32.118236472945895, 32.274348697394785, 32.43046092184369, 32.586573146292594, 32.74268537074148, 32.89879759519039, 33.05490981963928, 33.21102204408818, 33.36713426853707, 33.523246492985976, 33.679358717434866, 33.83547094188377, 33.991583166332674, 34.147695390781564, 34.303807615230454, 34.45991983967936, 34.61603206412826, 34.77214428857717, 34.92825651302604, 35.084368737474946, 35.24048096192385, 35.396593186372755, 35.55270541082166, 35.708817635270535, 35.86492985971944, 36.02104208416834, 36.17715430861725, 36.33326653306614, 36.48937875751503, 36.64549098196393, 36.801603206412835, 36.957715430861725, 37.11382765531063, 37.26993987975952, 37.42605210420842, 37.58216432865731, 37.73827655310622, 37.89438877755512, 38.05050100200401, 38.2066132264529, 38.362725450901806, 38.51883767535071, 38.674949899799614, 38.83106212424849, 38.987174348697394, 39.1432865731463, 39.2993987975952, 39.45551102204409, 39.61162324649298, 39.767735470941886, 39.92384769539079, 40.07995991983968, 40.236072144288585, 40.392184368737475, 40.54829659318638, 40.70440881763527, 40.86052104208417, 41.01663326653308, 41.17274549098197, 41.32885771543086, 41.48496993987976, 41.641082164328665, 41.79719438877757, 41.953306613226445, 42.10941883767535, 42.26553106212425, 42.42164328657316, 42.57775551102205, 42.73386773547094, 42.88997995991984, 43.046092184368746, 43.202204408817636, 43.35831663326654, 43.51442885771543, 43.670541082164334, 43.826653306613224, 43.98276553106213, 44.13887775551103, 44.29498997995992, 44.45110220440881, 44.607214428857716, 44.76332665330662, 44.919438877755525, 45.0755511022044, 45.231663326653305, 45.38777555110221, 45.54388777555111, 45.7])
+              .range(['#a50026ff', '#a60026ff', '#a70126ff', '#a80226ff', '#a90326ff', '#aa0426ff', '#ab0526ff', '#ac0626ff', '#ad0726ff', '#ae0826ff', '#af0926ff', '#b00a26ff', '#b10b26ff', '#b20c26ff', '#b30d26ff', '#b40e26ff', '#b50f26ff', '#b61026ff', '#b71126ff', '#b81226ff', '#b91326ff', '#ba1426ff', '#bb1526ff', '#bc1626ff', '#bd1726ff', '#be1826ff', '#bf1926ff', '#c01a26ff', '#c11b26ff', '#c21c26ff', '#c31c26ff', '#c41d26ff', '#c51e26ff', '#c61f26ff', '#c72026ff', '#c82126ff', '#c92226ff', '#ca2326ff', '#cb2426ff', '#cc2526ff', '#cd2626ff', '#ce2726ff', '#cf2826ff', '#d02927ff', '#d12a27ff', '#d22b27ff', '#d32c27ff', '#d42d27ff', '#d52e27ff', '#d62f27ff', '#d73027ff', '#d83127ff', '#d93228ff', '#d93328ff', '#da3529ff', '#da362aff', '#db372aff', '#db382bff', '#dc3a2bff', '#dd3b2cff', '#dd3c2cff', '#de3d2dff', '#de3f2dff', '#df402eff', '#e0412fff', '#e0422fff', '#e14330ff', '#e14530ff', '#e24631ff', '#e24731ff', '#e34832ff', '#e44a33ff', '#e44b33ff', '#e54c34ff', '#e54d34ff', '#e64e35ff', '#e75035ff', '#e75136ff', '#e85236ff', '#e85337ff', '#e95538ff', '#e95638ff', '#ea5739ff', '#eb5839ff', '#eb5a3aff', '#ec5b3aff', '#ec5c3bff', '#ed5d3cff', '#ee5e3cff', '#ee603dff', '#ef613dff', '#ef623eff', '#f0633eff', '#f0653fff', '#f1663fff', '#f26740ff', '#f26841ff', '#f36941ff', '#f36b42ff', '#f46c42ff', '#f46d43ff', '#f56e43ff', '#f57044ff', '#f57145ff', '#f57245ff', '#f57446ff', '#f67547ff', '#f67647ff', '#f67848ff', '#f67948ff', '#f67a49ff', '#f67c4aff', '#f77d4aff', '#f77e4bff', '#f77f4bff', '#f7814cff', '#f7824dff', '#f8834dff', '#f8854eff', '#f8864eff', '#f8874fff', '#f88950ff', '#f88a50ff', '#f98b51ff', '#f98d51ff', '#f98e52ff', '#f98f53ff', '#f99053ff', '#fa9254ff', '#fa9354ff', '#fa9455ff', '#fa9656ff', '#fa9756ff', '#fa9857ff', '#fb9a57ff', '#fb9b58ff', '#fb9c59ff', '#fb9e59ff', '#fb9f5aff', '#fca05aff', '#fca15bff', '#fca35cff', '#fca45cff', '#fca55dff', '#fca75dff', '#fda85eff', '#fda95fff', '#fdab5fff', '#fdac60ff', '#fdad60ff', '#fdae61ff', '#feaf62ff', '#feb063ff', '#feb264ff', '#feb365ff', '#feb466ff', '#feb567ff', '#feb668ff', '#feb769ff', '#feb86aff', '#feb96bff', '#feba6cff', '#febb6dff', '#febc6dff', '#febd6eff', '#febe6fff', '#febf70ff', '#fec071ff', '#fec172ff', '#fec273ff', '#fec374ff', '#fec475ff', '#fec576ff', '#fec677ff', '#fec778ff', '#fec879ff', '#fec97aff', '#feca7bff', '#fecb7cff', '#fecc7dff', '#fecd7eff', '#fece7eff', '#fecf7fff', '#fed080ff', '#fed181ff', '#fed282ff', '#fed383ff', '#fed484ff', '#fed585ff', '#fed686ff', '#fed787ff', '#fed888ff', '#fed989ff', '#feda8aff', '#fedb8bff', '#fedc8cff', '#fedd8dff', '#fede8eff', '#fedf8fff', '#fee08fff', '#ffe190ff', '#ffe191ff', '#ffe292ff', '#ffe293ff', '#ffe394ff', '#ffe495ff', '#ffe496ff', '#ffe597ff', '#ffe698ff', '#ffe699ff', '#ffe79aff', '#ffe79bff', '#ffe89cff', '#ffe99dff', '#ffe99eff', '#ffea9fff', '#ffeba0ff', '#ffeba1ff', '#ffeca1ff', '#ffeca2ff', '#ffeda3ff', '#ffeea4ff', '#ffeea5ff', '#ffefa6ff', '#fff0a7ff', '#fff0a8ff', '#fff1a9ff', '#fff1aaff', '#fff2abff', '#fff3acff', '#fff3adff', '#fff4aeff', '#fff5afff', '#fff5b0ff', '#fff6b1ff', '#fff6b2ff', '#fff7b2ff', '#fff8b3ff', '#fff8b4ff', '#fff9b5ff', '#fffab6ff', '#fffab7ff', '#fffbb8ff', '#fffbb9ff', '#fffcbaff', '#fffdbbff', '#fffdbcff', '#fffebdff', '#ffffbeff', '#ffffbfff', '#ffffc0ff', '#ffffc1ff', '#feffc2ff', '#fdffc3ff', '#fdfec4ff', '#fcfec6ff', '#fbfec7ff', '#fbfec8ff', '#fafdc9ff', '#fafdcaff', '#f9fdcbff', '#f8fdccff', '#f8fcceff', '#f7fccfff', '#f6fcd0ff', '#f6fcd1ff', '#f5fcd2ff', '#f5fbd3ff', '#f4fbd4ff', '#f3fbd6ff', '#f3fbd7ff', '#f2fad8ff', '#f1fad9ff', '#f1fadaff', '#f0fadbff', '#f0f9dcff', '#eff9deff', '#eef9dfff', '#eef9e0ff', '#edf8e1ff', '#ecf8e2ff', '#ecf8e3ff', '#ebf8e5ff', '#ebf7e6ff', '#eaf7e7ff', '#e9f7e8ff', '#e9f7e9ff', '#e8f6eaff', '#e7f6ebff', '#e7f6edff', '#e6f6eeff', '#e6f5efff', '#e5f5f0ff', '#e4f5f1ff', '#e4f5f2ff', '#e3f5f3ff', '#e2f4f5ff', '#e2f4f6ff', '#e1f4f7ff', '#e1f4f8ff', '#e0f3f8ff', '#dff3f8ff', '#def2f8ff', '#ddf2f7ff', '#dbf1f7ff', '#daf1f7ff', '#d9f0f6ff', '#d8eff6ff', '#d7eff6ff', '#d6eef6ff', '#d5eef5ff', '#d4edf5ff', '#d3edf5ff', '#d2ecf4ff', '#d1ecf4ff', '#d0ebf4ff', '#cfebf3ff', '#ceeaf3ff', '#cdeaf3ff', '#cbe9f3ff', '#cae9f2ff', '#c9e8f2ff', '#c8e8f2ff', '#c7e7f1ff', '#c6e7f1ff', '#c5e6f1ff', '#c4e6f0ff', '#c3e5f0ff', '#c2e4f0ff', '#c1e4f0ff', '#c0e3efff', '#bfe3efff', '#bee2efff', '#bde2eeff', '#bbe1eeff', '#bae1eeff', '#b9e0edff', '#b8e0edff', '#b7dfedff', '#b6dfedff', '#b5deecff', '#b4deecff', '#b3ddecff', '#b2ddebff', '#b1dcebff', '#b0dcebff', '#afdbeaff', '#aedbeaff', '#addaeaff', '#abdaeaff', '#aad9e9ff', '#a9d8e9ff', '#a8d7e8ff', '#a7d6e8ff', '#a6d5e7ff', '#a5d4e7ff', '#a4d3e6ff', '#a3d3e6ff', '#a2d2e5ff', '#a0d1e5ff', '#9fd0e4ff', '#9ecfe4ff', '#9dcee3ff', '#9ccde3ff', '#9bcce2ff', '#9acbe2ff', '#99cbe1ff', '#98cae1ff', '#96c9e0ff', '#95c8e0ff', '#94c7dfff', '#93c6dfff', '#92c5deff', '#91c4deff', '#90c3ddff', '#8fc3ddff', '#8ec2ddff', '#8dc1dcff', '#8bc0dcff', '#8abfdbff', '#89bedbff', '#88bddaff', '#87bcdaff', '#86bcd9ff', '#85bbd9ff', '#84bad8ff', '#83b9d8ff', '#81b8d7ff', '#80b7d7ff', '#7fb6d6ff', '#7eb5d6ff', '#7db4d5ff', '#7cb4d5ff', '#7bb3d4ff', '#7ab2d4ff', '#79b1d3ff', '#77b0d3ff', '#76afd2ff', '#75aed2ff', '#74add1ff', '#73acd1ff', '#72abd0ff', '#71aad0ff', '#70a9cfff', '#6fa8cfff', '#6ea7ceff', '#6ea6cdff', '#6da4cdff', '#6ca3ccff', '#6ba2ccff', '#6aa1cbff', '#69a0caff', '#689fcaff', '#679ec9ff', '#669dc9ff', '#659bc8ff', '#649ac8ff', '#6399c7ff', '#6298c6ff', '#6197c6ff', '#6096c5ff', '#5f95c5ff', '#5e93c4ff', '#5d92c3ff', '#5d91c3ff', '#5c90c2ff', '#5b8fc2ff', '#5a8ec1ff', '#598dc1ff', '#588cc0ff', '#578abfff', '#5689bfff', '#5588beff', '#5487beff', '#5386bdff', '#5285bcff', '#5184bcff', '#5083bbff', '#4f81bbff', '#4e80baff', '#4d7fbaff', '#4c7eb9ff', '#4b7db8ff', '#4b7cb8ff', '#4a7bb7ff', '#497ab7ff', '#4878b6ff', '#4777b5ff', '#4676b5ff', '#4575b4ff', '#4474b4ff', '#4473b3ff', '#4471b2ff', '#4370b2ff', '#436fb1ff', '#426db1ff', '#426cb0ff', '#426bafff', '#416aafff', '#4168aeff', '#4067adff', '#4066adff', '#4065acff', '#3f63acff', '#3f62abff', '#3e61aaff', '#3e60aaff', '#3e5ea9ff', '#3d5da8ff', '#3d5ca8ff', '#3c5aa7ff', '#3c59a7ff', '#3c58a6ff', '#3b57a5ff', '#3b55a5ff', '#3a54a4ff', '#3a53a3ff', '#3a52a3ff', '#3950a2ff', '#394fa2ff', '#384ea1ff', '#384da0ff', '#384ba0ff', '#374a9fff', '#37499eff', '#36479eff', '#36469dff', '#36459dff', '#35449cff', '#35429bff', '#34419bff', '#34409aff', '#343f99ff', '#333d99ff', '#333c98ff', '#323b98ff', '#323a97ff', '#313896ff', '#313796ff', '#313695ff']);
+    
+
+    color_map_edc7111a615d87efb283231f4ebef5c5.x = d3.scale.linear()
+              .domain([-32.2, 45.7])
+              .range([0, 450 - 50]);
+
+    color_map_edc7111a615d87efb283231f4ebef5c5.legend = L.control({position: 'topright'});
+    color_map_edc7111a615d87efb283231f4ebef5c5.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_edc7111a615d87efb283231f4ebef5c5.legend.addTo(map_d27281003e5a3956561a95b64d18a200);
+
+    color_map_edc7111a615d87efb283231f4ebef5c5.xAxis = d3.svg.axis()
+        .scale(color_map_edc7111a615d87efb283231f4ebef5c5.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([-32.2, '', -16.62, '', -1.0399999999999991, '', 14.54, '', 30.120000000000005, '', 45.7, '']);
+
+    color_map_edc7111a615d87efb283231f4ebef5c5.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_edc7111a615d87efb283231f4ebef5c5.g = color_map_edc7111a615d87efb283231f4ebef5c5.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_edc7111a615d87efb283231f4ebef5c5.g.selectAll("rect")
+        .data(color_map_edc7111a615d87efb283231f4ebef5c5.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_edc7111a615d87efb283231f4ebef5c5.x(color_map_edc7111a615d87efb283231f4ebef5c5.color.domain()[i - 1]) : color_map_edc7111a615d87efb283231f4ebef5c5.x.range()[0],
+            x1: i < color_map_edc7111a615d87efb283231f4ebef5c5.color.domain().length ? color_map_edc7111a615d87efb283231f4ebef5c5.x(color_map_edc7111a615d87efb283231f4ebef5c5.color.domain()[i]) : color_map_edc7111a615d87efb283231f4ebef5c5.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_edc7111a615d87efb283231f4ebef5c5.g.call(color_map_edc7111a615d87efb283231f4ebef5c5.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("Temperature Scale (\u00b0C)");
+    
+            var heat_map_6ac5fc1b4a02f220f5921462eb5564c3 = L.heatLayer(
+                [[-24.346783457900017, 125.9615630433902, 45.7], [-26.274999496625536, 139.3852693573042, 45.1], [-21.445277382079958, 128.10212220349948, 44.6], [-27.88456409916662, 145.19069257636534, 44.3], [-24.552719781451856, 131.97898513917, 43.1], [-33.291210736006626, 120.5933491243965, 41.6], [-26.602173315109763, 119.20522480258802, 41.2], [-29.944534401496416, 116.6093102509253, 40.4], [-31.38456136668727, 121.41923954046672, 40.1], [-21.91496622586279, 118.54794989286708, 38.9], [7.826085996594244, 31.593103942113718, 38.5], [-28.471209211599504, 128.56236878166, 38.4], [-24.312841515918684, 114.56948736404121, 38.1], [-27.684985063322777, 19.069746408898773, 38.1], [-38.184342742852124, -67.06861624110685, 37.9], [-32.40593966457316, 146.16183440711174, 37.7], [-33.459137238422976, 20.80883863744169, 37.4], [6.404972044405235, -3.362598417998695, 36.7], [-18.251439663707252, -41.98072438117591, 36.6], [-28.624394255094245, -56.628201240529314, 36.3], [10.203302413588933, -14.010243609697229, 36.2], [-31.301682215166657, 23.417331843097962, 36.1], [13.272966590474525, -87.47242414583292, 36.1], [-30.724617662604217, 127.76321092751057, 36.0], [-35.46401799552825, -60.80743688799227, 35.8], [-3.63801436257372, 141.33238298948197, 35.7], [-30.084685424532964, 136.99678420245053, 35.7], [-34.16531941007006, -62.87872876878476, 35.5], [10.089365214176155, -74.05824977471248, 35.4], [-33.34097240906261, 20.228450776392016, 35.3], [48.74113799466631, 93.68490097157742, -32.2], [51.343495144125384, 94.41268975332633, -26.8], [48.7183061972236, 131.25699581938744, -25.4], [56.340969387334, 77.11605068649312, -25.3], [51.98370392504525, 69.96565852855242, -24.8], [36.28423855258029, 70.50829286348846, -24.6], [51.90267857565003, 123.89502016424365, -24.6], [45.49918119404632, -68.92527523096754, -24.5], [46.493084905821284, -65.01129310052374, -24.5], [50.28513192403619, 73.1133803590196, -24.5], [54.41607515019459, 71.84481079066894, -24.4], [48.437316722553035, 65.83622174369957, -24.3], [43.1498041178344, 80.3730446960803, -23.0], [47.04502612724456, -77.5361882686272, -23.0], [44.54151277703264, -76.67402854849615, -21.5], [42.00545100474454, -76.79630350257283, -21.4], [46.130627107817254, 127.79292180478691, -21.0], [34.81510935754237, 76.42599184931926, -20.9], [38.38296021180931, 73.35508380327796, -20.9], [46.49865747933678, 123.96148967064512, -20.4], [38.65994839762418, 97.9856944881943, -20.1], [36.17483636617563, 85.24463181367204, -20.0], [41.458142037819854, -83.804950039547, -19.7], [48.650375286019276, 88.05712443315967, -19.2], [38.74998652254176, -106.3821030334288, -19.1], [46.680748214184305, 135.1671404235551, -19.1], [41.789834741956554, 127.56669208708634, -19.0], [48.2471191929791, 90.33452652098191, -18.4], [40.190205042668104, -88.99704886388355, -18.4], [45.84380344100127, 115.84182692055019, -18.3]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 18,
+  "radius": 25,
+  "blur": 15,
+}
+            );
+        
+    
+            heat_map_6ac5fc1b4a02f220f5921462eb5564c3.addTo(map_d27281003e5a3956561a95b64d18a200);
+        
+</script>
+</html>

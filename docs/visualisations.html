@@ -1,145 +1,864 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pokémon Biome Mapping Visualizations</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 20px;
-    }
-    h1, h2, h3 {
-      color: #2c3e50;
-    }
-    .warning {
-      background-color: #f39c12;
-      color: white;
-      font-weight: bold;
-      padding: 15px;
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    .step {
-      background-color: #f4f4f9;
-      border-left: 5px solid #3498db;
-      margin: 20px 0;
-      padding: 10px 20px;
-    }
-    .comments-section {
-      margin-top: 40px;
-      border-top: 2px solid #bdc3c7;
-      padding-top: 20px;
-    }
-    .comment-box {
-      margin-bottom: 20px;
-    }
-    textarea {
-      width: 100%;
-      height: 100px;
-      margin-bottom: 10px;
-    }
-    button {
-      background-color: #3498db;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #2980b9;
-    }
-    iframe {
-      width: 100%;
-      height: 500px;
-      margin-bottom: 30px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualization of Pokémon Biome Mapping</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Add Font Awesome for GitHub icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Navigation Bar (Pokéball-like color scheme) */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #e60012; /* Red like Pokéball */
+            color: white;
+            display: flex;
+            justify-content: space-around; /* Space out links evenly */
+            align-items: center;
+            padding: 1rem;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            height: 60px; /* Explicitly set the height of the navbar */
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+            width: 100%; /* Ensure the list takes up the full width */
+            justify-content: center; /* Center the links horizontally */
+        }
+
+        .navbar ul li {
+            display: inline;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em; /* Slightly increase font size */
+            padding: 10px 20px; /* Add padding for spacing */
+            border-radius: 5px; /* Optional: add rounded corners */
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            background-color: #ffffff; /* White like Pokéball */
+            color: #e60012; /* Red text on hover */
+        }
+
+        :root {
+            --navbar-height: 60px;
+        }
+
+        /* Apply padding to the body */
+        body {
+            padding-top: var(--navbar-height);
+        }
+
+        /* Header Styles */
+        .hero {
+            position: relative; /* Add relative positioning */
+            text-align: center;
+            padding: 50px; /* Adjust padding as needed */
+            background: linear-gradient(135deg, #e60012, #ffffff); /* Red to white gradient */
+            color: #ffffff; /* White text */
+            margin-top: var(--navbar-height);
+        }
+
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            background-color: #ffffff; /* White background */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Slider Container */
+        .slider-container {
+            position: relative;
+            width: 80%;
+            margin: 40px auto;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            padding: 20px;
+        }
+
+        /* Slider */
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        /* Slide */
+        .slide {
+            min-width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        /* Slide Title */
+        .slide h3 {
+            font-size: 24px;
+            color: #e60012; /* Red text */
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        /* Slide Content */
+        .slide p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        /* Slide Image */
+        .slide img {
+            width: 60%;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Navigation Dots */
+        .dots {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #bdc3c7;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .dot.active {
+            background-color: #e60012; /* Red dot */
+        }
+
+        /* Buttons to Navigate Slides */
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .prev, .next {
+            padding: 12px 20px;
+            background-color: #e60012; /* Red button */
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: #ff3333; /* Lighter red on hover */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            padding: 30px;
+            margin: 0;
+        }
+
+        section:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+        section:nth-child(even) {
+            background-color: #e9e9e9;
+        }
+
+        figure {
+            margin: 1rem 0;
+            text-align: center;
+        }
+
+        figcaption {
+            font-style: italic;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        form {
+            margin-top: 1rem;
+        }
+
+        fieldset {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #e60012; /* Red text */
+        }
+
+        textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+
+        button {
+            background-color: #e60012; /* Red button */
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ff3333; /* Lighter red on hover */
+            color: white;
+        }
+
+        footer {
+            background-color: #e60012; /* Red footer */
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .github-button {
+            display: inline-block;
+            background-color: #e60012; /* Red button */
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 0.5rem;
+        }
+
+        .github-button:hover {
+            background-color: #ff3333; /* Lighter red on hover */
+            color: white;
+        }
+
+        .comment {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .comment h3 {
+            margin-top: 0;
+        }
+
+        /* GitHub Button Styling */
+        .github-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #e60012; /* Red button */
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px; /* Rounded edges */
+            text-decoration: none;
+            margin-top: 0.5rem;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .github-button:hover {
+            background-color: #ff3333; /* Lighter red on hover */
+            transform: translateY(-2px); /* Slight lift on hover */
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .github-button i {
+            margin-right: 8px; /* Space between icon and text */
+            font-size: 1.2rem; /* Icon size */
+        }
+
+        /* Interactive Map Section */
+        #interactive-map {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #interactive-map h2 {
+            font-size: 36px;
+            color: #e60012; /* Red text */
+            margin-bottom: 20px;
+        }
+
+        #interactive-map p {
+            font-size: 18px;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            color: #333;
+        }
+
+        /* Override for Interactive Map Section */
+        #interactive-map {
+            background-color: inherit; /* Inherit the alternating background color */
+        }
+
+        .map-container {
+            margin: 20px auto;
+            border: 2px solid #e60012; /* Red border */
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            max-width: 1200px;
+        }
+
+        .map-container:hover {
+            transform: scale(1.02); /* Slight zoom effect on hover */
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+
+        /* Custom Scrollbar for Map Container */
+        .map-container::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        .map-container::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        .map-container::-webkit-scrollbar-thumb {
+            background: #e60012; /* Red scrollbar */
+            border-radius: 10px;
+        }
+
+        .map-container::-webkit-scrollbar-thumb:hover {
+            background: #ff3333; /* Lighter red on hover */
+        }
+
+        /* Call-to-Action Button */
+        .map-cta-button {
+            margin-top: 30px;
+            padding: 15px 30px;
+            background-color: #e60012; /* Red button */
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .map-cta-button:hover {
+            background-color: #ff3333; /* Lighter red on hover */
+            transform: translateY(-5px);
+        }
+
+        /* Override for Interactive Map Section */
+        #interactive-map {
+            background-color: inherit; /* Inherit the alternating background color */
+        }
+
+        /* === Scroll-to-Top Button === */
+        #scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #e60012; /* Red button */
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            display: none;
+        }
+
+        #scroll-to-top:hover {
+            background-color: #ff3333; /* Lighter red on hover */
+            transform: scale(1.1);
+        }
+
+        /* === Progress Bar === */
+        #progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 4px;
+            background-color: #f5f5f5; /* Red progress bar */
+            width: 0%;
+            z-index: 1001;
+        }
+
+        /* Comments Section Styling */
+        #comments-list {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #comments-list h3 {
+            margin-top: 0;
+            color: #e60012; /* Red text */
+        }
+
+        #comments {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #comments li {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        #comments li strong {
+            color: #e60012; /* Red text */
+        }
+
+        /* Checkbox Styling */
+        #make-public {
+            margin-right: 10px;
+        }
+
+        /* Confirmation Message Styling */
+        #confirmation-message {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e8f5e9; /* Light green background */
+            border: 1px solid #a5d6a7; /* Green border */
+            border-radius: 8px;
+            color: #2e7d32; /* Dark green text */
+            display: none; /* Hidden by default */
+        }
+        </style>
 </head>
 <body>
-  <h1>Pokémon Biome Mapping Visualizations</h1>
-  
-  <div class="warning">
-    <strong>⚠️ WARNING: This project is not finished and requires immediate action! ⚠️</strong>
-  </div>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="our-process.html">Our Process</a></li>
+            <li><a href="findings.html">Findings</a></li>
+            <li><a href="sources.html">Data Sources</a></li>
+            <li><a href="contribute.html">Contribute</a></li>
+            <li><a href="our_team.html">Our Team</a></li>
+        </ul>
+    </nav>
 
-  <p>In this section, we explore the visualizations we created during the process of mapping Pokémon to biomes. These visualizations illustrate key findings from our analysis, as well as how we developed the interactive map.</p>
 
-  <!-- Step 1: Visualizing the effect of latitude and longitude on temperature -->
-  <div class="step">
-    <h2>Effect of Latitude and Longitude on Temperature</h2>
-    <p>We analyzed the impact of geographical coordinates (latitude and longitude) on temperature. The three graphs below demonstrate this relationship:</p>
+    <!-- Progress Bar -->
+    <div id="progress-bar"></div>
+    
+    <!-- Header -->
+    <header class="hero" id="home">
+        <h1>Visualization of Pokémon Biome Mapping</h1>
+        <p>An interactive exploration of Pokémon distributions across real-world biomes</p>
+    </header>
 
-    <h3>Graph 1: Latitude vs Temperature</h3>
-    <img src="graph1.png" alt="Graph 1: Latitude vs Temperature" width="100%">
+    <!-- GitHub Section -->
+    <section id="github-section">
+        <div style="text-align: center;">
+            <p><strong>Authors:</strong> Vignesh Narayanan, Hanle Yang, Jonathon Chang, Adrian Chang</p>
+            <p><strong>Affiliation:</strong> London School of Economics and Political Science</p>
+            <p><strong>Code:</strong> 
+                <a href="https://github.com/lse-ds105/ds105a-2024-project-error_105" class="github-button">
+                    <i class="fab fa-github"></i> GitHub Repository
+                </a>
+            </p>
+        </div>
+    </section>
 
-    <h3>Graph 2: Longitude vs Temperature</h3>
-    <img src="graph2.png" alt="Graph 2: Longitude vs Temperature" width="100%">
+    <!-- Introduction Section -->
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>In this section, we present a series of visualizations created during the process of mapping Pokémon distributions to real-world biomes. These visual representations highlight key findings from our analysis and illustrate the development process of the interactive map.</p>
+    </section>
 
-    <h3>Graph 3: Combined Latitude and Longitude vs Temperature</h3>
-    <img src="graph3.png" alt="Graph 3: Combined Latitude and Longitude vs Temperature" width="100%">
+    <!-- Geographic Coordinates Section with Slider -->
+    <section id="effect-of-latitude-and-longitude">
+        <h2 style="text-align: center;">Effect of Latitude and Longitude on Temperature</h2>
+        <p style="text-align: center; max-width: 800px; margin: auto;">
+            This study examines how geographical coordinates—<b>latitude</b> and <b>longitude</b>—impact temperature variations.
+            We analyzed three key relationships to determine which factor plays a more dominant role in shaping temperature patterns.
+        </p>
 
-    <p>Our analysis pointed to latitude being the primary factor in determining temperature. This finding is consistent with geography literature that supports the idea that temperature decreases as we move away from the equator (Springer, 2011).</p>
-  </div>
+        <!-- Slider Container -->
+        <div class="slider-container">
+            <div class="slider">
+                <!-- Slide 1: Latitude vs. Temperature -->
+                <div class="slide">
+                    <h3>Graph 1: Latitude vs. Temperature</h3>
+                    <figure>
+                        <img src="lat_temp.png" alt="Latitude vs Temperature" width="100%">
+                        <figcaption><strong>Figure 1.</strong> Relationship between latitude and temperature. The trend shows that temperatures decrease as latitude increases.</figcaption>
+                    </figure>
+                    <p>The graph shows a <span class="highlight">strong negative correlation</span> between latitude and temperature. 
+                        This supports the well-known geographical principle: <span class="highlight">temperatures are highest near the equator and decrease as we move toward the poles.</span>
+                    </p>
+                </div>
 
-  <!-- Step 2: Regression Analysis -->
-  <div class="step">
-    <h2>Regression Analysis: Latitude as a Primary Determinant of Temperature</h2>
-    <p>We ran two regressions that further supported our conclusion. Both analyses indicated that latitude was the most significant predictor of temperature, which aligns with existing geographic theory.</p>
-    <ul>
-      <li>Regression 1: Latitudes explained 80% of the variance in temperature.</li>
-      <li>Regression 2: Longitude had a negligible effect on temperature.</li>
-    </ul>
-    <p>The findings were consistent with the expectations from geography, where higher latitudes correspond to cooler temperatures.</p>
-  </div>
+                <!-- Slide 2: Longitude vs. Temperature -->
+                <div class="slide">
+                    <h3>Graph 2: Longitude vs. Temperature</h3>
+                    <figure>
+                        <img src="long_temp.png" alt="Longitude vs Temperature" width="100%">
+                        <figcaption><strong>Figure 2.</strong> Relationship between longitude and temperature. Results indicate minimal influence of longitude on temperature.</figcaption>
+                    </figure>
+                    <p>Unlike latitude, longitude does not show a clear relationship with temperature. The data points are scattered, indicating 
+                        <span class="highlight">no significant correlation</span>. Other factors such as elevation and ocean currents likely play a greater role.
+                    </p>
+                </div>
+            </div>
 
-  <!-- Step 3: Creating the Folium Map -->
-  <div class="step">
-    <h2>Creating the Interactive Folium Map</h2>
-    <p>The final interactive map was created using Folium, which shows Pokémon distributions across biomes. Below are three preliminary drafts of the map we tested before finalizing the design:</p>
+            <!-- Navigation Dots -->
+            <div class="dots">
+                <div class="dot active" onclick="showSlide(0, this.parentElement.parentElement)"></div>
+                <div class="dot" onclick="showSlide(1, this.parentElement.parentElement)"></div>
+            </div>
+        </div>
 
-    <h3>Preliminary Drafts:</h3>
-    <h4>Test 1</h4>
-    <iframe src="test1.html" title="Test Map 1"></iframe>
+        <!-- Buttons to Navigate Slides -->
+        <div class="button-container">
+            <button class="prev" onclick="prevSlide(this.parentElement.parentElement)">Prev</button>
+            <button class="next" onclick="nextSlide(this.parentElement.parentElement)">Next</button>
+        </div>
 
-    <h4>Test 2</h4>
-    <iframe src="test2.html" title="Test Map 2"></iframe>
+        <!-- Summary of Findings -->
+        <div class="summary">
+            <h2>Key Findings</h2>
+            <p>
+                These findings align with fundamental climatological principles, where latitude influences solar radiation 
+                exposure and, consequently, temperature patterns. Regions closer to the equator receive more direct sunlight, 
+                resulting in higher temperatures, while polar regions experience lower temperatures due to indirect solar rays.
+            </p>
 
-    <h4>Test 3</h4>
-    <iframe src="test3.html" title="Test Map 3"></iframe>
+            <p>
+                Overall, this analysis reinforces that <strong>latitude is the dominant geographic factor in determining 
+                temperature variation</strong>, while longitude plays no meaningful role in temperature prediction.
+            </p>
+        </div>
+    </section>
 
-    <p>These drafts show various iterations, and after extensive feedback, we arrived at the final version of the map. The end result can be viewed in <a href="pokemon_map.html">pokemon_map.html</a>.</p>
-  </div>
+    <!-- Regression Analysis Section -->
+    <section id="regression-analysis">
+        <h2>Regression Analysis: Latitude as a Primary Determinant of Temperature</h2>
+        
+        <div class="slider-container">
+            <div class="slider">
+                <!-- Slide 1: Regression Model 1 -->
+                <div class="slide">
+                    <h3><strong>Regression Model 1: Latitude vs. Temperature</strong></h3>
+                    <iframe src="lat_regression.html" width="100%" height="500px"></iframe>
+                    <p>The R-squared value of <span class="highlight"><strong>0.781</strong></span> indicates that <span class="highlight"><strong>78.1%</strong></span> of the variation in temperature can be explained by latitude alone. This supports the well-known geographic principle that temperatures decrease as one moves away from the equator.</p>
+                    
+                    <p><strong>Coefficient:</strong> <span class="highlight">-0.7931</span> (As latitude increases, temperature decreases.)</p>
+                    <p><strong>Statistical Significance:</strong> p-value <span class="highlight"><strong>&lt; 0.001</strong></span> (The relationship is statistically significant.)</p>
+                </div>
+        
+                <!-- Slide 2: Regression Model 2 -->
+                <div class="slide">
+                    <h3><strong>Regression Model 2: Longitude vs. Temperature</strong></h3>
+                    <iframe src="long_regression.html" width="100%" height="500px"></iframe>
+                    <p>In contrast, longitude had an R-squared value of <span class="highlight"><strong>0</strong></span>, meaning it does not explain any variation in temperature.</p>
+        
+                    <p>The regression results showed:</p>
+                    
+                    <p><strong>Coefficient:</strong> <span class="highlight">0.0113</span> (This suggests no meaningful relationship between longitude and temperature.)</p>
+                    <p><strong>Statistical Significance:</strong> p-value <span class="highlight"><strong>0.874</strong></span> (This indicates that longitude has no statistical significance in determining temperature.)</p>
+                </div>
+            </div>      
 
-  <!-- Step 4: The Final Map and Its Nuances -->
-  <div class="step">
-    <h2>The Final Map</h2>
-    <p>The final map displays Pokémon in real-world biomes and is fully interactive. Some of the map's key features include:</p>
-    <ul>
-      <li>Stacked Pokémon: Some Pokémon may appear stacked in the same location due to overlapping biomes or identical ranking. This issue can be resolved through layering or by adjusting their visibility in the legend.</li>
-      <li>Search Bar: Users can search for specific Pokémon to see where they are located globally.</li>
-      <li>Map Updates: The map updates daily, allowing for real-time changes based on weather forecasts and Pokémon migrations.</li>
-    </ul>
-    <p>Our team members @Hailey and @Adrian are working on improving these features and addressing any remaining issues related to map interaction and visualization.</p>
-  </div>
+            <!-- Navigation Dots -->
+            <div class="dots">
+                <div class="dot active" onclick="showSlide(0, this.parentElement.parentElement)"></div>
+                <div class="dot" onclick="showSlide(1, this.parentElement.parentElement)"></div>
+            </div>
+        </div>
 
-  <!-- Feedback Section -->
-  <div class="comments-section">
-    <h2>Feedback Section</h2>
-    <p>We welcome any feedback on the visualizations! If you think there’s something that could be improved, please share your thoughts below:</p>
-    <form>
-      <div class="comment-box">
-        <label for="comment">Leave a Comment:</label>
-        <textarea id="comment" name="comment" placeholder="Type your comment here..."></textarea>
-      </div>
-      <button type="submit">Submit Comment</button>
-    </form>
-  </div>
+        <!-- Buttons to navigate slides -->
+        <div class="button-container">
+            <button class="prev" onclick="prevSlide(this.parentElement.parentElement)">Prev</button>
+            <button class="next" onclick="nextSlide(this.parentElement.parentElement)">Next</button>
+        </div>
+    </section>
 
-  <footer>
-    <p>Reference: Springer, 2011. <i>The Influence of Latitude on Temperature Patterns. Geographical Review, 101(2), 337-349.</i> <a href="https://link.springer.com/article/10.1007/s11629-011-1090-2">Link to article</a></p>
-  </footer>
+    <!-- Temperature Variance Section -->
+    <section id="temperature-variance" style="text-align: center;">
+        <h2>Temperature Variance: Hottest vs Coldest Places</h2>
+        <p style="max-width: 800px; margin: auto;">
+            This section explores the variance in temperature between the hottest and coldest places. The analysis reveals that the hottest places exhibit less variance in temperature compared to the coldest places.
+        </p>
+
+        <!-- Findings Container -->
+        <div class="slider-container" style="display: flex; flex-direction: column; align-items: center;">
+            <div class="slide">
+                <h3>Temperature Variance</h3>
+                <figure>
+                    <img src="hotvscold_spread_plot.png" alt="Temperature Variance" width="80%">
+                    <figcaption><strong>Figure 1.</strong> Comparison of temperature spread in the hottest and coldest places.</figcaption>
+                </figure>
+                <p style="max-width: 800px; margin: auto;">
+                    The data shows that the hottest places have a more consistent temperature range, with less fluctuation, maintaining relatively stable high temperatures throughout the year.
+                    On the other hand, the coldest places exhibit greater variability in temperature, influenced by seasonal changes and geographical factors.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Map Section -->
+    <section id="interactive-map">
+        <h2>Development of the Interactive Folium Map</h2>
+        <p>To effectively visualize the spatial distribution of Pokémon across different biomes, we employed <strong>Folium</strong>, a Python library designed for interactive geographic mapping. The objective of this step was to create a dynamic and user-friendly tool that integrates ecological data with real-world geographical coordinates. Through an iterative design process, we tested multiple drafts before finalizing the map.</p>
+
+        <h3>Preliminary Drafts and Iterative Refinement</h3>
+        <p>During the initial development phase, three versions of the map were created to evaluate different visualization techniques and optimize the representation of Pokémon distributions. Each iteration provided insights into improving the accuracy and usability of the final model.</p>
+
+        <!-- Map 1 -->
+        <h4>Test Map 1</h4>
+        <div class="map-container">
+            <iframe src="temperature_ranked_map.html" title="Test Map 1"></iframe>
+        </div>
+        <p><em>Figure 1: Initial test version, focusing on basic markers placement.</em></p>
+
+        <!-- Map 2 -->
+        <h4>Test Map 2</h4>
+        <div class="map-container">
+            <iframe src="temperature_map_with_scale.html" title="Test Map 2"></iframe>
+        </div>
+        <p><em>Figure 2: Adjusted version incorporating color-coded biome layers.</em></p>
+
+        <!-- Map 3 -->
+        <h4>Test Map 3</h4>
+        <div class="map-container">
+            <iframe src="pokemon_map.html" title="Test Map 3"></iframe>
+        </div>
+        <p><em>Figure 3: Final test version before optimization, featuring enhanced interactivity and legend customization.</em></p>
+
+        <!-- Call-to-Action Button -->
+        <button class="map-cta-button" onclick="window.open('pokemon_map.html', '_blank')">
+            Explore the Full Interactive Map
+        </button>
+
+        <p>Feedback from these preliminary drafts led to significant refinements in the final version, which can be accessed here. Key improvements included better handling of overlapping Pokémon, an improved search function, and real-time weather updates.</p>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback">
+        <h2>Feedback and Peer Review</h2>
+        <p>We encourage constructive feedback to refine our visualizations and improve the interactive mapping experience. Your insights will contribute to the accuracy and usability of this research. Please share your observations below:</p>
+
+        <!-- Comments Form -->
+        <form id="comment-form">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="comment">Comment:</label><br>
+            <textarea id="comment" name="comment" rows="4" cols="50" required></textarea><br><br>
+            <label>
+                <input type="checkbox" id="make-public" name="make-public"> Make my feedback public
+            </label><br><br>
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Comments List -->
+        <div id="comments-list">
+            <h3>Public Comments</h3>
+            <ul id="comments"></ul> <!-- Public comments will be dynamically added here -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>References</h2>
+        <p>Springer, 2011. <i>The Influence of Latitude on Temperature Patterns.</i> Geographical Review, 101(2), 337-349.  
+        <a href="https://link.springer.com/article/10.1007/s11629-011-1090-2">Access the article</a></p>
+        <!-- Social Sharing Buttons -->
+        <div style="margin-top: 20px;">
+            <a href="https://twitter.com/intent/tweet?url=YOUR_URL&text=Check%20out%20this%20awesome%20Pokémon%20biome%20mapping%20project!" target="_blank" class="github-button">
+                <i class="fab fa-twitter"></i> Share on Twitter
+            </a>
+            <a href="https://www.linkedin.com/shareArticle?url=YOUR_URL&title=Pokémon%20Biome%20Mapping" target="_blank" class="github-button">
+                <i class="fab fa-linkedin"></i> Share on LinkedIn
+            </a>
+        </div>
+    </footer>
+
+    <!-- Scroll-to-Top Button -->
+    <button id="scroll-to-top" title="Go to top">↑</button>
+
+    <!-- JavaScript for Slider Functionality -->
+    <script>
+        function showSlide(index, sliderContainer) {
+            const slider = sliderContainer.querySelector('.slider');
+            const slides = sliderContainer.querySelectorAll('.slide');
+            const dots = sliderContainer.querySelectorAll('.dot');
+
+            if (index >= slides.length) index = 0;
+            if (index < 0) index = slides.length - 1;
+
+            // Update slider position
+            slider.style.transform = `translateX(-${index * 100}%)`;
+
+            // Update active dot
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+        }
+
+        function nextSlide(sliderContainer) {
+            const activeDot = sliderContainer.querySelector('.dot.active');
+            const currentIndex = Array.from(sliderContainer.querySelectorAll('.dot')).indexOf(activeDot);
+            showSlide(currentIndex + 1, sliderContainer);
+        }
+
+        function prevSlide(sliderContainer) {
+            const activeDot = sliderContainer.querySelector('.dot.active');
+            const currentIndex = Array.from(sliderContainer.querySelectorAll('.dot')).indexOf(activeDot);
+            showSlide(currentIndex - 1, sliderContainer);
+        }
+
+        // === Scroll-to-Top Button ===
+        const scrollToTopButton = document.getElementById('scroll-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollToTopButton.style.display = 'block';
+            } else {
+                scrollToTopButton.style.display = 'none';
+            }
+        });
+
+        scrollToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // === Progress Bar ===
+        window.addEventListener('scroll', () => {
+            const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrollPercentage = (scrollTop / scrollHeight) * 100;
+            document.getElementById('progress-bar').style.width = scrollPercentage + '%';
+        });
+    </script>
+
+    <!-- JavaScript for Dark Mode -->
+    <script>
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        darkModeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            darkModeToggle.textContent = document.body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
+        });
+    </script>
+    <script>
+        // JavaScript for Comments Section
+        document.addEventListener('DOMContentLoaded', () => {
+            const commentForm = document.getElementById('comment-form');
+            const commentsList = document.getElementById('comments');
+
+            // Load public comments from local storage when the page loads
+            loadComments();
+
+            // Handle form submission
+            commentForm.addEventListener('submit', (e) => {
+                e.preventDefault(); // Prevent form from submitting the traditional way
+
+                // Get form data
+                const name = document.getElementById('name').value;
+                const comment = document.getElementById('comment').value;
+                const makePublic = document.getElementById('make-public').checked;
+
+                // Save the comment to local storage
+                saveComment(name, comment, makePublic);
+
+                // Clear the form
+                commentForm.reset();
+
+                // Reload comments to display the new one (if public)
+                loadComments();
+
+                // Show confirmation message
+                alert('Thank you for your feedback! Your submission has been received.');
+            });
+
+            // Function to save a comment to local storage
+            function saveComment(name, comment, makePublic) {
+                let comments = JSON.parse(localStorage.getItem('comments')) || [];
+                comments.push({ name, comment, makePublic });
+                localStorage.setItem('comments', JSON.stringify(comments));
+            }
+
+            // Function to load and display public comments
+            function loadComments() {
+                let comments = JSON.parse(localStorage.getItem('comments')) || [];
+                commentsList.innerHTML = ''; // Clear existing comments
+
+                comments.forEach((item) => {
+                    if (item.makePublic) { // Only display public comments
+                        const li = document.createElement('li');
+                        li.innerHTML = `<strong>${item.name}</strong>: ${item.comment}`;
+                        commentsList.appendChild(li);
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>
-
