@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visualization of Pokémon Biome Mapping</title>
+    <title>PokéMap Project</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <!-- Add Font Awesome for GitHub icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         /* Navigation Bar (Pokéball-like color scheme) */
         .navbar {
+            font-family: 'Poppins', sans-serif;
             position: fixed;
             top: 0;
             width: 100%;
@@ -24,7 +23,7 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             height: 60px; /* Explicitly set the height of the navbar */
         }
-
+    
         .navbar ul {
             list-style: none;
             margin: 0;
@@ -34,11 +33,11 @@
             width: 100%; /* Ensure the list takes up the full width */
             justify-content: center; /* Center the links horizontally */
         }
-
+    
         .navbar ul li {
             display: inline;
         }
-
+    
         .navbar ul li a {
             font-family: 'Poppins', sans-serif;
             color: white;
@@ -49,21 +48,29 @@
             border-radius: 5px; /* Optional: add rounded corners */
             transition: background-color 0.3s ease, color 0.3s ease;
         }
-
+    
         .navbar ul li a:hover {
             background-color: #ffffff; /* White like Pokéball */
             color: #e60012; /* Red text on hover */
         }
-
+    
         :root {
             --navbar-height: 60px;
         }
-
+    
         /* Apply padding to the body */
         body {
             padding-top: var(--navbar-height);
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f0f0;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            text-align: center;
+            min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
         }
-
+    
         /* Header Styles */
         .hero {
             position: relative; /* Add relative positioning */
@@ -73,336 +80,189 @@
             color: #ffffff; /* White text */
             margin-top: var(--navbar-height);
         }
-
-        body { 
-            font-family: 'Poppins', sans-serif; 
-            background-color: #ffffff; /* White background */
-            color: #333;
-            margin: 0;
-            padding: 0;
+    
+        /* Pokémon Animation */
+        .pokemon {
+            position: absolute;
+            animation: appear 5s linear infinite;
+            width: 100px;
+            cursor: pointer; /* Make Pokémon clickable */
         }
-
-        /* Slider Container */
-        .slider-container {
-            position: relative;
-            width: 80%;
-            margin: 40px auto;
-            overflow: hidden;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            background-color: white;
-            padding: 20px;
+    
+        @keyframes appear {
+            0% { opacity: 0; transform: scale(0); }
+            50% { opacity: 1; transform: scale(1); }
+            100% { opacity: 0; transform: scale(0); }
         }
-
-        /* Slider */
-        .slider {
-            display: flex;
-            transition: transform 0.5s ease;
-        }
-
-        /* Slide */
-        .slide {
-            min-width: 100%;
-            padding: 20px;
-            box-sizing: border-box;
-            text-align: center;
-        }
-
-        /* Slide Title */
-        .slide h3 {
-            font-size: 24px;
-            color: #e60012; /* Red text */
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
-
-        /* Slide Content */
-        .slide p {
-            font-size: 16px;
-            line-height: 1.6;
-            margin-bottom: 15px;
-            color: #333;
-        }
-
-        /* Slide Image */
-        .slide img {
-            width: 60%;
-            margin-top: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Navigation Dots */
-        .dots {
+    
+        /* Pikachu Animation */
+        #pikachu {
             position: absolute;
             bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 10px;
+            left: -100px;
+            animation: run 5s linear infinite;
+            width: 100px;
+            cursor: pointer; /* Make Pikachu clickable */
         }
-
-        .dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background-color: #bdc3c7;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
+    
+        @keyframes run {
+            0% { left: -100px; }
+            100% { left: 100%; }
         }
-
-        .dot.active {
-            background-color: #e60012; /* Red dot */
+    
+        /* Heading and Section Styles */
+        h1, h2 {
+            color: #ff0000;
         }
-
-        /* Buttons to Navigate Slides */
-        .button-container {
-            text-align: center;
-            margin-top: 20px;
+    
+        h1 {
+            text-shadow: 3px 3px #ffffff;
+            font-size: 2.5em;
         }
-
-        .prev, .next {
-            padding: 12px 20px;
-            background-color: #e60012; /* Red button */
-            color: white;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-            font-size: 16px;
-            transition: background-color 0.3s ease;
+    
+        h2 {
+            font-size: 1.8em;
         }
-
-        .prev:hover, .next:hover {
-            background-color: #ff3333; /* Lighter red on hover */
+    
+        .bullet-points {
+            list-style-type: none; /* Remove default bullets */
+            padding-left: 30px; /* Space for the custom bullet */
         }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
+    
+        .bullet-points li {
+            background: url('https://upload.wikimedia.org/wikipedia/commons/5/53/Poké_Ball_icon.svg') no-repeat left center; /* Use the Pokéball image as the bullet */
+            background-size: 20px 20px; /* Adjust the size of the Pokéball */
+            padding-left: 30px; /* Space between the bullet and text */
+            margin-bottom: 10px; /* Space between list items */
         }
-
-        section {
-            padding: 30px;
-            margin: 0;
-        }
-
-        section:nth-child(odd) {
-            background-color: #f9f9f9;
-        }
-        section:nth-child(even) {
-            background-color: #e9e9e9;
-        }
-
-        figure {
-            margin: 1rem 0;
-            text-align: center;
-        }
-
-        figcaption {
-            font-style: italic;
-            color: #666;
-            margin-top: 0.5rem;
-        }
-
-        iframe {
-            width: 100%;
-            height: 400px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-        }
-
-        form {
-            margin-top: 1rem;
-        }
-
-        fieldset {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 1rem;
-        }
-
-        legend {
+    
+        /* Pokémon Themed Title Animation */
+        #animated-title {
+            color: #ffcc00; /* Pikachu yellow */
+            font-size: 2.5em; /* Adjusted for better readability */
             font-weight: bold;
-            color: #e60012; /* Red text */
+            text-shadow: 3px 3px 5px #ff0000, -3px -3px 5px #ffffff; /* Subtle shadow */
+            animation: fadeIn 2s ease-out, colorChange 3s ease-out forwards;
         }
-
-        textarea {
-            width: 100%;
-            padding: 0.5rem;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            margin-bottom: 1rem;
+    
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
         }
-
-        button {
-            background-color: #e60012; /* Red button */
-            color: white;
-            padding: 0.5rem 1rem;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
+    
+        @keyframes colorChange {
+            0% { color: #ffcc00; } /* Pikachu yellow */
+            50% { color: #ff0000; } /* Red (Pokéball theme) */
+            100% { color: #ffcc00; } /* Back to Pikachu yellow */
         }
-
-        button:hover {
-            background-color: #ff3333; /* Lighter red on hover */
-            color: white;
-        }
-
-        footer {
-            background-color: #e60012; /* Red footer */
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
-        }
-
-        footer a {
-            color: white;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        .github-button {
-            display: inline-block;
-            background-color: #e60012; /* Red button */
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
-            text-decoration: none;
-            margin-top: 0.5rem;
-        }
-
-        .github-button:hover {
-            background-color: #ff3333; /* Lighter red on hover */
-            color: white;
-        }
-
-        .comment {
-            background-color: white;
-            padding: 1rem;
-            border-radius: 8px;
-            margin-bottom: 1rem;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .comment h3 {
-            margin-top: 0;
-        }
-
-        /* GitHub Button Styling */
-        .github-button {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #e60012; /* Red button */
-            color: white;
-            padding: 12px 24px;
-            border-radius: 50px; /* Rounded edges */
-            text-decoration: none;
-            margin-top: 0.5rem;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .github-button:hover {
-            background-color: #ff3333; /* Lighter red on hover */
-            transform: translateY(-2px); /* Slight lift on hover */
-            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-        }
-
-        .github-button i {
-            margin-right: 8px; /* Space between icon and text */
-            font-size: 1.2rem; /* Icon size */
-        }
-
-        /* Interactive Map Section */
-        #interactive-map {
-            padding: 50px 20px;
-            text-align: center;
-        }
-
-        #interactive-map h2 {
-            font-size: 36px;
-            color: #e60012; /* Red text */
-            margin-bottom: 20px;
-        }
-
-        #interactive-map p {
-            font-size: 18px;
-            line-height: 1.8;
-            max-width: 800px;
-            margin: 0 auto 30px;
-            color: #333;
-        }
-
-        .map-container {
+    
+        /* Map Container */
+        #map-container {
             margin: 20px auto;
-            border: 2px solid #e60012; /* Red border */
+            width: 95%;
+            border: 2px solid #ff0000;
             border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            max-width: 1200px;
+            background-color: #ffffff;
+            padding: 10px;
         }
-
-        .map-container:hover {
-            transform: scale(1.02); /* Slight zoom effect on hover */
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
-        }
-
-        .map-container iframe {
+    
+        iframe {
             width: 100%;
             height: 600px;
             border: none;
         }
-
-        /* Custom Scrollbar for Map Container */
-        .map-container::-webkit-scrollbar {
-            width: 10px;
-        }
-
-        .map-container::-webkit-scrollbar-track {
-            background: #f1f1f1;
+    
+        /* User Guide */
+        #user-guide {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 2px solid #ff0000;
             border-radius: 10px;
+            width: 80%;
+            text-align: left;
         }
-
-        .map-container::-webkit-scrollbar-thumb {
-            background: #e60012; /* Red scrollbar */
-            border-radius: 10px;
-        }
-
-        .map-container::-webkit-scrollbar-thumb:hover {
-            background: #ff3333; /* Lighter red on hover */
-        }
-
-        /* Call-to-Action Button */
-        .map-cta-button {
-            margin-top: 30px;
-            padding: 15px 30px;
-            background-color: #e60012; /* Red button */
-            color: white;
-            border: none;
-            border-radius: 50px;
-            font-size: 18px;
+    
+        .guide-item {
             cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.3s ease;
+            font-weight: bold;
+            color: #ff0000;
+            margin: 10px 0;
         }
-
-        .map-cta-button:hover {
+    
+        .guide-content {
+            display: none;
+            padding-left: 20px;
+            color: #333;
+        }
+    
+        /* Instructions Modal */
+        #instructions-modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #ff0000;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+            max-width: 500px;
+            text-align: center;
+        }
+    
+        .close-btn {
+            cursor: pointer;
+            color: #ff0000;
+            font-size: 20px;
+            font-weight: bold;
+            position: absolute;
+            top: 10px;
+            right: 15px;
+        }
+    
+        /* General Button Styles */
+        button, .join-us-button {
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            padding: 10px 20px;
+            background-color: #ff0000; /* Red background */
+            color: #ffffff; /* White text */
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease; /* Smooth transition for all properties */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+            transform: translateY(0); /* Initial position */
+        }
+    
+        button:hover, .join-us-button:hover {
             background-color: #ff3333; /* Lighter red on hover */
-            transform: translateY(-5px);
+            transform: translateY(-3px); /* Move button up slightly */
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
         }
-
-        /* Override for Interactive Map Section */
-        #interactive-map {
-            background-color: inherit; /* Inherit the alternating background color */
+    
+        button:active, .join-us-button:active {
+            transform: translateY(0); /* Reset position */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Reset shadow */
         }
-
-        /* === Scroll-to-Top Button === */
+    
+        /* Specific Styles for Quiz Buttons */
+        #quiz-section button {
+            background-color: #ffffff; /* White background */
+            color: #333333; /* Dark text */
+            border: 2px solid #ff0000; /* Red border */
+        }
+    
+        #quiz-section button:hover {
+            background-color: #ff0000; /* Red background on hover */
+            color: #ffffff; /* White text on hover */
+        }
+    
+        /* Scroll-to-Top Button */
         #scroll-to-top {
             position: fixed;
             bottom: 20px;
@@ -417,77 +277,99 @@
             cursor: pointer;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             transition: background-color 0.3s ease, transform 0.3s ease;
-            display: none;
         }
-
+    
         #scroll-to-top:hover {
             background-color: #ff3333; /* Lighter red on hover */
             transform: scale(1.1);
         }
-
-        /* === Progress Bar === */
-        #progress-bar {
+    
+        /* Fun Section */
+        #fun-section {
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #ffe176; /* Bright yellow background */
+            border: 6px solid #ff0000; /* Red border */
+            border-radius: 15px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            display: none; /* Initially hidden */
+        }
+    
+        #fun-section h2 {
+            color: #ff0000;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+    
+        #fun-section p {
+            font-size: 1.2em;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+    
+        /* Divider between Fun Game and Quiz */
+        .divider {
+            border-top: 2px solid #ff0000;
+            margin: 40px 0;
+        }
+    
+        /* Pokéball Icon for Quiz */
+        #quiz-section::before {
+            content: '';
+            display: block;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/5/53/Pok%C3%A9_Ball_icon.svg') no-repeat center center;
+            background-size: 50px 50px;
+            width: 50px;
+            height: 50px;
+            margin: 0 auto 20px;
+        }
+    
+        /* Easter Egg Styles */
+        .easter-egg {
+            display: none;
             position: fixed;
-            top: 0;
-            left: 0;
-            height: 4px;
-            background-color: #f5f5f5; /* Red progress bar */
-            width: 0%;
-            z-index: 1001;
-        }
-
-        /* Comments Section Styling */
-        #comments-list {
-            margin-top: 20px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #ffffff;
             padding: 20px;
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 4px solid #ff0000;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+            text-align: center;
         }
-
-        #comments-list h3 {
-            margin-top: 0;
-            color: #e60012; /* Red text */
-        }
-
-        #comments {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        #comments li {
-            background-color: white;
-            padding: 15px;
+    
+        .easter-egg img {
+            width: 100px;
+            height: 100px;
             margin-bottom: 10px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-
-        #comments li strong {
-            color: #e60012; /* Red text */
+    
+        .easter-egg p {
+            font-size: 1.2em;
+            color: #333333;
         }
-
-        /* Checkbox Styling */
-        #make-public {
-            margin-right: 10px;
+    
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 1.5em;
+            color: #ff0000;
         }
-
-        /* Confirmation Message Styling */
-        #confirmation-message {
-            margin-top: 20px;
-            padding: 15px;
-            background-color: #e8f5e9; /* Light green background */
-            border: 1px solid #a5d6a7; /* Green border */
-            border-radius: 8px;
-            color: #2e7d32; /* Dark green text */
-            display: none; /* Hidden by default */
-        }
-        </style>
+    </style>
 </head>
 <body>
+    <!-- Pikachu Animation -->
+    <img id="pikachu" src="pikachu.png" alt="Pikachu running" onclick="showEasterEgg('pikachu')">
+
     <!-- Navigation Bar -->
     <nav class="navbar">
-        <ul class>
+        <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="process.html">Our Process</a></li>
             <li><a href="visualisations.html">Findings</a></li>
@@ -497,277 +379,133 @@
         </ul>
     </nav>
 
-
-    <!-- Progress Bar -->
-    <div id="progress-bar"></div>
-    
     <!-- Header -->
     <header class="hero" id="home">
-        <h1>Visualization of Pokémon Biome Mapping</h1>
-        <p>An interactive exploration of Pokémon distributions across real-world biomes</p>
+        <h1 id="animated-title">Welcome to the PokéMap Project!</h1>
+        <p>Mapping Pokémon habitats based on real-world climate and biomes</p>
     </header>
 
-    <!-- GitHub Section -->
-    <section id="github-section">
-        <div style="text-align: center;">
-            <p><strong>Authors:</strong> Vignesh Narayanan, Hanle Yang, Jonathon Chang, Adrian Chang</p>
-            <p><strong>Affiliation:</strong> London School of Economics and Political Science</p>
-            <p><strong>Code:</strong> 
-                <a href="https://github.com/lse-ds105/ds105a-2024-project-error_105" class="github-button">
-                    <i class="fab fa-github"></i> GitHub Repository
-                </a>
-            </p>
-        </div>
-    </section>
+    <!-- Add the horizontal line here -->
+    <hr style="border: 2px solid #ff0000; margin: 20px auto; width: 80%;">
 
-    <!-- Introduction Section -->
-    <section id="introduction">
+    <!-- Main Content -->
+    <div>
         <h2>Introduction</h2>
-        <p>In this section, we present a series of visualizations created during the process of mapping Pokémon distributions to real-world biomes. These visual representations highlight key findings from our analysis and illustrate the development process of the interactive map.</p>
-    </section>
-
-    <!-- Geographic Coordinates Section with Slider -->
-    <section id="effect-of-latitude-and-longitude">
-        <h2 style="text-align: center;">Effect of Latitude and Longitude on Temperature</h2>
-        <p style="text-align: center; max-width: 800px; margin: auto;">
-            This study examines how geographical coordinates—<b>latitude</b> and <b>longitude</b>—impact temperature variations.
-            We analyzed three key relationships to determine which factor plays a more dominant role in shaping temperature patterns.
+        <p>
+            This project combines Pokémon lore with real-world climatological and ecological data to create a scientifically plausible mapping of Pokémon habitats.
         </p>
+        <ul class="bullet-points">
+            <li><strong>Fire-Type Pokémon:</strong> Mapped to the hottest places on Earth.</li>
+            <li><strong>Water-Type Pokémon:</strong> Linked to the wettest regions.</li>
+            <li><strong>Ice-Type Pokémon:</strong> Thrive in the coldest environments.</li>
+        </ul>
+        <p><strong>Goal:</strong> To integrate Pokémon attributes, climate data, and biomes into a single cohesive map.</p>
 
-        <!-- Slider Container -->
-        <div class="slider-container">
-            <div class="slider">
-                <!-- Slide 1: Latitude vs. Temperature -->
-                <div class="slide">
-                    <h3>Graph 1: Latitude vs. Temperature</h3>
-                    <figure>
-                        <img src="lat_temp.png" alt="Latitude vs Temperature" width="100%">
-                        <figcaption><strong>Figure 1.</strong> Relationship between latitude and temperature. The trend shows that temperatures decrease as latitude increases.</figcaption>
-                    </figure>
-                    <p>The graph shows a <span class="highlight">strong negative correlation</span> between latitude and temperature. 
-                        This supports the well-known geographical principle: <span class="highlight">temperatures are highest near the equator and decrease as we move toward the poles.</span>
-                    </p>
-                </div>
+        <!-- Add the horizontal line here -->
+        <hr style="border: 2px solid #ff0000; margin: 20px auto; width: 80%;">
 
-                <!-- Slide 2: Longitude vs. Temperature -->
-                <div class="slide">
-                    <h3>Graph 2: Longitude vs. Temperature</h3>
-                    <figure>
-                        <img src="long_temp.png" alt="Longitude vs Temperature" width="100%">
-                        <figcaption><strong>Figure 2.</strong> Relationship between longitude and temperature. Results indicate minimal influence of longitude on temperature.</figcaption>
-                    </figure>
-                    <p>Unlike latitude, longitude does not show a clear relationship with temperature. The data points are scattered, indicating 
-                        <span class="highlight">no significant correlation</span>. Other factors such as elevation and ocean currents likely play a greater role.
-                    </p>
-                </div>
-            </div>
+        <!-- User Guide -->
+        <div id="user-guide">
+            <h2>User Guide</h2>
+            <p>This map allows users to explore Pokémon habitats interactively. Click on each feature below to learn more:</p>
+            
+            <div class="guide-item" onclick="toggleGuide('filter')">▶ Filter Pokémon by Type</div>
+            <div id="filter" class="guide-content">You can filter Pokémon habitats by Fire, Water, or Ice types using the toggle button in the top-right corner.</div>
+            
+            <div class="guide-item" onclick="toggleGuide('heatmap')">▶ Toggle Heatmap Layer</div>
+            <div id="heatmap" class="guide-content">The heatmap layer can be toggled on/off for better clarity.</div>
 
-            <!-- Navigation Dots -->
-            <div class="dots">
-                <div class="dot active" onclick="showSlide(0, this.parentElement.parentElement)"></div>
-                <div class="dot" onclick="showSlide(1, this.parentElement.parentElement)"></div>
-            </div>
+            <div class="guide-item" onclick="toggleGuide('click')">▶ Click on Pokémon Icons</div>
+            <div id="click" class="guide-content">Click on Pokémon icons to view their stats, ranking and details.</div>
+            
+            <div class="guide-item" onclick="toggleGuide('zoom')">▶ Use Zoom Controls</div>
+            <div id="zoom" class="guide-content">Use the zoom controls at the top left to explore specific areas in greater detail.</div>
+            
+            <div class="guide-item" onclick="toggleGuide('toggleMarkers')">▶ Toggle Markers</div>
+            <div id="toggleMarkers" class="guide-content">When the map first loads, there are blue markers. You can toggle them to make them disappear from the map for better view.</div>
+            
+            <div class="guide-item" onclick="toggleGuide('search')">▶ Search Pokémon</div>
+            <div id="search" class="guide-content">For best results, zoom into the map first, then search for the Pokémon character you want to find. The map will move to the Pokémon and highlight its location with a red circle.</div>
+            
+            <div class="guide-item" onclick="toggleGuide('viewInfo')">▶ View Pokémon and Weather Info</div>
+            <div id="viewInfo" class="guide-content">To see both the weather and Pokémon information, first click on the Pokémon icon, then click on the round weather marker. The Pokémon info will stay on the screen until you click the Pokémon icon again to disable the info popup.</div>
         </div>
 
-        <!-- Buttons to Navigate Slides -->
+        <!-- Interactive Map -->
+        <h2>Interactive Map</h2>
+        <div id="map-container">
+            <iframe src="../visuals/html_files/pokemon_map.html" title="Interactive PokéMap"></iframe>
+        </div>
+
+        <!-- Fun Section Toggle Button -->
         <div class="button-container">
-            <button class="prev" onclick="prevSlide(this.parentElement.parentElement)">Prev</button>
-            <button class="next" onclick="nextSlide(this.parentElement.parentElement)">Next</button>
+            <button class="how-to-play-btn" onclick="toggleFunSection()">Toggle Fun Section</button>
         </div>
 
-        <!-- Summary of Findings -->
-        <div class="summary">
-            <h2>Key Findings</h2>
-            <p>
-                These findings align with fundamental climatological principles, where latitude influences solar radiation 
-                exposure and, consequently, temperature patterns. Regions closer to the equator receive more direct sunlight, 
-                resulting in higher temperatures, while polar regions experience lower temperatures due to indirect solar rays.
-            </p>
+        <!-- Fun Section -->
+        <div id="fun-section">
+            <h2>Fun Section</h2>
+            <p>Explore Pokémon-related games and quizzes here!</p>
 
-            <p>
-                Overall, this analysis reinforces that <strong>latitude is the dominant geographic factor in determining 
-                temperature variation</strong>, while longitude plays no meaningful role in temperature prediction.
-            </p>
-        </div>
-    </section>
+            <!-- Divider -->
+            <div class="divider"></div>
 
-    <!-- Regression Analysis Section -->
-    <section id="regression-analysis">
-        <h2>Regression Analysis: Latitude as a Primary Determinant of Temperature</h2>
-        
-        <div class="slider-container">
-            <div class="slider">
-                <!-- Slide 1: Regression Model 1 -->
-                <div class="slide">
-                    <h3><strong>Regression Model 1: Latitude vs. Temperature</strong></h3>
-                    <iframe src="lat_regression.html" width="100%" height="500px"></iframe>
-                    <p>The R-squared value of <span class="highlight"><strong>0.781</strong></span> indicates that <span class="highlight"><strong>78.1%</strong></span> of the variation in temperature can be explained by latitude alone. This supports the well-known geographic principle that temperatures decrease as one moves away from the equator.</p>
-                    
-                    <p><strong>Coefficient:</strong> <span class="highlight">-0.7931</span> (As latitude increases, temperature decreases.)</p>
-                    <p><strong>Statistical Significance:</strong> p-value <span class="highlight"><strong>&lt; 0.001</strong></span> (The relationship is statistically significant.)</p>
+            <!-- Fun Game Section -->
+            <div id="fun-game-section">
+                <h2>Fun Game: Catch Pokémon!</h2>
+                <button class="how-to-play-btn" onclick="startPokemonGame()">How to Play</button>
+            </div>
+
+            <!-- Divider -->
+            <div class="divider"></div>
+
+            <!-- Pokémon Type Quiz -->
+            <div id="quiz-section">
+                <h2>Pokémon Type Quiz</h2>
+                <p>Test your knowledge! Which Pokémon type would thrive in the following habitat?</p>
+                <p id="quiz-question"></p>
+                <div id="quiz-options">
+                    <!-- Quiz options will be dynamically added here -->
                 </div>
-        
-                <!-- Slide 2: Regression Model 2 -->
-                <div class="slide">
-                    <h3><strong>Regression Model 2: Longitude vs. Temperature</strong></h3>
-                    <iframe src="long_regression.html" width="100%" height="500px"></iframe>
-                    <p>In contrast, longitude had an R-squared value of <span class="highlight"><strong>0</strong></span>, meaning it does not explain any variation in temperature.</p>
-        
-                    <p>The regression results showed:</p>
-                    
-                    <p><strong>Coefficient:</strong> <span class="highlight">0.0113</span> (This suggests no meaningful relationship between longitude and temperature.)</p>
-                    <p><strong>Statistical Significance:</strong> p-value <span class="highlight"><strong>0.874</strong></span> (This indicates that longitude has no statistical significance in determining temperature.)</p>
-                </div>
-            </div>      
-
-            <!-- Navigation Dots -->
-            <div class="dots">
-                <div class="dot active" onclick="showSlide(0, this.parentElement.parentElement)"></div>
-                <div class="dot" onclick="showSlide(1, this.parentElement.parentElement)"></div>
+                <p id="quiz-feedback"></p>
             </div>
         </div>
 
-        <!-- Buttons to navigate slides -->
-        <div class="button-container">
-            <button class="prev" onclick="prevSlide(this.parentElement.parentElement)">Prev</button>
-            <button class="next" onclick="nextSlide(this.parentElement.parentElement)">Next</button>
+        <!-- Instructions Modal -->
+        <div id="instructions-modal">
+            <span class="close-btn" onclick="closeInstructions()">&times;</span>
+            <h3>How to Play</h3>
+            <p>Pokémon will appear every minute. Click on them to catch and unlock a fun fact!</p>
         </div>
-    </section>
 
-    <!-- Temperature Variance Section -->
-    <section id="temperature-variance" style="text-align: center;">
-        <h2>Temperature Variance: Hottest vs Coldest Places</h2>
-        <p style="max-width: 800px; margin: auto;">
-            This section explores the variance in temperature between the hottest and coldest places. The analysis reveals that the hottest places exhibit less variance in temperature compared to the coldest places.
-        </p>
-
-        <!-- Findings Container -->
-        <div class="slider-container" style="display: flex; flex-direction: column; align-items: center;">
-            <div class="slide">
-                <h3>Temperature Variance</h3>
-                <figure>
-                    <img src="hotvscold_spread_plot.png" alt="Temperature Variance" width="80%">
-                    <figcaption><strong>Figure 1.</strong> Comparison of temperature spread in the hottest and coldest places.</figcaption>
-                </figure>
-                <p style="max-width: 800px; margin: auto;">
-                    The data shows that the hottest places have a more consistent temperature range, with less fluctuation, maintaining relatively stable high temperatures throughout the year.
-                    On the other hand, the coldest places exhibit greater variability in temperature, influenced by seasonal changes and geographical factors.
-                </p>
-            </div>
+        <!-- Contribute Section -->
+        <div id="contribute-section" style="background-color: #ffebcd; border-radius: 8px; padding: 20px; margin-top: 40px; text-align: center;">
+            <h2 style="font-family: 'Arial', sans-serif; color: #333333; font-size: 22px; margin-bottom: 10px;">Want to Contribute?</h2>
+            <p style="font-family: 'Arial', sans-serif; color: #555555; font-size: 16px; margin-bottom: 20px;">Help us expand our Pokémon habitat research! We're looking to explore more types and could use your help. Get involved and make a difference!</p>
+            <a href="contribute.html" class="join-us-button">Join Us!</a>
         </div>
-    </section>
 
-    <!-- Interactive Map Section -->
-    <section id="interactive-map">
-        <h2>Development of the Interactive Folium Map</h2>
-        <p>To effectively visualize the spatial distribution of Pokémon across different biomes, we employed <strong>Folium</strong>, a Python library designed for interactive geographic mapping. The objective of this step was to create a dynamic and user-friendly tool that integrates ecological data with real-world geographical coordinates. Through an iterative design process, we tested multiple drafts before finalizing the map.</p>
+        <!-- Space Below Contribute Section -->
+        <div style="background-color: #ffebcd; height: 100px;"></div>
 
-        <h3>Preliminary Drafts and Iterative Refinement</h3>
-        <p>During the initial development phase, three versions of the map were created to evaluate different visualization techniques and optimize the representation of Pokémon distributions. Each iteration provided insights into improving the accuracy and usability of the final model.</p>
+        <!-- Scroll-to-Top Button -->
+        <button id="scroll-to-top" title="Go to top">↑</button>
 
-        <!-- Map 1 -->
-        <h4>Test Map 1</h4>
-        <div class="map-container">
-            <iframe src="temperature_ranked_map.html" title="Test Map 1"></iframe>
-        </div>
-        <p><em>Figure 1: Initial test version, focusing on basic markers placement.</em></p>
+        <!-- Pokémon will appear here -->
+        <div id="pokemon-container"></div>
+    </div>
 
-        <!-- Map 2 -->
-        <h4>Test Map 2</h4>
-        <div class="map-container">
-            <iframe src="temperature_map_with_scale.html" title="Test Map 2"></iframe>
-        </div>
-        <p><em>Figure 2: Adjusted version incorporating color-coded biome layers.</em></p>
+    <!-- Blank Row for Pikachu -->
+    <div class="footer-space"></div>
 
-        <!-- Map 3 -->
-        <h4>Test Map 3</h4>
-        <div class="map-container">
-            <iframe src="pokemon_map.html" title="Test Map 3"></iframe>
-        </div>
-        <p><em>Figure 3: Final test version before optimization, featuring enhanced interactivity and legend customization.</em></p>
+    <!-- Easter Egg Popups -->
+    <div id="easter-egg" class="easter-egg">
+        <span class="close-button" onclick="closeEasterEgg()">&times;</span>
+        <img id="pokemon-image" src="" alt="Pokémon">
+        <p id="pokemon-fact"></p>
+    </div>
 
-        <!-- Call-to-Action Button -->
-        <button class="map-cta-button" onclick="window.open('pokemon_map.html', '_blank')">
-            Explore the Full Interactive Map
-        </button>
-
-        <p>Feedback from these preliminary drafts led to significant refinements in the final version, which can be accessed here. Key improvements included better handling of overlapping Pokémon, an improved search function, and real-time weather updates.</p>
-    </section>
-
-    <!-- Feedback Section -->
-    <section id="feedback">
-        <h2>Feedback and Peer Review</h2>
-        <p>We encourage constructive feedback to refine our visualizations and improve the interactive mapping experience. Your insights will contribute to the accuracy and usability of this research. Please share your observations below:</p>
-
-        <!-- Comments Form -->
-        <form id="comment-form">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
-            <label for="comment">Comment:</label><br>
-            <textarea id="comment" name="comment" rows="4" cols="50" required></textarea><br><br>
-            <label>
-                <input type="checkbox" id="make-public" name="make-public"> Make my feedback public
-            </label><br><br>
-            <button type="submit">Submit</button>
-        </form>
-
-        <!-- Comments List -->
-        <div id="comments-list">
-            <h3>Public Comments</h3>
-            <ul id="comments"></ul> <!-- Public comments will be dynamically added here -->
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <h2>References</h2>
-        <p>Springer, 2011. <i>The Influence of Latitude on Temperature Patterns.</i> Geographical Review, 101(2), 337-349.  
-        <a href="https://link.springer.com/article/10.1007/s11629-011-1090-2">Access the article</a></p>
-        <!-- Social Sharing Buttons -->
-        <div style="margin-top: 20px;">
-            <a href="https://twitter.com/intent/tweet?url=YOUR_URL&text=Check%20out%20this%20awesome%20Pokémon%20biome%20mapping%20project!" target="_blank" class="github-button">
-                <i class="fab fa-twitter"></i> Share on Twitter
-            </a>
-            <a href="https://www.linkedin.com/shareArticle?url=YOUR_URL&title=Pokémon%20Biome%20Mapping" target="_blank" class="github-button">
-                <i class="fab fa-linkedin"></i> Share on LinkedIn
-            </a>
-        </div>
-    </footer>
-
-    <!-- Scroll-to-Top Button -->
-    <button id="scroll-to-top" title="Go to top">↑</button>
-
-    <!-- JavaScript for Slider Functionality -->
     <script>
-        function showSlide(index, sliderContainer) {
-            const slider = sliderContainer.querySelector('.slider');
-            const slides = sliderContainer.querySelectorAll('.slide');
-            const dots = sliderContainer.querySelectorAll('.dot');
-
-            if (index >= slides.length) index = 0;
-            if (index < 0) index = slides.length - 1;
-
-            // Update slider position
-            slider.style.transform = `translateX(-${index * 100}%)`;
-
-            // Update active dot
-            dots.forEach((dot, i) => {
-                dot.classList.toggle('active', i === index);
-            });
-        }
-
-        function nextSlide(sliderContainer) {
-            const activeDot = sliderContainer.querySelector('.dot.active');
-            const currentIndex = Array.from(sliderContainer.querySelectorAll('.dot')).indexOf(activeDot);
-            showSlide(currentIndex + 1, sliderContainer);
-        }
-
-        function prevSlide(sliderContainer) {
-            const activeDot = sliderContainer.querySelector('.dot.active');
-            const currentIndex = Array.from(sliderContainer.querySelectorAll('.dot')).indexOf(activeDot);
-            showSlide(currentIndex - 1, sliderContainer);
-        }
-
         // === Scroll-to-Top Button ===
         const scrollToTopButton = document.getElementById('scroll-to-top');
 
@@ -786,67 +524,168 @@
             });
         });
 
-        // === Progress Bar ===
-        window.addEventListener('scroll', () => {
-            const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            const scrollPercentage = (scrollTop / scrollHeight) * 100;
-            document.getElementById('progress-bar').style.width = scrollPercentage + '%';
-        });
-    </script>
+        // === Toggle Fun Section ===
+        function toggleFunSection() {
+            const funSection = document.getElementById('fun-section');
+            if (funSection.style.display === 'none' || funSection.style.display === '') {
+                funSection.style.display = 'block';
+            } else {
+                funSection.style.display = 'none';
+                stopPokemonGame(); // Stop the Pokémon game when the section is closed
+            }
+        }
 
-    <script>
-        // JavaScript for Comments Section
-        document.addEventListener('DOMContentLoaded', () => {
-            const commentForm = document.getElementById('comment-form');
-            const commentsList = document.getElementById('comments');
+        // === Pokémon Game Functions ===
+        let pokemonInterval;
 
-            // Load public comments from local storage when the page loads
-            loadComments();
+        function startPokemonGame() {
+            stopPokemonGame(); // Stop any existing game
+            pokemonInterval = setInterval(generateRandomPokemon, 30000); // Generate Pokémon every 5 seconds
+            showInstructions(); // Show the instructions modal
+        }
 
-            // Handle form submission
-            commentForm.addEventListener('submit', (e) => {
-                e.preventDefault(); // Prevent form from submitting the traditional way
+        function stopPokemonGame() {
+            clearInterval(pokemonInterval); // Stop generating Pokémon
+            const pokemonContainer = document.getElementById('pokemon-container');
+            pokemonContainer.innerHTML = ''; // Clear all Pokémon from the screen
+        }
 
-                // Get form data
-                const name = document.getElementById('name').value;
-                const comment = document.getElementById('comment').value;
-                const makePublic = document.getElementById('make-public').checked;
+        // Pokémon data and facts
+        const pokemonFacts = [
+            { image: "charizard.png", fact: "Charizard can fly up to 4,600 feet in the air and breathes fire hot enough to melt boulders!" },
+            { image: "mewtwo.png", fact: "Mewtwo was created by scientists through genetic manipulation of Mew's DNA." },
+            { image: "gyarados.png", fact: "Gyarados is known for its fierce temper and destructive nature, often burning down entire villages." },
+            { image: "snorlax.png", fact: "Snorlax eats nearly 900 pounds of food per day and falls asleep after every meal." },
+            { image: "dragonite.png", fact: "Dragonite can circle the globe in just 16 hours, flying at supersonic speeds." }
+        ];
 
-                // Save the comment to local storage
-                saveComment(name, comment, makePublic);
+        // Function to generate random Pokémon
+        function generateRandomPokemon() {
+            const randomFact = pokemonFacts[Math.floor(Math.random() * pokemonFacts.length)];
+            const pokemonElement = document.createElement("img");
+            pokemonElement.src = randomFact.image;
+            pokemonElement.classList.add("pokemon");
 
-                // Clear the form
-                commentForm.reset();
+            // Random position for the Pokémon (entire document height)
+            const randomLeft = Math.random() * (window.innerWidth - 100);
+            const randomTop = Math.random() * (document.documentElement.scrollHeight - 100);
 
-                // Reload comments to display the new one (if public)
-                loadComments();
+            pokemonElement.style.left = `${randomLeft}px`;
+            pokemonElement.style.top = `${randomTop}px`;
 
-                // Show confirmation message
-                alert('Thank you for your feedback! Your submission has been received.');
+            // Add the Pokémon element to the container
+            document.getElementById("pokemon-container").appendChild(pokemonElement);
+
+            // Add click event to catch the Pokémon
+            pokemonElement.addEventListener("click", () => {
+                showEasterEgg(randomFact);
+                pokemonElement.remove(); // Remove Pokémon after catching
+            });
+        }
+
+        // Function to show Easter egg popup
+        function showEasterEgg(fact) {
+            document.getElementById("pokemon-image").src = fact.image;
+            document.getElementById("pokemon-fact").textContent = fact.fact;
+            document.getElementById("easter-egg").style.display = "block";
+        }
+
+        // Function to close Easter egg popup
+        function closeEasterEgg() {
+            document.getElementById("easter-egg").style.display = "none";
+        }
+
+        // === Quiz Functions ===
+        const quizData = [
+            {
+                question: "Which Pokémon type would thrive in a desert?",
+                options: ["Fire", "Water", "Grass", "Ice"],
+                answer: "Fire"
+            },
+            {
+                question: "Which Pokémon type would thrive in a rainforest?",
+                options: ["Fire", "Water", "Grass", "Ice"],
+                answer: "Grass"
+            },
+            {
+                question: "Which Pokémon type would thrive in the Arctic?",
+                options: ["Fire", "Water", "Grass", "Ice"],
+                answer: "Ice"
+            },
+            {
+                question: "Which Pokémon type would thrive near a lake?",
+                options: ["Fire", "Water", "Grass", "Ice"],
+                answer: "Water"
+            }
+        ];
+
+        let currentQuizIndex = 0;
+
+        // Function to load the quiz
+        function loadQuiz() {
+            const quiz = quizData[currentQuizIndex];
+            document.getElementById("quiz-question").textContent = quiz.question;
+            const quizOptions = document.getElementById("quiz-options");
+            quizOptions.innerHTML = ""; // Clear previous options
+
+            quiz.options.forEach(option => {
+                const button = document.createElement("button");
+                button.textContent = option;
+                button.classList.add('quiz-option'); // Add class for styling
+                button.onclick = () => checkAnswer(option, button);
+                quizOptions.appendChild(button);
             });
 
-            // Function to save a comment to local storage
-            function saveComment(name, comment, makePublic) {
-                let comments = JSON.parse(localStorage.getItem('comments')) || [];
-                comments.push({ name, comment, makePublic });
-                localStorage.setItem('comments', JSON.stringify(comments));
+            document.getElementById("quiz-feedback").textContent = "";
+        }
+
+        // Function to check the user's answer
+        function checkAnswer(selectedOption, selectedButton) {
+            const quiz = quizData[currentQuizIndex];
+            const buttons = document.querySelectorAll('.quiz-option'); // Get all buttons
+
+            // Remove any previous feedback classes
+            buttons.forEach(button => {
+                button.classList.remove('correct', 'incorrect');
+            });
+
+            // Check if the selected answer is correct
+            if (selectedOption === quiz.answer) {
+                selectedButton.classList.add('correct'); // Add 'correct' class to the selected button
+                document.getElementById("quiz-feedback").textContent = "Correct! 🎉";
+            } else {
+                selectedButton.classList.add('incorrect'); // Add 'incorrect' class to the selected button
+                document.getElementById("quiz-feedback").textContent = `Incorrect! The correct answer is ${quiz.answer}.`;
             }
 
-            // Function to load and display public comments
-            function loadComments() {
-                let comments = JSON.parse(localStorage.getItem('comments')) || [];
-                commentsList.innerHTML = ''; // Clear existing comments
+            // Move to the next question after a short delay
+            setTimeout(() => {
+                currentQuizIndex = (currentQuizIndex + 1) % quizData.length;
+                loadQuiz();
+            }, 2000);
+        }
 
-                comments.forEach((item) => {
-                    if (item.makePublic) { // Only display public comments
-                        const li = document.createElement('li');
-                        li.innerHTML = `<strong>${item.name}</strong>: ${item.comment}`;
-                        commentsList.appendChild(li);
-                    }
-                });
+        // Load the first quiz question
+        loadQuiz();
+
+        // === Instructions Modal ===
+        function showInstructions() {
+            document.getElementById("instructions-modal").style.display = "block";
+        }
+
+        function closeInstructions() {
+            document.getElementById("instructions-modal").style.display = "none";
+        }
+
+        // === Toggle Guide Content ===
+        function toggleGuide(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
             }
-        });
+        }
     </script>
 </body>
 </html>
