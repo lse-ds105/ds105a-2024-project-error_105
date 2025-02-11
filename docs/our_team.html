@@ -6,151 +6,135 @@
   <title>Our Team</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Poppins', sans-serif;
       line-height: 1.6;
-      margin: 20px;
+      margin: 0;
+      padding-top: 80px; /* Offset for fixed navbar */
+      background-color: #f8f9fa;
     }
     h2 {
-      color: #2c3e50;
+      color: #e60012; /* Pokéball Red */
+      text-align: center;
+      margin-bottom: 20px;
     }
     .team-container {
-      padding: 64px 0;
+      padding: 40px 0;
       text-align: center;
-    }
-    .team-container h2 {
-      margin-bottom: 10px;
-    }
-    .team-container p {
-      font-style: italic;
-      color: #7f8c8d;
     }
     .team-row {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 30px;
+      margin-top: 20px;
     }
     .team-member {
-      width: 22%;
+      width: 220px;
       text-align: center;
-      padding: 10px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      transition: transform 0.3s ease-in-out;
     }
     .team-member img {
-      width: 100px;
-      height: 100px;
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
       object-fit: cover;
-      cursor: pointer;
-      transition: opacity 0.3s ease;
-    }
-    .team-member img:hover {
-      opacity: 0.8;
+      margin-bottom: 10px;
     }
     .team-member h3 {
+      font-size: 1.2em;
+      color: #333;
       margin-top: 10px;
-      font-size: 1.1em;
     }
     .team-member p {
+      font-size: 0.9em;
       color: #7f8c8d;
       margin-top: 5px;
     }
-    .email {
-      font-size: 0.9em;
-      color: #2980b9;
+    .team-member:hover {
+      transform: translateY(-10px);
     }
-    .reminder {
-      margin-top: 50px;
-      font-weight: bold;
-      color: #e74c3c;
+    .thank-you-section {
+      padding: 40px 20px;
+      background-color: #fff;
+      border-top: 2px solid #e60012;
+      text-align: center;
+      margin-top: 40px;
     }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
+    .thank-you-section h3 {
+      color: #e60012;
+      margin-bottom: 20px;
     }
-    table, th, td {
-      border: 1px solid #bdc3c7;
-    }
-    th, td {
-      padding: 10px;
-      text-align: left;
-    }
-    th {
-      background-color: #f4f4f9;
+    .thank-you-section p {
+      font-size: 1em;
+      color: #555;
+      line-height: 1.8;
     }
   </style>
 </head>
 <body>
 
+  <!-- Team Section -->
   <div class="team-container" id="team">
-    <h2>OUR TEAM</h2>
-    <p>Meet the team - our office rats:</p>
+    <h2>Our Team</h2>
+    <p>Meet the talented team behind the PokéMap Project!</p>
+    <p><em>Each of us led in different cycles of the project, ensuring collaborative growth while building this tool together.</em></p>
 
     <div class="team-row">
       <div class="team-member">
-        <img src="vignesh.jpg" alt="Vignesh Narayanan" class="w3-circle">
+        <img src="vig.jpg" alt="Vignesh Narayanan">
         <h3>Vignesh Narayanan</h3>
-        <p>Lead Developer</p>
-        <p class="email">vignesh.narayanan@gmail.com</p>
+        <p>Open Meteo Analysis</p>
+        <p>Folium Exploration</p>
+        <p>Webpage Development</p>
       </div>
       <div class="team-member">
-        <img src="hanle.jpg" alt="Hanle Yang" class="w3-circle">
+        <img src="hanle.jpg" alt="Hanle Yang">
         <h3>Hanle Yang</h3>
-        <p>Data Analyst</p>
-        <p class="email">hanle.yang@gmail.com</p>
+        <p>Google Earth Engine Analysis</p>
+        <p>Map Development</p>
+        <p>Webpage Development</p>
       </div>
       <div class="team-member">
-        <img src="jonathan.jpg" alt="Jonathan Chang" class="w3-circle">
+        <img src="chang.jpg" alt="Jonathan Chang">
         <h3>Jonathan Chang</h3>
-        <p>Geospatial Specialist</p>
-        <p class="email">jonathan.chang@gmail.com</p>
+        <p>PokéAPI Exploration</p>
+        <p>Data Curation/Finetuning</p>
+        <p>Web Design</p>
       </div>
       <div class="team-member">
-        <img src="adrian.jpg" alt="Adrian Chang" class="w3-circle">
+        <img src="adrian.jpg" alt="Adrian Chang">
         <h3>Adrian Chang</h3>
-        <p>Project Manager</p>
-        <p class="email">adrian.chang@gmail.com</p>
+        <p>Map Development</p>
+        <p>Data Integration</p>
+        <p>Web Design</p>
       </div>
     </div>
   </div>
 
-  <!-- Reminder -->
-  <div class="reminder">
-    <p>Reminder: Contributions of each team member should be listed below in the table format!</p>
+  <!-- Work Allocation Reference -->
+  <div class="work-allocation">
+    <p style="text-align: center; font-size: 1em; color: #333; margin-top: 40px;">
+      For a more detailed breakdown of work allocation, please refer to our <a href="process.html" style="color: #e60012; text-decoration: none;">Process Section</a>.
+    </p>
   </div>
 
-  <!-- Contributions Table -->
-  <table>
-    <thead>
-      <tr>
-        <th>Team Member</th>
-        <th>Contribution</th>
-        <th>Status</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Vignesh Narayanan</td>
-        <td>GOAT</td>
-        <td>To be completed</td>
-      </tr>
-      <tr>
-        <td>Hanle Yang</td>
-        <td>XXX</td>
-        <td>To be completed</td>
-      </tr>
-      <tr>
-        <td>Jonathan Chang</td>
-        <td>XXX</td>
-        <td>To be completed</td>
-      </tr>
-      <tr>
-        <td>Adrian Chang</td>
-        <td>XXX</td>
-        <td>To be completed</td>
-      </tr>
-    </tbody>
-  </table>
+  <!-- Thank You Section -->
+  <div class="thank-you-section">
+    <h3>Thank You</h3>
+    <p>
+      We extend our heartfelt gratitude to the <strong>DS105A Team</strong> for their support and guidance throughout this project. 
+    </p>
+    <p>
+      A special thanks to <strong>Dr. Jon</strong> for being present for us and for his invaluable insights that helped shape this journey.
+    </p>
+    <p>
+      We’d also like to acknowledge <strong>Alex Soldatkin</strong> for being an exceptional class teacher, guiding us with patience and clarity, and, of course, for wearing the most <em>fly suits</em> to class—always inspiring us to bring our best selves!
+    </p>
+  </div>
 
 </body>
 </html>
