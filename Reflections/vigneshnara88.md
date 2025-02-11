@@ -86,7 +86,7 @@ I developed logic tailored to Pokémon-related analysis by:
 
 ### **Supporting Team Members**  
 - When Jon tore his ACL, I had to spend some time taking care of him, as we stay in the same hall (he had to endure my horrendous cooking), and we were sidetracked from our project.  
-![Dish_1](pasta.jpg)
+![Dish_1](../Reflections/supporting_evidence_vignesh/pasta.jpg)
 - Helped less familiar team members understand **Pokémon-related concepts**, ensuring they could contribute effectively.  
 - Individually texted team members to ensure they were getting along well with their tasks and offered help when they were stuck.
 
