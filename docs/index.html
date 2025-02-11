@@ -23,7 +23,7 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             height: 60px; /* Explicitly set the height of the navbar */
         }
-    
+
         .navbar ul {
             list-style: none;
             margin: 0;
@@ -33,11 +33,11 @@
             width: 100%; /* Ensure the list takes up the full width */
             justify-content: center; /* Center the links horizontally */
         }
-    
+
         .navbar ul li {
             display: inline;
         }
-    
+
         .navbar ul li a {
             font-family: 'Poppins', sans-serif;
             color: white;
@@ -48,16 +48,16 @@
             border-radius: 5px; /* Optional: add rounded corners */
             transition: background-color 0.3s ease, color 0.3s ease;
         }
-    
+
         .navbar ul li a:hover {
             background-color: #ffffff; /* White like Pokéball */
             color: #e60012; /* Red text on hover */
         }
-    
+
         :root {
             --navbar-height: 60px;
         }
-    
+
         /* Apply padding to the body */
         body {
             padding-top: var(--navbar-height);
@@ -70,7 +70,7 @@
             text-align: center;
             min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
         }
-    
+
         /* Header Styles */
         .hero {
             position: relative; /* Add relative positioning */
@@ -80,7 +80,7 @@
             color: #ffffff; /* White text */
             margin-top: var(--navbar-height);
         }
-    
+
         /* Pokémon Animation */
         .pokemon {
             position: absolute;
@@ -88,13 +88,13 @@
             width: 100px;
             cursor: pointer; /* Make Pokémon clickable */
         }
-    
+
         @keyframes appear {
             0% { opacity: 0; transform: scale(0); }
             50% { opacity: 1; transform: scale(1); }
             100% { opacity: 0; transform: scale(0); }
         }
-    
+
         /* Pikachu Animation */
         #pikachu {
             position: absolute;
@@ -104,38 +104,38 @@
             width: 100px;
             cursor: pointer; /* Make Pikachu clickable */
         }
-    
+
         @keyframes run {
             0% { left: -100px; }
             100% { left: 100%; }
         }
-    
+
         /* Heading and Section Styles */
         h1, h2 {
             color: #ff0000;
         }
-    
+
         h1 {
             text-shadow: 3px 3px #ffffff;
             font-size: 2.5em;
         }
-    
+
         h2 {
             font-size: 1.8em;
         }
-    
+
         .bullet-points {
             list-style-type: none; /* Remove default bullets */
             padding-left: 30px; /* Space for the custom bullet */
         }
-    
+
         .bullet-points li {
             background: url('https://upload.wikimedia.org/wikipedia/commons/5/53/Poké_Ball_icon.svg') no-repeat left center; /* Use the Pokéball image as the bullet */
             background-size: 20px 20px; /* Adjust the size of the Pokéball */
             padding-left: 30px; /* Space between the bullet and text */
             margin-bottom: 10px; /* Space between list items */
         }
-    
+
         /* Pokémon Themed Title Animation */
         #animated-title {
             color: #ffcc00; /* Pikachu yellow */
@@ -144,18 +144,18 @@
             text-shadow: 3px 3px 5px #ff0000, -3px -3px 5px #ffffff; /* Subtle shadow */
             animation: fadeIn 2s ease-out, colorChange 3s ease-out forwards;
         }
-    
+
         @keyframes fadeIn {
             0% { opacity: 0; }
             100% { opacity: 1; }
         }
-    
+
         @keyframes colorChange {
             0% { color: #ffcc00; } /* Pikachu yellow */
             50% { color: #ff0000; } /* Red (Pokéball theme) */
             100% { color: #ffcc00; } /* Back to Pikachu yellow */
         }
-    
+
         /* Map Container */
         #map-container {
             margin: 20px auto;
@@ -166,13 +166,13 @@
             background-color: #ffffff;
             padding: 10px;
         }
-    
+
         iframe {
             width: 100%;
             height: 600px;
             border: none;
         }
-    
+
         /* User Guide */
         #user-guide {
             margin: 20px auto;
@@ -183,20 +183,20 @@
             width: 80%;
             text-align: left;
         }
-    
+
         .guide-item {
             cursor: pointer;
             font-weight: bold;
             color: #ff0000;
             margin: 10px 0;
         }
-    
+
         .guide-content {
             display: none;
             padding-left: 20px;
             color: #333;
         }
-    
+
         /* Instructions Modal */
         #instructions-modal {
             display: none;
@@ -213,7 +213,7 @@
             max-width: 500px;
             text-align: center;
         }
-    
+
         .close-btn {
             cursor: pointer;
             color: #ff0000;
@@ -223,7 +223,7 @@
             top: 10px;
             right: 15px;
         }
-    
+
         /* General Button Styles */
         button, .join-us-button {
             font-family: 'Poppins', sans-serif;
@@ -238,30 +238,31 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
             transform: translateY(0); /* Initial position */
         }
-    
+
         button:hover, .join-us-button:hover {
             background-color: #ff3333; /* Lighter red on hover */
             transform: translateY(-3px); /* Move button up slightly */
             box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
         }
-    
+
         button:active, .join-us-button:active {
             transform: translateY(0); /* Reset position */
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Reset shadow */
         }
-    
+
         /* Specific Styles for Quiz Buttons */
         #quiz-section button {
             background-color: #ffffff; /* White background */
             color: #333333; /* Dark text */
             border: 2px solid #ff0000; /* Red border */
+            margin: 10px; /* Adds space around each button */
         }
-    
+
         #quiz-section button:hover {
             background-color: #ff0000; /* Red background on hover */
             color: #ffffff; /* White text on hover */
         }
-    
+
         /* Scroll-to-Top Button */
         #scroll-to-top {
             position: fixed;
@@ -278,12 +279,12 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             transition: background-color 0.3s ease, transform 0.3s ease;
         }
-    
+
         #scroll-to-top:hover {
             background-color: #ff3333; /* Lighter red on hover */
             transform: scale(1.1);
         }
-    
+
         /* Fun Section */
         #fun-section {
             margin: 40px auto;
@@ -296,25 +297,25 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             display: none; /* Initially hidden */
         }
-    
+
         #fun-section h2 {
             color: #ff0000;
             font-size: 2.5em;
             margin-bottom: 20px;
         }
-    
+
         #fun-section p {
             font-size: 1.2em;
             color: #333333;
             margin-bottom: 20px;
         }
-    
+
         /* Divider between Fun Game and Quiz */
         .divider {
             border-top: 2px solid #ff0000;
             margin: 40px 0;
         }
-    
+
         /* Pokéball Icon for Quiz */
         #quiz-section::before {
             content: '';
@@ -325,7 +326,7 @@
             height: 50px;
             margin: 0 auto 20px;
         }
-    
+
         /* Easter Egg Styles */
         .easter-egg {
             display: none;
@@ -341,18 +342,18 @@
             z-index: 1000;
             text-align: center;
         }
-    
+
         .easter-egg img {
             width: 100px;
             height: 100px;
             margin-bottom: 10px;
         }
-    
+
         .easter-egg p {
             font-size: 1.2em;
             color: #333333;
         }
-    
+
         .close-button {
             position: absolute;
             top: 10px;
@@ -454,6 +455,8 @@
             <div id="fun-game-section">
                 <h2>Fun Game: Catch Pokémon!</h2>
                 <button class="how-to-play-btn" onclick="startPokemonGame()">How to Play</button>
+                <p>The game will start when the 'How to Play' button is pressed.</p>
+                <p>The game will stop when the 'Fun Section' is closed.</p>
             </div>
 
             <!-- Divider -->
@@ -540,7 +543,7 @@
 
         function startPokemonGame() {
             stopPokemonGame(); // Stop any existing game
-            pokemonInterval = setInterval(generateRandomPokemon, 30000); // Generate Pokémon every 5 seconds
+            pokemonInterval = setInterval(generateRandomPokemon, 25000); // Generate Pokémon every 25 seconds
             showInstructions(); // Show the instructions modal
         }
 
