@@ -3,13 +3,133 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <title>Our Team</title>
   <style>
+    /* Navigation Bar (Pokéball-like color scheme) */
+    .navbar {
+      font-family: 'Poppins', sans-serif;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #e60012; /* Red like Pokéball */
+      color: white;
+      display: flex;
+      justify-content: space-around; /* Space out links evenly */
+      align-items: center;
+      padding: 1rem;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      height: 60px; /* Explicitly set the height of the navbar */
+    }
+
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+      width: 100%; /* Ensure the list takes up the full width */
+      justify-content: center; /* Center the links horizontally */
+    }
+
+    .navbar ul li {
+      display: inline;
+    }
+
+    .navbar ul li a {
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2em; /* Slightly increase font size */
+      padding: 10px 20px; /* Add padding for spacing */
+      border-radius: 5px; /* Optional: add rounded corners */
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .navbar ul li a:hover {
+      background-color: #ffffff; /* White like Pokéball */
+      color: #e60012; /* Red text on hover */
+    }
+
+    /* Style for the active link */
+    .navbar ul li a.active {
+      background-color: #ffffff; /* White background */
+      color: #e60012; /* Red text */
+    }
+
+    /* Style for the project name */
+    .navbar ul li.project-name a {
+      font-size: 1.5em; /* Larger font size */
+      font-weight: 800; /* Bolder font */
+      padding: 0 20px; /* Adjust padding */
+    }
+
+    /* Override hover behavior for the project name */
+    .navbar ul li.project-name a:hover {
+      background-color: transparent; /* No background color on hover */
+      color: white; /* Keep the text color white */
+    }
+
+    :root {
+      --navbar-height: 60px;
+    }
+
+    /* Apply padding to the body */
+    body {
+      padding-top: var(--navbar-height);
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* Header Styles */
+    .hero {
+      position: relative; /* Add relative positioning */
+      text-align: center;
+      padding: 150px; /* Adjust padding as needed */
+      background: linear-gradient(135deg, #e60012, #ffcb05); /* Red to yellow gradient */
+      color: #ffffff; /* White text */
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    /* Scroll Down Button */
+    .scroll-down-button {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: transparent;
+      border: 2px solid white;
+      color: white;
+      font-size: 1.5em;
+      padding: 10px 20px;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .scroll-down-button:hover {
+      background-color: white;
+      color: #e60012;
+    }
+
     body {
       font-family: 'Poppins', sans-serif;
       line-height: 1.6;
       margin: 0;
-      padding-top: 80px; /* Offset for fixed navbar */
+      padding-top: var(--navbar-height);
       background-color: #f8f9fa;
     }
     h2 {
@@ -17,46 +137,81 @@
       text-align: center;
       margin-bottom: 20px;
     }
+
+    /* Team Container */
     .team-container {
-      padding: 40px 0;
+      padding: 40px 20px;
       text-align: center;
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin: 40px auto;
+      max-width: 1200px;
     }
+
+    .team-container h2 {
+      color: #e74c3c; /* Pokémon Red */
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .team-container p {
+      color: #7f8c8d;
+      font-size: 1.1em;
+      line-height: 1.8;
+    }
+
+    /* Team Row */
     .team-row {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       gap: 30px;
-      margin-top: 20px;
+      margin-top: 30px;
     }
+
+    /* Team Member Card */
     .team-member {
-      width: 220px;
+      width: 260px;
       text-align: center;
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       padding: 20px;
-      transition: transform 0.3s ease-in-out;
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
+    .team-member:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
     .team-member img {
       width: 120px;
       height: 120px;
       border-radius: 50%;
       object-fit: cover;
-      margin-bottom: 10px;
+      border: 4px solid #e74c3c; /* Pokémon Red */
+      transition: border-color 0.3s ease;
     }
+
+    .team-member img:hover {
+      border-color: #f1c40f; /* Pokémon Yellow */
+    }
+
     .team-member h3 {
-      font-size: 1.2em;
-      color: #333;
-      margin-top: 10px;
+      margin-top: 15px;
+      font-size: 1.4em;
+      color: #2c3e50; /* Dark Blue */
     }
+
     .team-member p {
-      font-size: 0.9em;
       color: #7f8c8d;
       margin-top: 5px;
+      font-size: 0.95em;
     }
-    .team-member:hover {
-      transform: translateY(-10px);
-    }
+
+    /* Thank You Section */
     .thank-you-section {
       padding: 40px 20px;
       background-color: #fff;
@@ -64,18 +219,94 @@
       text-align: center;
       margin-top: 40px;
     }
+
     .thank-you-section h3 {
       color: #e60012;
       margin-bottom: 20px;
     }
+
     .thank-you-section p {
       font-size: 1em;
       color: #555;
       line-height: 1.8;
     }
+
+    .thank-you-section a {
+      color: #e60012; /* Pokéball Red */
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .thank-you-section a:hover {
+      text-decoration: underline;
+    }
+
+    /* Work Allocation Reference */
+    .work-allocation {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .work-allocation p {
+      font-size: 1em;
+      color: #333;
+    }
+
+    .work-allocation a {
+      color: #e60012;
+      text-decoration: none;
+    }
+
+    .work-allocation a:hover {
+      text-decoration: underline;
+    }
+
+    /* === Scroll-to-Top Button === */
+    #scroll-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #e60012; /* Red button */
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      display: none;
+    }
+
+    #scroll-to-top:hover {
+      background-color: #ff3333; /* Lighter red on hover */
+      transform: scale(1.1);
+    }
   </style>
 </head>
 <body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+        <!-- Add the project name as the first item in the navbar -->
+        <li class="project-name"><a href="index.html">Project Error 105</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="process.html">Our Process</a></li>
+        <li><a href="visualisations.html">Findings</a></li>
+        <li><a href="sources.html">Data Sources</a></li>
+        <li><a href="contribute.html">Contribute</a></li>
+        <li><a href="our_team.html" class="active">Our Team</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Meet Our Team</h1>
+    <p>The masterminds behind the PokéMap Project!</p>
+    <!-- Scroll Down Button -->
+    <button class="scroll-down-button" onclick="scrollToTeam()">▼</button>
+  </div>
 
   <!-- Team Section -->
   <div class="team-container" id="team">
@@ -117,9 +348,7 @@
 
   <!-- Work Allocation Reference -->
   <div class="work-allocation">
-    <p style="text-align: center; font-size: 1em; color: #333; margin-top: 40px;">
-      For a more detailed breakdown of work allocation, please refer to our <a href="process.html" style="color: #e60012; text-decoration: none;">Process Section</a>.
-    </p>
+    <p>For a more detailed breakdown of work allocation, please refer to our <a href="process.html">Process Section</a>.</p>
   </div>
 
   <!-- Thank You Section -->
@@ -129,12 +358,52 @@
       We extend our heartfelt gratitude to the <strong>DS105A Team</strong> for their support and guidance throughout this project. 
     </p>
     <p>
-      A special thanks to <strong>Dr. Jon</strong> for being present for us and for his invaluable insights that helped shape this journey.
+      A special thanks to <strong><a href="https://github.com/jonjoncardoso" target="_blank">Dr. Jon</a></strong> for being present for us and for his invaluable insights that helped shape this journey.
     </p>
     <p>
-      We’d also like to acknowledge <strong>Alex Soldatkin</strong> for being an exceptional class teacher, guiding us with patience and clarity, and, of course, for wearing the most <em>fly suits</em> to class—always inspiring us to bring our best selves!
+      We’d also like to acknowledge <strong><a href="https://github.com/alex-soldatkin" target="_blank">Alex Soldatkin</a></strong> for being an exceptional class teacher, guiding us with patience and clarity, and, of course, for wearing the most <em>fly suits</em> to class—always inspiring us to bring our best selves!
     </p>
   </div>
 
+  <!-- Scroll-to-Top Button -->
+  <button id="scroll-to-top" title="Go to top">↑</button>
+
+  <!-- JavaScript for Smooth Scrolling -->
+  <script>
+    function scrollToTeam() {
+      const teamSection = document.getElementById('team');
+      teamSection.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // === Scroll-to-Top Button ===
+    const scrollToTopButton = document.getElementById('scroll-to-top');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            scrollToTopButton.style.display = 'block';
+        } else {
+            scrollToTopButton.style.display = 'none';
+        }
+    });
+
+    scrollToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    // Add this script to dynamically highlight the current page
+    document.addEventListener('DOMContentLoaded', () => {
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html'; // Get the current page filename
+        const navLinks = document.querySelectorAll('.navbar ul li a');
+
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('active'); // Add the active class to the current page's link
+            }
+        });
+    });
+  </script>
 </body>
 </html>
