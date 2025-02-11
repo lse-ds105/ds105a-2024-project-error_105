@@ -1,119 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pokémon Biome Mapping Project</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 20px;
-    }
-    h1, h2, h3 {
-      color: #2c3e50;
-    }
-    .step {
-      background-color: #f4f4f9;
-      border-left: 5px solid #3498db;
-      margin: 20px 0;
-      padding: 10px 20px;
-    }
-    .comments-section {
-      margin-top: 40px;
-      border-top: 2px solid #bdc3c7;
-      padding-top: 20px;
-    }
-    .comment-box {
-      margin-bottom: 20px;
-    }
-    textarea {
-      width: 100%;
-      height: 100px;
-      margin-bottom: 10px;
-    }
-    button {
-      background-color: #3498db;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #2980b9;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Our Process</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #333;
+            font-size: 2em;
+        }
+
+        .section h3 {
+            color: #555;
+            font-size: 1.5em;
+        }
+
+        .section h4 {
+            color: #666;
+            font-size: 1.25em;
+        }
+
+        p, ul {
+            font-size: 1em;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            max-width: 50%;
+            height: auto;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-  <h1>Pokémon Biome Mapping Project</h1>
-  <p>This project maps Pokémon to real-world biomes based on their strengths and types, leveraging Pokémon data, geographic information, and climate datasets.</p>
 
-  <!-- Step 1 -->
-  <div class="step">
-    <h2>Step 1: Pokémon Data Analysis (Using PokeAPI)</h2>
-    <p>This step focuses on extracting, processing, and ranking Pokémon data using the <strong>PokeAPI</strong>.</p>
-    <h3>Key Activities:</h3>
-    <ul>
-      <li><strong>Comprehensive Pokémon Data Extraction:</strong> Queried the PokeAPI to retrieve Pokémon stats, types, and sprite images using asynchronous methods.</li>
-      <li><strong>Ranking Pokémon:</strong> Calculated total stat scores and assigned rankings on a scale of 1–100, with the strongest Pokémon matched to extreme environments.</li>
-      <li><strong>Filtering Pokémon by Type:</strong> Specialized filtering for Fire, Ice, and Water types to match them to specific biomes.</li>
-      <li><strong>Data Storage:</strong> Stored structured data in JSON files and an SQLite database for further analysis.</li>
-    </ul>
-    <p><strong>Outputs:</strong> Cleaned Pokémon dataset with rankings, stats, and types.</p>
-  </div>
+    <header>
+        <h1>Our Process</h1>
+    </header>
 
-  <!-- Step 2 -->
-  <div class="step">
-    <h2>Step 2: Extracting Biomes from Google Earth Engine</h2>
-    <p>This step identifies real-world biomes using the <strong>Google Earth Engine (GEE)</strong> API.</p>
-    <h3>Key Activities:</h3>
-    <ul>
-      <li>Utilized the <strong>Ecoregions 2017 Resolve Dataset</strong> to classify biomes such as deserts, forests, and tundras.</li>
-      <li>Calculated centroids for 1,500+ biomes globally to represent each biome.</li>
-      <li>Authenticated Google Earth Engine using a service account to automate the data extraction process.</li>
-      <li>Batch-processed biome data to optimize runtime and ensure consistency.</li>
-    </ul>
-    <p><strong>Outputs:</strong> A structured dataset of biome centroids with geographic coordinates.</p>
-  </div>
+    <div class="container">
+        <div class="section">
+            <h2>Our Process</h2>
+            <p>The process of our project generally follows the Data Science process taught in DS105. However, due to the nature of our project requiring the usage of multiple APIs, we have decided to include “Integration” as the third step of our project. As such, our process follows the structure as shown below:</p>
+            <div class="image-container">
+                <img src="process_workflow.png" alt="Our Process Diagram">
+            </div>
+            <p>The sections below will go into further detail about how each of the different types of data - Pokémon, Biome and Weather - are collected, cleaned, and analyzed for our project.</p>
+        </div>
 
-  <!-- Step 3 -->
-  <div class="step">
-    <h2>Step 3: Climate Data Analysis (Using Open-Meteo)</h2>
-    <p>Fetched and analyzed climate data for the identified biome centroids to rank the hottest, coldest, and wettest locations. We also leveraged forecasted climate data to predict where Pokémon might move in the future.</p>
-    <h3>Key Activities:</h3>
-    <ul>
-      <li><strong>Data Collection:</strong> Used <strong>Open-Meteo</strong> to retrieve both historical and forecasted temperature and rainfall data for biome centroids.</li>
-      <li><strong>Asynchronous Requests:</strong> Leveraged <strong>asyncio</strong> to process large volumes of data efficiently.</li>
-      <li><strong>Daily Updates:</strong> Updated maps on a daily, refreshable basis to reflect real-time and forecasted Pokémon migrations based on climate trends.</li>
-      <li><strong>Pokémon Movement Tracker:</strong> Investigated how much Pokémon moved between biomes over time, enabling a Pokémon movement tracker feature.</li>
-    </ul>
-    <p><strong>Outputs:</strong> Ranked list of locations based on climatic extremes and Pokémon migration patterns.</p>
-  </div>
+        <div class="section">
+            <h2>Pokemon Data</h2>
+            <h3>Pokémon Data Collection</h3>
+            <p>This section details the methodology for retrieving and processing Pokémon data from the PokeAPI. The approach ensures efficient data collection, structuring, and storage while utilizing parallel processing techniques to optimize performance.</p>
 
-  <!-- Step 4 -->
-  <div class="step">
-    <h2>Step 4: Mapping Pokémon to Biomes</h2>
-    <p>This step matches ranked Pokémon to biomes based on their types and strengths and visualizes the results on an interactive map.</p>
-    <h3>Key Activities:</h3>
-    <ul>
-      <li><strong>Matching Pokémon to Biomes:</strong> Assigned Pokémon to biomes based on rankings, e.g., the strongest Fire-type Pokémon matched to the hottest biome.</li>
-      <li><strong>Interactive Mapping:</strong> Used <strong>Folium</strong> to create interactive maps showing Pokémon distributions across biomes.</li>
-      <li><strong>Geographical Analysis:</strong> Performed regression analysis to understand how latitude and longitude influence climate extremes and Pokémon distribution.</li>
-    </ul>
-    <p><strong>Outputs:</strong> Interactive maps displaying Pokémon distributions and movements.</p>
-  </div>
+            <h4>Asynchronous API Requests with ThreadPoolExecutor</h4>
+            <p>There are 1025 different Pokémon, so we explored efficient ways to collect data regarding each individual Pokémon. The requests library is used to query the PokeAPI for data on all Pokémon species. The ThreadPoolExecutor module enables concurrent API calls, significantly reducing execution time.</p>
+            <ul>
+                <li>The collected data is structured into Pandas DataFrames and saved as JSON files for further analysis.</li>
+                <li>Through parallel execution, the time to collect the data was reduced by a factor of 10.</li>
+            </ul>
 
-  <!-- Comments Section -->
-  <div class="comments-section">
-    <h2>Comments Section</h2>
-    <form>
-      <div class="comment-box">
-        <label for="comment">Leave a Comment:</label>
-        <textarea id="comment" name="comment" placeholder="Type your comment here..."></textarea>
-      </div>
-      <button type="submit">Submit Comment</button>
-    </form>
-  </div>
+            <h4>Extracting and Organizing Pokémon Identifiers</h4>
+            <p>Each Pokémon was identified by querying data from every generation, from Generation I to Generation IX. The Pokémon’s ID was extracted from the collected URL and assigned to a new column in the dataframe.</p>
+
+            <h4>Comprehensive Data Collection for Each Pokémon</h4>
+            <p>The data for each Pokémon was collected in two steps:</p>
+            <ul>
+                <li><strong>Pokemon-specific Details:</strong> Extracts fundamental attributes such as name, base stats, and sprite images. Non-essential data is removed, and the required data is stored in a JSON structure.</li>
+                <li><strong>Species Details:</strong> Retrieves species-specific information, including Pokédex flavor text. Filters and retains only the first available English descriptions for clarity.</li>
+            </ul>
+
+            <h4>Error Handling</h4>
+            <p>Any API request failures or missing data points are logged and managed to prevent script interruptions. It was reflected that data was successfully collected for all 1025 Pokémon.</p>
+
+            <h3>Pokémon Data Processing</h3>
+            <h4>Data Extraction and Transformation</h4>
+            <p>Data was collected and processed from the JSON format into a Pandas DataFrame using the following steps:</p>
+            <ul>
+                <li><strong>Loading Data:</strong> Utilized the JSON and Pandas libraries to read and load Pokémon data from JSON files into DataFrames.</li>
+                <li><strong>Normalization:</strong> Applied pd.json_normalize to flatten nested JSON structures, making it easier to manipulate the data.</li>
+                <li><strong>Data Integration:</strong> Merged various data sources into a comprehensive DataFrame containing attributes like habitat, description, types, and statistical metrics.</li>
+            </ul>
+
+            <h4>Statistical Calculations</h4>
+            <p>Statistical calculations were executed to compute aggregate statistics for each Pokémon, facilitating ranking and comparison.</p>
+            <ul>
+                <li><strong>Total Stat Calculation:</strong> Summed individual stats (HP, attack, defense, special attack, special defense, speed) to derive a total_stat metric for each Pokémon.</li>
+                <li><strong>Ranking:</strong> Sorted Pokémon based on their total_stat, with tiebreakers based on HP stat to reflect their ability to tolerate intense climates.</li>
+            </ul>
+
+            <h4>Dominant Colour Extraction from Images</h4>
+            <p>The dominant color of each Pokémon's image was determined using the following process:</p>
+            <ul>
+                <li><strong>Image Retrieval:</strong> Downloaded Pokémon images using URLs provided in the dataset.</li>
+                <li><strong>Background Removal:</strong> Filtered out black and white pixels to focus on the Pokémon's primary colors.</li>
+                <li><strong>Colour Clustering:</strong> Employed the K-Means clustering algorithm to identify the dominant RGB color in each image.</li>
+                <li><strong>Colour Classification:</strong> Converted RGB values to HSV to classify colors into categories like red, orange, yellow, etc.</li>
+            </ul>
+
+            <h4>Data Storage and Accessibility</h4>
+            <p>Processed Pokémon data was stored in structured formats for future analysis and application development:</p>
+            <ul>
+                <li><strong>JSON Export:</strong> The main Pokémon DataFrame was saved as a JSON file for easy sharing and future use.</li>
+                <li><strong>Database Integration:</strong> Utilized SQLite to create separate tables for fire, ice, and water type Pokémon, storing relevant attributes and rankings.</li>
+            </ul>
+            <p>Storing the data in both JSON and database formats ensures flexibility, allowing for efficient querying and integration with other applications or analyses. The SQL tables will be utilized for the integration of the different forms of data.</p>
+
+            <h4>Considerations and Challenges</h4>
+            <ul>
+                <li><strong>Image Processing Limitation:</strong> Encountered an issue with Pokémon ID 678, whose image could not be processed due to a bug. Assigned a manual RGB value to address this.</li>
+                <li><strong>Background Removal Impact:</strong> The background removal process eliminated all white pixels, resulting in no Pokémon being classified with white as their dominant colour.</li>
+                <li><strong>Concurrency Warning:</strong> Despite setting the 'OMP_NUM_THREADS' to 1, a UserWarning regarding thread settings persisted during K-Means clustering.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Biome Data</h2>
+            <h3>Biome Data Collection</h3>
+            <p>This section focuses on collecting and analyzing biome data by determining the center coordinates of each ecoregion for the 14 biomes present in the Ecoregions 2017 Resolve dataset from Google Earth Engine (GEE). By identifying the central coordinates, we can use these coordinates to find out more data (e.g., weather data) using other APIs.</p>
+            <h4>Use of a Service Account to Authenticate Google Earth Engine</h4>
+            <p>Google Earth Engine (GEE) requires authentication to access its resources. While manual authentication (OAuth) is fine for interactive use, a service account is the best option for automated data collection.</p>
+            <ul>
+                <li><strong>What is a Service Account:</strong> A service account is a special type of Google account designed for applications rather than individuals. It allows scripts and automated workflows to authenticate with Google services securely, without requiring manual login.</li>
+                <li><strong>Why Use a Service Account for GEE:</strong>
+                    <ul>
+                        <li>Automation & Batch Processing: A service account enables scripts to run unattended, making it ideal for processing large datasets in Google Earth Engine.</li>
+                        <li>Security: Unlike personal accounts, service accounts use private keys for authentication, ensuring secure access control.</li>
+                        <li>Cloud Integration: Essential for running scripts on Google Colab, Google Cloud, or other remote servers without needing user interaction.</li>
+                        <li>Team Collaboration: Service accounts allow multiple team members to access shared resources without compromising personal credentials.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>By using a service account, the biome data extraction process can run automatically, reducing manual intervention and improving efficiency.</p>
+
+            <h4>Rationale for Using .py Script to Collect and Process Data for Biomes</h4>
+            <p>A Python script was used to collect and process the biome data due to the following advantages:</p>
+            <ul>
+                <li><strong>Batch Processing for Efficiency:</strong> Given the large dataset, biome data was collected in batches to optimize runtime and prevent exceeding computational limits.</li>
+                <li><strong>Automated Data Extraction:</strong> The script leverages Google Earth Engine’s Python API to fetch relevant biome data efficiently.</li>
+                <li><strong>Custom Filtering & Processing:</strong> The script applies filters to extract only the required information (e.g., center coordinates, biome types, ecoregions) as the huge amount of raw data makes it impractical to be collected.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Weather Data</h2>
+            <h3>Weather Data Collection</h3>
+            <p>This section focuses on collecting and analysing the data from open-meteo to identify the hottest, coldest, and rainiest locations in the world, and visualise any trends encountered along the way.</p>
+            <h4>Weather Data Collection</h4>
+            <p>This section aims to identify and rank geographical locations based on climatic extremes (hottest, coldest, and wettest regions) while evaluating their spatial patterns and exploring their potential influence on Pokémon distribution.</p>
+            <ul>
+                <li><strong>Use of asyncio for Asynchronous Requests:</strong> The asyncio library was implemented to efficiently handle API calls, enabling the retrieval of large volumes of forecasted weather data in parallel.</li>
+                <li><strong>Significance:</strong> This asynchronous approach significantly reduced the runtime of data collection, allowing the analysis to handle real-time, high-frequency data from diverse geographical regions.</li>
+                <li><strong>Scalability:</strong> By employing asyncio, the script demonstrates scalability and efficiency, ensuring that data for thousands of global centroids can be processed rapidly and without unnecessary delays.</li>
+            </ul>
+            <h4>Rationale for Using Forecasted Data</h4>
+            <p>The decision to use forecasted weather data, rather than purely historical datasets, was motivated by a desire to evaluate how Pokémon might adapt and move across varying climatic conditions in the near future.</p>
+
+            <h4>Weather Data Processing</h4>
+            <p>Climatic rankings and analysis were performed to assess the hottest, coldest, and wettest places globally. Additionally, exploratory mapping with Folium and geographical regression were used to visualize and analyze spatial and temporal variations in climate extremes.</p>
+        </div>
+
+        <div class="section">
+            <h2>Integration</h2>
+            <p>During the data exploration process, we realized that the API did not collect data on every Pokémon’s habitat. As such, the integration was done based on ranking Pokémon by their stat totals, with tiebreakers resolved by their health points.</p>
+            <div class="image-container">
+                <img src="pokemon_types_vs_habitats.html" alt="Integration Diagram">
+            </div>
+            <p>The final dataset was integrated using SQL tables, joining Pokémon data with weather data and biomes. This allowed us to create an interactive map with Pokémon locations and weather trends.</p>
+        </div>
+
+        <div class="section">
+            <h2>Visualisation</h2>
+            <p>Using the tables created, an interactive map was created with the following features:</p>
+            <ul>
+                <li><strong>Heatmap:</strong> Displaying the hottest, coldest, and wettest places globally.</li>
+                <li><strong>Fire Pokémon:</strong> Layer containing the locations of all fire-type Pokémon.</li>
+                <li><strong>Ice Pokémon:</strong> Layer containing the locations of all ice-type Pokémon.</li>
+                <li><strong>Water Pokémon:</strong> Layer containing the locations of all water-type Pokémon.</li>
+            </ul>
+            <p>The map is scrollable and zoomable for detailed exploration. It also includes a search bar to easily locate specific Pokémon.</p>
+            <p>If you would like to learn more about how to use our map, please head over to our <a href="index.html">home page</a>!</p>
+        </div>
+    </div>
 </body>
 </html>
-
