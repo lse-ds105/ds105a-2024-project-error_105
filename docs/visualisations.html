@@ -71,7 +71,7 @@
             position: relative; /* Add relative positioning */
             text-align: center;
             padding: 50px; /* Adjust padding as needed */
-            background: linear-gradient(135deg, #e60012, #ffffff); /* Red to white gradient */
+            background: linear-gradient(135deg, #e60012, #ffcb05);
             color: #ffffff; /* White text */
             margin-top: var(--navbar-height);
         }
@@ -484,6 +484,19 @@
             color: #2e7d32; /* Dark green text */
             display: none; /* Hidden by default */
         }
+        .special-links a {
+        display: block; /* Make the link a block element so it takes up the full width */
+        margin-bottom: 10px; /* Add some space between the link and the image */
+        color: #0000EE; /* Set the initial color */
+        text-decoration: underline; /* Keep the underline */
+        font-weight: bold; /* Make the text bold */
+        }
+
+        .special-links a:hover {
+            color: #551A8B; /* Change to a different color on hover */
+            text-decoration: none; /* Remove underline on hover */
+            font-weight: normal; /* Adjust the weight if desired */
+        }
         </style>
 </head>
 <body>
@@ -539,13 +552,25 @@
         <!-- Ridge Plot Container -->
         <div class="ridge-plot-container">
             <div class="ridge-plot">
-                <h3>Ridge Plot: Distribution of Pokémon Stats by Type</h3>
+                <h3 style="text-align: center;">Ridge Plot: Distribution of Pokémon Stats by Type</h3>
                 <figure>
-                    <div style="display: flex; justify-content: center; align-items: center; height: 70vh; width: 100%; text-align: center; margin: 0; padding: 0;">
-                        <!-- Set width to a percentage less than 100% for centering -->
-                    <iframe src="main_ridge_plot.html" alt="Ridge Plot of Pokémon Stats" style="width: 80%; height: 100%; border: none; display: block; margin-left: 18%;"></iframe>
+                    <!-- Link to open in a new tab -->
+                    <div class="special-links">
+                        <a href="main_ridge_plot.html" target="_blank" title="Click to open in a new tab">
+                            Click to open in a new tab.
+                        </a>
                     </div>
-                    <figcaption><strong>Figure 1.</strong> Distribution of Pokémon stats by type. A higher peak represents more Pokémon of that type at that stat total.</figcaption>
+                
+                    <!-- Centered iframe container -->
+                    <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 500px;">
+                        <!-- Image (iframe) -->
+                        <iframe src="main_ridge_plot.html" alt="Ridge Plot of Pokémon Stats" style="width: 90%; height: 90%; border: none; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);"></iframe>
+                    </div>
+                
+                    <!-- Centered caption -->
+                    <figcaption style="text-align: center; margin-top: 10px; font-style: italic; color: #666;">
+                        <strong>Figure 1.</strong> Distribution of Pokémon stats by type. A higher peak represents more Pokémon of that type at that stat total.
+                    </figcaption>
                 </figure>
                 <p>
                     By generating this ridge plot, we are able to observe the distribution of Pokémon according to their stats and types. The plot reveals two significant insights: Firstly, we notice several peaks for each Pokémon type, which reflects the evolution path of Pokémon—more evolved Pokémon tend to have higher stat totals. Secondly, the dragon type stands out as having the highest average stat, which aligns with the well-known rarity and strength of dragon-type Pokémon.
@@ -576,8 +601,13 @@
         <!-- Plot Container -->
         <div class="plot-container">
             <figure>    
-                <div style="display: flex; justify-content: center; align-items: center; height: 70vh; width: 100%; text-align: center; margin: 0; padding: 0;">
-                    <iframe src="filtered_candle_plot.html" alt="Filtered Candle Plot" style="width: 100%; height: 100%; border: none; display: block; margin-left: 18.5%;"></iframe>
+                <div class="special-links">
+                    <a href="filtered_candle_plot.html" target="_blank" title="Click to open in a new tab">
+                        Click to open in a new tab.
+                    </a>
+                </div>
+                <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 500px;">
+                    <iframe src="filtered_candle_plot.html" alt="Filtered Candle Plot" style="width: 90%; height: 90%; border: none; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);"></iframe>
                 </div>                                                     
                 <figcaption><strong>Figure 1.</strong> Candle plot showing the distribution of stats (max, min, and median) for the Pokémon types: Fire, Water, and Ice.</figcaption>
             </figure>
@@ -596,51 +626,86 @@
     </section>
 
     <!-- Section: How many of each type of Pokémon are there? -->
-    <section id="how-many-of-each-type" style="overflow: auto;">
+    <section id="how-many-of-each-type">
         <h2 style="text-align: center;">How many of each type of Pokémon are there?</h2>
 
-        <!-- Plots Container -->
-        <div class="plots-container" style="position: relative; width: 100%; height: 240vh;">
-        
-            <!-- Plot 1: Primary Type Bar Plot -->
-            <div class="plot" style="display: block;">
-                <h3>Graph 1: Primary Type Bar Plot</h3>
-                <figure>
-                    <iframe src="primary_type_bar_plot.html" alt="Primary Type Bar Plot" width="100%" height="100%" style="border: none;"></iframe>
-                    <figcaption><strong>Figure 1.</strong> Bar plot showing the distribution of primary Pokémon types.</figcaption>
-                </figure>
-                <p>We can see that the most common Primary Type for most Pokémon is water with 134 Pokémon. On the other hand, the least common Primary type for Pokémon is flying with 9 Pokémon. The rest of the Pokémon types are quite evenly distributed. While this may seem to imply that flying Pokémon are the rarest, this is not the case, as can be observed in the next plot below.</p>
+        <!-- Slider Container -->
+        <div class="slider-container">
+            <div class="slider">
+                <!-- Slide 1: Primary Type Bar Plot -->
+                <div class="slide">
+                    <h3>Graph 1: Primary Type Bar Plot</h3>
+                    <figure>
+                        <div class="special-links">
+                            <a href="primary_type_bar_plot.html" target="_blank" title="Click to open in a new tab">
+                                Click to open in a new tab.
+                            </a>
+                        </div>
+                        <iframe src="primary_type_bar_plot.html" alt="Primary Type Bar Plot" width="100%" height="500px" style="border: none;"></iframe>
+                        <figcaption><strong>Figure 1.</strong> Bar plot showing the distribution of primary Pokémon types.</figcaption>
+                    </figure>
+                    <p>We can see that the most common Primary Type for most Pokémon is water with 134 Pokémon. On the other hand, the least common Primary type for Pokémon is flying with 9 Pokémon. The rest of the Pokémon types are quite evenly distributed. While this may seem to imply that flying Pokémon are the rarest, this is not the case, as can be observed in the next plot below.</p>
+                </div>
+
+                <!-- Slide 2: Primary Type Heat Plot -->
+                <div class="slide">
+                    <h3>Graph 2: Primary Type Heat Plot</h3>
+                    <figure>
+                        <div class="special-links">
+                            <a href="primary_type_heat_plot.html" target="_blank" title="Click to open in a new tab">
+                                Click to open in a new tab.
+                            </a>
+                        </div>
+                        <iframe src="primary_type_heat_plot.html" alt="Primary Type Heat Plot" width="100%" height="500px" style="border: none;"></iframe>
+                        <figcaption><strong>Figure 2.</strong> Heat plot showing the distribution of primary Pokémon types.</figcaption>
+                    </figure>
+                    <p>The heat plot reinforces the bar plot’s findings, giving a more visual representation of the type distribution across different Pokémon species.</p>
+                </div>
+
+                <!-- Slide 3: Secondary Type Bar Plot -->
+                <div class="slide">
+                    <h3>Graph 3: Secondary Type Bar Plot</h3>
+                    <figure>
+                        <div class="special-links">
+                            <a href="secondary_type_bar_plot.html" target="_blank" title="Click to open in a new tab">
+                                Click to open in a new tab.
+                            </a>
+                        </div>
+                        <iframe src="secondary_type_bar_plot.html" alt="Secondary Type Bar Plot" width="100%" height="500px" style="border: none;"></iframe>
+                        <figcaption><strong>Figure 3.</strong> Bar plot showing the distribution of secondary Pokémon types.</figcaption>
+                    </figure>
+                    <p>For the secondary types, we can see that the flying type is the most common by far. This is not surprising, as many Pokémon are capable of flying but still retain their primary elemental type. This distribution suggests that the flying type is a common secondary feature across various Pokémon species.</p>
+                </div>
+
+                <!-- Slide 4: Secondary Type Heat Plot -->
+                <div class="slide">
+                    <h3>Graph 4: Secondary Type Heat Plot</h3>
+                    <figure>
+                        <div class="special-links">
+                            <a href="secondary_type_heat_plot.html" target="_blank" title="Click to open in a new tab">
+                                Click to open in a new tab.
+                            </a>
+                        </div>
+                        <iframe src="secondary_type_heat_plot.html" alt="Secondary Type Heat Plot" width="100%" height="500px" style="border: none;"></iframe>
+                        <figcaption><strong>Figure 4.</strong> Heat plot showing the distribution of secondary Pokémon types.</figcaption>
+                    </figure>
+                    <p>This heat plot visually emphasizes the prevalence of flying as a secondary type across the Pokémon dataset, supporting the bar plot’s findings.</p>
+                </div>
             </div>
 
-            <!-- Plot 2: Primary Type Heat Plot -->
-            <div class="plot" style="display: block;">
-                <h3>Graph 2: Primary Type Heat Plot</h3>
-                <figure>
-                    <iframe src="primary_type_heat_plot.html" alt="Primary Type Heat Plot" width="100%" height="100%" style="border: none;"></iframe>
-                    <figcaption><strong>Figure 2.</strong> Heat plot showing the distribution of primary Pokémon types.</figcaption>
-                </figure>
-                <p>The heat plot reinforces the bar plot’s findings, giving a more visual representation of the type distribution across different Pokémon species.</p>
+            <!-- Navigation Dots -->
+            <div class="dots">
+                <div class="dot active" onclick="showSlide(0, this.parentElement.parentElement)"></div>
+                <div class="dot" onclick="showSlide(1, this.parentElement.parentElement)"></div>
+                <div class="dot" onclick="showSlide(2, this.parentElement.parentElement)"></div>
+                <div class="dot" onclick="showSlide(3, this.parentElement.parentElement)"></div>
             </div>
+        </div>
 
-            <!-- Plot 3: Secondary Type Bar Plot -->
-            <div class="plot" style="display: block;">
-                <h3>Graph 3: Secondary Type Bar Plot</h3>
-                <figure>
-                    <iframe src="secondary_type_bar_plot.html" alt="Secondary Type Bar Plot" width="100%" height="100%" style="border: none;"></iframe>
-                    <figcaption><strong>Figure 3.</strong> Bar plot showing the distribution of secondary Pokémon types.</figcaption>
-                </figure>
-                <p>For the secondary types, we can see that the flying type is the most common by far. This is not surprising, as many Pokémon are capable of flying but still retain their primary elemental type. This distribution suggests that the flying type is a common secondary feature across various Pokémon species.</p>
-            </div>
-
-            <!-- Plot 4: Secondary Type Heat Plot -->
-            <div class="plot" style="display: block;">
-                <h3>Graph 4: Secondary Type Heat Plot</h3>
-                <figure>
-                    <iframe src="secondary_type_heat_plot.html" alt="Secondary Type Heat Plot" width="100%" height="100%" style="border: none;"></iframe>
-                    <figcaption><strong>Figure 4.</strong> Heat plot showing the distribution of secondary Pokémon types.</figcaption>
-                </figure>
-                <p>This heat plot visually emphasizes the prevalence of flying as a secondary type across the Pokémon dataset, supporting the bar plot’s findings.</p>
-            </div>
+        <!-- Buttons to Navigate Slides -->
+        <div class="button-container">
+            <button class="prev" onclick="prevSlide(this.parentElement.parentElement)">Prev</button>
+            <button class="next" onclick="nextSlide(this.parentElement.parentElement)">Next</button>
         </div>
     </section>
     
@@ -658,6 +723,11 @@
                 <div class="slide">
                     <h3>Graph: Pokémon Colour Proportions</h3>
                     <figure>
+                        <div class="special-links">
+                            <a href="colour_proportion_plot.html" target="_blank" title="Click to open in a new tab">
+                                Click to open in a new tab.
+                            </a>
+                        </div>
                         <div style="display: flex; justify-content: center; align-items: center; height: 50vh; width: 100%; text-align: center; margin: 0; padding: 0;">
                             <iframe src="colour_proportion_plot.html" alt="Colour Proportion of Pokémon" style="width: 100%; height: 100%; border: none; display: block; margin-left: 24.5%; margin-right: 17.5%; box-sizing: border-box;"></iframe>
                         </div>      
@@ -700,8 +770,18 @@
                 <div class="slide">
                     <h3>Graph 1: Latitude vs. Temperature</h3>
                     <figure>
+                        <div class="special-links">
+                            <a href="lat_temp.png" target="_blank" title="Click to open in a new tab">
+                                Click to open a in new tab.
+                            </a>
+                        </div>
+                        <!-- Image -->
                         <img src="lat_temp.png" alt="Latitude vs Temperature" width="100%">
-                        <figcaption><strong>Figure 1.</strong> Relationship between latitude and temperature. The trend shows that temperatures decrease as latitude increases.</figcaption>
+                    
+                        <!-- Caption -->
+                        <figcaption>
+                            <strong>Figure 1.</strong> Relationship between latitude and temperature. The trend shows that temperatures decrease as latitude increases.
+                        </figcaption>
                     </figure>
                     <p>The graph shows a <span class="highlight">strong negative correlation</span> between latitude and temperature. 
                         This supports the well-known geographical principle: <span class="highlight">temperatures are highest near the equator and decrease as we move toward the poles.</span>
@@ -712,6 +792,11 @@
                 <div class="slide">
                     <h3>Graph 2: Longitude vs. Temperature</h3>
                     <figure>
+                        <div class="special-links">
+                            <a href="long_temp.png" target="_blank" title="Click to open in a new tab">
+                                Click to open a in new tab.
+                            </a>
+                        </div>
                         <img src="long_temp.png" alt="Longitude vs Temperature" width="100%">
                         <figcaption><strong>Figure 2.</strong> Relationship between longitude and temperature. Results indicate minimal influence of longitude on temperature.</figcaption>
                     </figure>
@@ -759,9 +844,16 @@
                 <!-- Slide 1: Regression Model 1 -->
                 <div class="slide">
                     <h3><strong>Regression Model 1: Latitude vs. Temperature</strong></h3>
-                    <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 500px;">
-                        <iframe src="lat_regression.html" width="100%" height="100%" style="border: none; margin-left: 30%; margin-right:30%;"></iframe>
-                    </div>
+                    <figure>
+                        <div class="special-links">
+                            <a href="lat_regression.html" target="_blank" title="Click to open in a new tab">
+                                Click to open a in new tab.
+                            </a>
+                        </div>
+                        <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 500px;">
+                            <iframe src="lat_regression.html" width="100%" height="100%" style="border: none; margin-left: 30%; margin-right:30%;"></iframe>
+                        </div>
+                    </figure>
                     <p>The R-squared value of <span class="highlight"><strong>0.781</strong></span> indicates that <span class="highlight"><strong>78.1%</strong></span> of the variation in temperature can be explained by latitude alone. This supports the well-known geographic principle that temperatures decrease as one moves away from the equator.</p>
                     
                     <p><strong>Coefficient:</strong> <span class="highlight">-0.7931</span> (As latitude increases, temperature decreases.)</p>
@@ -771,9 +863,16 @@
                 <!-- Slide 2: Regression Model 2 -->
                 <div class="slide">
                     <h3><strong>Regression Model 2: Longitude vs. Temperature</strong></h3>
-                    <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 500px;">
-                        <iframe src="long_regression.html" width="100%" height="100%" style="border: none; margin-left: 30%; margin-right:30%;"></iframe>
-                    </div>
+                    <figure>
+                        <div class="special-links">
+                            <a href="long_regression.html" target="_blank" title="Click to open in a new tab">
+                                Click to open a in new tab.
+                            </a>
+                        </div>
+                        <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 500px;">
+                            <iframe src="long_regression.html" width="100%" height="100%" style="border: none; margin-left: 30%; margin-right:30%;"></iframe>
+                        </div>
+                    </figure>
                     <p>In contrast, longitude had an R-squared value of <span class="highlight"><strong>0</strong></span>, meaning it does not explain any variation in temperature.</p>
         
                     <p>The regression results showed:</p>
@@ -809,6 +908,11 @@
             <div class="slide">
                 <h3>Temperature Variance</h3>
                 <figure>
+                    <div class="special-links">
+                        <a href="hotvscold_spread_plot.png" target="_blank" title="Click to open in a new tab">
+                            Click to open a in new tab.
+                        </a>
+                    </div>
                     <img src="hotvscold_spread_plot.png" alt="Temperature Variance" width="80%">
                     <figcaption><strong>Figure 1.</strong> Comparison of temperature spread in the hottest and coldest places.</figcaption>
                 </figure>
@@ -830,6 +934,11 @@
 
         <!-- Map 1 -->
         <h4>Test Map 1</h4>
+        <div class="special-links">
+            <a href="temperature_ranked_map.html" target="_blank" title="Click to open in a new tab">
+                Click to open in a new tab.
+            </a>
+        </div>
         <div class="map-container">
             <iframe src="temperature_ranked_map.html" title="Test Map 1"></iframe>
         </div>
@@ -837,6 +946,11 @@
 
         <!-- Map 2 -->
         <h4>Test Map 2</h4>
+        <div class="special-links">
+            <a href="temperature_map_with_scale.html" target="_blank" title="Click to open in a new tab">
+                Click to open in a new tab.
+            </a>
+        </div>
         <div class="map-container">
             <iframe src="temperature_map_with_scale.html" title="Test Map 2"></iframe>
         </div>
@@ -844,6 +958,11 @@
 
         <!-- Map 3 -->
         <h4>Test Map 3</h4>
+        <div class="special-links">
+            <a href="pokemon_map.html" target="_blank" title="Click to open in a new tab">
+                Click to open in a new tab.
+            </a>
+        </div>
         <div class="map-container">
             <iframe src="pokemon_map.html" title="Test Map 3"></iframe>
         </div>

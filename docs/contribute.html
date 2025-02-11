@@ -6,29 +6,136 @@
     <title>Contribute to Our Pokémon Project</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- For icons -->
     <style>
-        body {
+        /* Navigation Bar (Pokéball-like color scheme) */
+        .navbar {
             font-family: 'Poppins', sans-serif;
-            background-color: #fff;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #e60012; /* Red like Pokéball */
+            color: white;
+            display: flex;
+            justify-content: space-around; /* Space out links evenly */
+            align-items: center;
+            padding: 1rem;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            height: 60px; /* Explicitly set the height of the navbar */
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+            width: 100%; /* Ensure the list takes up the full width */
+            justify-content: center; /* Center the links horizontally */
+        }
+
+        .navbar ul li {
+            display: inline;
+        }
+
+        .navbar ul li a {
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em; /* Slightly increase font size */
+            padding: 10px 20px; /* Add padding for spacing */
+            border-radius: 5px; /* Optional: add rounded corners */
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            background-color: #ffffff; /* White like Pokéball */
+            color: #e60012; /* Red text on hover */
+        }
+
+        /* Style for the active link */
+        .navbar ul li a.active {
+            background-color: #ffffff; /* White background */
+            color: #e60012; /* Red text */
+        }
+
+        /* Style for the project name */
+        .navbar ul li.project-name a {
+            font-size: 1.5em; /* Larger font size */
+            font-weight: 800; /* Bolder font */
+            padding: 0 20px; /* Adjust padding */
+        }
+
+        /* Override hover behavior for the project name */
+        .navbar ul li.project-name a:hover {
+            background-color: transparent; /* No background color on hover */
+            color: white; /* Keep the text color white */
+        }
+
+        :root {
+            --navbar-height: 60px;
+        }
+
+        /* Apply padding to the body */
+        body {
+            padding-top: var(--navbar-height);
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
             color: #333;
-            margin-top: 80px; /* Offset for fixed navbar */
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
         }
-        h1, h2 {
-            color: #e60012; /* Red like Pokéball */
-            text-align: center;
-            margin-bottom: 30px;
-        }
+
+        /* Main Content */
         .content {
+            margin-right: 80px; /* Offset for sidebar */
+            padding: 20px;
+            flex: 1;
             max-width: 900px;
             margin: 0 auto;
         }
+
+        /* Header Styles */
+        .hero {
+            position: relative;
+            text-align: center;
+            padding: 150px 20px;
+            background: linear-gradient(135deg, #e60012, #ffcb05);
+            color: #ffffff;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            color: white;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+
+        h1, h2 {
+            color: #e60012;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
         .goals ul {
             list-style-type: disc;
             padding-left: 20px;
         }
+
         .goals li {
             margin-bottom: 15px;
         }
+
         .github-box {
             background-color: #e60012;
             color: white;
@@ -40,22 +147,27 @@
             margin-top: 20px;
             transition: background-color 0.3s;
         }
+
         .github-box a {
             color: white;
             text-decoration: none;
             font-weight: 600;
         }
+
         .github-box:hover {
             background-color: #d70011;
         }
+
         .contact, .github {
             margin-top: 30px;
         }
+
         .contact p, .github p {
             font-size: 1.1em;
             text-align: center;
             color: #555;
         }
+
         .live-update {
             background-color: #f9ebea;
             border-left: 5px solid #e60012;
@@ -64,45 +176,68 @@
             font-style: italic;
             font-size: 1.1em;
         }
+
+        /* Footer */
         footer {
             text-align: center;
             font-size: 0.9em;
-            margin-top: 40px;
+            margin-top: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-top: 1px solid #e60012;
             color: #777;
         }
-        .navbar {
-            font-family: 'Poppins', sans-serif;
+
+        /* === Scroll-to-Top Button === */
+        #scroll-to-top {
             position: fixed;
-            top: 0;
-            width: 100%;
-            background-color: #e60012;
+            bottom: 20px;
+            right: 20px;
+            background-color: #e60012; /* Red button */
             color: white;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            padding: 1rem;
-            z-index: 1000;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            height: 60px;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            display: none;
+        }
+
+        #scroll-to-top:hover {
+            background-color: #ff3333; /* Lighter red on hover */
+            transform: scale(1.1);
         }
     </style>
 </head>
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
-        <a href="#" class="navbar-brand text-white">PokéMap Project</a>
-        <div>
-            <a href="#" class="text-white mx-3">Home</a>
-            <a href="#goals" class="text-white mx-3">Goals</a>
-            <a href="#contribute" class="text-white mx-3">Contribute</a>
-        </div>
+        <ul>
+            <!-- Add the project name as the first item in the navbar -->
+            <li class="project-name"><a href="index.html">Project Error 105</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="process.html">Our Process</a></li>
+            <li><a href="visualisations.html">Findings</a></li>
+            <li><a href="sources.html">Data Sources</a></li>
+            <li><a href="contribute.html" class="active">Contribute</a></li> <!-- Add the active class here -->
+            <li><a href="our_team.html">Our Team</a></li>
+        </ul>
     </nav>
 
-    <div class="content">
-        <h1>Contribute to Our Project</h1>
+    <!-- Hero Section -->
+    <div class="hero">
+        <section id="home">
+        <h1>Contribute to the PokéMap Project!</h1>
         <p>Join our team of Pokémon enthusiasts and data scientists! Whether you're an expert in Pokémon data analysis, web development, or have a creative flair, we have a place for you. Together, we can bring this ambitious project to life!</p>
+        </section>
+    </div>
 
-        <div class="goals" id="goals">
+    <!-- Main Content -->
+    <div class="content">
+        <section id="goals">
             <h2>Our Current Goals</h2>
             <ul>
                 <li><strong>Extend Analysis:</strong> Expand our database with more Pokémon types to improve our research findings.</li>
@@ -111,29 +246,53 @@
                 <li><strong>Live Weather Updates:</strong> We're working on integrating live weather updates to make the map refreshable based on real-time conditions. If you're interested in contributing to this feature, we'd love to collaborate!</li>
                 <li><strong>Long-Term Vision:</strong> Create a realistic Pokémon GO-like experience where users can complete the Pokédex in real life by discovering Pokémon in their natural habitats.</li>
             </ul>
-        </div>
+        </section>
 
-        <div class="live-update">
-            <p><strong>Exciting Update:</strong> We are actively working on adding live weather data to enhance the map's interactivity. Stay tuned if you're interested in helping us build this feature!</p>
-        </div>
-
-        <div class="contact">
-            <p>If you're interested in learning more or would like to get involved, please reach out to <strong>Vignesh Narayanan</strong> at <a href="mailto:v.narayanan@lse.ac.uk">v.narayanan@lse.ac.uk</a>.</p>
-        </div>
-
-        <div class="github">
-            <p>All project details and dependencies are available on our GitHub page. Click the link below to access and contribute:</p>
-            <div class="github-box">
-                <a href="https://github.com/lse-ds105/ds105a-2024-project-error_105" target="_blank">Visit Our GitHub Repository</a>
+        <section id="contribute">
+            <div class="live-update">
+                <p><strong>Exciting Update:</strong> We are actively working on adding live weather data to enhance the map's interactivity. Stay tuned if you're interested in helping us build this feature!</p>
             </div>
-            <p>Your contributions are invaluable, and all contributors will be acknowledged on our GitHub page!</p>
-        </div>
+
+            <div class="contact">
+                <p>If you're interested in learning more or would like to get involved, please reach out to <strong>Vignesh Narayanan</strong> at <a href="mailto:v.narayanan@lse.ac.uk">v.narayanan@lse.ac.uk</a>.</p>
+            </div>
+
+            <div class="github">
+                <p>All project details and dependencies are available on our GitHub page. Click the link below to access and contribute:</p>
+                <div class="github-box">
+                    <a href="https://github.com/lse-ds105/ds105a-2024-project-error_105" target="_blank">Visit Our GitHub Repository</a>
+                </div>
+                <p>Your contributions are invaluable, and all contributors will be acknowledged on our GitHub page!</p>
+            </div>
+        </section>
     </div>
 
+    <!-- Scroll-to-Top Button -->
+    <button id="scroll-to-top" title="Go to top">↑</button>
+
+    <!-- Footer -->
     <footer>
-        <p>© 2025 Pokémap Project Team  </p>
+        <p>© 2025 Pokémap Project Team</p>
     </footer>
+
+    <script>
+        // === Scroll-to-Top Button ===
+        const scrollToTopButton = document.getElementById('scroll-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollToTopButton.style.display = 'block';
+            } else {
+                scrollToTopButton.style.display = 'none';
+            }
+        });
+
+        scrollToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
 </body>
 </html>
-
-

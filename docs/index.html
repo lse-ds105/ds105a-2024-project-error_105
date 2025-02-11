@@ -54,6 +54,25 @@
             color: #e60012; /* Red text on hover */
         }
 
+        /* Style for the active link */
+        .navbar ul li a.active {
+            background-color: #ffffff; /* White background */
+            color: #e60012; /* Red text */
+        }
+
+        /* Style for the project name */
+        .navbar ul li.project-name a {
+            font-size: 1.5em; /* Larger font size */
+            font-weight: 800; /* Bolder font */
+            padding: 0 20px; /* Adjust padding */
+        }
+
+        /* Override hover behavior for the project name */
+        .navbar ul li.project-name a:hover {
+            background-color: transparent; /* No background color on hover */
+            color: white; /* Keep the text color white */
+        }
+
         :root {
             --navbar-height: 60px;
         }
@@ -76,7 +95,7 @@
             position: relative; /* Add relative positioning */
             text-align: center;
             padding: 50px; /* Adjust padding as needed */
-            background: linear-gradient(135deg, #e60012, #ffffff); /* Red to white gradient */
+            background: linear-gradient(135deg, #e60012, #ffcb05);
             color: #ffffff; /* White text */
             margin-top: var(--navbar-height);
         }
@@ -263,7 +282,7 @@
             color: #ffffff; /* White text on hover */
         }
 
-        /* Scroll-to-Top Button */
+        /* === Scroll-to-Top Button === */
         #scroll-to-top {
             position: fixed;
             bottom: 20px;
@@ -278,6 +297,7 @@
             cursor: pointer;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             transition: background-color 0.3s ease, transform 0.3s ease;
+            display: none;
         }
 
         #scroll-to-top:hover {
@@ -287,6 +307,8 @@
 
         /* Fun Section */
         #fun-section {
+            position: relative; /* Ensure Pokémon are positioned relative to the fun section */
+            overflow: hidden; /* Prevent Pokémon from appearing outside the fun section */
             margin: 40px auto;
             padding: 30px;
             background-color: #ffe176; /* Bright yellow background */
@@ -298,17 +320,26 @@
             display: none; /* Initially hidden */
         }
 
-        #fun-section h2 {
-            color: #ff0000;
-            font-size: 2.5em;
-            margin-bottom: 20px;
+        /* Pokémon Container */
+        #pokemon-container {
+            position: relative; /* Ensure Pokémon are positioned relative to this container */
+            width: 100%;
+            height: 100%; /* Take up the full height of the fun section */
         }
 
-        #fun-section p {
-            font-size: 1.2em;
-            color: #333333;
-            margin-bottom: 20px;
+        .pokemon {
+            position: absolute; /* Position Pokémon absolutely within the Fun Section */
+            width: 100px;
+            cursor: pointer;
+            animation: appear 5s linear infinite;
         }
+
+        @keyframes appear {
+            0% { opacity: 0; transform: scale(0); }
+            50% { opacity: 1; transform: scale(1); }
+            100% { opacity: 0; transform: scale(0); }
+        }
+
 
         /* Divider between Fun Game and Quiz */
         .divider {
@@ -362,6 +393,15 @@
             font-size: 1.5em;
             color: #ff0000;
         }
+
+        /* Pokéball Icon for Fun Game Section */
+        .pokeball-icon {
+            background: url('https://upload.wikimedia.org/wikipedia/commons/5/53/Pok%C3%A9_Ball_icon.svg') no-repeat center center;
+            background-size: 50px 50px;
+            width: 50px;
+            height: 50px;
+            margin: 0 auto 20px;
+        }
     </style>
 </head>
 <body>
@@ -371,7 +411,9 @@
     <!-- Navigation Bar -->
     <nav class="navbar">
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <!-- Add the project name as the first item in the navbar -->
+            <li class="project-name"><a href="index.html">Project Error 105</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
             <li><a href="process.html">Our Process</a></li>
             <li><a href="visualisations.html">Findings</a></li>
             <li><a href="sources.html">Data Sources</a></li>
@@ -450,14 +492,18 @@
 
             <!-- Divider -->
             <div class="divider"></div>
-
-            <!-- Fun Game Section -->
+            
+            <!-- Fun Game Section -->    
             <div id="fun-game-section">
+                <!-- Add Pokéball image here -->
+                <div class="pokeball-icon"></div>
                 <h2>Fun Game: Catch Pokémon!</h2>
+                <p>The game will start when the 'How to Play' button is clicked on and stop when the 'Fun Section' is closed.</p>
                 <button class="how-to-play-btn" onclick="startPokemonGame()">How to Play</button>
-                <p>The game will start when the 'How to Play' button is pressed.</p>
-                <p>The game will stop when the 'Fun Section' is closed.</p>
             </div>
+
+            <!-- Pokémon Container -->
+            <div id="pokemon-container"></div>
 
             <!-- Divider -->
             <div class="divider"></div>
@@ -478,7 +524,7 @@
         <div id="instructions-modal">
             <span class="close-btn" onclick="closeInstructions()">&times;</span>
             <h3>How to Play</h3>
-            <p>Pokémon will appear every minute. Click on them to catch and unlock a fun fact!</p>
+            <p>Pokémon will appear every 15 seconds. Click on them to catch and unlock a fun fact!</p>
         </div>
 
         <!-- Contribute Section -->
@@ -543,14 +589,15 @@
 
         function startPokemonGame() {
             stopPokemonGame(); // Stop any existing game
-            pokemonInterval = setInterval(generateRandomPokemon, 25000); // Generate Pokémon every 25 seconds
+            pokemonInterval = setInterval(generateRandomPokemon, 10000); // Generate Pokémon every 10 seconds
             showInstructions(); // Show the instructions modal
         }
 
         function stopPokemonGame() {
             clearInterval(pokemonInterval); // Stop generating Pokémon
-            const pokemonContainer = document.getElementById('pokemon-container');
-            pokemonContainer.innerHTML = ''; // Clear all Pokémon from the screen
+            const funSection = document.getElementById('fun-section');
+            const pokemonElements = funSection.querySelectorAll('.pokemon');
+            pokemonElements.forEach(pokemon => pokemon.remove()); // Clear all Pokémon from the Fun Section
         }
 
         // Pokémon data and facts
@@ -559,25 +606,31 @@
             { image: "mewtwo.png", fact: "Mewtwo was created by scientists through genetic manipulation of Mew's DNA." },
             { image: "gyarados.png", fact: "Gyarados is known for its fierce temper and destructive nature, often burning down entire villages." },
             { image: "snorlax.png", fact: "Snorlax eats nearly 900 pounds of food per day and falls asleep after every meal." },
-            { image: "dragonite.png", fact: "Dragonite can circle the globe in just 16 hours, flying at supersonic speeds." }
+            { image: "dragonite.png", fact: "Dragonite can circle the globe in just 16 hours, flying at supersonic speeds." },
+            { image: "lucario.png", fact: "Lucario can sense aura from other beings and communicate telepathically with humans." },
+            { image: "bulbasaur.png", fact: "Bulbasaur is the only starter Pokémon that has the same type for all its evolutions." },
+            { image: "gengar.png", fact: "Gengar is said to be the shadow of a former trainer that came back to haunt them." }
         ];
 
-        // Function to generate random Pokémon
         function generateRandomPokemon() {
             const randomFact = pokemonFacts[Math.floor(Math.random() * pokemonFacts.length)];
             const pokemonElement = document.createElement("img");
             pokemonElement.src = randomFact.image;
             pokemonElement.classList.add("pokemon");
 
-            // Random position for the Pokémon (entire document height)
-            const randomLeft = Math.random() * (window.innerWidth - 100);
-            const randomTop = Math.random() * (document.documentElement.scrollHeight - 100);
+            // Get the dimensions of the Fun Section container
+            const funSection = document.getElementById('fun-section');
+            const funSectionRect = funSection.getBoundingClientRect();
+
+            // Random position within the Fun Section
+            const randomLeft = Math.random() * (funSectionRect.width - 100); // Subtract 100 to account for Pokémon size
+            const randomTop = Math.random() * (funSectionRect.height - 100);
 
             pokemonElement.style.left = `${randomLeft}px`;
             pokemonElement.style.top = `${randomTop}px`;
 
-            // Add the Pokémon element to the container
-            document.getElementById("pokemon-container").appendChild(pokemonElement);
+            // Add the Pokémon element to the Fun Section
+            funSection.appendChild(pokemonElement);
 
             // Add click event to catch the Pokémon
             pokemonElement.addEventListener("click", () => {
@@ -689,6 +742,18 @@
                 content.style.display = "none";
             }
         }
+
+        // Add this script to dynamically highlight the current page
+        document.addEventListener('DOMContentLoaded', () => {
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html'; // Get the current page filename
+            const navLinks = document.querySelectorAll('.navbar ul li a');
+
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('active'); // Add the active class to the current page's link
+                }
+            });
+        });
     </script>
 </body>
 </html>

@@ -4,237 +4,808 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <title>Our Process</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+        /* Navigation Bar (Pokéball-like color scheme) */
+        .navbar {
+        font-family: 'Poppins', sans-serif;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #e60012; /* Red like Pokéball */
+        color: white;
+        display: flex;
+        justify-content: space-around; /* Space out links evenly */
+        align-items: center;
+        padding: 1rem;
+        z-index: 1000;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        height: 60px; /* Explicitly set the height of the navbar */
         }
 
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
+        .navbar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 20px;
+        width: 100%; /* Ensure the list takes up the full width */
+        justify-content: center; /* Center the links horizontally */
+        }
+
+        .navbar ul li {
+        display: inline;
+        }
+
+        .navbar ul li a {
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2em; /* Slightly increase font size */
+        padding: 10px 20px; /* Add padding for spacing */
+        border-radius: 5px; /* Optional: add rounded corners */
+        transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+        background-color: #ffffff; /* White like Pokéball */
+        color: #e60012; /* Red text on hover */
+        }
+
+        /* Style for the active link */
+        .navbar ul li a.active {
+        background-color: #ffffff; /* White background */
+        color: #e60012; /* Red text */
+        }
+
+        /* Style for the project name */
+        .navbar ul li.project-name a {
+        font-size: 1.5em; /* Larger font size */
+        font-weight: 800; /* Bolder font */
+        padding: 0 20px; /* Adjust padding */
+        }
+
+        /* Override hover behavior for the project name */
+        .navbar ul li.project-name a:hover {
+        background-color: transparent; /* No background color on hover */
+        color: white; /* Keep the text color white */
+        }
+
+        :root {
+        --navbar-height: 60px;
+        }
+
+        /* Header Styles */
+        .hero {
+            position: relative; /* Add relative positioning */
             text-align: center;
+            padding: 150px; /* Adjust padding as needed */
+            background: linear-gradient(135deg, #e60012, #ffcb05); /* Red to yellow gradient */
+            color: #ffffff; /* White text */
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #e60012, #ffcb05);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
         header h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 3em;
+            font-weight: 700;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         }
 
-        .container {
+        /* Timeline Layout */
+        .timeline {
+            position: relative;
             max-width: 1200px;
-            margin: 20px auto;
+            margin: 40px auto;
             padding: 20px;
         }
 
-        .section {
-            margin-bottom: 40px;
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #e60012;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
         }
 
-        .section h2 {
-            color: #333;
-            font-size: 2em;
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
         }
 
-        .section h3 {
-            color: #555;
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -13px;
+            background-color: #e60012;
+            border: 4px solid #ffcb05;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            left: 50%;
+        }
+
+        .left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid #e60012;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent #e60012;
+        }
+
+        .right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid #e60012;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent #e60012 transparent transparent;
+        }
+
+        .right::after {
+            left: -13px;
+        }
+
+        /* Collapsible Headers */
+        .collapsible-header {
+            width: 100%;
+            text-align: left;
+            padding: 15px;
             font-size: 1.5em;
-        }
-
-        .section h4 {
-            color: #666;
-            font-size: 1.25em;
-        }
-
-        p, ul {
-            font-size: 1em;
+            font-weight: 600;
             color: #333;
-            line-height: 1.6;
+            background-color: #fff;
+            border: 2px solid #e60012;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            cursor: pointer;
         }
 
-        ul {
-            list-style-type: disc;
+        .collapsible-header:hover {
+            background-color: #e60012;
+            color: #fff;
+        }
+
+        .collapsible-header.active {
+            background-color: #e60012;
+            color: #fff;
+        }
+
+        /* Subheaders */
+        .subheaders {
+            margin-top: 10px;
             padding-left: 20px;
         }
 
-        ul li {
-            margin-bottom: 10px;
+        .subheader {
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 1.2em;
         }
 
-        .image-container {
+        .subheader:hover {
+            background-color: #e60012;
+            color: #fff;
+        }
+
+        /* Nested Subheaders */
+        .nested-subheaders {
+            margin-top: 5px;
+            padding-left: 20px;
+        }
+
+        .nested-subheader {
+            padding: 8px;
+            margin: 3px 0;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .nested-subheader:hover {
+            background-color: #e60012;
+            color: #fff;
+        }
+
+        /* Full Screen Modal */
+        .full-screen-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            overflow-y: auto;
+            padding: 20px;
+        }
+
+        .full-screen-modal .modal-content {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 800px;
+            width: 100%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .full-screen-modal .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .full-screen-modal .modal-header h2 {
+            margin: 0;
+            font-size: 2em;
+            color: #e60012;
+            font-size: 2.5em;
+        }
+
+        .full-screen-modal .modal-header .close-btn {
+            background: none;
+            border: none;
+            font-size: 1.5em;
+            cursor: pointer;
+            color: #333;
+        }
+
+        .full-screen-modal .modal-header .close-btn:hover {
+            color: #e60012;
+        }
+
+        .full-screen-modal .modal-body {
+            max-height: 80vh;
+            overflow-y: auto;
+            font-size: 1.2em; 
+        }
+
+        /* Footer */
+        footer {
             text-align: center;
-            margin: 20px 0;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 50px;
         }
 
-        .image-container img {
-            max-width: 50%;
-            height: auto;
-        }
-
-        a {
-            color: #0066cc;
+        footer a {
+            color: #ffcb05;
             text-decoration: none;
         }
 
-        a:hover {
+        footer a:hover {
             text-decoration: underline;
+        }
+
+        /* === Scroll-to-Top Button === */
+        #scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #e60012; /* Red button */
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            display: none;
+        }
+
+        #scroll-to-top:hover {
+            background-color: #ff3333; /* Lighter red on hover */
+            transform: scale(1.1);
+        }
+
+        /* Divider */
+        .divider {
+            width: 80%;
+            margin: 40px auto;
+            border-top: 2px solid #e60012;
+        }
+
+        /* Instructions */
+        .instructions {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        .special-links a {
+        display: block; /* Make the link a block element so it takes up the full width */
+        margin-bottom: 10px; /* Add some space between the link and the image */
+        color: #0000EE; /* Set the initial color */
+        text-decoration: underline; /* Keep the underline */
+        font-weight: bold; /* Make the text bold */
+        }
+
+        .special-links a:hover {
+            color: #551A8B; /* Change to a different color on hover */
+            text-decoration: none; /* Remove underline on hover */
+            font-weight: normal; /* Adjust the weight if desired */
         }
     </style>
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <!-- Add the project name as the first item in the navbar -->
+            <li class="project-name"><a href="index.html">Project Error 105</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="process.html" class="active">Our Process</a></li>
+            <li><a href="visualisations.html">Findings</a></li>
+            <li><a href="sources.html">Data Sources</a></li>
+            <li><a href="contribute.html">Contribute</a></li>
+            <li><a href="our_team.html">Our Team</a></li>
+        </ul>
+    </nav>
 
-    <header>
+    <!-- Hero Section -->
+    <div class="hero">
         <h1>Our Process</h1>
-    </header>
+        <p>Explore the process of our project!</p>
+    </div>
 
-    <div class="container">
-        <div class="section">
-            <h2>Our Process</h2>
-            <p>The process of our project generally follows the Data Science process taught in DS105. However, due to the nature of our project requiring the usage of multiple APIs, we have decided to include “Integration” as the third step of our project. As such, our process follows the structure as shown below:</p>
-            <div class="image-container">
-                <img src="process_workflow.png" alt="Our Process Diagram">
+    <!-- Introductory Text Section -->
+    <div class="intro-text" style="max-width: 800px; margin: 40px auto; padding: 20px; text-align: center;">
+        <p>
+            The process of our project generally follows the Data Science process taught in DS105. However, due to the nature of our project requiring the usage of multiple APIs, we have decided to include “Integration” as the third step of our project. As such, our process follows the structure as shown below:
+        </p>
+        <div class="image-container">
+            <img src="process_workflow.png" alt="Our Process Diagram" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+        </div>
+        <p>
+            The sections below will go into further detail about how each of the different types of data - Pokémon, Biome and Weather - are collected, cleaned, and analyzed for our project.
+        </p>
+    </div>
+
+    <!-- Divider -->
+    <hr class="divider">
+
+    <!-- Instructions -->
+    <div class="instructions">
+        <p><strong>Tip:</strong> Click on the headers below to expand and explore our process in detail.</p>
+    </div>
+
+    <!-- Timeline Layout -->
+    <div class="timeline" id="timeline">
+        <!-- Pokemon Data Section -->
+        <div class="timeline-item left">
+            <div class="collapsible-header" data-bs-toggle="collapse" data-bs-target="#pokemondata">
+                Pokémon Data
             </div>
-            <p>The sections below will go into further detail about how each of the different types of data - Pokémon, Biome and Weather - are collected, cleaned, and analyzed for our project.</p>
-        </div>
-
-        <div class="section">
-            <h2>Pokemon Data</h2>
-            <h3>Pokémon Data Collection</h3>
-            <p>This section details the methodology for retrieving and processing Pokémon data from the PokeAPI. The approach ensures efficient data collection, structuring, and storage while utilizing parallel processing techniques to optimize performance.</p>
-
-            <h4>Asynchronous API Requests with ThreadPoolExecutor</h4>
-            <p>There are 1025 different Pokémon, so we explored efficient ways to collect data regarding each individual Pokémon. The requests library is used to query the PokeAPI for data on all Pokémon species. The ThreadPoolExecutor module enables concurrent API calls, significantly reducing execution time.</p>
-            <ul>
-                <li>The collected data is structured into Pandas DataFrames and saved as JSON files for further analysis.</li>
-                <li>Through parallel execution, the time to collect the data was reduced by a factor of 10.</li>
-            </ul>
-
-            <h4>Extracting and Organizing Pokémon Identifiers</h4>
-            <p>Each Pokémon was identified by querying data from every generation, from Generation I to Generation IX. The Pokémon’s ID was extracted from the collected URL and assigned to a new column in the dataframe.</p>
-
-            <h4>Comprehensive Data Collection for Each Pokémon</h4>
-            <p>The data for each Pokémon was collected in two steps:</p>
-            <ul>
-                <li><strong>Pokemon-specific Details:</strong> Extracts fundamental attributes such as name, base stats, and sprite images. Non-essential data is removed, and the required data is stored in a JSON structure.</li>
-                <li><strong>Species Details:</strong> Retrieves species-specific information, including Pokédex flavor text. Filters and retains only the first available English descriptions for clarity.</li>
-            </ul>
-
-            <h4>Error Handling</h4>
-            <p>Any API request failures or missing data points are logged and managed to prevent script interruptions. It was reflected that data was successfully collected for all 1025 Pokémon.</p>
-
-            <h3>Pokémon Data Processing</h3>
-            <h4>Data Extraction and Transformation</h4>
-            <p>Data was collected and processed from the JSON format into a Pandas DataFrame using the following steps:</p>
-            <ul>
-                <li><strong>Loading Data:</strong> Utilized the JSON and Pandas libraries to read and load Pokémon data from JSON files into DataFrames.</li>
-                <li><strong>Normalization:</strong> Applied pd.json_normalize to flatten nested JSON structures, making it easier to manipulate the data.</li>
-                <li><strong>Data Integration:</strong> Merged various data sources into a comprehensive DataFrame containing attributes like habitat, description, types, and statistical metrics.</li>
-            </ul>
-
-            <h4>Statistical Calculations</h4>
-            <p>Statistical calculations were executed to compute aggregate statistics for each Pokémon, facilitating ranking and comparison.</p>
-            <ul>
-                <li><strong>Total Stat Calculation:</strong> Summed individual stats (HP, attack, defense, special attack, special defense, speed) to derive a total_stat metric for each Pokémon.</li>
-                <li><strong>Ranking:</strong> Sorted Pokémon based on their total_stat, with tiebreakers based on HP stat to reflect their ability to tolerate intense climates.</li>
-            </ul>
-
-            <h4>Dominant Colour Extraction from Images</h4>
-            <p>The dominant color of each Pokémon's image was determined using the following process:</p>
-            <ul>
-                <li><strong>Image Retrieval:</strong> Downloaded Pokémon images using URLs provided in the dataset.</li>
-                <li><strong>Background Removal:</strong> Filtered out black and white pixels to focus on the Pokémon's primary colors.</li>
-                <li><strong>Colour Clustering:</strong> Employed the K-Means clustering algorithm to identify the dominant RGB color in each image.</li>
-                <li><strong>Colour Classification:</strong> Converted RGB values to HSV to classify colors into categories like red, orange, yellow, etc.</li>
-            </ul>
-
-            <h4>Data Storage and Accessibility</h4>
-            <p>Processed Pokémon data was stored in structured formats for future analysis and application development:</p>
-            <ul>
-                <li><strong>JSON Export:</strong> The main Pokémon DataFrame was saved as a JSON file for easy sharing and future use.</li>
-                <li><strong>Database Integration:</strong> Utilized SQLite to create separate tables for fire, ice, and water type Pokémon, storing relevant attributes and rankings.</li>
-            </ul>
-            <p>Storing the data in both JSON and database formats ensures flexibility, allowing for efficient querying and integration with other applications or analyses. The SQL tables will be utilized for the integration of the different forms of data.</p>
-
-            <h4>Considerations and Challenges</h4>
-            <ul>
-                <li><strong>Image Processing Limitation:</strong> Encountered an issue with Pokémon ID 678, whose image could not be processed due to a bug. Assigned a manual RGB value to address this.</li>
-                <li><strong>Background Removal Impact:</strong> The background removal process eliminated all white pixels, resulting in no Pokémon being classified with white as their dominant colour.</li>
-                <li><strong>Concurrency Warning:</strong> Despite setting the 'OMP_NUM_THREADS' to 1, a UserWarning regarding thread settings persisted during K-Means clustering.</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Biome Data</h2>
-            <h3>Biome Data Collection</h3>
-            <p>This section focuses on collecting and analyzing biome data by determining the center coordinates of each ecoregion for the 14 biomes present in the Ecoregions 2017 Resolve dataset from Google Earth Engine (GEE). By identifying the central coordinates, we can use these coordinates to find out more data (e.g., weather data) using other APIs.</p>
-            <h4>Use of a Service Account to Authenticate Google Earth Engine</h4>
-            <p>Google Earth Engine (GEE) requires authentication to access its resources. While manual authentication (OAuth) is fine for interactive use, a service account is the best option for automated data collection.</p>
-            <ul>
-                <li><strong>What is a Service Account:</strong> A service account is a special type of Google account designed for applications rather than individuals. It allows scripts and automated workflows to authenticate with Google services securely, without requiring manual login.</li>
-                <li><strong>Why Use a Service Account for GEE:</strong>
-                    <ul>
-                        <li>Automation & Batch Processing: A service account enables scripts to run unattended, making it ideal for processing large datasets in Google Earth Engine.</li>
-                        <li>Security: Unlike personal accounts, service accounts use private keys for authentication, ensuring secure access control.</li>
-                        <li>Cloud Integration: Essential for running scripts on Google Colab, Google Cloud, or other remote servers without needing user interaction.</li>
-                        <li>Team Collaboration: Service accounts allow multiple team members to access shared resources without compromising personal credentials.</li>
-                    </ul>
-                </li>
-            </ul>
-            <p>By using a service account, the biome data extraction process can run automatically, reducing manual intervention and improving efficiency.</p>
-
-            <h4>Rationale for Using .py Script to Collect and Process Data for Biomes</h4>
-            <p>A Python script was used to collect and process the biome data due to the following advantages:</p>
-            <ul>
-                <li><strong>Batch Processing for Efficiency:</strong> Given the large dataset, biome data was collected in batches to optimize runtime and prevent exceeding computational limits.</li>
-                <li><strong>Automated Data Extraction:</strong> The script leverages Google Earth Engine’s Python API to fetch relevant biome data efficiently.</li>
-                <li><strong>Custom Filtering & Processing:</strong> The script applies filters to extract only the required information (e.g., center coordinates, biome types, ecoregions) as the huge amount of raw data makes it impractical to be collected.</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Weather Data</h2>
-            <h3>Weather Data Collection</h3>
-            <p>This section focuses on collecting and analysing the data from open-meteo to identify the hottest, coldest, and rainiest locations in the world, and visualise any trends encountered along the way.</p>
-            <h4>Weather Data Collection</h4>
-            <p>This section aims to identify and rank geographical locations based on climatic extremes (hottest, coldest, and wettest regions) while evaluating their spatial patterns and exploring their potential influence on Pokémon distribution.</p>
-            <ul>
-                <li><strong>Use of asyncio for Asynchronous Requests:</strong> The asyncio library was implemented to efficiently handle API calls, enabling the retrieval of large volumes of forecasted weather data in parallel.</li>
-                <li><strong>Significance:</strong> This asynchronous approach significantly reduced the runtime of data collection, allowing the analysis to handle real-time, high-frequency data from diverse geographical regions.</li>
-                <li><strong>Scalability:</strong> By employing asyncio, the script demonstrates scalability and efficiency, ensuring that data for thousands of global centroids can be processed rapidly and without unnecessary delays.</li>
-            </ul>
-            <h4>Rationale for Using Forecasted Data</h4>
-            <p>The decision to use forecasted weather data, rather than purely historical datasets, was motivated by a desire to evaluate how Pokémon might adapt and move across varying climatic conditions in the near future.</p>
-
-            <h4>Weather Data Processing</h4>
-            <p>Climatic rankings and analysis were performed to assess the hottest, coldest, and wettest places globally. Additionally, exploratory mapping with Folium and geographical regression were used to visualize and analyze spatial and temporal variations in climate extremes.</p>
-        </div>
-
-        <div class="section">
-            <h2>Integration</h2>
-            <p>During the data exploration process, we realized that the API did not collect data on every Pokémon’s habitat. As such, the integration was done based on ranking Pokémon by their stat totals, with tiebreakers resolved by their health points.</p>
-            <div class="image-container">
-                <img src="pokemon_types_vs_habitats.html" alt="Integration Diagram">
+            <div class="collapse" id="pokemondata">
+                <div class="subheaders">
+                    <div class="subheader" data-bs-toggle="collapse" data-bs-target="#pokemondatacollection">
+                        Pokémon Data Collection
+                    </div>
+                    <p style="margin-top: 10px; font-size: 1.1em; color: #555;">
+                        This section details the methodology for retrieving and processing Pokémon data from the PokeAPI. The approach ensures efficient data collection, structuring, and storage while utilizing parallel processing techniques to optimize performance.                    
+                    </p>
+                    <div class="collapse" id="pokemondatacollection">
+                        <div class="nested-subheaders">
+                            <div class="nested-subheader" onclick="openModal('Asynchronous API Requests with ThreadPoolExecutor')">
+                                Asynchronous API Requests with ThreadPoolExecutor
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse" id="pokemondatacollection">
+                        <div class="nested-subheaders">
+                            <div class="nested-subheader" onclick="openModal('Extracting and Organizing Pokémon Identifiers')">
+                                Extracting and Organizing Pokémon Identifiers
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse" id="pokemondatacollection">
+                        <div class="nested-subheaders">
+                            <div class="nested-subheader" onclick="openModal('Comprehensive Data Collection for Each Pokémon')">
+                                Comprehensive Data Collection for Each Pokémon
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse" id="pokemondatacollection">
+                        <div class="nested-subheaders">
+                            <div class="nested-subheader" onclick="openModal('Error Handling')">
+                                Error Handling
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subheader" data-bs-toggle="collapse" data-bs-target="#pokemondataprocessing">
+                        Pokémon Data Processing
+                    </div>
+                    <div class="collapse" id="pokemondataprocessing">
+                        <div class="nested-subheaders">
+                            <div class="nested-subheader" onclick="openModal('Data Extraction and Transformation')">
+                                Data Extraction and Transformation
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse" id="pokemondataprocessing">
+                        <div class="nested-subheaders">
+                            <div class="nested-subheader" onclick="openModal('Statistical Calculations')">
+                                Statistical Calculations
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse" id="pokemondataprocessing">
+                        <div class="nested-subheaders">
+                            <div class="nested-subheader" onclick="openModal('Dominant Colour Extraction from Images')">
+                                Dominant Colour Extraction from Images
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse" id="pokemondataprocessing">
+                        <div class="nested-subheaders">
+                            <div class="nested-subheader" onclick="openModal('Data Storage and Accessibility')">
+                                Data Storage and Accessibility
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse" id="pokemondataprocessing">
+                        <div class="nested-subheaders">
+                            <div class="nested-subheader" onclick="openModal('Considerations and Challenges')">
+                                Considerations and Challenges
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p>The final dataset was integrated using SQL tables, joining Pokémon data with weather data and biomes. This allowed us to create an interactive map with Pokémon locations and weather trends.</p>
         </div>
 
-        <div class="section">
-            <h2>Visualisation</h2>
-            <p>Using the tables created, an interactive map was created with the following features:</p>
-            <ul>
-                <li><strong>Heatmap:</strong> Displaying the hottest, coldest, and wettest places globally.</li>
-                <li><strong>Fire Pokémon:</strong> Layer containing the locations of all fire-type Pokémon.</li>
-                <li><strong>Ice Pokémon:</strong> Layer containing the locations of all ice-type Pokémon.</li>
-                <li><strong>Water Pokémon:</strong> Layer containing the locations of all water-type Pokémon.</li>
-            </ul>
-            <p>The map is scrollable and zoomable for detailed exploration. It also includes a search bar to easily locate specific Pokémon.</p>
-            <p>If you would like to learn more about how to use our map, please head over to our <a href="index.html">home page</a>!</p>
+        <!-- Biome Data Section -->
+        <div class="timeline-item right">
+            <div class="collapsible-header" data-bs-toggle="collapse" data-bs-target="#biomedata">
+                Biome Data
+            </div>
+            <div class="collapse" id="biomedata">
+                <div class="subheaders">
+                    <div class="subheader" data-bs-toggle="collapse" data-bs-target="#datacollection">
+                        Data Collection
+                    </div>
+                    <p style="margin-top: 10px; font-size: 1.1em; color: #555;">
+                        This section focuses on collecting and analyzing biome data by determining the center coordinates of each ecoregion for the 14 biomes present in the Ecoregions 2017 Resolve dataset from Google Earth Engine (GEE). By identifying the central coordinates, we can use these coordinates to find out more data (e.g., weather data) using other APIs.                    
+                    </p>
+                    <div class="collapse" id="datacollection">
+                        <div class="nested-subheaders">
+                            <div class="nested-subheader" onclick="openModal('Use of a Service Account')">
+                                Use of a Service Account
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse" id="datacollection">
+                        <div class="nested-subheaders">
+                            <div class="nested-subheader" onclick="openModal('Rationale for Using .py Script')">
+                                Rationale for Using .py Script
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Weather Data Section -->
+        <div class="timeline-item left">
+            <div class="collapsible-header" data-bs-toggle="collapse" data-bs-target="#weatherdata">
+                Weather Data
+            </div>
+            <div class="collapse" id="weatherdata">
+                <div class="subheaders">
+                    <div class="subheader" data-bs-toggle="collapse" data-bs-target="#weatherdatacollection">
+                        Data Collection
+                    </div>
+                    <div class="collapse" id="weatherdatacollection">
+                        <div class="nested-subheaders">
+                            <div class="nested-subheader" onclick="openModal('Weather Data Collection')">
+                                Data Collection
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse" id="weatherdatacollection">
+                        <div class="nested-subheaders">
+                            <div class="nested-subheader" onclick="openModal('Rationale for Using Forecasted Data')">
+                                Rationale
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subheader" onclick="openModal('Weather Data Processing')">
+                        Data Processing
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Integration Section -->
+        <div class="timeline-item right">
+            <div class="collapsible-header" onclick="openModal('Integration')">
+                Integration
+            </div>
+        </div>
+
+        <!-- Visualisation Section -->
+        <div class="timeline-item left">
+            <div class="collapsible-header" onclick="openModal('Visualisation')">
+                Visualisation
+            </div>
         </div>
     </div>
+
+    <!-- Full Screen Modal -->
+    <div id="modal" class="full-screen-modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Modal Title</h2>
+                <button class="close-btn" onclick="closeModal()">×</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Add the new sentences here -->
+    <div class="instructions" style="text-align: center; margin-top: 20px;">
+        <p>The map is scrollable and zoomable for detailed exploration. It also includes a search bar to easily locate specific Pokémon.</p>
+        <p>If you would like to learn more about how to use our map, please head over to our <a href="index.html">home page</a>!</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Pokémap Project Team</p>
+    </footer>
+
+    <!-- Scroll-to-Top Button -->
+    <button id="scroll-to-top" title="Go to top">↑</button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Function to open the modal
+        function openModal(title) {
+            const modal = document.getElementById('modal');
+            const modalTitle = document.getElementById('modal-title');
+            const modalBody = document.getElementById('modal-body');
+
+            // Debugging: Log the title and content
+            console.log("Opening modal for:", title);
+            console.log("Content:", contentData[title]);
+
+            // Set modal title and content
+            modalTitle.textContent = title;
+            modalBody.innerHTML = contentData[title] || `<p>No content available for ${title}.</p>`;
+
+            // Display the modal
+            modal.style.display = 'flex';
+        }
+
+        // Function to close the modal
+        function closeModal() {
+            const modal = document.getElementById('modal');
+            modal.style.display = 'none';
+        }
+
+        // === Scroll-to-Top Button ===
+        const scrollToTopButton = document.getElementById('scroll-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollToTopButton.style.display = 'block';
+            } else {
+                scrollToTopButton.style.display = 'none';
+            }
+        });
+
+        scrollToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Add this script to dynamically highlight the current page
+        document.addEventListener('DOMContentLoaded', () => {
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html'; // Get the current page filename
+            const navLinks = document.querySelectorAll('.navbar ul li a');
+
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('active'); // Add the active class to the current page's link
+                }
+            });
+        });
+    </script>
+
+    <script>
+        const contentData = {
+            "Asynchronous API Requests with ThreadPoolExecutor": `
+                <p>There are 1025 different Pokémon, so we explored efficient ways to collect data regarding each individual Pokémon. The requests library is used to query the PokeAPI for data on all Pokémon species. The ThreadPoolExecutor module enables concurrent API calls, significantly reducing execution time.</p>
+                <ul>
+                    <li>The collected data is structured into Pandas DataFrames and saved as JSON files for further analysis.</li>
+                    <li>Through parallel execution, the time to collect the data was reduced by a factor of 10.</li>
+                </ul>
+            `,
+            "Extracting and Organizing Pokémon Identifiers": `
+                <p>Each Pokémon was identified by querying data from every generation, from Generation I to Generation IX. The Pokémon’s ID was extracted from the collected URL and assigned to a new column in the dataframe.</p>
+            `,
+            "Comprehensive Data Collection for Each Pokémon": `
+                <p>The data for each Pokémon was collected in two steps:</p>
+                <ul>
+                    <li><strong>Pokemon-specific Details:</strong> Extracts fundamental attributes such as name, base stats, and sprite images. Non-essential data is removed, and the required data is stored in a JSON structure.</li>
+                    <li><strong>Species Details:</strong> Retrieves species-specific information, including Pokédex flavor text. Filters and retains only the first available English descriptions for clarity.</li>
+                </ul>
+            `,
+            "Error Handling": `
+                <p>Any API request failures or missing data points are logged and managed to prevent script interruptions. It was reflected that data was successfully collected for all 1025 Pokémon.</p>
+            `,
+            "Data Extraction and Transformation": `
+                <p>Data was collected and processed from the JSON format into a Pandas DataFrame using the following steps:</p>
+                <ul>
+                    <li><strong>Loading Data:</strong> Utilized the JSON and Pandas libraries to read and load Pokémon data from JSON files into DataFrames.</li>
+                    <li><strong>Normalization:</strong> Applied pd.json_normalize to flatten nested JSON structures, making it easier to manipulate the data.</li>
+                    <li><strong>Data Integration:</strong> Merged various data sources into a comprehensive DataFrame containing attributes like habitat, description, types, and statistical metrics.</li>
+                </ul>
+            `,
+            "Statistical Calculations": `
+                <p>Statistical calculations were executed to compute aggregate statistics for each Pokémon, facilitating ranking and comparison.</p>
+                <ul>
+                    <li><strong>Total Stat Calculation:</strong> Summed individual stats (HP, attack, defense, special attack, special defense, speed) to derive a total_stat metric for each Pokémon.</li>
+                    <li><strong>Ranking:</strong> Sorted Pokémon based on their total_stat, with tiebreakers based on HP stat to reflect their ability to tolerate intense climates.</li>
+                </ul>
+            `,
+            "Dominant Colour Extraction from Images": `
+                <p>The dominant color of each Pokémon's image was determined using the following process:</p>
+                <ul>
+                    <li><strong>Image Retrieval:</strong> Downloaded Pokémon images using URLs provided in the dataset.</li>
+                    <li><strong>Image Retrieval:</strong> Downloaded Pokémon images using URLs provided in the dataset.</li>
+                    <li><strong>Colour Clustering:</strong> Employed the K-Means clustering algorithm to identify the dominant RGB color in each image.</li>
+                    <li><strong>Colour Classification:</strong> Converted RGB values to HSV to classify colors into categories like red, orange, yellow, etc.</li>
+                </ul>
+            `,
+            "Data Storage and Accessibility": `
+                <p>Processed Pokémon data was stored in structured formats for future analysis and application development:</p>
+                <ul>
+                    <li><strong>JSON Export:</strong> The main Pokémon DataFrame was saved as a JSON file for easy sharing and future use.</li>
+                    <li><strong>Database Integration:</strong> Utilized SQLite to create separate tables for fire, ice, and water type Pokémon, storing relevant attributes and rankings.</li>
+                </ul>
+            `,
+            "Considerations and Challenges": `
+                <ul>
+                    <li><strong>Image Processing Limitation:</strong> Encountered an issue with Pokémon ID 678, whose image could not be processed due to a bug. Assigned a manual RGB value to address this.</li>
+                    <li><strong>Background Removal Impact:</strong> The background removal process eliminated all white pixels, resulting in no Pokémon being classified with white as their dominant colour.</li>
+                    <li><strong>Concurrency Warning:</strong> Despite setting the 'OMP_NUM_THREADS' to 1, a UserWarning regarding thread settings persisted during K-Means clustering.</li>
+                </ul>
+            `,
+            "Use of a Service Account": `
+                <p>Google Earth Engine (GEE) requires authentication to access its resources. While manual authentication (OAuth) is fine for interactive use, a service account is the best option for automated data collection.</p>
+                <ul>
+                    <li>What is a Service Account: A service account is a special type of Google account designed for applications rather than individuals. It allows scripts and automated workflows to authenticate with Google services securely, without requiring manual login.</li>
+                    <li>
+                        Why Use a Service Account for GEE:
+                        <ul>
+                            <li><strong>Automation & Batch Processing:</strong> A service account enables scripts to run unattended, making it ideal for processing large datasets in Google Earth Engine.</li>
+                            <li><strong>Security:</strong> Unlike personal accounts, service accounts use private keys for authentication, ensuring secure access control.</li>
+                            <li><strong>Cloud Integration:</strong> Essential for running scripts on Google Colab, Google Cloud, or other remote servers without needing user interaction.</li>
+                            <li><strong>Team Collaboration:</strong> Service accounts allow multiple team members to access shared resources without compromising personal credentials.</li>
+                        </ul> 
+                    </li>
+                <p>By using a service account, the biome data extraction process can run automatically, reducing manual intervention and improving efficiency.</p>
+                </ul>
+            `,
+            "Rationale for Using .py Script": `
+                <p>A Python script was used to collect and process the biome data due to the following advantages:</p>
+                <ul>
+                    <li><strong>Batch Processing for Efficiency:</strong> Given the large dataset, biome data was collected in batches to optimize runtime and prevent exceeding computational limits.</li>
+                    <li><strong>Automated Data Extraction:</strong> The script leverages Google Earth Engine’s Python API to fetch relevant biome data efficiently.</li>
+                    <li><strong>Custom Filtering & Processing:</strong> The script applies filters to extract only the required information (e.g., center coordinates, biome types, ecoregions) as the huge amount of raw data makes it impractical to be collected.</li>
+                </ul>
+            `,
+            "Weather Data Collection": `
+                <p>This section aims to identify and rank geographical locations based on climatic extremes (hottest, coldest, and wettest regions) while evaluating their spatial patterns and exploring their potential influence on Pokémon distribution.</p>
+                <ul>
+                    <li><strong>Use of asyncio for Asynchronous Requests:</strong> The asyncio library was implemented to efficiently handle API calls, enabling the retrieval of large volumes of forecasted weather data in parallel.</li>
+                    <li><strong>Significance:</strong> This asynchronous approach significantly reduced the runtime of data collection, allowing the analysis to handle real-time, high-frequency data from diverse geographical regions.</li>
+                    <li><strong>Scalability:</strong> By employing asyncio, the script demonstrates scalability and efficiency, ensuring that data for thousands of global centroids can be processed rapidly and without unnecessary delays.</li>
+                </ul>
+            `,
+            "Rationale for Using Forecasted Data": `
+                <p>The decision to use forecasted weather data, rather than purely historical datasets, was motivated by a desire to evaluate how Pokémon might adapt and move across varying climatic conditions in the near future.</p>
+            `,
+            "Weather Data Processing": `
+                <p>Climatic rankings and analysis were performed to assess the hottest, coldest, and wettest places globally. Additionally, exploratory mapping with Folium and geographical regression were used to visualize and analyze spatial and temporal variations in climate extremes.</p>
+            `,
+            "Integration": `
+                <p>During the data exploration process, we realized that the API did not collect data on every Pokémon’s habitat. As such, the integration was done based on ranking Pokémon by their stat totals, with tiebreakers resolved by their health points.</p>
+                <figure>
+                    <div class="special-links" style="text-align: center; margin-bottom: 10px;">
+                        <a href="pokemon_types_vs_habitats.html" target="_blank" title="Click to open in a new tab">
+                            Click to open in a new tab.
+                        </a>
+                    </div>
+                    <iframe src="pokemon_types_vs_habitats.html" style="width: 100%; height: 400px; border: none; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);"></iframe>
+                    <figcaption style="text-align: center; margin-top: 10px; font-style: italic; color: #666;"><strong>Figure 1.</strong> Pokémon Types vs Habitats</figcaption>
+                </figure>
+                <p>The final dataset was integrated using SQL tables, joining Pokémon data with weather data and biomes. This allowed us to create an interactive map with Pokémon locations and weather trends.</p>
+            `,
+            "Visualisation": `
+                <p>Using the tables created, an interactive map was created with the following features:</p>
+                <ul>
+                    <li><strong>Heatmap:</strong> Displaying the hottest, coldest, and wettest places globally.</li>
+                    <li><strong>Fire Pokémon:</strong> Layer containing the locations of all fire-type Pokémon.</li>
+                    <li><strong>Ice Pokémon:</strong> Layer containing the locations of all ice-type Pokémon.</li>
+                    <li><strong>Ice Pokémon:</strong> Layer containing the locations of all water-type Pokémon.</li>
+                </ul>
+            `
+        };
+    </script>
 </body>
 </html>
