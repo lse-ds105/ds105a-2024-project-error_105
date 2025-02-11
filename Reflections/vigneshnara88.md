@@ -1,9 +1,8 @@
----
-
 # **Reflection**  
 **Vignesh Narayanan**
 
 ---
+
 
 ## **Technical Contribution Example** 🔧
 
@@ -79,9 +78,11 @@ I developed logic tailored to Pokémon-related analysis by:
 - Organised **weekly team meetings** to ensure progress was on track and created task lists to maintain accountability. I had a vision of what features I expected we should have on the end result and I made sure that was communicated clearly from the start.  
 - Additionally, I followed up individually with team members to provide support and ensure they could meet deadlines.  
 
-*Examples*
-![tasklist_1](../Reflections/supporting_evidence_vignesh/tasklist_1.png)
-![tasklist_2](../Reflections/supporting_evidence_vignesh/tasklist_2.png)
+*Examples*  
+
+| ![tasklist_1](../Reflections/supporting_evidence_vignesh/tasklist_1.png) | ![tasklist_2](../Reflections/supporting_evidence_vignesh/tasklist_2.png) |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+
 
 ### **Supporting Team Members**  
 - When Jon tore his ACL, I had to spend some time taking care of him, as we stay in the same hall (he had to endure my horrendous cooking), and we were sidetracked from our project.  
