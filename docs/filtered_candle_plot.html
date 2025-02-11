@@ -1,0 +1,201 @@
+            <iframe src='about:blank' style='border:none !important;' width='1000' height='600' srcdoc="&lt;html lang=&quot;en&quot;>
+   &lt;head>
+       &lt;meta charset=&quot;UTF-8&quot;>
+       &lt;style> html, body { margin: 0; overflow: hidden; } &lt;/style>
+       &lt;script type=&quot;text/javascript&quot; data-lets-plot-script=&quot;library&quot; src=&quot;https://cdn.jsdelivr.net/gh/JetBrains/lets-plot@v4.5.1/js-package/distr/lets-plot.min.js&quot;>&lt;/script>
+   &lt;/head>
+   &lt;body>
+          &lt;div id=&quot;fk8VtC&quot;>&lt;/div>
+   &lt;script type=&quot;text/javascript&quot; data-lets-plot-script=&quot;plot&quot;>
+   
+   (function() {
+   // ----------
+   
+       var plotSpec={
+&quot;data&quot;:{
+},
+&quot;mapping&quot;:{
+&quot;x&quot;:&quot;type_1&quot;,
+&quot;y&quot;:&quot;total_stat&quot;,
+&quot;fill&quot;:&quot;type_1&quot;
+},
+&quot;data_meta&quot;:{
+&quot;series_annotations&quot;:[{
+&quot;type&quot;:&quot;str&quot;,
+&quot;column&quot;:&quot;name&quot;
+},{
+&quot;type&quot;:&quot;str&quot;,
+&quot;column&quot;:&quot;url&quot;
+},{
+&quot;type&quot;:&quot;int&quot;,
+&quot;column&quot;:&quot;generation&quot;
+},{
+&quot;type&quot;:&quot;str&quot;,
+&quot;column&quot;:&quot;habitat_name&quot;
+},{
+&quot;type&quot;:&quot;str&quot;,
+&quot;column&quot;:&quot;pokemon_description&quot;
+},{
+&quot;type&quot;:&quot;str&quot;,
+&quot;column&quot;:&quot;type_1&quot;
+},{
+&quot;type&quot;:&quot;str&quot;,
+&quot;column&quot;:&quot;type_2&quot;
+},{
+&quot;type&quot;:&quot;str&quot;,
+&quot;column&quot;:&quot;pokemon_portrait&quot;
+},{
+&quot;type&quot;:&quot;int&quot;,
+&quot;column&quot;:&quot;hp_stat&quot;
+},{
+&quot;type&quot;:&quot;int&quot;,
+&quot;column&quot;:&quot;attack_stat&quot;
+},{
+&quot;type&quot;:&quot;int&quot;,
+&quot;column&quot;:&quot;defense_stat&quot;
+},{
+&quot;type&quot;:&quot;int&quot;,
+&quot;column&quot;:&quot;special_attack_stat&quot;
+},{
+&quot;type&quot;:&quot;int&quot;,
+&quot;column&quot;:&quot;special_defense_stat&quot;
+},{
+&quot;type&quot;:&quot;int&quot;,
+&quot;column&quot;:&quot;speed_stat&quot;
+},{
+&quot;type&quot;:&quot;int&quot;,
+&quot;column&quot;:&quot;total_stat&quot;
+},{
+&quot;type&quot;:&quot;unknown(pandas:mixed)&quot;,
+&quot;column&quot;:&quot;pokemon_colour&quot;
+},{
+&quot;type&quot;:&quot;str&quot;,
+&quot;column&quot;:&quot;colour_family&quot;
+},{
+&quot;type&quot;:&quot;int&quot;,
+&quot;column&quot;:&quot;min&quot;
+},{
+&quot;type&quot;:&quot;float&quot;,
+&quot;column&quot;:&quot;median&quot;
+},{
+&quot;type&quot;:&quot;int&quot;,
+&quot;column&quot;:&quot;max&quot;
+}]
+},
+&quot;ggtitle&quot;:{
+&quot;text&quot;:&quot;Candlestick-like Visualization of Stat Totals by Type&quot;
+},
+&quot;guides&quot;:{
+&quot;x&quot;:{
+&quot;title&quot;:&quot;Pokémon Type&quot;
+},
+&quot;y&quot;:{
+&quot;title&quot;:&quot;Stat Total&quot;
+}
+},
+&quot;theme&quot;:{
+&quot;name&quot;:&quot;minimal&quot;,
+&quot;axis_title&quot;:{
+&quot;size&quot;:12.0,
+&quot;blank&quot;:false
+},
+&quot;axis_text_x&quot;:{
+&quot;angle&quot;:45.0,
+&quot;hjust&quot;:1.0,
+&quot;blank&quot;:false
+},
+&quot;legend_text&quot;:{
+&quot;size&quot;:10.0,
+&quot;blank&quot;:false
+},
+&quot;legend_title&quot;:{
+&quot;size&quot;:12.0,
+&quot;blank&quot;:false
+},
+&quot;plot_title&quot;:{
+&quot;face&quot;:&quot;bold&quot;,
+&quot;size&quot;:16.0,
+&quot;hjust&quot;:0.5,
+&quot;blank&quot;:false
+}
+},
+&quot;ggsize&quot;:{
+&quot;width&quot;:1000.0,
+&quot;height&quot;:600.0
+},
+&quot;kind&quot;:&quot;plot&quot;,
+&quot;scales&quot;:[{
+&quot;name&quot;:&quot;Pokémon Type&quot;,
+&quot;aesthetic&quot;:&quot;fill&quot;,
+&quot;breaks&quot;:[&quot;fire&quot;,&quot;water&quot;,&quot;ice&quot;],
+&quot;values&quot;:[&quot;#F08030&quot;,&quot;#6890F0&quot;,&quot;#98D8D8&quot;]
+}],
+&quot;layers&quot;:[{
+&quot;geom&quot;:&quot;boxplot&quot;,
+&quot;mapping&quot;:{
+},
+&quot;tooltips&quot;:{
+&quot;formats&quot;:[],
+&quot;lines&quot;:[&quot;Min Stat: @min&quot;,&quot;Median Stat: @median&quot;,&quot;Max Stat: @max&quot;],
+&quot;title&quot;:&quot;@type_1&quot;
+},
+&quot;data_meta&quot;:{
+},
+&quot;alpha&quot;:0.7,
+&quot;width&quot;:0.6,
+&quot;data&quot;:{
+&quot;..middle..&quot;:[473.0,440.0,475.0],
+&quot;..lower..&quot;:[357.5,322.5,317.5],
+&quot;..upper..&quot;:[530.0,499.0,523.0],
+&quot;..ymin..&quot;:[250.0,175.0,185.0],
+&quot;..ymax..&quot;:[680.0,680.0,580.0],
+&quot;type_1&quot;:[&quot;fire&quot;,&quot;water&quot;,&quot;ice&quot;],
+&quot;min&quot;:[250.0,175.0,185.0],
+&quot;median&quot;:[473.0,440.0,475.0],
+&quot;max&quot;:[680.0,680.0,580.0]
+}
+},{
+&quot;geom&quot;:&quot;point&quot;,
+&quot;stat&quot;:&quot;boxplot_outlier&quot;,
+&quot;mapping&quot;:{
+},
+&quot;show_legend&quot;:false,
+&quot;data_meta&quot;:{
+},
+&quot;data&quot;:{
+&quot;..middle..&quot;:[473.0,440.0,475.0],
+&quot;..lower..&quot;:[357.5,322.5,317.5],
+&quot;..upper..&quot;:[530.0,499.0,523.0],
+&quot;..ymin..&quot;:[250.0,175.0,185.0],
+&quot;..ymax..&quot;:[680.0,680.0,580.0],
+&quot;type_1&quot;:[&quot;fire&quot;,&quot;water&quot;,&quot;ice&quot;],
+&quot;total_stat&quot;:[NaN,NaN,NaN]
+}
+}],
+&quot;metainfo_list&quot;:[],
+&quot;spec_id&quot;:&quot;5&quot;
+};
+       var containerDiv = document.getElementById(&quot;fk8VtC&quot;);
+       
+               var toolbar = null;
+               var plotContainer = containerDiv;               
+               
+       var options = {
+           sizing: {
+               width_mode: &quot;fixed&quot;,
+               height_mode: &quot;fixed&quot;,
+               width: 1000.0,
+               height: 600.0
+           }
+       };
+       var fig = LetsPlot.buildPlotFromProcessedSpecs(plotSpec, -1, -1, plotContainer, options);
+       if (toolbar) {
+         toolbar.bind(fig);
+       }
+       
+   // ----------
+   })();
+   
+   &lt;/script>
+   &lt;/body>
+&lt;/html>"></iframe>    

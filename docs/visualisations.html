@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visualization of Pokémon Biome Mapping</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lets-plot@2.0.0/dist/lets-plot.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <!-- Add Font Awesome for GitHub icon -->
@@ -526,6 +528,161 @@
         <p>In this section, we present a series of visualizations created during the process of mapping Pokémon distributions to real-world biomes. These visual representations highlight key findings from our analysis and illustrate the development process of the interactive map.</p>
     </section>
 
+    <!-- Ridge Plot Section -->
+    <section id="ridge-plot-analysis">
+        <h2 style="text-align: center;">Ridge Plot Analysis of Pokémon Stats and Types</h2>
+        <p style="text-align: center; max-width: 800px; margin: auto;">
+            This analysis presents a ridge plot to observe the distribution of Pokémon based on their stats and types. 
+            The findings highlight interesting patterns in how Pokémon evolve and their relationship to stat totals.
+        </p>
+
+        <!-- Ridge Plot Container -->
+        <div class="ridge-plot-container">
+            <div class="ridge-plot">
+                <h3>Ridge Plot: Distribution of Pokémon Stats by Type</h3>
+                <figure>
+                    <div style="display: flex; justify-content: center; align-items: center; height: 66vh; width: 100%; text-align: center; margin: 0; padding: 0;">
+                        <iframe src="main_ridge_plot.html" alt="Ridge Plot of Pokémon Stats" style="width: 100%; height: 100%; border: none; display: block; margin-left: 17.5%; margin-right: 17.5; box-sizing: border-box;"></iframe>
+                    </div>                                              
+                    <figcaption><strong>Figure 1.</strong> Distribution of Pokémon stats by type. A higher peak represents more Pokémon of that type at that stat total.</figcaption>
+                </figure>
+                <p>
+                    By generating this ridge plot, we are able to observe the distribution of Pokémon according to their stats and types. The plot reveals two significant insights: Firstly, we notice several peaks for each Pokémon type, which reflects the evolution path of Pokémon—more evolved Pokémon tend to have higher stat totals. Secondly, the dragon type stands out as having the highest average stat, which aligns with the well-known rarity and strength of dragon-type Pokémon.
+                </p>
+            </div>
+        </div>
+
+        <!-- Summary of Findings -->
+        <div class="summary">
+            <h2>Key Findings</h2>
+            <p>
+                The ridge plot provides valuable insights into how the evolution of Pokémon correlates with their stats. 
+                Pokémon types with higher evolutionary stages tend to have more pronounced peaks in their stat distributions, 
+                reinforcing the link between evolution and stat increase. Additionally, the dominance of the dragon type in terms of average stat totals is evident. This type's rarity and powerful abilities make it stand out among others, furthering the understanding of its competitive edge.
+            </p>
+        </div>
+    </section>
+
+    <!-- Candle Plot Section -->
+    <section id="filtered-candle-plot">
+        <h2 style="text-align: center;">Stat Distributions for Fire, Water, and Ice Pokémon</h2>
+        <p style="text-align: center; max-width: 800px; margin: auto;">
+            This interactive candle plot presents the maximum, minimum, and median stat values for each of the Pokémon types we focused on: 
+            <b>fire</b>, <b>water</b>, and <b>ice</b>. By exploring these distributions, we gain insights into the range and central tendencies of their stats.
+        </p>
+
+        <!-- Plot Container -->
+        <div class="plot-container">
+            <figure>
+                <div style="display: flex; justify-content: center; align-items: center; height: 66vh; width: 100%; text-align: center; margin: 0; padding: 0;">
+                    <iframe src="filtered_candle_plot.html" alt="Filtered Candle Plot" style="width: 100%; height: 100%; border: none; display: block; margin-left: 17.5%; margin-right: 17.5; box-sizing: border-box;"></iframe>
+                </div>                                              
+                <figcaption><strong>Figure 1.</strong> Candle plot showing the distribution of stats (max, min, and median) for the Pokémon types: Fire, Water, and Ice.</figcaption>
+            </figure>
+            <p>The candle plot clearly illustrates the differences in the statistical distributions between the Pokémon types. 
+                Ice-type Pokémon, for instance, show the lowest maximum stat, indicating that their legendary Pokémon tend to have lower stat totals compared to the legendary Pokémon of Fire and Water types.</p>
+        </div>
+
+        <div class="summary">
+            <h2>Key Findings</h2>
+            <p>
+                From this interactive candle plot, we observe significant variations in the max, min, and median stat totals for Fire, Water, and Ice types. 
+                This reinforces the decision to separate Pokémon types before ranking them. The plot makes it clear that Ice-type Pokémon have the lowest maximum stats, 
+                suggesting that legendary Pokémon of the Ice type are not as statistically powerful as those of the Fire and Water types.
+            </p>
+        </div>
+    </section>
+
+    <!-- Section: How many of each type of Pokémon are there? -->
+    <section id="how-many-of-each-type" style="overflow: auto;">
+        <h2 style="text-align: center;">How many of each type of Pokémon are there?</h2>
+
+        <!-- Plots Container -->
+        <div class="plots-container" style="position: relative; width: 100%; height: 240vh;">
+        
+            <!-- Plot 1: Primary Type Bar Plot -->
+            <div class="plot" style="display: block;">
+                <h3>Graph 1: Primary Type Bar Plot</h3>
+                <figure>
+                    <iframe src="primary_type_bar_plot.html" alt="Primary Type Bar Plot" width="100%" height="100%" style="border: none;"></iframe>
+                    <figcaption><strong>Figure 1.</strong> Bar plot showing the distribution of primary Pokémon types.</figcaption>
+                </figure>
+                <p>We can see that the most common Primary Type for most Pokémon is water with 134 Pokémon. On the other hand, the least common Primary type for Pokémon is flying with 9 Pokémon. The rest of the Pokémon types are quite evenly distributed. While this may seem to imply that flying Pokémon are the rarest, this is not the case, as can be observed in the next plot below.</p>
+            </div>
+
+            <!-- Plot 2: Primary Type Heat Plot -->
+            <div class="plot" style="display: block;">
+                <h3>Graph 2: Primary Type Heat Plot</h3>
+                <figure>
+                    <iframe src="primary_type_heat_plot.html" alt="Primary Type Heat Plot" width="100%" height="100%" style="border: none;"></iframe>
+                    <figcaption><strong>Figure 2.</strong> Heat plot showing the distribution of primary Pokémon types.</figcaption>
+                </figure>
+                <p>The heat plot reinforces the bar plot’s findings, giving a more visual representation of the type distribution across different Pokémon species.</p>
+            </div>
+
+            <!-- Plot 3: Secondary Type Bar Plot -->
+            <div class="plot" style="display: block;">
+                <h3>Graph 3: Secondary Type Bar Plot</h3>
+                <figure>
+                    <iframe src="secondary_type_bar_plot.html" alt="Secondary Type Bar Plot" width="100%" height="100%" style="border: none;"></iframe>
+                    <figcaption><strong>Figure 3.</strong> Bar plot showing the distribution of secondary Pokémon types.</figcaption>
+                </figure>
+                <p>For the secondary types, we can see that the flying type is the most common by far. This is not surprising, as many Pokémon are capable of flying but still retain their primary elemental type. This distribution suggests that the flying type is a common secondary feature across various Pokémon species.</p>
+            </div>
+
+            <!-- Plot 4: Secondary Type Heat Plot -->
+            <div class="plot" style="display: block;">
+                <h3>Graph 4: Secondary Type Heat Plot</h3>
+                <figure>
+                    <iframe src="secondary_type_heat_plot.html" alt="Secondary Type Heat Plot" width="100%" height="100%" style="border: none;"></iframe>
+                    <figcaption><strong>Figure 4.</strong> Heat plot showing the distribution of secondary Pokémon types.</figcaption>
+                </figure>
+                <p>This heat plot visually emphasizes the prevalence of flying as a secondary type across the Pokémon dataset, supporting the bar plot’s findings.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Colour Proportion Plot Section -->
+    <section id="most-common-pokemon-colour">
+        <h2 style="text-align: center;">What is the Most Common Colour of Pokémon?</h2>
+        <p style="text-align: center; max-width: 800px; margin: auto;">
+            Now that there are Pokémon in the real world, you probably want to select which one is your favourite! This diagram shows how rare certain colours of Pokémon are.
+        </p>
+
+        <!-- Colour Proportion Plot Container -->
+        <div class="slider-container">
+            <div class="slider">
+                <!-- Colour Proportion Plot -->
+                <div class="slide">
+                    <h3>Graph: Pokémon Colour Proportions</h3>
+                    <figure>
+                        <div style="display: flex; justify-content: center; align-items: center; height: 45vh; width: 100%; text-align: center; margin: 0; padding: 0;">
+                            <iframe src="colour_proportion_plot.html" alt="Colour Proportion of Pokémon" style="width: 100%; height: 100%; border: none; display: block; margin-left: 24.5%; margin-right: 17.5%; box-sizing: border-box;"></iframe>
+                        </div>      
+                        <figcaption><strong>Figure 1.</strong> Proportion of Pokémon colours.</figcaption>
+                    </figure>
+                    <p>
+                        This plot was used to portray the proportion of colours of Pokémon. With each square representing 1% of the Pokémon species, we can observe that the most common colour is red, while green and purple are the least common colours, each sitting at around 3%. This is great news for people who like the colour red!
+                    </p>
+                    <p>
+                        <strong>Note:</strong> The process of isolating the dominant colour of Pokémon and sorting them into colour families may not result in 100% accuracy in this chart.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Summary of Findings -->
+        <div class="summary">
+            <h2>Key Findings</h2>
+            <p>
+                This diagram reveals the distribution of Pokémon colours, highlighting that red is the most common colour among Pokémon, while green and purple are the least common, each accounting for about 3% of the total Pokémon species.
+            </p>
+            <p>
+                While the process of determining the dominant colours of Pokémon may not be 100% accurate, this plot offers a clear visual representation of colour proportions across the Pokémon species.
+            </p>
+        </div>
+    </section>
+
     <!-- Geographic Coordinates Section with Slider -->
     <section id="effect-of-latitude-and-longitude">
         <h2 style="text-align: center;">Effect of Latitude and Longitude on Temperature</h2>
@@ -600,7 +757,9 @@
                 <!-- Slide 1: Regression Model 1 -->
                 <div class="slide">
                     <h3><strong>Regression Model 1: Latitude vs. Temperature</strong></h3>
-                    <iframe src="lat_regression.html" width="100%" height="500px"></iframe>
+                    <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 500px;">
+                        <iframe src="lat_regression.html" width="100%" height="100%" style="border: none; margin-left: 30%; margin-right:30%;"></iframe>
+                    </div>
                     <p>The R-squared value of <span class="highlight"><strong>0.781</strong></span> indicates that <span class="highlight"><strong>78.1%</strong></span> of the variation in temperature can be explained by latitude alone. This supports the well-known geographic principle that temperatures decrease as one moves away from the equator.</p>
                     
                     <p><strong>Coefficient:</strong> <span class="highlight">-0.7931</span> (As latitude increases, temperature decreases.)</p>
@@ -610,7 +769,9 @@
                 <!-- Slide 2: Regression Model 2 -->
                 <div class="slide">
                     <h3><strong>Regression Model 2: Longitude vs. Temperature</strong></h3>
-                    <iframe src="long_regression.html" width="100%" height="500px"></iframe>
+                    <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 500px;">
+                        <iframe src="long_regression.html" width="100%" height="100%" style="border: none; margin-left: 30%; margin-right:30%;"></iframe>
+                    </div>
                     <p>In contrast, longitude had an R-squared value of <span class="highlight"><strong>0</strong></span>, meaning it does not explain any variation in temperature.</p>
         
                     <p>The regression results showed:</p>
