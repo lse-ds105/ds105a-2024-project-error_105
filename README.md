@@ -118,6 +118,12 @@ We have three main data sources.
 └── requirements.txt           # Dependencies
 ```
 
+## Search bar bug in map
 
+Our map, when initialised, shows many blue markers that have to be disabled manually via clicking the "Pokemon Locations" layer in the map. This is due to a bug in the Search plugin of Folium.
+
+To implement a search bar, we have to create a GeoJson layer that contains all Pokemon locations for the search bar to browse through. This leads to default blue markers popping up in all these locations. Without a search bar, we can remove these marker prior to initialisation by passing the "Show = False" argument for layers.
+
+However, this argument is overridden when the search bar is implemented, which leads to the default blue markers showing up. We've tried many solutions, including trying to make the blue markers transparent and injecting JavaScript to manually disable this layer, but to no avail.
 
 
