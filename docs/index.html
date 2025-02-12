@@ -401,6 +401,20 @@
             height: 50px;
             margin: 0 auto 20px;
         }
+
+        .special-links a {
+        display: block; /* Make the link a block element so it takes up the full width */
+        margin-bottom: 10px; /* Add some space between the link and the image */
+        color: #0000EE; /* Set the initial color */
+        text-decoration: underline; /* Keep the underline */
+        font-weight: bold; /* Make the text bold */
+        }
+
+        .special-links a:hover {
+            color: #551A8B; /* Change to a different color on hover */
+            text-decoration: none; /* Remove underline on hover */
+            font-weight: normal; /* Adjust the weight if desired */
+        }
     </style>
 </head>
 <body>
@@ -473,6 +487,12 @@
 
         <!-- Interactive Map -->
         <h2>Interactive Map</h2>
+        <!-- Link to open in a new tab -->
+        <div class="special-links">
+            <a href="pokemon_map.html" target="_blank" title="Click to open in a new tab">
+                Click to open in a new tab.
+            </a>
+        </div>
         <div id="map-container">
             <iframe src="../visuals/html_files/pokemon_map.html" title="Interactive PokéMap"></iframe>
         </div>
