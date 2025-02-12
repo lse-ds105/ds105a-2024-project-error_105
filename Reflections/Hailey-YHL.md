@@ -49,7 +49,7 @@
 - **Webpage Design**: Designed the 'Findings' section with a clean academic format and refined other sections. Standardized the theme across all pages and incorporated creative components like a Pokémon game on the homepage. Learned and implemented CSS and JavaScript to enhance user experience.  
 
   **Evidence**:  
-  -  [Findings Section on the Webpage](https://lse-ds105.github.io/ds105a-2024-project-error_105/visualisations.html)  
+  - [Findings Section on the Webpage](https://lse-ds105.github.io/ds105a-2024-project-error_105/visualisations.html)  
   - [Website referenced for HTML/CSS/JavaScript code](https://www.w3schools.com/html/)  
   - [Github Commit](https://github.com/lse-ds105/ds105a-2024-project-error_105/commit/23c81adc0885b94c739b60c90c32b12221938afc)
 
@@ -71,7 +71,7 @@
 ## Role in Team Coordination
 - Maintained regular updates via Telegram and online meetings. Clarified doubts and assigned specific tasks to avoid redundancy and improve efficiency. 
 
-  **Evidence**: 
+  **Evidence**:    
 ![Screenshot of meeting](../Reflections/supporting_evidence_hailey/meeting.png)
 
 ## How I Supported Team Members
