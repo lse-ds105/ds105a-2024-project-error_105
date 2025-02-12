@@ -54,6 +54,9 @@ However, we eventually shifted most of our coordination and collaboration to Tel
 
 ![Supporting Team Members](./supporting_evidence_jonathan/supporting_team_members_2.png)
 
+### Conflict Resolution
+There were no major conflicts, and any simple misunderstandings or miscommunications were resolved during our regular meetings. 
+
 ## Learning Journey  
 
 ### Skills Developed  
