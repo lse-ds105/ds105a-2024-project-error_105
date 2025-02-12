@@ -4,93 +4,156 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sources</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --navbar-height: 60px;
+      --primary-color: #e60012;
+      --secondary-color: #ffcb05;
+      --text-color: #333;
+      --background-color: #f9f9f9;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: var(--primary-color);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      height: var(--navbar-height);
+    }
+
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .navbar ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2em;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .navbar ul li a:hover, .navbar ul li a.active {
+      background-color: white;
+      color: var(--primary-color);
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 20px;
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.8;
+      margin: 80px 20px 20px;
+      background-color: var(--background-color);
+      color: var(--text-color);
     }
-    h2 {
-      color: #2c3e50;
+
+    .hero {
+      position: relative;
+      text-align: center;
+      padding: 150px;
+      background: linear-gradient(135deg, #e60012, #ffcb05);
+      color: #ffffff;
     }
-    .source {
-      margin-bottom: 30px;
+
+    .hero h1 {
+      font-size: 3em;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     }
+
+    .source, .repository, .academic-sources {
+      max-width: 800px;
+      margin: 40px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
     .source img {
       width: 100px;
       height: auto;
       display: block;
-      margin-bottom: 10px;
+      margin: 0 auto 10px;
     }
-    .source p {
-      font-size: 1.1em;
-    }
+
     .source a {
-      color: #2980b9;
+      color: var(--primary-color);
+      font-weight: bold;
       text-decoration: none;
     }
+
     .source a:hover {
       text-decoration: underline;
-    }
-    .academic-sources {
-      margin-top: 50px;
-    }
-    ul {
-      list-style-type: disc;
-      padding-left: 20px;
-    }
-    ul li {
-      margin-bottom: 10px;
-    }
-    .repository {
-      margin-top: 30px;
-      font-size: 1.2em;
-      font-weight: bold;
-      color: #e74c3c;
     }
   </style>
 </head>
 <body>
 
-  <h1>Sources</h1>
+  <nav class="navbar">
+    <ul>
+      <li class="project-name"><a href="index.html">Project Error 105</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="process.html">Our Process</a></li>
+      <li><a href="visualisations.html">Findings</a></li>
+      <li><a href="sources.html" class="active">Data Sources</a></li>
+      <li><a href="contribute.html">Contribute</a></li>
+      <li><a href="our_team.html">Our Team</a></li>
+    </ul>
+  </nav>
 
-  <!-- PokeAPI -->
+  <div class="hero">
+    <h1>Sources</h1>
+  </div>
+  
   <div class="source">
     <h2>PokeAPI</h2>
     <img src="pokeapi_logo.png" alt="PokeAPI Logo">
     <p>PokeAPI provides detailed information about Pokémon, including types, stats, and descriptions. This data was used to determine Pokémon affinities for specific environmental conditions.</p>
+    <p><strong>Authentication:</strong> No authentication required.</p>
+    <p><strong>Rate Limits:</strong> Unlimited requests, but caching is encouraged.</p>
+    <p><strong>Endpoints Used:</strong> <code>/pokemon/{id}</code>, <code>/type/{id}</code></p>
+    <p><strong>Data Structure:</strong> JSON responses with details like name, stats, and abilities.</p>
+    <p><strong>Error Handling:</strong> Common errors include 404 for invalid Pokémon IDs.</p>
     <p><a href="https://pokeapi.co" target="_blank">Visit PokeAPI</a></p>
   </div>
 
-  <!-- Open-Meteo API -->
   <div class="source">
     <h2>Open-Meteo API</h2>
     <img src="open_meteo_logo.png" alt="Open-Meteo API Logo">
     <p>The Open-Meteo API was used to retrieve historical and forecasted weather data, helping identify the hottest, coldest, and wettest regions in the world.</p>
+    <p><strong>Authentication:</strong> No authentication required for free tier.</p>
+    <p><strong>Rate Limits:</strong> 10,000 requests per day, 5,000 per hour, 600 per minute.</p>
+    <p><strong>Endpoints Used:</strong> <code>/forecast</code>, <code>/historical</code></p>
+    <p><strong>Data Structure:</strong> JSON format with weather attributes like temperature, humidity, and precipitation.</p>
+    <p><strong>Error Handling:</strong> Common errors include 429 for exceeding request limits.</p>
     <p><a href="https://open-meteo.com" target="_blank">Visit Open-Meteo API</a></p>
   </div>
 
-  <!-- Google Earth Engine Dataset -->
   <div class="source">
     <h2>Google Earth Engine Dataset</h2>
     <img src="google_earth_engine_logo.png" alt="Google Earth Engine Logo">
     <p>The Google Earth Engine Dataset provides global biome data, including vegetation, terrain, and habitat classifications, which refined our Pokémon location matches.</p>
+    <p><strong>Authentication:</strong> Requires Google authentication and project approval.</p>
+    <p><strong>Rate Limits:</strong> 40 concurrent requests per project, 100 requests per second (6000 per minute).</p>
+    <p><strong>Endpoints Used:</strong> <code>/datasets/biome</code>, <code>/datasets/terrain</code></p>
+    <p><strong>Data Structure:</strong> JSON responses including biome classifications, vegetation indices, and terrain data.</p>
+    <p><strong>Error Handling:</strong> Common errors include quota exceedance (429) and authentication failures (401).</p>
     <p><a href="https://earthengine.google.com/" target="_blank">Visit Google Earth Engine</a></p>
-  </div>
-
-  <!-- Repository Link -->
-  <div class="repository">
-    <p>Check out our <a href="https://github.com/your-repo-link" target="_blank">GitHub Repository</a> for more details on how we accessed and cleaned the data. Be sure to check the README for step-by-step insights!</p>
-  </div>
-
-  <!-- Academic Sources -->
-  <div class="academic-sources">
-    <h2>Academic Sources</h2>
-    <ul>
-      <li>Li, X., Li, W., & Wang, S. (2011). *The distribution of temperature in relation to latitude: A geographic perspective*. Retrieved from <a href="https://link.springer.com/article/10.1007/s11629-011-1090-2" target="_blank">https://link.springer.com/article/10.1007/s11629-011-1090-2</a></li>
-      <li>GateCrashers. (2022). *Pokémon Crash Course*. Retrieved from <a href="https://gatecrashers.fan/2022/04/11/pokemon-crash-course/" target="_blank">https://gatecrashers.fan/2022/04/11/pokemon-crash-course/</a></li>
-      <li>Vignesh Narayanan (2004). *Our Resident Pokémon Expert*.</li>
-    </ul>
   </div>
 
 </body>
