@@ -72,7 +72,7 @@
 - Maintained regular updates via Telegram and online meetings. Clarified doubts and assigned specific tasks to avoid redundancy and improve efficiency. 
 
   **Evidence**:    
-![Screenshot of meeting](../Reflections/supporting_evidence_hailey/meeting.png)
+![Screenshot of meeting](../reflections/supporting_evidence_hailey/meeting.png)
 
 ## How I Supported Team Members
 - Assisted teammates with debugging Python scripts and optimizing map features.  
