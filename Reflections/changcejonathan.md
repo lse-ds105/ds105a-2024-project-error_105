@@ -50,8 +50,6 @@ However, we eventually shifted most of our coordination and collaboration to Tel
 
 ![Supporting Team Members](./supporting_evidence_jonathan/supporting_team_members_2.png)
 
-The second way I supported team members was by helping to neatly organize our repository. This involved restructuring the files, as we had not initially followed a strict structure. This experience taught me the importance of establishing a standard procedure for creating and naming files from the beginning to ensure smooth and efficient project progress.  
-
 ## Learning Journey  
 
 ### Skills Developed  
