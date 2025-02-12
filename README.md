@@ -114,7 +114,7 @@ We have three main data sources.
 │   ├── biomes_data/           # Biomes data files
 │   └── pokemon_data/          # Pokémon data files    
 ├── .env.template              # Sample .env file
-├── .gitignore                 # 
+├── .gitignore                 # Files for GitHub to not track
 ├── README.md                  # Project documentation
 └── requirements.txt           # Dependencies
 ```
