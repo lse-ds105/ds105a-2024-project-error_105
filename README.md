@@ -10,6 +10,7 @@ The goal of our project is to analyse the data of Pokémon, and map it to locati
 - [Usage](#usage)
 - [Data Sources](#data-sources)
 - [Project Structure](#project-structure)
+- [Search Bar Bug](#search-bar-bug-in-map)
 
 ## Installation
 Provide instructions on how to set up the project.
