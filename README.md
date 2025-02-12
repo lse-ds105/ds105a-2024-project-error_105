@@ -68,7 +68,7 @@ cp .env.template .env
 ```
 
 ## Usage
-## Sequence of Running the Notebooks  
+### Sequence of Running the Notebooks  
 
 To ensure accurate results, the notebooks must be executed in the following order:  
 
