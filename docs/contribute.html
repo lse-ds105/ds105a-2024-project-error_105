@@ -6,23 +6,42 @@
     <title>Contribute to Our Pokémon Project</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- For icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        /* Navigation Bar (Pokéball-like color scheme) */
-        .navbar {
+        /* === Global Styles === */
+        :root {
+            --navbar-height: 60px;
+            --primary-color: #e60012; /* Pokéball red */
+            --secondary-color: #ffcb05; /* Pokéball yellow */
+            --text-color: #333;
+            --background-color: #f9f9f9;
+        }
+
+        body {
             font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding-top: var(--navbar-height);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* === Navigation Bar (Standardized for all pages) === */
+        .navbar {
             position: fixed;
             top: 0;
             width: 100%;
-            background-color: #e60012; /* Red like Pokéball */
+            background-color: var(--primary-color);
             color: white;
             display: flex;
-            justify-content: space-around; /* Space out links evenly */
+            justify-content: center;
             align-items: center;
-            padding: 1rem;
+            padding: 0 20px;
             z-index: 1000;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            height: 60px; /* Explicitly set the height of the navbar */
+            height: var(--navbar-height);
         }
 
         .navbar ul {
@@ -31,8 +50,7 @@
             padding: 0;
             display: flex;
             gap: 20px;
-            width: 100%; /* Ensure the list takes up the full width */
-            justify-content: center; /* Center the links horizontally */
+            align-items: center;
         }
 
         .navbar ul li {
@@ -40,89 +58,66 @@
         }
 
         .navbar ul li a {
-            font-family: 'Poppins', sans-serif;
             color: white;
             text-decoration: none;
             font-weight: bold;
-            font-size: 1.2em; /* Slightly increase font size */
-            padding: 10px 20px; /* Add padding for spacing */
-            border-radius: 5px; /* Optional: add rounded corners */
+            font-size: 1.2em;
+            padding: 10px 20px;
+            border-radius: 5px;
             transition: background-color 0.3s ease, color 0.3s ease;
         }
 
         .navbar ul li a:hover {
-            background-color: #ffffff; /* White like Pokéball */
-            color: #e60012; /* Red text on hover */
+            background-color: white;
+            color: var(--primary-color);
         }
 
-        /* Style for the active link */
         .navbar ul li a.active {
-            background-color: #ffffff; /* White background */
-            color: #e60012; /* Red text */
+            background-color: white;
+            color: var(--primary-color);
         }
 
-        /* Style for the project name */
         .navbar ul li.project-name a {
-            font-size: 1.5em; /* Larger font size */
-            font-weight: 800; /* Bolder font */
-            padding: 0 20px; /* Adjust padding */
+            font-size: 1.5em;
+            font-weight: 800;
+            padding: 0 20px;
         }
 
-        /* Override hover behavior for the project name */
         .navbar ul li.project-name a:hover {
-            background-color: transparent; /* No background color on hover */
-            color: white; /* Keep the text color white */
+            background-color: transparent;
+            color: white;
         }
 
-        :root {
-            --navbar-height: 60px;
-        }
-
-        /* Apply padding to the body */
-        body {
-            padding-top: var(--navbar-height);
-            font-family: 'Poppins', sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
-        }
-
-        /* Main Content */
+        /* === Main Content === */
         .content {
-            margin-right: 80px; /* Offset for sidebar */
-            padding: 20px;
             flex: 1;
             max-width: 900px;
             margin: 0 auto;
+            padding: 20px;
         }
-
-        /* Header Styles */
+        
+        /* Hero Section */
         .hero {
-            position: relative;
+            position: relative; /* Make the hero section the positioning context */
             text-align: center;
             padding: 150px 20px;
-            background: linear-gradient(135deg, #e60012, #ffcb05);
-            color: #ffffff;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
         }
-
         .hero h1 {
             font-size: 3em;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-            color: white;
         }
 
         .hero p {
             font-size: 1.2em;
             margin-top: 10px;
-            padding-left: 10%;
-            padding-right: 10%;
+            padding: 0 10%;
         }
 
+        /* === Section Styles === */
         h1, h2 {
-            color: #e60012;
+            color: var(--primary-color);
             text-align: center;
             margin-bottom: 30px;
         }
@@ -136,8 +131,17 @@
             margin-bottom: 15px;
         }
 
+        .live-update {
+            background-color: #f9ebea;
+            border-left: 5px solid var(--primary-color);
+            padding: 15px;
+            margin-top: 30px;
+            font-style: italic;
+            font-size: 1.1em;
+        }
+
         .github-box {
-            background-color: #e60012;
+            background-color: var(--primary-color);
             color: white;
             padding: 15px;
             text-align: center;
@@ -168,23 +172,14 @@
             color: #555;
         }
 
-        .live-update {
-            background-color: #f9ebea;
-            border-left: 5px solid #e60012;
-            padding: 15px;
-            margin-top: 30px;
-            font-style: italic;
-            font-size: 1.1em;
-        }
-
-        /* Footer */
+        /* === Footer === */
         footer {
             text-align: center;
             font-size: 0.9em;
             margin-top: auto;
             padding: 20px;
-            background-color: #fff;
-            border-top: 1px solid #e60012;
+            background-color: white;
+            border-top: 1px solid var(--primary-color);
             color: #777;
         }
 
@@ -193,7 +188,7 @@
             position: fixed;
             bottom: 20px;
             right: 20px;
-            background-color: #e60012; /* Red button */
+            background-color: var(--primary-color);
             color: white;
             border: none;
             border-radius: 50%;
@@ -207,32 +202,58 @@
         }
 
         #scroll-to-top:hover {
-            background-color: #ff3333; /* Lighter red on hover */
+            background-color: #ff3333;
             transform: scale(1.1);
+        }
+
+        /* Scroll Down Button Container */
+        .scroll-down-container {
+            position: absolute;
+            bottom: 20px; /* Position at the bottom of the hero section */
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Scroll Down Button */
+        .scroll-down-button {
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+            font-size: 1.5em;
+            padding: 10px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .scroll-down-button:hover {
+            background-color: white;
+            color: var(--primary-color);
         }
     </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
+    <!-- Navigation Bar (Standardized for all pages) -->
     <nav class="navbar">
         <ul>
-            <!-- Add the project name as the first item in the navbar -->
             <li class="project-name"><a href="index.html">Project Error 105</a></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="process.html">Our Process</a></li>
             <li><a href="visualisations.html">Findings</a></li>
             <li><a href="sources.html">Data Sources</a></li>
-            <li><a href="contribute.html" class="active">Contribute</a></li> <!-- Add the active class here -->
+            <li><a href="contribute.html" class="active">Contribute</a></li>
             <li><a href="our_team.html">Our Team</a></li>
         </ul>
     </nav>
 
     <!-- Hero Section -->
     <div class="hero">
-        <section id="home">
-        <h1>Contribute to the PokéMap Project!</h1>
+        <h1 style="color: rgb(255, 255, 255);">Contribute to the PokéMap Project!</h1>
         <p>Join our team of Pokémon enthusiasts and data scientists! Whether you're an expert in Pokémon data analysis, web development, or have a creative flair, we have a place for you. Together, we can bring this ambitious project to life!</p>
-        </section>
+        <!-- Scroll Down Button -->
+        <div class="scroll-down-container">
+            <button class="scroll-down-button" onclick="scrollToContent()">▼</button>
+        </div>
     </div>
 
     <!-- Main Content -->
@@ -276,7 +297,13 @@
     </footer>
 
     <script>
-        // === Scroll-to-Top Button ===
+        // Scroll Down Button Functionality
+        function scrollToContent() {
+            const contentSection = document.querySelector('.content'); // Select the main content section
+            contentSection.scrollIntoView({ behavior: 'smooth' }); // Smoothly scroll to the content section
+        }
+
+        // Scroll-to-Top Button
         const scrollToTopButton = document.getElementById('scroll-to-top');
 
         window.addEventListener('scroll', () => {

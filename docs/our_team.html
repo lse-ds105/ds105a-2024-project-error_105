@@ -7,75 +7,85 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <title>Our Team</title>
   <style>
-    /* Navigation Bar (Pokéball-like color scheme) */
-    .navbar {
-      font-family: 'Poppins', sans-serif;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background-color: #e60012; /* Red like Pokéball */
-      color: white;
-      display: flex;
-      justify-content: space-around; /* Space out links evenly */
-      align-items: center;
-      padding: 1rem;
-      z-index: 1000;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      height: 60px; /* Explicitly set the height of the navbar */
-    }
-
-    .navbar ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      gap: 20px;
-      width: 100%; /* Ensure the list takes up the full width */
-      justify-content: center; /* Center the links horizontally */
-    }
-
-    .navbar ul li {
-      display: inline;
-    }
-
-    .navbar ul li a {
-      font-family: 'Poppins', sans-serif;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.2em; /* Slightly increase font size */
-      padding: 10px 20px; /* Add padding for spacing */
-      border-radius: 5px; /* Optional: add rounded corners */
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
-
-    .navbar ul li a:hover {
-      background-color: #ffffff; /* White like Pokéball */
-      color: #e60012; /* Red text on hover */
-    }
-
-    /* Style for the active link */
-    .navbar ul li a.active {
-      background-color: #ffffff; /* White background */
-      color: #e60012; /* Red text */
-    }
-
-    /* Style for the project name */
-    .navbar ul li.project-name a {
-      font-size: 1.5em; /* Larger font size */
-      font-weight: 800; /* Bolder font */
-      padding: 0 20px; /* Adjust padding */
-    }
-
-    /* Override hover behavior for the project name */
-    .navbar ul li.project-name a:hover {
-      background-color: transparent; /* No background color on hover */
-      color: white; /* Keep the text color white */
-    }
-
+    /* === Global Styles === */
     :root {
-      --navbar-height: 60px;
-    }
+            --navbar-height: 60px;
+            --primary-color: #e60012; /* Pokéball red */
+            --secondary-color: #ffcb05; /* Pokéball yellow */
+            --text-color: #333;
+            --background-color: #f9f9f9;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding-top: var(--navbar-height);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* === Navigation Bar (Standardized for all pages) === */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: var(--primary-color);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 20px;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            height: var(--navbar-height);
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .navbar ul li {
+            display: inline;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            background-color: white;
+            color: var(--primary-color);
+        }
+
+        .navbar ul li a.active {
+            background-color: white;
+            color: var(--primary-color);
+        }
+
+        .navbar ul li.project-name a {
+            font-size: 1.5em;
+            font-weight: 800;
+            padding: 0 20px;
+        }
+
+        .navbar ul li.project-name a:hover {
+            background-color: transparent;
+            color: white;
+        }
 
     /* Apply padding to the body */
     body {
