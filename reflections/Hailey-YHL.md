@@ -1,4 +1,4 @@
-# Individual Reflection
+# Individual Reflection - Hailey Yang
 
 ## Table of Contents
 1. [Technical Contributions](#technical-contributions)
@@ -12,7 +12,7 @@
 ## Specific Code/Features Developed
 - **Data Collection & Processing**: Developed a Python script (`NB1B.py`) to automate the collection of biome coordinates, ensuring accurate geographical data for analysis. Implemented batch processing to reduce runtime from **1 hour** to **a few minutes** and prevent kernel failures. Optimized the script to collect only central coordinates, reducing data size significantly.  
   **Evidence**:  
-  - [Link to `NB1B.py` on GitHub](https://github.com/lse-ds105/ds105a-2024-project-error_105/blob/main/code/data_collection/process_biomes.py)  
+  - [Link to `NB1B - process_biomes.py` on GitHub](https://github.com/lse-ds105/ds105a-2024-project-error_105/blob/main/code/data_collection/NB1B%20-%20process_biomes.py)  
   - Code snippets showing batch processing and optimization:  
     ```python
     # Example code snippet
@@ -35,7 +35,7 @@
   
   **Evidence**:  
     - **Screenshots of the map with Pokémon markers and pop-ups:**      
-        - Before: [Basic Map](../Reflections/supporting_evidence_hailey/pokemon_map_initial.html)
+        - Before: [Basic Map](../reflections/supporting_evidence_hailey/pokemon_map_initial.html)
         - After: [Interactive map with Pokémon markers](../visuals/html_files/pokemon_map.html)
     - **Git Commit History:**
 
