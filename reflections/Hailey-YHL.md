@@ -54,10 +54,9 @@
   - [Github Commit](https://github.com/lse-ds105/ds105a-2024-project-error_105/commit/23c81adc0885b94c739b60c90c32b12221938afc)
 
 ## Problems Solved
-- Reduced script execution time significantly using batch processing.  
-- Prevented excessive data collection, optimizing memory usage and preventing kernel crashes.  
+- Reduced script execution time significantly using batch processing. Prevented excessive data collection, optimizing memory usage and preventing kernel crashes.  
 - Ensured consistent and accessible webpage design while maintaining aesthetic appeal. 
-- Solved technicals problems of the map such as placement of markers.  
+- Solved technicals problems of the map such as placement of markers and came up with a Python code to solve typo errors for the map.  
 
 ## Technical Decisions Influenced
 - Developed a user-friendly Python script for biome data collection, allowing users to run it via terminal commands.  
