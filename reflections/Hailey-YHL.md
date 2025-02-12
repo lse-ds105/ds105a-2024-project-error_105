@@ -1,4 +1,4 @@
-# Individual Reflection
+# Individual Reflection - Hailey Yang
 
 ## Table of Contents
 1. [Technical Contributions](#technical-contributions)
@@ -12,7 +12,7 @@
 ## Specific Code/Features Developed
 - **Data Collection & Processing**: Developed a Python script (`NB1B.py`) to automate the collection of biome coordinates, ensuring accurate geographical data for analysis. Implemented batch processing to reduce runtime from **1 hour** to **a few minutes** and prevent kernel failures. Optimized the script to collect only central coordinates, reducing data size significantly.  
   **Evidence**:  
-  - [Link to `NB1B.py` on GitHub](https://github.com/lse-ds105/ds105a-2024-project-error_105/blob/main/code/data_collection/process_biomes.py)  
+  - [Link to `NB1B - process_biomes.py` on GitHub](https://github.com/lse-ds105/ds105a-2024-project-error_105/blob/main/code/data_collection/NB1B%20-%20process_biomes.py)  
   - Code snippets showing batch processing and optimization:  
     ```python
     # Example code snippet
@@ -27,7 +27,7 @@
     ```
   - Reduced time:  
     - Before: 1 hour
-    ![Before](../Reflections/supporting_evidence_hailey/runningtime.png)
+    ![Before](../reflections/supporting_evidence_hailey/runningtime.png)
 
     - After: 1 minute 
 
@@ -35,7 +35,7 @@
   
   **Evidence**:  
     - **Screenshots of the map with Pokémon markers and pop-ups:**      
-        - Before: [Basic Map](../Reflections/supporting_evidence_hailey/pokemon_map_initial.html)
+        - Before: [Basic Map](../reflections/supporting_evidence_hailey/pokemon_map_initial.html)
         - After: [Interactive map with Pokémon markers](../visuals/html_files/pokemon_map.html)
     - **Git Commit History:**
 
@@ -49,15 +49,14 @@
 - **Webpage Design**: Designed the 'Findings' section with a clean academic format and refined other sections. Standardized the theme across all pages and incorporated creative components like a Pokémon game on the homepage. Learned and implemented CSS and JavaScript to enhance user experience.  
 
   **Evidence**:  
-  -  [Findings Section on the Webpage](https://lse-ds105.github.io/ds105a-2024-project-error_105/visualisations.html)  
-  - [Website referenced for HTML/CSS/JavaScript code](https://www.w3schools.com/html/)  
+  - [Findings Section on the Webpage](https://lse-ds105.github.io/ds105a-2024-project-error_105/visualisations.html)  
+  - Website referenced for HTML/CSS/Javascript: [Website 1](https://www.w3schools.com/html/), [Website 2](https://www.w3schools.com/bootstrap5/) 
   - [Github Commit](https://github.com/lse-ds105/ds105a-2024-project-error_105/commit/23c81adc0885b94c739b60c90c32b12221938afc)
 
 ## Problems Solved
-- Reduced script execution time significantly using batch processing.  
-- Prevented excessive data collection, optimizing memory usage and preventing kernel crashes.  
+- Reduced script execution time significantly using batch processing. Prevented excessive data collection, optimizing memory usage and preventing kernel crashes.  
 - Ensured consistent and accessible webpage design while maintaining aesthetic appeal. 
-- Standardising designs for the webpages to ensure consistency.  
+- Solved technicals problems of the map such as placement of markers and came up with a Python code to solve typo errors for the map.  
 
 ## Technical Decisions Influenced
 - Developed a user-friendly Python script for biome data collection, allowing users to run it via terminal commands.  
@@ -71,8 +70,8 @@
 ## Role in Team Coordination
 - Maintained regular updates via Telegram and online meetings. Clarified doubts and assigned specific tasks to avoid redundancy and improve efficiency. 
 
-  **Evidence**:
-![Screenshot of meeting](../Reflections/supporting_evidence_hailey/meeting.png)
+  **Evidence**:    
+![Screenshot of meeting](../reflections/supporting_evidence_hailey/meeting.png)
 
 ## How I Supported Team Members
 - Assisted teammates with debugging Python scripts and optimizing map features.  
@@ -101,4 +100,5 @@
 ### Areas for Future Growth
 - **Developing Stronger Leadership Skills**: Be more confident in guiding members through technical challenges, decision-making, and feature implementation. Setting clear goals and take on a more active role in project coordination.
 - **Processing and Visualizing Larger Datasets**: Learning advanced data manipulation techniques, such as parallel processing and use more data visulization tools. Explore distributed computing frameworks like **Dask** or **Apache Spark** to handle large datasets across multiple systems, enabling faster data processing and more effective analysis.
+- **Webpage designing**: I can learn more about HTML/CSS/Java to come up with more complicated web designing and incorporate more functions such as making the website usable on all devices instead of just laptop.
 ---
