@@ -29,8 +29,6 @@ When I first created the colour identification code, a problem was encountered w
 
 ### Technical Decisions I Influenced  
 
-![Technical Decision 1](./supporting_evidence_jonathan/technical_decisions.png)
-
 Our group had originally planned to factor the Pokémon's listed habitat on PokéAPI into the placement of Pokémon on the interactive map. However, during my exploratory data analysis, I discovered that the PokéAPI had not stored this data for a significant number of Pokémon. As such, we adopted a simpler approach for matching Pokémon to biomes, eliminating the need to rely on habitat data.  
 
 ![Technical Decision 1](./supporting_evidence_jonathan/technical_decisions.png)
@@ -38,7 +36,6 @@ Our group had originally planned to factor the Pokémon's listed habitat on Pok�
 ## Team Collaboration  
 
 ### Role in Team Coordination  
-![Team Collaboration](./supporting_evidence_jonathan/role_in_team_collab.png)
 
 As the idea for this project was originally mine, I took more initiative during the initial stages of the project, deciding how the group proposal projects—and the parts we were in charge of—were divided up. However, due to an injury I suffered during the winter break and the medical treatment I underwent afterward, I took a more backseat approach at the start of this year. That said, I remained responsive and contributed my input where I could.
 
