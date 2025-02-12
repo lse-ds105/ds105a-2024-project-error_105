@@ -17,17 +17,6 @@
             --background-color: #f9f9f9;
         }
 
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--background-color);
-            color: var(--text-color);
-            margin: 0;
-            padding-top: var(--navbar-height);
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
         /* === Navigation Bar (Standardized for all pages) === */
         .navbar {
             position: fixed;
@@ -404,30 +393,6 @@
             text-decoration: none; /* Remove underline on hover */
             font-weight: normal; /* Adjust the weight if desired */
         }
-        /* Scroll Down Button Container */
-        .scroll-down-container {
-            position: absolute;
-            bottom: 20px; /* Position at the bottom of the hero section */
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        /* Scroll Down Button */
-        .scroll-down-button {
-            background-color: transparent;
-            border: 2px solid white;
-            color: white;
-            font-size: 1.5em;
-            padding: 10px 20px;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        .scroll-down-button:hover {
-            background-color: white;
-            color: var(--primary-color);
-        }
     </style>
 </head>
 <body>
@@ -449,10 +414,6 @@
     <div class="hero">
         <h1>Our Process</h1>
         <p>Explore the process of our project!</p>
-        <!-- Scroll Down Button -->
-        <div class="scroll-down-container">
-            <button class="scroll-down-button" onclick="scrollToContent()">▼</button>
-        </div>
     </div>
 
     <!-- Introductory Text Section -->
@@ -690,12 +651,6 @@
         function closeModal() {
             const modal = document.getElementById('modal');
             modal.style.display = 'none';
-        }
-
-        // Scroll Down Button Functionality
-        function scrollToContent() {
-            const contentSection = document.querySelector('.intro-text'); // Select the main content section
-            contentSection.scrollIntoView({ behavior: 'smooth' }); // Smoothly scroll to the content section
         }
 
         // === Scroll-to-Top Button ===
