@@ -13,13 +13,15 @@ My main role in this project was to deal with everything Pokémon related. As su
 
 ![Specific Code 1](./supporting_evidence_jonathan/specific_code_1.png)  
 
-Lastly, I also created visualisations to portray the trends and patterns that I encountered along the way. 
+Furthermore, I created visualisations to portray the trends and patterns that I encountered along the way. 
 
 ![Specific Code 2](./supporting_evidence_jonathan/specific_code_2.png)  
 
 I also suggested the usage of SQL's `JOIN` function, allowing us to seamlessly link Pokémon to locations based on the ranking.
 
 ![Specific Code 3](./supporting_evidence_jonathan/specific_code_3.png)
+
+Lastly, I designed the structure and content of the `process` page, as well as the Pokémon segment of the `findings` page, before Hailey added the aesthetic web design. 
 
 #### Large Collection Space Required  
 While storing the data, I realised that there were various types of data being collected that were not necessary, including many keys in the `json` file with the word `'sprites'`. As such, I kept what was needed and removed the rest to reduce the storage space required.  
