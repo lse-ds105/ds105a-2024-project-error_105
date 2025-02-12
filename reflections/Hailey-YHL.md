@@ -27,7 +27,7 @@
     ```
   - Reduced time:  
     - Before: 1 hour
-    ![Before](../Reflections/supporting_evidence_hailey/runningtime.png)
+    ![Before](../reflections/supporting_evidence_hailey/runningtime.png)
 
     - After: 1 minute 
 
@@ -57,7 +57,7 @@
 - Reduced script execution time significantly using batch processing.  
 - Prevented excessive data collection, optimizing memory usage and preventing kernel crashes.  
 - Ensured consistent and accessible webpage design while maintaining aesthetic appeal. 
-- Standardising designs for the webpages to ensure consistency.  
+- Solved technicals problems of the map such as placement of markers.  
 
 ## Technical Decisions Influenced
 - Developed a user-friendly Python script for biome data collection, allowing users to run it via terminal commands.  
