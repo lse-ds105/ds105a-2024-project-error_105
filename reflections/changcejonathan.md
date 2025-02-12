@@ -23,6 +23,8 @@ I also suggested the usage of SQL's `JOIN` function, allowing us to seamlessly l
 
 Lastly, I designed the structure and content of the `process` page, as well as the Pokémon segment of the `findings` page, before Hailey added the aesthetic web design. 
 
+### Problems I solved
+
 #### Large Collection Space Required  
 While storing the data, I realised that there were various types of data being collected that were not necessary, including many keys in the `json` file with the word `'sprites'`. As such, I kept what was needed and removed the rest to reduce the storage space required.  
 
