@@ -50,7 +50,7 @@
 
   **Evidence**:  
   - [Findings Section on the Webpage](https://lse-ds105.github.io/ds105a-2024-project-error_105/visualisations.html)  
-  - [Website referenced for HTML/CSS/JavaScript code](https://www.w3schools.com/html/)  
+  - Website referenced for HTML/CSS/Javascript: [Website 1](https://www.w3schools.com/html/), [Website 2](https://www.w3schools.com/bootstrap5/) 
   - [Github Commit](https://github.com/lse-ds105/ds105a-2024-project-error_105/commit/23c81adc0885b94c739b60c90c32b12221938afc)
 
 ## Problems Solved
@@ -101,4 +101,5 @@
 ### Areas for Future Growth
 - **Developing Stronger Leadership Skills**: Be more confident in guiding members through technical challenges, decision-making, and feature implementation. Setting clear goals and take on a more active role in project coordination.
 - **Processing and Visualizing Larger Datasets**: Learning advanced data manipulation techniques, such as parallel processing and use more data visulization tools. Explore distributed computing frameworks like **Dask** or **Apache Spark** to handle large datasets across multiple systems, enabling faster data processing and more effective analysis.
+- **Webpage designing**: I can learn more about HTML/CSS/Java to come up with more complicated web designing and incorporate more functions such as making the website usable on all devices instead of just laptop.
 ---
