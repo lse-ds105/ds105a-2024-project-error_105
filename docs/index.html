@@ -752,6 +752,11 @@
                 if (link.getAttribute('href') === 'index.html' && currentPage === 'index.html') {
                     link.classList.add('active');
                 }
+
+                // Ensure the "Project Error 105" link is never highlighted
+                if (link.parentElement.classList.contains('project-name')) {
+                    link.classList.remove('active');
+                }
             });
 
             // Ensure clicking on "Project Error 105" redirects to the homepage
