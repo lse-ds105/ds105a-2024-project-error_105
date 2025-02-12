@@ -1,17 +1,15 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/_SwzfpU1)
 
-# Pokemon in the Real World
+# Pokémon in the Real World
 
 ## Description
-The goal of our project is to analyse the data of Pokemon, and map it to locations in the real world by referencing weather data. Due to time constraints, we have focused on 3 primary types: fire, ice and water. The final product of our project is a map where one can see the locations of the Pokemon. 
+The goal of our project is to analyse the data of Pokémon, and map it to locations in the real world by referencing weather data. Due to time constraints, we have focused on 3 primary types: fire, ice and water. The final product of our project is a map where one can see the locations of the Pokémon. 
 
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
 - [Data Sources](#data-sources)
 - [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 Provide instructions on how to set up the project.
@@ -69,36 +67,57 @@ cp .env.template .env
 ```
 
 ## Usage
-### **Running the Python Script**
+## Sequence of Running the Notebooks  
 
-To run the `process_biomes.py` script, open your terminal and navigate to the directory where the `proess_biomes.py` script is located. Then, use the following command:
+To ensure accurate results, the notebooks must be executed in the following order:  
 
 ```bash
-python process_biomes.py
+NB1A → NB2A → NB3A → NB1B → NB1C → NB2C → NB3B → NB3C
+```  
+
+**Note:** Running the notebooks in a different order may lead to errors.
+
+### **Running the Python Script (NB1B)**
+
+To run the `NB1B - process_biomes.py` script, open your terminal and navigate to the directory where the `NB1B - proess_biomes.py` script is located. Then, use the following command:
+
+```bash
+python "NB1B - process_biomes.py"
 ```
 
+Note! It is important to use **double quotes** to ensure that the script is run properly. 
+
 ## Data Sources 
+
+We have three main data sources. 
+1. [PokeAPI](https://pokeapi.co/docs/v2) - for Pokémon data. 
+2. [RESOLVE Ecoregions 2017](https://developers.google.com/earth-engine/datasets/catalog/RESOLVE_ECOREGIONS_2017) - for biome and location data. 
+3. [Open-Meteo](https://open-meteo.com/) - for various types of meteorological data. 
+
 
 ## Project Structure 
 ```bash
 /project-root
+├── code/              
+│   ├── data_collection/       # Code for data collection
+│   ├── data_processing/       # Code for data processing
+│   └── data_visualisation/    # Code for generating visualizations
 ├── data/                 
 │   ├── biomes_data/           # Biomes data files
 │   ├── pokemon_data/          # Pokémon data files
 │   ├── weather_data/          # Weather data files
 │   └── main.db                # SQL Tables
-├── code/              
-│   ├── data_collection/       # Code for data collection
-│   ├── data_processing/       # Code for data processing
-│   └── Data Visualisation/    # Code for generating visualizations
-│
-├── map/                       # Maps and visualizations
 ├── docs/                      # GitHub Pages entry point, assorted diagrams and media files
+├── reflections/    
+├── visuals/
+│   ├── biomes_data/           # Biomes data files
+│   └── pokemon_data/          # Pokémon data files    
+├── .env.template              # Sample .env file
+├── .gitignore                 # 
 ├── README.md                  # Project documentation
 └── requirements.txt           # Dependencies
 ```
 
-FOR FINAL EDITOR OF THE README MENTION SOMEWHERE THE SEQUENCE IN WHICH THE NOTEBOOKS SHOULD BE RUN \, I ASSUME IT IS 1A, 1C so and so forth right, because NB2C rn is throwing an error code which is vvvvv bad
 
 
 
