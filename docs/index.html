@@ -407,12 +407,10 @@
     <!-- Pikachu Animation -->
     <img id="pikachu" src="pikachu.png" alt="Pikachu running" onclick="showEasterEgg('pikachu')">
 
-    <!-- Navigation Bar -->
     <nav class="navbar">
         <ul>
-            <!-- Add the project name as the first item in the navbar -->
             <li class="project-name"><a href="index.html">Project Error 105</a></li>
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="process.html">Our Process</a></li>
             <li><a href="visualisations.html">Findings</a></li>
             <li><a href="sources.html">Data Sources</a></li>
@@ -742,16 +740,28 @@
             }
         }
 
-        // Add this script to dynamically highlight the current page
         document.addEventListener('DOMContentLoaded', () => {
             const currentPage = window.location.pathname.split('/').pop() || 'index.html'; // Get the current page filename
             const navLinks = document.querySelectorAll('.navbar ul li a');
 
             navLinks.forEach(link => {
-                if (link.getAttribute('href') === currentPage) {
-                    link.classList.add('active'); // Add the active class to the current page's link
+                // Remove the 'active' class from all links initially
+                link.classList.remove('active');
+
+                // Add the 'active' class to the "Home" link if the current page is the homepage
+                if (link.getAttribute('href') === 'index.html' && currentPage === 'index.html') {
+                    link.classList.add('active');
                 }
             });
+
+            // Ensure clicking on "Project Error 105" redirects to the homepage
+            const projectNameLink = document.querySelector('.navbar ul li.project-name a');
+            if (projectNameLink) {
+                projectNameLink.addEventListener('click', (e) => {
+                    e.preventDefault(); // Prevent default link behavior
+                    window.location.href = 'index.html'; // Redirect to the homepage
+                });
+            }
         });
     </script>
 </body>

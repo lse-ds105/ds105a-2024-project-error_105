@@ -149,7 +149,8 @@
             font-size: 1.1em;
             font-weight: 600;
             margin-top: 20px;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            cursor: pointer; /* Add a pointer cursor to indicate it's clickable */
         }
 
         .github-box a {
@@ -159,7 +160,9 @@
         }
 
         .github-box:hover {
-            background-color: #d70011;
+            background-color: #d70011; /* Darker red on hover */
+            transform: scale(1.05); /* Slightly enlarge the button */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
         }
 
         .contact, .github {

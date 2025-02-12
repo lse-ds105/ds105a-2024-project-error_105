@@ -7,15 +7,17 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    /* === Global Styles === */
     :root {
-      --navbar-height: 60px;
-      --primary-color: #e60012;
-      --secondary-color: #ffcb05;
-      --text-color: #333;
-      --background-color: #f9f9f9;
-    }
+        --navbar-height: 60px;
+        --primary-color: #e60012; /* Pokéball red */
+        --secondary-color: #ffcb05; /* Pokéball yellow */
+        --text-color: #333;
+        --background-color: #f9f9f9;
+      }
 
-    .navbar {
+      /* === Navigation Bar (Standardized for all pages) === */
+      .navbar {
       position: fixed;
       top: 0;
       width: 100%;
@@ -39,6 +41,10 @@
       align-items: center;
     }
 
+    .navbar ul li {
+      display: inline;
+    }
+
     .navbar ul li a {
       color: white;
       text-decoration: none;
@@ -49,30 +55,53 @@
       transition: background-color 0.3s ease, color 0.3s ease;
     }
 
-    .navbar ul li a:hover, .navbar ul li a.active {
+    .navbar ul li a:hover {
       background-color: white;
       color: var(--primary-color);
     }
 
-    body {
-      font-family: 'Poppins', sans-serif;
-      line-height: 1.8;
-      margin: 80px 20px 20px;
-      background-color: var(--background-color);
-      color: var(--text-color);
+    .navbar ul li a.active {
+      background-color: white;
+      color: var(--primary-color);
     }
 
+    .navbar ul li.project-name a {
+      font-size: 1.5em;
+      font-weight: 800;
+      padding: 0 20px;
+    }
+
+    .navbar ul li.project-name a:hover {
+      background-color: transparent;
+      color: white;
+    }
+
+    /* Header Styles */
     .hero {
-      position: relative;
+      position: relative; /* Add relative positioning */
       text-align: center;
-      padding: 150px;
-      background: linear-gradient(135deg, #e60012, #ffcb05);
-      color: #ffffff;
+      padding: 150px; /* Adjust padding as needed */
+      background: linear-gradient(135deg, #e60012, #ffcb05); /* Red to yellow gradient */
+      color: #ffffff; /* White text */
     }
 
     .hero h1 {
       font-size: 3em;
       text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.8;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
     }
 
     .source, .repository, .academic-sources {
@@ -100,6 +129,88 @@
     .source a:hover {
       text-decoration: underline;
     }
+    /* Scroll Down Button */
+    .scroll-down-button {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: transparent;
+      border: 2px solid white;
+      color: white;
+      font-size: 1.5em;
+      padding: 10px 20px;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .scroll-down-button:hover {
+      background-color: white;
+      color: #e60012;
+    }
+    
+    /* === Scroll-to-Top Button === */
+    #scroll-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #e60012; /* Red button */
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      display: none;
+    }
+
+    #scroll-to-top:hover {
+      background-color: #ff3333; /* Lighter red on hover */
+      transform: scale(1.1);
+    }
+
+    .footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: var(--primary-color);
+      color: white;
+      margin-top: 60px;
+      border-top: 5px solid var(--secondary-color);
+    }
+
+    .footer h3 {
+      margin-bottom: 15px;
+      font-size: 1.5em;
+    }
+
+    .footer p {
+      font-size: 1em;
+    }
+
+    .footer a {
+      color: var(--secondary-color);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    .footer ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer ul li {
+      margin-bottom: 5px;
+    }
+
+
   </style>
 </head>
 <body>
@@ -118,11 +229,16 @@
 
   <div class="hero">
     <h1>Sources</h1>
+    <p>Check out the sources used for our project!</p>
+    <!-- Scroll Down Button -->
+    <div class="scroll-down-container">
+      <button class="scroll-down-button" onclick="scrollToContent()">▼</button>
+  </div>
   </div>
   
   <div class="source">
     <h2>PokeAPI</h2>
-    <img src="pokeapi_logo.png" alt="PokeAPI Logo">
+    <img src="pokeapi.png" alt="PokeAPI Logo">
     <p>PokeAPI provides detailed information about Pokémon, including types, stats, and descriptions. This data was used to determine Pokémon affinities for specific environmental conditions.</p>
     <p><strong>Authentication:</strong> No authentication required.</p>
     <p><strong>Rate Limits:</strong> Unlimited requests, but caching is encouraged.</p>
@@ -134,7 +250,7 @@
 
   <div class="source">
     <h2>Open-Meteo API</h2>
-    <img src="open_meteo_logo.png" alt="Open-Meteo API Logo">
+    <img src="open_meteo.png" alt="Open-Meteo API Logo">
     <p>The Open-Meteo API was used to retrieve historical and forecasted weather data, helping identify the hottest, coldest, and wettest regions in the world.</p>
     <p><strong>Authentication:</strong> No authentication required for free tier.</p>
     <p><strong>Rate Limits:</strong> 10,000 requests per day, 5,000 per hour, 600 per minute.</p>
@@ -146,7 +262,7 @@
 
   <div class="source">
     <h2>Google Earth Engine Dataset</h2>
-    <img src="google_earth_engine_logo.png" alt="Google Earth Engine Logo">
+    <img src="google_earth_engine.png" alt="Google Earth Engine Logo">
     <p>The Google Earth Engine Dataset provides global biome data, including vegetation, terrain, and habitat classifications, which refined our Pokémon location matches.</p>
     <p><strong>Authentication:</strong> Requires Google authentication and project approval.</p>
     <p><strong>Rate Limits:</strong> 40 concurrent requests per project, 100 requests per second (6000 per minute).</p>
@@ -155,6 +271,56 @@
     <p><strong>Error Handling:</strong> Common errors include quota exceedance (429) and authentication failures (401).</p>
     <p><a href="https://earthengine.google.com/" target="_blank">Visit Google Earth Engine</a></p>
   </div>
+
+  <!-- Academic Sources Section -->
+  <footer class="footer">
+    <h3>Academic Sources</h3>
+    <ul>
+      <li><a href="https://link.springer.com/article/10.1007/s11629-011-1090-2" target="_blank">The Distribution of Temperature</a></li>
+      <li><a href="https://gatecrashers.fan/2022/04/11/pokemon-crash-course/" target="_blank">Pokémon Crash Course</a></li>
+    </ul> 
+  </footer>
+
+  <!-- Scroll-to-Top Button -->
+  <button id="scroll-to-top" title="Go to top">↑</button>
+
+  <script>
+  // Scroll Down Button Functionality
+        function scrollToContent() {
+            const contentSection = document.querySelector('.source');
+            contentSection.scrollIntoView({ behavior: 'smooth' });
+        }
+
+  // === Scroll-to-Top Button ===
+  const scrollToTopButton = document.getElementById('scroll-to-top');
+
+  window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+          scrollToTopButton.style.display = 'block';
+      } else {
+          scrollToTopButton.style.display = 'none';
+      }
+  });
+
+  scrollToTopButton.addEventListener('click', () => {
+      window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+      });
+  });
+
+  // Add this script to dynamically highlight the current page
+  document.addEventListener('DOMContentLoaded', () => {
+      const currentPage = window.location.pathname.split('/').pop() || 'index.html'; // Get the current page filename
+      const navLinks = document.querySelectorAll('.navbar ul li a');
+
+      navLinks.forEach(link => {
+          if (link.getAttribute('href') === currentPage) {
+              link.classList.add('active'); // Add the active class to the current page's link
+          }
+      });
+  });
+</script>
 
 </body>
 </html>

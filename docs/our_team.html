@@ -9,72 +9,72 @@
   <style>
     /* === Global Styles === */
     :root {
-            --navbar-height: 60px;
-            --primary-color: #e60012; /* Pokéball red */
-            --secondary-color: #ffcb05; /* Pokéball yellow */
-            --text-color: #333;
-            --background-color: #f9f9f9;
-        }
+        --navbar-height: 60px;
+        --primary-color: #e60012; /* Pokéball red */
+        --secondary-color: #ffcb05; /* Pokéball yellow */
+        --text-color: #333;
+        --background-color: #f9f9f9;
+      }
 
-        /* === Navigation Bar (Standardized for all pages) === */
-        .navbar {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background-color: var(--primary-color);
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 0 20px;
-            z-index: 1000;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            height: var(--navbar-height);
-        }
+      /* === Navigation Bar (Standardized for all pages) === */
+      .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: var(--primary-color);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      height: var(--navbar-height);
+    }
 
-        .navbar ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            gap: 20px;
-            align-items: center;
-        }
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
 
-        .navbar ul li {
-            display: inline;
-        }
+    .navbar ul li {
+      display: inline;
+    }
 
-        .navbar ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.2em;
-            padding: 10px 20px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
+    .navbar ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2em;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
 
-        .navbar ul li a:hover {
-            background-color: white;
-            color: var(--primary-color);
-        }
+    .navbar ul li a:hover {
+      background-color: white;
+      color: var(--primary-color);
+    }
 
-        .navbar ul li a.active {
-            background-color: white;
-            color: var(--primary-color);
-        }
+    .navbar ul li a.active {
+      background-color: white;
+      color: var(--primary-color);
+    }
 
-        .navbar ul li.project-name a {
-            font-size: 1.5em;
-            font-weight: 800;
-            padding: 0 20px;
-        }
+    .navbar ul li.project-name a {
+      font-size: 1.5em;
+      font-weight: 800;
+      padding: 0 20px;
+    }
 
-        .navbar ul li.project-name a:hover {
-            background-color: transparent;
-            color: white;
-        }
+    .navbar ul li.project-name a:hover {
+      background-color: transparent;
+      color: white;
+    }
 
     /* Apply padding to the body */
     body {
