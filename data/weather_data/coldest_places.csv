@@ -1,101 +1,101 @@
-region,max_temperature,min_temperature,max_rainfall
-Great Lakes Basin desert steppe,-20.1,-34.4,0.0
-Northern Shortgrass prairie,-17.7,-30.6,0.0
-Canadian Aspen forests and parklands,-23.3,-30.0,0.0
-Montana Valley and Foothill grasslands,-12.0,-28.4,0.0
-Northern Tallgrass prairie,-18.7,-28.3,0.0
-North Tibetan Plateau-Kunlun Mountains alpine desert,-15.3,-28.2,0.7
-Qilian Mountains subalpine meadows,-11.1,-26.8,0.0
-South Central Rockies forests,-18.4,-26.0,0.0
-Alberta-British Columbia foothills forests,-8.2,-25.6,0.4
-Da Hinggan-Dzhagdy Mountains conifer forests,-14.5,-25.2,0.0
-Sayan Intermontane steppe,-10.0,-25.1,0.0
-Altai steppe and semi-desert,-13.3,-25.0,0.0
-Khangai Mountains alpine meadow,-11.0,-24.6,0.0
-Central Tibetan Plateau alpine steppe,-14.0,-24.4,0.4
-Junggar Basin semi-desert,-12.0,-24.3,0.0
-Hindu Kush alpine meadow,-22.1,-24.1,0.5
-Northern Rockies conifer forests,-12.6,-23.9,0.0
-Snake-Columbia shrub steppe,-13.5,-23.2,0.0
-Eastern Canadian Forest-Boreal transition,-10.6,-23.1,0.0
-Changbai Mountains mixed forests,-6.5,-22.9,3.7
-Wyoming Basin shrub steppe,-13.3,-22.7,0.0
-Altai montane forest and forest steppe,-5.2,-22.1,0.0
-Karakoram-West Tibetan Plateau alpine steppe,-17.5,-22.0,0.1
-Blue Mountains forests,-5.8,-22.0,0.0
-Amur meadow steppe,-14.1,-21.9,0.0
-Colorado Rockies forests,-9.7,-21.9,0.0
-Pamir alpine desert and tundra,-12.8,-21.8,0.0
-Altai alpine meadow and tundra,-15.1,-21.2,0.0
-Daurian forest steppe,-11.2,-20.8,0.0
-Eastern Cascades forests,-7.7,-20.8,0.0
-Manchurian mixed forests,-12.1,-20.2,0.0
-Gobi Lakes Valley desert steppe,-4.2,-19.0,0.0
-Nenjiang River grassland,-8.1,-18.9,0.0
-Qaidam Basin semi-desert,-3.5,-18.7,0.0
-New England-Acadian forests,-7.5,-18.5,0.0
-Kazakh semi-desert,-6.0,-18.5,0.2
-Tibetan Plateau alpine shrublands and meadows,-6.1,-18.4,0.2
-Nebraska Sand Hills mixed grasslands,-10.8,-18.2,5.0
-Fraser Plateau and Basin conifer forests,-3.1,-18.2,0.0
-Okanogan dry forests,-6.8,-18.1,0.0
-Ussuri broadleaf and mixed forests,-6.4,-18.1,0.1
-Upper Midwest US forest-savanna transition,-12.7,-17.7,0.0
-Tian Shan montane conifer forests,-8.5,-17.5,1.5
-Western Himalayan subalpine conifer forests,-10.5,-17.4,0.0
-Helanshan montane conifer forests,-9.4,-17.3,0.0
-Central British Columbia Mountain forests,-11.5,-17.3,0.0
-Kazakh steppe,-9.7,-17.3,0.0
-Mongolian-Manchurian grassland,-8.1,-16.9,0.0
-Great Basin montane forests,-5.3,-16.6,0.0
-Gulf of St. Lawrence lowland forests,-9.0,-16.5,0.0
-Suiphun-Khanka meadows and forest meadows,-6.9,-15.7,0.0
-Eastern Himalayan alpine shrub and meadows,-6.5,-15.6,0.0
-Eastern Gobi desert steppe,-1.6,-15.5,0.0
-Wasatch and Uinta montane forests,-5.6,-15.5,0.0
-Kazakh upland steppe,-7.0,-15.3,0.0
-Qilian Mountains conifer forests,-6.0,-15.2,0.0
-Eastern Great Lakes lowland forests,-7.5,-15.1,0.0
-Great Basin shrub steppe,-0.7,-15.1,0.0
-Palouse prairie,-2.4,-15.0,0.0
-Western Great Lakes forests,-11.2,-14.5,0.4
-Central Tallgrass prairie,-9.9,-14.5,13.7
-Alashan Plateau semi-desert,2.0,-14.2,0.0
-Kazakh forest steppe,-8.7,-13.7,0.0
-Nujiang Langcang Gorge alpine conifer and mixed forests,-6.7,-13.5,2.7
-Northwestern Himalayan alpine shrub and meadows,-7.8,-13.4,5.2
-Southeast Tibet shrublands and meadows,-1.7,-13.3,5.1
-Khangai Mountains conifer forests,-7.0,-13.2,0.0
-Selenge-Orkhon forest steppe,-5.5,-13.1,0.0
-Taklimakan desert,2.5,-13.1,0.0
-Western shortgrass prairie,-3.5,-13.1,3.9
-North Cascades conifer forests,-0.5,-12.5,0.0
-Pontic steppe,-5.1,-12.4,0.0
-Tian Shan montane steppe and meadows,-3.0,-12.3,1.0
-Sayan alpine meadows and tundra,-9.3,-12.1,0.1
-Northeast China Plain deciduous forests,-3.6,-12.1,0.0
-Emin Valley steppe,-3.1,-12.1,0.1
-Hengduan Mountains subalpine conifer forests,-4.3,-12.1,0.0
-Western Himalayan alpine shrub and meadows,-2.3,-12.0,0.0
-Eastern Anatolian montane steppe,-3.2,-11.9,0.0
-British Columbia coastal conifer forests,-1.9,-11.8,0.0
-Sarmatic mixed forests,-9.1,-11.2,0.0
-Ordos Plateau steppe,-2.6,-11.0,0.0
-East European forest steppe,-7.1,-10.6,0.0
-Central-Southern US mixed grasslands,-2.2,-10.6,4.8
-Qionglai-Minshan conifer forests,-5.0,-10.5,4.1
-Western Siberian hemiboreal forests,-6.1,-10.4,2.7
-Yarlung Zanbo arid steppe,8.4,-10.3,0.0
-Flint Hills tallgrass prairie,-4.9,-9.6,9.4
-Central-Southern Cascades Forests,-1.3,-9.6,0.0
-South Siberian forest steppe,-7.1,-9.6,2.1
-Tarim Basin deciduous forests and steppe,3.2,-9.3,0.0
-Kopet Dag woodlands and forest steppe,-3.6,-9.1,0.0
-Alps conifer and mixed forests,-7.3,-9.1,1.6
-Sierra Nevada forests,0.8,-9.0,0.0
-Himalayan subtropical pine forests,-4.6,-8.8,0.0
-Sayan montane conifer forests,-4.0,-8.8,0.3
-Klamath-Siskiyou forests,3.6,-8.7,0.0
-Central European mixed forests,0.0,-8.7,0.0
-Hokkaido montane conifer forests,-4.1,-8.6,11.4
-Puget lowland forests,-1.0,-8.6,0.0
+region,temperature,max_rainfall,latitude,longitude
+Canadian Low Arctic tundra,-37.5,0.0,65.75614598895739,-99.13115906940823
+Cherskii-Kolyma mountain tundra,-37.1,0.3,65.83012913270245,144.37527559602933
+Canadian Middle Arctic Tundra,-34.8,0.0,69.06278125695016,-91.08110141448437
+Great Lakes Basin desert steppe,-34.4,0.0,48.74113799466631,93.68490097157742
+Mid-Canada Boreal Plains forests,-33.2,0.0,54.83909806625907,-108.36580951598022
+Midwest Canadian Shield forests,-33.2,0.0,54.26123326631851,-96.04530775585702
+Copper Plateau taiga,-32.3,0.0,62.16990259997762,-145.32002103497095
+Novosibirsk Islands Arctic desert,-31.7,4.3,75.07541338303871,142.05992090585198
+Northern Shortgrass prairie,-31.3,0.0,47.55583031175631,-105.63968241960043
+Torngat Mountain tundra,-30.9,1.7,58.687010455720035,-64.05101068216037
+Transantarctic Mountains tundra,-30.9,0.0,-85.82815961454199,-177.3805713380788
+Eastern Canadian Shield taiga,-30.8,0.0,55.102335433140695,-68.63724882365852
+Northern Canadian Shield taiga,-30.3,0.0,61.486657391379055,-105.06769288057133
+Canadian Aspen forests and parklands,-30.3,0.0,49.39040069806108,-102.7929197552445
+Northeast Siberian taiga,-30.0,0.6,65.49904186465082,147.29426493307486
+Trans-Baikal Bald Mountain tundra,-29.4,0.0,56.185074704377854,122.27436705214163
+Southern Hudson Bay taiga,-29.3,0.0,53.814140386689004,-85.49135221559648
+Taimyr-Central Siberian tundra,-28.9,0.0,72.3164681133716,100.98398844784465
+Montana Valley and Foothill grasslands,-28.5,0.0,46.62716716115227,-111.69567889872829
+North Tibetan Plateau-Kunlun Mountains alpine desert,-28.2,0.7,36.17483636617563,85.24463181367204
+Kalaallit Nunaat High Arctic tundra,-27.3,0.0,81.65730002789047,-40.87179908680918
+Yamal-Gydan tundra,-27.1,0.2,69.06936464947026,76.2553864620324
+Central Canadian Shield forests,-27.0,0.0,49.85543046782225,-78.85631103552913
+Qilian Mountains subalpine meadows,-26.8,0.0,38.65994839762418,97.9856944881943
+Kalaallit Nunaat Arctic steppe,-26.5,0.0,69.62876285697395,-38.91020076734502
+Northeast Siberian coastal tundra,-26.1,4.5,70.87548539505822,147.11904429188417
+Northern Tallgrass prairie,-25.9,0.0,48.79838510709723,-97.4261712760448
+South Central Rockies forests,-25.9,0.0,44.77761546148722,-111.80470495668534
+Canadian High Arctic tundra,-25.7,0.0,75.73023222126506,-84.45300137076175
+North Victoria Land tundra,-25.7,0.0,-72.72162304319944,164.88114495751464
+Alberta-British Columbia foothills forests,-25.6,0.4,55.051769316093235,-117.91483856398307
+Dronning Maud Land tundra,-25.4,0.0,-72.36993397782612,14.099358594461254
+Da Hinggan-Dzhagdy Mountains conifer forests,-25.2,0.0,51.90267857565003,123.89502016424365
+Sayan Intermontane steppe,-25.1,0.0,51.343495144125384,94.41268975332633
+Altai steppe and semi-desert,-25.0,0.0,48.460159551190145,82.57869986344535
+East Antarctic tundra,-24.8,0.0,-67.91054055145852,91.09957927467123
+Muskwa-Slave Lake taiga,-24.8,0.7,59.914620811233114,-118.45831763852775
+Khangai Mountains alpine meadow,-24.6,0.0,47.495290380713186,99.30474380594563
+Eastern Canadian forests,-24.6,0.0,50.60559813879596,-63.638381712699505
+Central Tibetan Plateau alpine steppe,-24.4,0.4,33.4152468460836,87.93815188626614
+Northern Rockies conifer forests,-24.3,0.0,50.239084013386766,-117.07086989743935
+Junggar Basin semi-desert,-24.3,0.0,45.66598582938039,88.87268742064339
+Northwest Territories taiga,-24.1,4.2,65.39774443296804,-123.9015489582962
+Hindu Kush alpine meadow,-24.1,0.5,36.28423855258029,70.50829286348846
+Okhotsk-Manchurian taiga,-23.5,0.0,51.9459261061764,136.4144779351067
+Eastern Canadian Forest-Boreal transition,-23.1,0.0,47.04502612724456,-77.5361882686272
+Snake-Columbia shrub steppe,-23.0,0.0,42.68980755454539,-116.40050293625781
+Changbai Mountains mixed forests,-22.9,3.7,41.789834741956554,127.56669208708634
+Northern Cordillera forests,-22.6,0.0,58.45227262049424,-128.9625208165415
+Wyoming Basin shrub steppe,-22.4,0.0,42.42654494335129,-108.39440317449333
+Altai montane forest and forest steppe,-22.1,0.0,48.2471191929791,90.33452652098191
+Karakoram-West Tibetan Plateau alpine steppe,-22.0,0.1,34.81510935754237,76.42599184931926
+Blue Mountains forests,-22.0,0.0,44.81202540606686,-118.61837452315152
+Amur meadow steppe,-21.9,0.0,48.7183061972236,131.25699581938744
+South Antarctic Peninsula tundra,-21.8,0.0,-74.10501749241054,-64.36307908123271
+Davis Highlands tundra,-21.8,1.2,69.20185573286388,-68.58692452008297
+Pamir alpine desert and tundra,-21.8,0.0,38.38296021180931,73.35508380327796
+Trans-Baikal conifer forests,-21.6,1.9,50.902125679522825,109.88093866322211
+Colorado Rockies forests,-21.4,0.0,38.74998652254176,-106.3821030334288
+Watson Highlands taiga,-21.3,0.0,61.5229947579381,-132.62673599164236
+Marie Byrd Land tundra,-21.2,0.4,-76.55900990502434,-134.69906302032751
+Altai alpine meadow and tundra,-21.2,0.0,48.650375286019276,88.05712443315967
+Sakhalin Island taiga,-20.9,0.0,50.58172499719661,142.79345126377265
+Eastern Cascades forests,-20.9,0.0,43.04707492415838,-121.19066526238171
+Daurian forest steppe,-20.8,0.0,49.969965151088395,112.47232038621209
+Ellsworth Mountains tundra,-20.4,0.0,-78.86006167353855,-84.82604685899281
+Manchurian mixed forests,-20.2,0.0,46.130627107817254,127.79292180478691
+Ogilvie-MacKenzie alpine tundra,-20.1,0.0,64.43428031151687,-131.97052986914537
+Alaska-St. Elias Range tundra,-19.6,0.0,62.13277547547787,-147.09922130540738
+Interior Alaska-Yukon lowland taiga,-19.4,0.0,64.72797109655282,-153.37465003610413
+Gobi Lakes Valley desert steppe,-19.0,0.0,45.42690150272366,100.33645863824195
+Nenjiang River grassland,-18.9,0.0,46.49865747933678,123.96148967064512
+Prince Charles Mountains tundra,-18.8,0.0,-72.18131539828222,66.52089804140283
+Qaidam Basin semi-desert,-18.7,0.0,37.7198618952003,93.7216534579662
+Okanogan dry forests,-18.5,0.0,50.37081524314767,-120.53337750504377
+Arctic foothills tundra,-18.5,0.0,69.16798869970731,-155.4981496251492
+New England-Acadian forests,-18.5,0.0,45.49918119404632,-68.92527523096754
+Kazakh semi-desert,-18.5,0.2,48.437316722553035,65.83622174369957
+Tibetan Plateau alpine shrublands and meadows,-18.4,0.2,33.31119274088961,94.6490814505087
+Nebraska Sand Hills mixed grasslands,-18.2,4.5,42.07166529102318,-100.78986025465083
+Fraser Plateau and Basin conifer forests,-18.2,0.0,52.71446500158669,-124.21539287422533
+Ussuri broadleaf and mixed forests,-18.1,0.1,46.680748214184305,135.1671404235551
+Scandinavian Montane Birch forest and grasslands,-18.0,1.6,65.34603606103715,13.78923888861843
+Upper Midwest US forest-savanna transition,-18.0,0.0,44.66737661795065,-91.64692155061732
+South Victoria Land tundra,-17.9,0.0,-77.7086753552398,162.09126156651828
+Kamchatka taiga,-17.6,10.8,56.095489328123826,160.35478217441266
+Tian Shan montane conifer forests,-17.5,1.5,43.1498041178344,80.3730446960803
+Western Himalayan subalpine conifer forests,-17.4,0.0,32.36178384712138,76.73966453497066
+Helanshan montane conifer forests,-17.3,0.0,38.617963544595284,105.86100349816759
+Central British Columbia Mountain forests,-17.3,0.0,55.418198386059316,-124.69320698671056
+Kazakh steppe,-17.3,0.0,51.98370392504525,69.96565852855242
+Russian Arctic desert,-17.0,0.1,79.66061406999177,51.73853386994074
+Mongolian-Manchurian grassland,-16.9,0.0,45.84380344100127,115.84182692055019
+Great Basin montane forests,-16.6,0.0,39.15191787708615,-116.46888428495821
+East Siberian taiga,-16.2,2.0,61.56053149206861,112.88046922666923
+Gulf of St. Lawrence lowland forests,-15.9,0.0,46.493084905821284,-65.01129310052374
+Enderby Land tundra,-15.7,0.2,-67.65740538401481,50.137070637386394
+Suiphun-Khanka meadows and forest meadows,-15.7,0.0,45.16497882244734,132.58895455681395
+Eastern Himalayan alpine shrub and meadows,-15.6,0.0,28.63619503992358,90.64930130439595
+Eastern Gobi desert steppe,-15.5,0.0,43.89011514616268,108.9505789556111

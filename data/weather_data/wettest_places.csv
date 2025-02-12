@@ -1,101 +1,101 @@
-region,max_temperature,min_temperature,max_rainfall
-Madagascar humid forests,27.5,21.3,103.7
-Taiwan subtropical evergreen forests,14.7,12.9,77.0
-Etosha Pan halophytics,26.5,21.6,37.2
-Appalachian Piedmont forests,3.9,1.9,36.8
-South China Sea Islands,26.6,26.2,33.7
-Mississippi lowland forests,16.5,6.9,31.9
-Fernando de Noronha-Atol das Rocas moist forests,26.8,26.2,28.7
-Mid-Atlantic US coastal savannas,5.6,2.2,25.1
-Southern Rift Montane forest-grassland,30.3,23.7,25.0
-Papuan Central Range sub-alpine grasslands,18.1,13.1,24.8
-Nyanga-Chimanimani Montane forest-grassland,22.1,18.9,23.5
-Southern New Guinea lowland rain forests,34.4,23.9,22.6
-Piney Woods,9.9,6.9,21.6
-Western European broadleaf forests,10.9,6.8,21.3
-Palau tropical moist forests,28.0,27.2,20.7
-Zagros Mountains forest steppe,-2.1,-5.5,19.2
-Sechura desert,5.6,-0.1,19.2
-Chiquitano dry forests,28.4,22.8,19.1
-Luzon rain forests,25.9,23.7,17.0
-Azores temperate mixed forests,17.1,16.4,16.7
-Illyrian deciduous forests,13.6,11.9,16.3
-Central Range Papuan montane rain forests,15.3,8.7,16.2
-Southeast Papuan rain forests,29.3,21.4,16.0
-Vogelkop montane rain forests,28.8,19.8,15.6
-Luzon tropical pine forests,27.1,17.0,14.6
-Eastern Australian temperate forests,22.7,17.1,14.0
-Central Tallgrass prairie,-9.9,-14.5,13.7
-Iberian conifer forests,9.7,5.4,13.3
-Zambezian evergreen dry forests,28.3,19.8,13.2
-Magdalena Valley dry forests,29.6,23.4,13.1
-Vogelkop-Aru lowland rain forests,33.6,24.2,13.0
-Northern Andean páramo,15.9,12.6,12.7
-Pyrenees conifer and mixed forests,-2.6,-4.7,12.3
-Hokkaido montane conifer forests,-4.1,-8.6,11.4
-Maranhão Babaçu forests,31.5,23.7,11.2
-Cordillera Central páramo,9.5,4.6,10.6
-Halmahera rain forests,26.8,20.7,10.0
-Guayaquil flooded grasslands,32.4,24.1,9.7
-Ozark Mountain forests,4.4,2.8,9.6
-Central Andean dry puna,17.5,6.1,9.6
-Amazon-Orinoco-Southern Caribbean mangroves,27.5,23.1,9.4
-New Britain-New Ireland lowland rain forests,30.4,28.0,9.4
-Flint Hills tallgrass prairie,-4.9,-9.6,9.4
-Southeast US conifer savannas,23.5,12.8,9.4
-Sulawesi montane rain forests,29.9,22.4,9.1
-Pantanal,30.1,23.3,9.1
-Biak-Numfoor rain forests,29.0,25.8,8.9
-St. Peter and St. Paul Rocks,27.1,26.2,8.8
-Nansei Islands subtropical evergreen forests,20.9,16.2,8.7
-Appalachian-Blue Ridge forests,2.3,0.2,8.6
-Lesser Sundas deciduous forests,28.9,26.4,8.5
-South Taiwan monsoon rain forests,21.5,19.3,8.4
-Northeast Brazil restingas,28.7,24.4,8.3
-East Central Texas forests,11.2,8.0,8.2
-Cross-Timbers savanna-woodland,4.2,0.7,8.0
-Nihonkai montane deciduous forests,10.8,4.0,8.0
-Brahmaputra Valley semi-evergreen forests,21.0,15.3,7.8
-Seram rain forests,27.9,22.4,7.8
-Mulanje Montane forest-grassland,29.2,21.8,7.8
-Buru rain forests,27.4,20.6,7.7
-Arabian desert,26.6,16.0,7.6
-Sumatran tropical pine forests,27.3,19.0,7.6
-Hokkaido deciduous forests,-0.4,-4.9,7.4
-California montane chaparral and woodlands,6.4,3.2,7.1
-Ozark Highlands mixed forests,-0.4,-1.1,6.8
-Cantabrian mixed forests,2.0,-2.0,6.8
-Iberian sclerophyllous and semi-deciduous forests,12.8,6.7,6.6
-Great Sandy-Tanami desert,38.7,25.9,6.4
-Northeast Himalayan subalpine conifer forests,5.1,-1.7,6.4
-Taiheiyo montane deciduous forests,7.8,-0.2,6.3
-Ecuadorian dry forests,30.9,23.0,6.3
-Zambezian flooded grasslands,28.2,18.7,6.2
-Northern Triangle temperate forests,10.8,4.6,6.2
-Northwest Iberian montane forests,11.5,5.0,6.0
-Southern New Guinea freshwater swamp forests,35.4,24.3,6.0
-Madagascar ericoid thickets,29.0,21.0,5.9
-Central Andean wet puna,16.4,9.0,5.9
-Santa Lucia Montane Chaparral & Woodlands,13.1,4.7,5.7
-Eastern Anatolian deciduous forests,2.0,-0.9,5.6
-Euxine-Colchic broadleaf forests,-0.1,-3.2,5.6
-Sumba deciduous forests,25.8,21.7,5.4
-Atlantic coastal pine barrens,3.9,0.4,5.3
-Northwestern Himalayan alpine shrub and meadows,-7.8,-13.4,5.2
-Eastern Congolian swamp forests,36.3,23.8,5.2
-Madagascar subhumid forests,25.4,18.5,5.2
-Southeast Tibet shrublands and meadows,-1.7,-13.3,5.1
-Nebraska Sand Hills mixed grasslands,-10.8,-18.2,5.0
-Honshu alpine conifer forests,11.1,3.8,4.8
-Central-Southern US mixed grasslands,-2.2,-10.6,4.8
-Appalachian mixed mesophytic forests,9.8,-0.0,4.5
-Eastern Java-Bali montane rain forests,27.5,21.8,4.5
-Eastern Himalayan broadleaf forests,-1.5,-7.0,4.4
-Solomon Islands rain forests,29.6,28.0,4.3
-Northern Anatolian conifer and deciduous forests,4.0,0.6,4.3
-Mount Cameroon and Bioko montane forests,19.1,14.1,4.2
-Qionglai-Minshan conifer forests,-5.0,-10.5,4.1
-Tigris-Euphrates alluvial salt marsh,14.8,10.3,4.0
-Amsterdam-Saint Paul Islands temperate grasslands,19.5,18.6,3.9
-Cyprus Mediterranean forests,10.5,3.7,3.9
-Western shortgrass prairie,-3.5,-13.1,3.9
+region,max_rainfall,latitude,longitude
+Madagascar humid forests,103.7,-18.907581403625347,48.61125472320374
+Taiwan subtropical evergreen forests,77.0,23.84893346081958,120.98027068892057
+Mississippi lowland forests,37.9,33.16144977971711,-90.87679540621757
+Etosha Pan halophytics,37.2,-18.831604754249557,16.15763910081212
+Western Congolian forest-savanna,35.8,-5.056069576811444,15.063522542959852
+South China Sea Islands,33.7,13.589150330997889,113.90922172750629
+Appalachian Piedmont forests,29.4,35.124825244216595,-81.53910587166561
+Fernando de Noronha-Atol das Rocas moist forests,28.7,-3.8582743430639392,-32.43224764131676
+Mid-Atlantic US coastal savannas,26.5,35.669709879261774,-77.63119822011807
+Southern Rift Montane forest-grassland,25.0,-9.853268716516373,34.04372696883163
+Bolivian Yungas,24.9,-15.717659174672585,-67.08700674729975
+Papuan Central Range sub-alpine grasslands,24.8,-4.8197817284047515,140.48757345041892
+Piney Woods,23.9,32.24481312202093,-93.817538769019
+Kalahari Acacia woodlands,23.7,-20.295060743770847,20.397815758730044
+Nyanga-Chimanimani Montane forest-grassland,23.5,-18.959319541416683,32.71502506369634
+Cook Islands tropical moist forests,23.2,-20.719806996811663,-158.69607031149553
+Southern New Guinea lowland rain forests,22.6,-6.37143908976543,140.81096261854788
+Western European broadleaf forests,21.3,48.407183630594965,8.02302043213913
+Palau tropical moist forests,20.7,7.4253860002609,134.51915544960022
+Iquitos várzea,20.7,-6.227301403727082,-73.41632747449037
+Sechura desert,19.2,-13.254970236415627,-75.16090421039094
+Zagros Mountains forest steppe,19.2,33.107639988340836,49.43971834624781
+Chiquitano dry forests,19.1,-16.11154098921144,-60.50983089100575
+Eastern Cordillera Real montane forests,18.2,-2.7529388008390425,-78.4815043968727
+Southwest Amazon moist forests,17.5,-9.573160362764867,-70.2645479554847
+Luzon rain forests,17.0,15.75573047291777,121.54451974529836
+Purus várzea,16.8,-4.103520265209392,-67.38299004501027
+Ucayali moist forests,16.7,-7.5218428118968825,-75.96950701953934
+Azores temperate mixed forests,16.7,38.37075365101017,-27.31815764798377
+Tapajós-Xingu moist forests,16.6,-5.899228199897558,-54.428079504183614
+Illyrian deciduous forests,16.3,42.292117104047215,18.210945818134984
+Central Range Papuan montane rain forests,16.2,-5.038867742694143,141.35128706126807
+Southeast Papuan rain forests,16.0,-8.832525057157104,147.82537356977218
+Vogelkop montane rain forests,15.6,-1.2731487497074445,133.14845142057345
+Ellsworth Land tundra,15.4,-73.44633643902503,-98.3280377646656
+Angolan wet miombo woodlands,15.2,-11.698669197343612,17.698972641479134
+Monte Alegre várzea,15.2,-4.385415333419539,-60.668036279633135
+Magdalena Valley montane forests,15.0,5.541490256569085,-74.50503840340262
+Uruguayan savanna,14.9,-31.535272580809576,-54.94809204573109
+Angolan mopane woodlands,14.7,-18.504396874643827,14.971637997543475
+Luzon tropical pine forests,14.6,16.980581761919364,120.93343812999987
+Eastern Australian temperate forests,14.0,-31.408902012289257,150.84995774229952
+Alaska Peninsula montane taiga,14.0,57.119339949408264,-157.02469297374523
+Uatumã-Trombetas moist forests,13.6,-0.31868217788235814,-56.91347166926008
+Iberian conifer forests,13.3,39.954131860495046,-2.4629172484407875
+Central Tallgrass prairie,13.3,41.12805936331629,-94.36929972582844
+Zambezian evergreen dry forests,13.2,-13.326320336638307,24.079362775900876
+Arnhem Land tropical savanna,13.1,-12.968444639389585,133.2995440733084
+Magdalena Valley dry forests,13.1,3.8686226490743683,-75.06663425388685
+Vogelkop-Aru lowland rain forests,13.0,-2.800042980509441,133.34907028212984
+Northern Andean páramo,12.7,1.6463165730370146,-76.44403472192616
+Guianan freshwater swamp forests,12.7,5.707639967228269,-55.74012028634233
+Beni savanna,12.6,-13.676148976626013,-65.48424367446815
+Scotia Sea Islands tundra,12.4,-58.9548300173434,-45.36978854659156
+Peruvian Yungas,12.2,-10.711386407398557,-74.88816282159128
+Zambezian mopane woodlands,11.7,-19.242543397748683,29.665664971343052
+Gurupa várzea,11.4,-1.9742014740087435,-53.52264945095048
+Hokkaido montane conifer forests,11.4,43.6020154549334,143.06254586437893
+Zambezian Baikiaea woodlands,11.2,-17.284784983404382,20.580213884510975
+Maranhão Babaçu forests,11.2,-4.29480004062247,-43.730000465263764
+Pyrenees conifer and mixed forests,11.2,42.69533319971464,0.6523119701789314
+Kamchatka taiga,10.8,56.095489328123826,160.35478217441266
+Dry miombo woodlands,10.7,-13.82124254614884,32.450159812527346
+Angolan scarp savanna and woodlands,10.7,-9.218641908161851,14.195908108170926
+Cordillera Central páramo,10.6,-7.498335270402999,-77.92592568996928
+Appalachian-Blue Ridge forests,10.4,37.3926435574081,-81.10297812627643
+Southeast US conifer savannas,10.2,32.17431319135985,-84.82338388639025
+Ozark Mountain forests,10.2,35.053994276705254,-94.00380069998766
+Halmahera rain forests,10.0,0.5701546461115305,127.96008903766136
+Guianan lowland moist forests,10.0,4.266041727012573,-56.426088535277266
+Clipperton Island shrub and grasslands,10.0,10.301112837634337,-109.22125792798433
+Guayaquil flooded grasslands,9.7,-2.081052039356999,-79.65011052411519
+California montane chaparral and woodlands,9.7,33.719584090271226,-117.5669304493583
+Flint Hills tallgrass prairie,9.6,38.20438785067657,-96.56334387378078
+Central Andean dry puna,9.6,-21.19179700944059,-67.90035572514665
+Zambezian-Limpopo mixed woodlands,9.6,-18.195199127153785,31.06670437338429
+New Britain-New Ireland lowland rain forests,9.4,-5.012028329402789,150.5774479700785
+Amazon-Orinoco-Southern Caribbean mangroves,9.4,4.5670410881669845,-55.96170120910551
+Kola Peninsula tundra,9.2,68.48076027079537,35.96190405016703
+Pantanal,9.1,-18.054175088084897,-57.210484271834524
+Sulawesi montane rain forests,9.1,-2.0398075449502393,120.79490356717088
+Biak-Numfoor rain forests,8.9,-0.9491367222826632,135.81197668734282
+Isthmian-Atlantic moist forests,8.9,10.205768271295321,-82.47349612949286
+St. Peter and St. Paul Rocks,8.8,0.912051325028964,-29.30960260963978
+Madeira-Tapajós moist forests,8.8,-8.864995264576315,-60.32644474364266
+Cross-Timbers savanna-woodland,8.8,33.5585734250308,-97.53189411193269
+Nansei Islands subtropical evergreen forests,8.7,27.496324659187017,128.23901743677484
+Lesser Sundas deciduous forests,8.5,-8.580294280822871,119.67568551707555
+East Central Texas forests,8.4,30.898429056853328,-96.63935033749266
+South Taiwan monsoon rain forests,8.4,22.389020298470015,120.68450178387944
+Northwest Hawai'i scrub,8.3,26.44039991347848,-172.59323644565518
+Northeast Brazil restingas,8.3,-2.8153340677170817,-42.43455844611171
+Fiji tropical moist forests,8.2,-17.463571946641725,178.78832603808326
+Nihonkai montane deciduous forests,8.0,38.43243756953396,139.23606383309286
+Northern New Guinea lowland rain and freshwater swamp forests,8.0,-3.63801436257372,141.33238298948197
+Cape York Peninsula tropical savanna,8.0,-14.001550941576248,142.9999648542346
+Brahmaputra Valley semi-evergreen forests,7.8,26.856407086428852,93.1662921040162
+Mulanje Montane forest-grassland,7.8,-15.682085824100751,35.4616929214279
+Seram rain forests,7.8,-3.2434507420179175,129.36922139278607
+Buru rain forests,7.7,-3.4307203408839335,126.63873940368943
