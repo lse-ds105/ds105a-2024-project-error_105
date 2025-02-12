@@ -21,25 +21,6 @@ I also suggested the usage of SQL's `JOIN` function, allowing us to seamlessly l
 
 ![Specific Code 3](./supporting_evidence_jonathan/specific_code_3.png)
 
-My main role in this project was to deal with everything Pokémon related. As such, I was responsible for developing the code to collect Pokémon data, process it, and create the rankings to be used for integration. While I was processing the code, I also developed a new code using SciKit's KMeans to identify the dominant colour of the Pokémon. Lastly, I also created visualisations to portray the trends and patterns that I encountered along the way. 
-
-![Specific Code 1](./supporting_evidence_jonathan/specific_code_1.png)  
-
-I also suggested the usage of SQL's `JOIN` function, allowing us to seamlessly link Pokémon to locations based on the ranking.
-
-![Specific Code 2](./supporting_evidence_jonathan/specific_code_2.png)  
-
-### Problems Solved  
-
-#### Long Collection Time  
-Due to having to make 1025 different API requests twice, I utilised the `ThreadPoolExecutor` to make simultaneous calls, thus effectively cutting down the time by a factor of 10.   
-
-![Specific Code 3](./supporting_evidence_jonathan/long_collection_time.png)
-
-Due to having to make 1025 different API requests twice, I utilised the `ThreadPoolExecutor` to make simultaneous calls, thus effectively cutting down the time by a factor of 10. 
-
-![Specific Code 3](./supporting_evidence_jonathan/specific_code_3.png)  
-
 #### Large Collection Space Required  
 While storing the data, I realised that there were various types of data being collected that were not necessary, including many keys in the `json` file with the word `'sprites'`. As such, I kept what was needed and removed the rest to reduce the storage space required.  
 
